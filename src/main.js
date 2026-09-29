@@ -114,7 +114,7 @@ class AncientEarthApp {
         }
       );
 
-      // 3.1. Initialize Full Catalog Modal (Enciclopedia de 57 Especies)
+      // 3.1. Initialize Full Catalog Modal (Enciclopedia de 96 Especies)
       const fullCatalogDialog = document.getElementById('full-catalog-dialog');
       if (fullCatalogDialog) {
         this.fullCatalogModal = new FullCatalogModal({

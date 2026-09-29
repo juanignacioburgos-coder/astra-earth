@@ -1,6 +1,6 @@
 /**
  * FullCatalogModal.js
- * Enciclopedia Paleobiológica Completa (57 Especies)
+ * Enciclopedia Paleobiológica Completa (96 Especies)
  * High-performance, full-window dialog featuring live search, multi-criteria filtering
  * (Era, Habitat, Diet, Sorting), and direct interactive actions:
  * 1. "Ver en Globo 3D": jumps timeline to exact era, applies PALEOMAP texture, and projects 3D species zone.

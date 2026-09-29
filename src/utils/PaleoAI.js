@@ -267,12 +267,12 @@ Pangea ("Toda la Tierra") fue el último supercontinente que reunió prácticame
 
     // 6. FULL SPECIES CATALOG & ENCYCLOPEDIA QUERIES
     if (q.includes('catalogo') || q.includes('especie') || q.includes('todas las especies') || q.includes('animal') || q.includes('enciclopedia') || q.includes('cuantas especies') || q.includes('fauna')) {
-      actions.push({ type: 'OPEN_CATALOG', label: '📚 Abrir Catálogo Completo (57 Especies)' });
+      actions.push({ type: 'OPEN_CATALOG', label: '📚 Abrir Catálogo Completo (96 Especies)' });
       return {
         text: `### 📚 Enciclopedia Paleobiológica Completa
-El atlas cuenta con una base de datos científica de **57 especies fósiles icónicas** reconstruidas exhaustivamente con coordenadas paleogeográficas, métricas anatómicas, dietas y yacimientos geológicos.
+El atlas cuenta con una base de datos científica de **96 especies fósiles icónicas** reconstruidas exhaustivamente con coordenadas paleogeográficas, métricas anatómicas, dietas y yacimientos geológicos.
 
-* **Abarca 4 Grandes Eras:** Desde los primeros organismos multicelulares del **Precámbrico** (hace 550 Ma) como *Dickinsonia*, pasando por la radiación del **Paleozoico**, los dinosaurios del **Mesozoico**, hasta la megafauna pleistocénica del **Cenozoico** como el *Mamut Lanudo* y el *Smilodon*.
+* **Abarca 4 Grandes Eras:** Desde los primeros organismos macroscópicos del **Precámbrico / Ediacárico** (hace 565 Ma) como *Dickinsonia*, *Charnia* y *Kimberella*, pasando por la explosión marina y terrestres del **Paleozoico**, los arcosaurios del **Mesozoico**, hasta la megafauna y homininos del **Cenozoico**.
 * **Búsqueda y Filtros:** Puedes filtrar por era, hábitat (marino, terrestre, volador, anfibio), dieta y tamaño.
 * **Teletransporte 3D:** Cada ficha incluye el botón **"Ver en Globo 3D"** para viajar en el tiempo geológico directamente a su ecosistema original.`,
         actions
