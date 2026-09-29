@@ -3346,67 +3346,419 @@ html, body {
 }
 
 /* ==========================================================================
-   Responsive Adaptations
+   Mobile Navigation Drawer & Hamburger Button
+   ========================================================================== */
+.mobile-menu-btn {
+  display: none; /* Hidden on desktop */
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.mobile-menu-btn .hamburger-line {
+  width: 18px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+.mobile-menu-btn:hover,
+.mobile-menu-btn:active {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.mobile-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 150;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-drawer-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(340px, 86vw);
+  background: rgba(8, 14, 28, 0.96);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  z-index: 160;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -10px 0 45px rgba(0, 0, 0, 0.9);
+  overflow-y: auto;
+}
+
+.mobile-nav-drawer.active {
+  transform: translateX(0);
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-drawer-body {
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.mobile-search-section {
+  position: relative;
+  width: 100%;
+}
+
+.mobile-search-wrapper {
+  width: 100%;
+}
+
+.mobile-search-wrapper input {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0.85rem;
+  outline: none;
+  font-family: var(--font-sans);
+}
+
+.mobile-search-wrapper input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+}
+
+.mobile-drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #e2e8f0;
+  font-family: var(--font-sans);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.mobile-nav-link:active,
+.mobile-nav-link:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.35);
+  color: #fff;
+  transform: translateX(3px);
+}
+
+.mobile-nav-link .nav-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.nav-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.nav-main-text {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-sub-text {
+  font-size: 0.7rem;
+  color: #94a3b8;
+}
+
+/* ==========================================================================
+   Responsive Adaptations (Mobile & Tablet)
    ========================================================================== */
 @media (max-width: 900px) {
-  .app-header {
-    height: 56px;
-    padding: 0 16px;
+  /* Prevent browser pull-to-refresh & scroll conflict with 3D canvas */
+  #globe-container {
+    touch-action: none;
   }
-  .header-center {
+
+  /* Header on Mobile: Compact and clean */
+  .app-header {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 52px;
+    padding: 0 12px;
+    border-radius: 14px;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .brand-title {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+  }
+
+  .brand-subtitle {
     display: none;
   }
-  #sidebar-mount {
-    width: 320px;
-    bottom: 160px;
+
+  /* Hide the horizontal nav and desktop-only buttons */
+  .header-nav {
+    display: none;
   }
+
+  .header-actions .city-search-box,
+  .header-actions .pill-btn,
+  .header-actions #btn-fullscreen {
+    display: none;
+  }
+
+  /* Show the mobile menu toggle button */
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  /* Timeline Scrubber Dock on Mobile */
+  #timeline-mount {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 12px;
+    transform: none;
+    width: auto;
+    max-width: none;
+    z-index: 90;
+  }
+
+  .timeline-hud.compact-dock {
+    padding: 8px 12px 6px 12px;
+    border-radius: 16px;
+    gap: 4px;
+  }
+
+  .timeline-compact-row {
+    gap: 6px;
+    min-height: 32px;
+  }
+
+  .timeline-ctrl-group {
+    gap: 4px;
+  }
+
+  .timeline-btn-mini {
+    width: 28px;
+    height: 28px;
+  }
+
+  .timeline-btn-play {
+    width: 32px;
+    height: 32px;
+  }
+
+  .timeline-speed-mini {
+    display: none;
+  }
+
+  .period-title-mini {
+    font-size: 0.8rem;
+    max-width: 125px;
+  }
+
+  .period-era-tag-mini {
+    display: none;
+  }
+
+  .timeline-eras-shortcut {
+    display: none;
+  }
+
+  .time-badge-prominent {
+    padding: 2px 8px;
+  }
+
+  .time-num-compact {
+    font-size: 1rem;
+  }
+
+  .timeline-slider::-webkit-slider-thumb {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* Sidebar Panel: Full height slide-over on mobile */
+  #sidebar-mount {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: min(390px, 94vw);
+    height: 100vh;
+    z-index: 120;
+    pointer-events: none;
+  }
+
+  .sidebar-panel {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+  }
+
+  .sidebar-panel.closed {
+    transform: translateX(100%);
+  }
+
+  .sidebar-toggle-btn {
+    left: -42px;
+    top: 68px;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px 0 0 12px;
+  }
+
+  /* Specimen Modal on Mobile */
   .specimen-modal {
-    width: 96vw;
+    width: 95vw;
     max-height: 94vh;
   }
+
   .specimen-card-view {
-    padding: 16px 18px;
+    padding: 16px;
+    max-height: 94vh;
+    overflow-y: auto;
   }
+
   .specimen-modal-body {
     grid-template-columns: 1fr;
-    overflow-y: auto;
-    max-height: calc(94vh - 140px);
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    gap: 16px;
   }
+
   .specimen-image-container {
-    height: 260px;
-    min-height: 200px;
+    height: 200px;
+    min-height: 180px;
+    padding: 10px;
   }
+
   .specimen-featured-image {
-    max-height: 240px;
+    max-height: 180px;
     height: auto;
     object-fit: contain;
   }
+
   .specimen-modal-footer {
     flex-direction: column-reverse;
-    gap: 10px;
+    gap: 8px;
   }
+
   .btn-modal-back, .btn-modal-explore {
     width: 100%;
     justify-content: center;
   }
-  #timeline-mount {
-    width: calc(100vw - 32px);
-    bottom: 12px;
-  }
-  .timeline-period-info {
-    font-size: 0.8rem;
-  }
-  .period-badge-mini, .period-era-tag-mini {
-    display: none;
-  }
-  .timeline-eras-shortcut {
-    display: none;
-  }
+
+  /* Extinction HUD on Mobile */
   .extinction-hud {
-    width: calc(100vw - 32px);
-    left: 16px;
-    right: 16px;
-    max-height: calc(100vh - 140px);
+    width: calc(100vw - 20px);
+    left: 10px;
+    right: 10px;
+    top: 68px;
+    max-height: calc(100vh - 120px);
+    padding: 14px;
+  }
+
+  /* City & Tectonics HUDs on Mobile */
+  .active-city-hud,
+  .tectonics-hud {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-width: calc(100vw - 20px);
+    top: 68px;
+  }
+
+  #active-city-hud[style*="display: block"] ~ #tectonics-hud,
+  #active-city-hud:not([style*="display: none"]) + #tectonics-hud {
+    top: 240px;
+  }
+
+  /* Concierge AI Assistant on Mobile */
+  .concierge-flyout {
+    width: calc(100vw - 20px);
+    right: 10px;
+    left: 10px;
+    bottom: 74px;
+    max-height: 72vh;
+  }
+
+  .concierge-bubble {
+    bottom: 74px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .period-title-mini {
+    max-width: 90px;
+    font-size: 0.74rem;
+  }
+
+  .period-badge-mini {
+    padding: 1px 5px;
+    font-size: 0.66rem;
+  }
+
+  .time-num-compact {
+    font-size: 0.92rem;
   }
 }
 

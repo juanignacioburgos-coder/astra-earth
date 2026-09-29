@@ -333,6 +333,120 @@ class AncientEarthApp {
         }
       });
     }
+
+    // Setup Mobile Navigation Drawer
+    this._setupMobileNavigation();
+  }
+
+  _setupMobileNavigation() {
+    const btnMobileMenu = document.getElementById('btn-mobile-menu');
+    const drawer = document.getElementById('mobile-nav-drawer');
+    const backdrop = document.getElementById('mobile-drawer-backdrop');
+    const btnCloseDrawer = document.getElementById('btn-close-mobile-drawer');
+
+    const openDrawer = () => {
+      if (drawer) drawer.classList.add('active');
+      if (backdrop) backdrop.classList.add('active');
+    };
+
+    const closeDrawer = () => {
+      if (drawer) drawer.classList.remove('active');
+      if (backdrop) backdrop.classList.remove('active');
+    };
+
+    if (btnMobileMenu) btnMobileMenu.addEventListener('click', openDrawer);
+    if (btnCloseDrawer) btnCloseDrawer.addEventListener('click', closeDrawer);
+    if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+    // Links inside mobile drawer
+    const bindDrawerLink = (id, callback) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('click', () => {
+          closeDrawer();
+          callback();
+        });
+      }
+    };
+
+    bindDrawerLink('mobile-nav-home', () => this.resetToHomeView());
+    bindDrawerLink('mobile-nav-catalog', () => this.openFullCatalog());
+    bindDrawerLink('mobile-nav-eras', () => {
+      const erasDialog = document.getElementById('eras-dialog');
+      if (erasDialog) erasDialog.showModal();
+    });
+    bindDrawerLink('mobile-nav-fossil', () => this.openPaleobiology());
+    bindDrawerLink('mobile-nav-timeline', () => this.enterExplorerMode());
+    bindDrawerLink('mobile-nav-tectonics', () => {
+      const btnTect = document.getElementById('btn-toggle-tectonics-header');
+      if (btnTect) btnTect.click();
+    });
+    bindDrawerLink('mobile-nav-extinctions', () => {
+      const btnExt = document.getElementById('btn-toggle-extinctions-header');
+      if (btnExt) btnExt.click();
+    });
+    bindDrawerLink('mobile-nav-methodology', () => {
+      const infoDialog = document.getElementById('info-dialog');
+      if (infoDialog) infoDialog.showModal();
+    });
+
+    // Mobile City Search
+    const mobileSearchInput = document.getElementById('mobile-city-search-input');
+    const mobileSuggestions = document.getElementById('mobile-city-suggestions');
+    const mobileClearBtn = document.getElementById('btn-clear-city-mobile');
+
+    if (mobileSearchInput && mobileSuggestions) {
+      mobileSearchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if (mobileClearBtn) mobileClearBtn.style.display = query ? 'block' : 'none';
+
+        if (!query) {
+          mobileSuggestions.style.display = 'none';
+          mobileSuggestions.innerHTML = '';
+          return;
+        }
+
+        const matches = this.cities.filter(c =>
+          c.name.toLowerCase().includes(query) ||
+          c.country.toLowerCase().includes(query)
+        ).slice(0, 5);
+
+        if (matches.length > 0) {
+          mobileSuggestions.innerHTML = matches.map(c => `
+            <div class="city-suggestion-item" data-city-name="${c.name}">
+              <div class="city-sug-name">${c.name}</div>
+              <div class="city-sug-country">${c.country} • ${c.plate}</div>
+            </div>
+          `).join('');
+          mobileSuggestions.style.display = 'block';
+        } else {
+          mobileSuggestions.style.display = 'none';
+        }
+      });
+
+      mobileSuggestions.addEventListener('click', (e) => {
+        const item = e.target.closest('.city-suggestion-item');
+        if (!item) return;
+        const cityName = item.dataset.cityName;
+        const city = this.cities.find(c => c.name === cityName);
+        if (city) {
+          closeDrawer();
+          this.selectCity(city);
+          mobileSearchInput.value = `${city.name}, ${city.country}`;
+          mobileSuggestions.style.display = 'none';
+          if (mobileClearBtn) mobileClearBtn.style.display = 'block';
+        }
+      });
+
+      if (mobileClearBtn) {
+        mobileClearBtn.addEventListener('click', () => {
+          mobileSearchInput.value = '';
+          mobileClearBtn.style.display = 'none';
+          mobileSuggestions.style.display = 'none';
+          this.clearCityMarker();
+        });
+      }
+    }
   }
 
   /**

@@ -77,8 +77,117 @@
               <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
             </svg>
           </button>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button id="btn-mobile-menu" class="mobile-menu-btn" aria-label="Abrir menú de navegación" title="Menú">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
         </div>
       </header>
+
+      <!-- Mobile Navigation Drawer & Backdrop -->
+      <div id="mobile-drawer-backdrop" class="mobile-drawer-backdrop"></div>
+      <aside id="mobile-nav-drawer" class="mobile-nav-drawer glass-panel" aria-label="Menú principal móvil">
+        <div class="mobile-drawer-header">
+          <div class="brand">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"></circle>
+                <ellipse cx="12" cy="12" rx="11" ry="4" stroke="currentColor" stroke-width="1.6" transform="rotate(-24 12 12)"></ellipse>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">ASTRA EARTH</span>
+              <span class="brand-subtitle">Atlas Paleogeográfico 3D</span>
+            </div>
+          </div>
+          <button id="btn-close-mobile-drawer" class="btn-close-circle" aria-label="Cerrar menú">&times;</button>
+        </div>
+
+        <div class="mobile-drawer-body">
+          <!-- Mobile City Search -->
+          <div class="mobile-search-section">
+            <div class="search-input-wrapper mobile-search-wrapper">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="mobile-city-search-input" placeholder="Buscar ciudad en el tiempo..." autocomplete="off" spellcheck="false" />
+              <button id="btn-clear-city-mobile" class="btn-clear-search" style="display: none;" title="Quitar">&times;</button>
+            </div>
+            <div class="city-suggestions-dropdown" id="mobile-city-suggestions" style="display: none;"></div>
+          </div>
+
+          <!-- Navigation Items List -->
+          <nav class="mobile-drawer-nav">
+            <button class="mobile-nav-link" id="mobile-nav-home">
+              <span class="nav-icon">🏠</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">Inicio</span>
+                <span class="nav-sub-text">Vista orbital global</span>
+              </div>
+            </button>
+
+            <button class="mobile-nav-link" id="mobile-nav-catalog">
+              <span class="nav-icon">📚</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">Catálogo Completo</span>
+                <span class="nav-sub-text">Enciclopedia de las 57 especies</span>
+              </div>
+            </button>
+
+            <button class="mobile-nav-link" id="mobile-nav-eras">
+              <span class="nav-icon">⏳</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">Atlas de Eras</span>
+                <span class="nav-sub-text">750 Ma a la actualidad</span>
+              </div>
+            </button>
+
+            <button class="mobile-nav-link" id="mobile-nav-fossil">
+              <span class="nav-icon">🦖</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">Paleobiología & Fauna</span>
+                <span class="nav-sub-text">Especies de esta era</span>
+              </div>
+            </button>
+
+            <button class="mobile-nav-link" id="mobile-nav-timeline">
+              <span class="nav-icon">⏱️</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">Línea de Tiempo</span>
+                <span class="nav-sub-text">Modo exploración continua</span>
+              </div>
+            </button>
+
+            <button class="mobile-nav-link" id="mobile-nav-tectonics">
+              <span class="nav-icon">🌍</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">Tectónica de Placas 3D</span>
+                <span class="nav-sub-text">Fallas, dorsales y rifts</span>
+              </div>
+            </button>
+
+            <button class="mobile-nav-link" id="mobile-nav-extinctions">
+              <span class="nav-icon">🌋</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">Extinciones Masivas 3D</span>
+                <span class="nav-sub-text">Chicxulub, Traps Siberianos</span>
+              </div>
+            </button>
+
+            <button class="mobile-nav-link" id="mobile-nav-methodology">
+              <span class="nav-icon">📖</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">Metodología Científica</span>
+                <span class="nav-sub-text">Scotese PALEOMAP & IUGS</span>
+              </div>
+            </button>
+          </nav>
+        </div>
+      </aside>
 
       <!-- Active City Drift Floating HUD -->
       <div id="active-city-hud" class="active-city-hud glass-panel" style="display: none;">
