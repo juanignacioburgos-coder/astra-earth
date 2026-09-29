@@ -1,0 +1,162 @@
+[
+  {
+    "id": "glyptodon",
+    "title": "Glyptodon",
+    "slug": "glyptodon",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Glyptodon-01.jpg",
+    "targetFile": "glyptodon.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "macrauchenia",
+    "title": "Macrauchenia",
+    "slug": "macrauchenia",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Macrauchenia-01.jpg",
+    "targetFile": "macrauchenia.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "megalania",
+    "title": "Megalania (Varanus priscus)",
+    "slug": "megalania",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Megalania-01.jpg",
+    "targetFile": "megalania.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "oso_cavernario",
+    "title": "Oso Cavernario (Ursus spelaeus)",
+    "slug": "oso-cavernario",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Oso-Cavernario-01.jpg",
+    "targetFile": "oso_cavernario.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "toxodon",
+    "title": "Toxodon",
+    "slug": "toxodon",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Toxodon-01.jpg",
+    "targetFile": "toxodon.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "diprotodon",
+    "title": "Diprotodon",
+    "slug": "diprotodon",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Diprotodon-01.jpg",
+    "targetFile": "diprotodon.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "lobo_gigante",
+    "title": "Lobo Gigante / Dire Wolf (Aenocyon dirus)",
+    "slug": "lobo-gigante",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Lobo-Gigante-01.jpg",
+    "targetFile": "lobo_gigante.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "mastodonte_americano",
+    "title": "Mastodonte Americano (Mammut americanum)",
+    "slug": "mastodonte-americano",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Mastodonte-Americano-01.jpg",
+    "targetFile": "mastodonte_americano.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "megaterio",
+    "title": "Megaterio (Megatherium americanum)",
+    "slug": "megaterio",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Megaterio-01.jpg",
+    "targetFile": "megaterio.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "smilodon_mundo",
+    "title": "Tigre Dientes de Sable (Smilodon)",
+    "slug": "tigre-dientes-de-sable",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Tigre-Dientes-de-Sable-01.jpg",
+    "targetFile": "smilodon_mundo.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "procoptodon",
+    "title": "Canguro Gigante de Cara Corta (Procoptodon)",
+    "slug": "canguro-gigante-de-cara-corta",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Canguro-Gigante-de-Cara-Corta-01.jpg",
+    "targetFile": "procoptodon.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "rinoceronte_lanudo",
+    "title": "Rinoceronte Lanudo (Coelodonta antiquitatis)",
+    "slug": "rinoceronte-lanudo",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Rinoceronte-Lanudo-01.jpg",
+    "targetFile": "rinoceronte_lanudo.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "megalocero",
+    "title": "Megalocero / Alce Gigante (Megaloceros giganteus)",
+    "slug": "megalocero",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Megalocero-01.jpg",
+    "targetFile": "megalocero.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "mamut_mundo",
+    "title": "Mamut Lanudo (Mammuthus primigenius)",
+    "slug": "mamut",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Mamut-01.jpg",
+    "targetFile": "mamut_mundo.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "leon_cavernas",
+    "title": "León de las Cavernas (Panthera spelaea)",
+    "slug": "leon-de-las-cavernas",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Le%C3%B3n-de-las-Cavernas-01.jpg",
+    "targetFile": "leon_cavernas.jpg",
+    "periodId": "present_0ma",
+    "articleText": "",
+    "paragraphs": []
+  },
+  {
+    "id": "titanis",
+    "title": "Titanis (Titanis walleri / Ave del Terror)",
+    "slug": "titanis",
+    "imgUrl": "https://www.mundoprehistorico.com/wp-content/uploads/Titanis-01.jpg",
+    "targetFile": "titanis.jpg",
+    "periodId": "miocene_20ma",
+    "articleText": "",
+    "paragraphs": []
+  }
+]

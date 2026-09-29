@@ -1,0 +1,2901 @@
+[
+  {
+    "id": "anomalocaris-canadensis",
+    "commonName": "Anomalocaris",
+    "scientificName": "Anomalocaris canadensis",
+    "clade": "Dinocaridida (Anomalocarididae)",
+    "periodId": "cambrico",
+    "startMa": 508,
+    "endMa": 497,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 1,
+      "weightTons": 0.004,
+      "heightMeters": 0.25
+    },
+    "paleoLocation": [
+      "Laurentia",
+      "Columbia Británica (Canadá)",
+      "Chengjiang (China)"
+    ],
+    "description": "Superdepredador ápice de los mares del Cámbrico dotado de dos apéndices prehensiles espinosos y ojos compuestos pedunculados formados por más de 16,000 lentes con visión estereoscópica. Su boca circular provista de placas dentadas trituraba trilobites e invertebrados de cuerpo blando.",
+    "media": {
+      "imageUrl": "assets/species/anomalocaris_mundo.jpg",
+      "imageAuthor": "Mundo Prehistórico / Katrina Kenny",
+      "imageLicense": "CC-BY-SA 4.0",
+      "phylopicSvgUrl": "https://images.phylopic.org/images/841fb002-c9a1-4328-86d7-ffb491fa9a5e/vector.svg"
+    },
+    "coordinates": {
+      "lat": 51.4,
+      "lng": -116.5
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Joseph Frederick Whiteaves",
+      "yearDiscovered": 1892,
+      "describedBy": "J.F. Whiteaves, 1892; Derek Briggs & Harry Whittington, 1985 (anatomía completa)",
+      "geologicalFormation": "Esquistos de Burgess (Burgess Shale, Stephen Formation)",
+      "typeSpecimen": "GSC 40103 / ROM 51211",
+      "museum": "Royal Ontario Museum (Toronto, Canadá)",
+      "modernCountry": "Canadá (Columbia Británica)",
+      "holotypeSpecimen": "GSC 40103"
+    },
+    "paleogeography": {
+      "waterBody": "Mar somero de Burgess / Océano Pantalasa",
+      "landmass": "Paleocontinente Laurentia ecuatorial",
+      "depthOrBiome": "Plataforma marina somera y arrecifes de microbialitos (50-120 m)",
+      "paleoZoneDescription": "Aguas tropicales marinas de la radiación cámbrica a lo largo del talud continental de Laurentia."
+    },
+    "paleoCoordinates": {
+      "lat": -8.0,
+      "lon": 58.0
+    }
+  },
+  {
+    "id": "opabinia-regalis",
+    "commonName": "Opabinia",
+    "scientificName": "Opabinia regalis",
+    "clade": "Dinocaridida (Opabiniidae)",
+    "periodId": "cambrico",
+    "startMa": 508,
+    "endMa": 505,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 0.07,
+      "weightTons": 2e-05,
+      "heightMeters": 0.02
+    },
+    "paleoLocation": [
+      "Laurentia",
+      "Burgess Shale (Canadá)"
+    ],
+    "description": "Enigmático artrópodo basal cámbrico con cinco ojos pedunculados que le conferían un campo de visión de 360 grados. En el frente de su cabeza poseía una probóscide flexible y extensible rematada en pinzas ganchudas con las que capturaba pequeñas presas entre los sedimentos marinos.",
+    "media": {
+      "imageUrl": "assets/species/opabinia.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0",
+      "phylopicSvgUrl": "https://images.phylopic.org/images/95c3fb02-23c2-4a0b-9dfd-b06253bc0745/vector.svg"
+    },
+    "coordinates": {
+      "lat": 51.41,
+      "lng": -116.51
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Charles Doolittle Walcott",
+      "yearDiscovered": 1912,
+      "describedBy": "Charles D. Walcott, 1912; Harry Whittington, 1975 (redescripción de 5 ojos)",
+      "geologicalFormation": "Esquistos de Burgess (Burgess Shale, Fossil Ridge)",
+      "typeSpecimen": "USNM 57683",
+      "museum": "Smithsonian National Museum of Natural History (Washington D.C., EE. UU.)",
+      "modernCountry": "Canadá",
+      "holotypeSpecimen": "USNM 57683"
+    },
+    "paleogeography": {
+      "waterBody": "Mar de Burgess / Océano Pantalasa",
+      "landmass": "Margen pasivo de Laurentia ecuatorial",
+      "depthOrBiome": "Fondo marino fangoso bajo la zona fótica superficial (70-150 m)",
+      "paleoZoneDescription": "Fondos marinos lodosos ricos en detritos bentónicos frente a los escarpados arrecifes cámbricos."
+    },
+    "paleoCoordinates": {
+      "lat": -8.2,
+      "lon": 58.2
+    }
+  },
+  {
+    "id": "pikaia-gracilens",
+    "commonName": "Pikaia",
+    "scientificName": "Pikaia gracilens",
+    "clade": "Chordata (Cephalochordata basal)",
+    "periodId": "cambrico",
+    "startMa": 508,
+    "endMa": 505,
+    "diet": "Filtrador",
+    "metrics": {
+      "lengthMeters": 0.05,
+      "weightTons": 5e-06,
+      "heightMeters": 0.01
+    },
+    "paleoLocation": [
+      "Laurentia",
+      "Burgess Shale (Canadá)"
+    ],
+    "description": "Uno de los primeros y más representativos antepasados de los vertebrados en el registro fósil. Presentaba una notocorda dorsal rígida precursora de la columna vertebral y miómeros musculares en forma de zigzag que le permitían ondular velozmente en el agua.",
+    "media": {
+      "imageUrl": "assets/species/pikaia.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY-SA 3.0",
+      "phylopicSvgUrl": "https://images.phylopic.org/images/841fb002-c9a1-4328-86d7-ffb491fa9a5e/vector.svg"
+    },
+    "coordinates": {
+      "lat": 51.42,
+      "lng": -116.49
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Charles Doolittle Walcott",
+      "yearDiscovered": 1911,
+      "describedBy": "Charles D. Walcott, 1911; Simon Conway Morris & Jean-Bernard Caron, 2012 (primer cordado)",
+      "geologicalFormation": "Esquistos de Burgess (Cantera Walcott)",
+      "typeSpecimen": "USNM 57625",
+      "museum": "Smithsonian National Museum of Natural History (Washington D.C., EE. UU.)",
+      "modernCountry": "Canadá",
+      "holotypeSpecimen": "USNM 57624"
+    },
+    "paleogeography": {
+      "waterBody": "Bahías epicontinentales de Laurentia / Pantalasa",
+      "landmass": "Talud continental de Laurentia",
+      "depthOrBiome": "Aguas marinas pelágicas y bentónicas supralitorales (30-90 m)",
+      "paleoZoneDescription": "Columna de agua marina somera de Laurentia, precursor clave del linaje de los cordados y vertebrados."
+    },
+    "paleoCoordinates": {
+      "lat": -8.1,
+      "lon": 58.1
+    }
+  },
+  {
+    "id": "olenoides-serratus",
+    "commonName": "Trilobites Cámbrico",
+    "scientificName": "Olenoides serratus",
+    "clade": "Trilobita (Corynexochida)",
+    "periodId": "cambrico",
+    "startMa": 513,
+    "endMa": 500,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 0.1,
+      "weightTons": 5e-05,
+      "heightMeters": 0.03
+    },
+    "paleoLocation": [
+      "Laurentia",
+      "Burgess Shale (Canadá)",
+      "Utah (EE. UU.)"
+    ],
+    "description": "Trilobites cámbrico de exoesqueleto trilobulado calcificado con fuertes espinas marginales y patas birrámeas articuladas. Sus ojos compuestos de calcita cristalina bifocal representaron uno de los avances ópticos más tempranos de la evolución biológica marina.",
+    "media": {
+      "imageUrl": "assets/species/trilobites_mundo.jpg",
+      "imageAuthor": "Mundo Prehistórico / Sam Gon III",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 51.45,
+      "lng": -116.48
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Charles Doolittle Walcott",
+      "yearDiscovered": 1888,
+      "describedBy": "Rominger, 1887; Walcott, 1918",
+      "geologicalFormation": "Esquistos de Burgess (Miembro Greater Phyllopod Bed)",
+      "typeSpecimen": "USNM 58392",
+      "museum": "Smithsonian National Museum of Natural History (Washington D.C., EE. UU.)",
+      "modernCountry": "Canadá",
+      "holotypeSpecimen": "USNM 56801"
+    },
+    "paleogeography": {
+      "waterBody": "Plataforma de carbonatos de Cathedral / Pantalasa",
+      "landmass": "Borde de plataforma de Laurentia",
+      "depthOrBiome": "Lecho marino bentónico oxigenado",
+      "paleoZoneDescription": "Plataforma marina somera dominada por artrópodos acorazados durante la explosión cámbrica."
+    },
+    "paleoCoordinates": {
+      "lat": -8.3,
+      "lon": 58.0
+    }
+  },
+  {
+    "id": "cameroceras-trentonense",
+    "commonName": "Cameroceras",
+    "scientificName": "Cameroceras trentonense",
+    "clade": "Cephalopoda (Endoceratidae)",
+    "periodId": "ordovicico",
+    "startMa": 470,
+    "endMa": 443,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 6,
+      "weightTons": 0.8,
+      "heightMeters": 0.9
+    },
+    "paleoLocation": [
+      "Laurentia",
+      "Báltica",
+      "Norteamérica y Escandinavia"
+    ],
+    "description": "Molusco cefalópodo con concha recta cónica de hasta 6 metros de longitud que dominó los mares poco profundos del Ordovícico. Como depredador de emboscada, capturaba trilobites y escorpiones marinos con sus fuertes tentáculos y trituraba sus corazas con un pico córneo.",
+    "media": {
+      "imageUrl": "assets/species/cameroceras.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY-SA 3.0"
+    },
+    "coordinates": {
+      "lat": 43.5,
+      "lng": -75.4
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Timothy Abbott Conrad",
+      "yearDiscovered": 1842,
+      "describedBy": "Timothy Abbott Conrad, 1842",
+      "geologicalFormation": "Grupo Trenton / Caliza de Black River (Nueva York)",
+      "typeSpecimen": "AMNH FI 1289",
+      "museum": "American Museum of Natural History (Nueva York, EE. UU.)",
+      "modernCountry": "Estados Unidos (Nueva York) y Báltica",
+      "holotypeSpecimen": "AMNH-FI 1152"
+    },
+    "paleogeography": {
+      "waterBody": "Mar epicontinental tropical de Trenton / Océano Jápeto",
+      "landmass": "Plataforma inundada de Laurentia oriental",
+      "depthOrBiome": "Mares tropicales someros con arrecifes de estromatopóridos y briozoos (20-80 m)",
+      "paleoZoneDescription": "Mares cálidos epeíricos que cubrían gran parte de Laurentia central antes de la glaciación hirnantiense."
+    },
+    "paleoCoordinates": {
+      "lat": -24.0,
+      "lon": 50.0
+    }
+  },
+  {
+    "id": "eurypterus-remipes",
+    "commonName": "Escorpión Marino",
+    "scientificName": "Eurypterus remipes",
+    "clade": "Chelicerata (Eurypterida)",
+    "periodId": "silurico",
+    "startMa": 432,
+    "endMa": 418,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 1.3,
+      "weightTons": 0.02,
+      "heightMeters": 0.2
+    },
+    "paleoLocation": [
+      "Laurentia",
+      "Nueva York (EE. UU.)",
+      "Báltica"
+    ],
+    "description": "Artrópodo quelicerado marino dotado de un par de patas modificadas en anchas palas natatorias y un telson caudal punzante. Fósil del estado de Nueva York, acechaba en lagunas salobres y arrecifes silúricos cazando peces basales y trilobites.",
+    "media": {
+      "imageUrl": "assets/species/eurypterus.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": 42.9,
+      "lng": -75.2
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "James Ellsworth De Kay",
+      "yearDiscovered": 1825,
+      "describedBy": "James Ellsworth De Kay, 1825 (Fósil oficial del estado de Nueva York)",
+      "geologicalFormation": "Formación Bertie (Dolomía de Fiddlers Green, Nueva York)",
+      "typeSpecimen": "NYSM 1238",
+      "museum": "New York State Museum (Albany, EE. UU.)",
+      "modernCountry": "Estados Unidos (Nueva York) y Europa",
+      "holotypeSpecimen": "NYSM 10328"
+    },
+    "paleogeography": {
+      "waterBody": "Lagunas hipersalinas de Bertie / Océano Jápeto en cierre",
+      "landmass": "Margen sur de Laurentia (Euramérica)",
+      "depthOrBiome": "Lagunas litorales hipersalinas y llanuras de marea salobre (1-15 m)",
+      "paleoZoneDescription": "Ambientes lagunares hipersalinos protegidos de depredadores marinos abiertos en el Silúrico tardío."
+    },
+    "paleoCoordinates": {
+      "lat": -22.0,
+      "lon": 34.0
+    }
+  },
+  {
+    "id": "prototaxites-loganii",
+    "commonName": "Prototaxites",
+    "scientificName": "Prototaxites loganii",
+    "clade": "Fungi / Ascomycota terrestre",
+    "periodId": "silurico",
+    "startMa": 430,
+    "endMa": 370,
+    "diet": "Filtrador",
+    "metrics": {
+      "lengthMeters": 8,
+      "weightTons": 1.5,
+      "heightMeters": 8
+    },
+    "paleoLocation": [
+      "Laurussia",
+      "Gaspé (Canadá)",
+      "Reino Unido",
+      "Arabia"
+    ],
+    "description": "Colosal estructura biológica columnar que se alzaba hasta 8 metros sobre el suelo silúrico y devónico, siendo con diferencia el organismo terrestre más alto de su era. Los análisis isotópicos modernos sugieren que era un hongo masivo o un liquen gigante antes de la evolución de los árboles verdaderos.",
+    "media": {
+      "imageUrl": "assets/species/prototaxites.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine / Mary Parrish",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": 48.83,
+      "lng": -64.48
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Sir John William Dawson",
+      "yearDiscovered": 1859,
+      "describedBy": "John William Dawson, 1859; C. Kevin Boyce et al., 2007 (identificado como hongo gigante)",
+      "geologicalFormation": "Arenisca de Gaspé / Formación Battery Point (Quebec)",
+      "typeSpecimen": "RM 2148",
+      "museum": "Redpath Museum (McGill University, Montreal, Canadá)",
+      "modernCountry": "Canadá, Reino Unido y Europa occidental",
+      "holotypeSpecimen": "RM-Dawson-1859-P1"
+    },
+    "paleogeography": {
+      "waterBody": "Cuencas fluviales costeras sin vegetación arbórea",
+      "landmass": "Euramérica tropical (continente de las Viejas Areniscas Rojas)",
+      "depthOrBiome": "Llanuras aluviales húmedas y costas fluviales colonizadas por briófitas",
+      "paleoZoneDescription": "Paisajes terrestres primigenios del Silúrico-Devónico dominados por gigantescas estructuras fúngicas columnares."
+    },
+    "paleoCoordinates": {
+      "lat": -17.5,
+      "lon": 31.0
+    }
+  },
+  {
+    "id": "dunkleosteus-terrelli",
+    "commonName": "Dunkleósteo",
+    "scientificName": "Dunkleosteus terrelli",
+    "clade": "Placodermi (Arthrodira)",
+    "periodId": "devonico",
+    "startMa": 382,
+    "endMa": 358,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 8.8,
+      "weightTons": 4,
+      "heightMeters": 1.8
+    },
+    "paleoLocation": [
+      "Laurussia",
+      "Ohio (EE. UU.)",
+      "Marruecos",
+      "Polonia"
+    ],
+    "description": "Pez acorazado placodermo colosal provisto de un blindaje óseo articulado en la cabeza y el tórax. Carecía de dientes verdaderos; en su lugar, poseía placas óseas afiladas y autoafilables con las que ejercía una fuerza de mordida de más de 5,000 N capaz de seccionar peces acorazados y tiburones primitivos.",
+    "media": {
+      "imageUrl": "assets/species/dunkleosteus.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY-SA 3.0"
+    },
+    "coordinates": {
+      "lat": 41.5,
+      "lng": -81.7
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Jay Terrell",
+      "yearDiscovered": 1867,
+      "describedBy": "John Strong Newberry, 1873; nombrado en honor a David Dunkle en 1956",
+      "geologicalFormation": "Lutita de Cleveland (Cleveland Shale, Miembro Superior de Huron Shale)",
+      "typeSpecimen": "CMNH 5768",
+      "museum": "Cleveland Museum of Natural History (Cleveland, EE. UU.)",
+      "modernCountry": "Estados Unidos, Marruecos, Polonia y Bélgica",
+      "holotypeSpecimen": "CMNH 5768"
+    },
+    "paleogeography": {
+      "waterBody": "Mar epicontinental interior de Ohio / Cuenca de los Apalaches",
+      "landmass": "Laurasia meridional (Euramérica)",
+      "depthOrBiome": "Mares someros pelágicos y zonas litorales ricas en peces (20-100 m)",
+      "paleoZoneDescription": "Mar interior cálido y estratificado de Laurussia oriental antes de la extinción masiva de Kellwasser."
+    },
+    "paleoCoordinates": {
+      "lat": -16.0,
+      "lon": 18.0
+    }
+  },
+  {
+    "id": "tiktaalik-roseae",
+    "commonName": "Tiktaalik",
+    "scientificName": "Tiktaalik roseae",
+    "clade": "Sarcopterygii (Elpistostegalia)",
+    "periodId": "devonico",
+    "startMa": 375,
+    "endMa": 370,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 2.7,
+      "weightTons": 0.08,
+      "heightMeters": 0.35
+    },
+    "paleoLocation": [
+      "Laurussia",
+      "Isla Ellesmere, Nunavut (Canadá)"
+    ],
+    "description": "Fósil de transición clave entre peces de aletas lobuladas y los primeros tetrápodos terrestres. Poseía cuello articulado móvil independiente del cráneo, costillas reforzadas para sostener los pulmones fuera del agua y aletas delanteras con huesos homólogos al brazo, antebrazo y muñeca capaces de apuntalar su cuerpo en tierra firme.",
+    "media": {
+      "imageUrl": "assets/species/tiktaalik.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": 78.5,
+      "lng": -82
+    },
+    "environment": "amphibious",
+    "discovery": {
+      "discoverer": "Edward Daeschler, Neil Shubin y Farish Jenkins",
+      "yearDiscovered": 2004,
+      "describedBy": "E.B. Daeschler, N.H. Shubin & F.A. Jenkins Jr., 2006",
+      "geologicalFormation": "Formación Fram (Isla de Ellesmere, Nunavut, Canadá)",
+      "typeSpecimen": "NUFV 108",
+      "museum": "Canadian Museum of Nature (Ottawa, Canadá)",
+      "modernCountry": "Canadá (Ártico canadiense)",
+      "holotypeSpecimen": "NUFV 108"
+    },
+    "paleogeography": {
+      "waterBody": "Sistemas fluviales meándricos y deltas de marea",
+      "landmass": "Laurasia septentrional ecuatorial",
+      "depthOrBiome": "Ríos de corriente lenta, canales someros y llanuras de inundación fangosas (0.5-3 m)",
+      "paleoZoneDescription": "Sistemas de agua dulce tropicales con vegetación marginal, clave en la transición agua-tierra de los tetrápodos."
+    },
+    "paleoCoordinates": {
+      "lat": 7.0,
+      "lon": 12.5
+    }
+  },
+  {
+    "id": "ichthyostega-stensioei",
+    "commonName": "Ichthyostega",
+    "scientificName": "Ichthyostega stensioei",
+    "clade": "Tetrapoda basal (Ichthyostegidae)",
+    "periodId": "devonico",
+    "startMa": 365,
+    "endMa": 360,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 1.5,
+      "weightTons": 0.04,
+      "heightMeters": 0.3
+    },
+    "paleoLocation": [
+      "Laurussia",
+      "Groenlandia Oriental"
+    ],
+    "description": "Uno de los primeros vertebrados tetrápodos que combinaba pulmones y extremidades con siete dedos por pata para arrastrarse por las marismas devónicas, manteniendo a la vez una aleta dorsal natatoria en la cola para impulsarse en el agua.",
+    "media": {
+      "imageUrl": "assets/species/ichthyostega.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine / Dmitry Bogdanov",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 73.5,
+      "lng": -23
+    },
+    "environment": "amphibious",
+    "discovery": {
+      "discoverer": "Gunnar Säve-Söderbergh / Lauge Koch",
+      "yearDiscovered": 1931,
+      "describedBy": "Gunnar Säve-Söderbergh, 1932; Erik Jarvik, 1952",
+      "geologicalFormation": "Formación Aina Dal (Grupo de Areniscas Rojas del Este de Groenlandia)",
+      "typeSpecimen": "MGUH VP 6001",
+      "museum": "Museo Geológico de Copenhague (Dinamarca)",
+      "modernCountry": "Groenlandia Oriental",
+      "holotypeSpecimen": "MGUH VP 6001"
+    },
+    "paleogeography": {
+      "waterBody": "Lagos de herradura y arroyos de llanuras de inundación",
+      "landmass": "Margen oriental de Laurasia (Groenlandia ecuatorial)",
+      "depthOrBiome": "Humedales subtropicales de agua dulce con vegetación de helechos primitivos",
+      "paleoZoneDescription": "Ecosistemas anfibios pioneros en los márgenes de las cuencas fluviales de las Areniscas Rojas."
+    },
+    "paleoCoordinates": {
+      "lat": 6.0,
+      "lon": 10.0
+    }
+  },
+  {
+    "id": "arthropleura-armata",
+    "commonName": "Arthropleura",
+    "scientificName": "Arthropleura armata",
+    "clade": "Myriapoda (Arthropleuridea)",
+    "periodId": "carbonifero",
+    "startMa": 315,
+    "endMa": 299,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 2.6,
+      "weightTons": 0.05,
+      "heightMeters": 0.35
+    },
+    "paleoLocation": [
+      "Euramérica",
+      "Reino Unido",
+      "Alemania",
+      "Nueva Escocia"
+    ],
+    "description": "El mayor invertebrado terrestre de todos los tiempos, un colosal milpiés de hasta 2.6 metros que prosperó gracias al 35% de oxígeno atmosférico del Carbonífero. Su cuerpo blindado con placas dorsales de quitina y queratina recorría los densos bosques de licopodios alimentándose de vegetación en descomposición.",
+    "media": {
+      "imageUrl": "assets/species/arthropleura.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY-SA 3.0"
+    },
+    "coordinates": {
+      "lat": 55.2,
+      "lng": -1.6
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Hermann Jordan / Christian Ernst Weiss",
+      "yearDiscovered": 1854,
+      "describedBy": "Hermann Jordan y Christian Ernst von Meyer, 1854",
+      "geologicalFormation": "Cuenca hullera de Saarbrücken (Alemania) / Formación Montceau-les-Mines",
+      "typeSpecimen": "MB.A. 1290",
+      "museum": "Museum für Naturkunde (Berlín, Alemania) / Museo de Historia Natural de Lille",
+      "modernCountry": "Alemania, Francia, Reino Unido y este de Norteamérica",
+      "holotypeSpecimen": "MB.A. 892"
+    },
+    "paleogeography": {
+      "waterBody": "Ciénagas y deltas fluviales tropicales",
+      "landmass": "Cinturón de carbón ecuatorial de Pangea / Euramérica",
+      "depthOrBiome": "Bosques pantanosos de licopodios gigantes (Lepidodendron, Sigillaria) ricos en O2",
+      "paleoZoneDescription": "Bosques de carbón hiperóxicos (30-35% O2) con biomasa vegetal densa que favoreció el gigantismo de artrópodos."
+    },
+    "paleoCoordinates": {
+      "lat": 4.0,
+      "lon": 14.0
+    }
+  },
+  {
+    "id": "meganeura-monyi",
+    "commonName": "Meganeura",
+    "scientificName": "Meganeura monyi",
+    "clade": "Meganisoptera (Meganeuridae)",
+    "periodId": "carbonifero",
+    "startMa": 305,
+    "endMa": 299,
+    "diet": "Insectívoro",
+    "metrics": {
+      "lengthMeters": 0.45,
+      "weightTons": 0.00045,
+      "heightMeters": 0.15
+    },
+    "paleoLocation": [
+      "Euramérica",
+      "Commentry (Francia)",
+      "Reino Unido"
+    ],
+    "description": "Gigantesco insecto grifonóptero emparentado con las libélulas modernas con una envergadura alar de hasta 75 cm. Como cazador aéreo veloz, capturaba anfibios tempranos e insectos de gran tamaño sobrevolando los pantanos del Carbonífero.",
+    "media": {
+      "imageUrl": "assets/species/meganeura.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 46.28,
+      "lng": 2.75
+    },
+    "environment": "aerial",
+    "discovery": {
+      "discoverer": "Stéphane Mony / Charles Brongniart",
+      "yearDiscovered": 1880,
+      "describedBy": "Charles Brongniart, 1885",
+      "geologicalFormation": "Capas de carbón de Commentry (Allier, Francia)",
+      "typeSpecimen": "MNHN.F.R51025",
+      "museum": "Muséum National d'Histoire Naturelle (París, Francia)",
+      "modernCountry": "Francia y cuencas hulleras europeas",
+      "holotypeSpecimen": "MNHN.F.R51084"
+    },
+    "paleogeography": {
+      "waterBody": "Lagos pantanosos de Commentry",
+      "landmass": "Zona intertropical de Pangea / Macizo Central Francés",
+      "depthOrBiome": "Dosel de selvas tropicales carboníferas y claros de lagunas pantanosas",
+      "paleoZoneDescription": "Ambientes aéreos densos y oxigenados donde patrullaba sobre estanques cazando anfibios pequeños e insectos."
+    },
+    "paleoCoordinates": {
+      "lat": 2.5,
+      "lon": 18.0
+    }
+  },
+  {
+    "id": "pulmonoscorpius-kirktonensis",
+    "commonName": "Pulmonoscorpio",
+    "scientificName": "Pulmonoscorpius kirktonensis",
+    "clade": "Arachnida (Scorpiones)",
+    "periodId": "carbonifero",
+    "startMa": 336,
+    "endMa": 326,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 0.7,
+      "weightTons": 0.003,
+      "heightMeters": 0.2
+    },
+    "paleoLocation": [
+      "Euramérica",
+      "East Kirkton (Escocia)"
+    ],
+    "description": "Escorpión gigante terrestre del Carbonífero temprano que alcanzaba hasta 70 cm de longitud. Poseía pedipalpos provistos de pinzas macizas y un gran aguijón curvo con el que inmovilizaba pequeños tetrápodos y artrópodos en el suelo forestal.",
+    "media": {
+      "imageUrl": "assets/species/pulmonoscorpius.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 55.9,
+      "lng": -3.5
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Stan Wood",
+      "yearDiscovered": 1984,
+      "describedBy": "Andrew J. Jeram, 1994",
+      "geologicalFormation": "Caliza de East Kirkton (West Lothian, Escocia)",
+      "typeSpecimen": "NMS G.1994.48.1",
+      "museum": "National Museums of Scotland (Edimburgo, Reino Unido)",
+      "modernCountry": "Reino Unido (Escocia)",
+      "holotypeSpecimen": "NMS G.1994.48.1"
+    },
+    "paleogeography": {
+      "waterBody": "Lago volcánico de East Kirkton",
+      "landmass": "Euramérica septentrional ecuatorial",
+      "depthOrBiome": "Laderas volcánicas húmedas con aguas termales y bosques de colas de caballo",
+      "paleoZoneDescription": "Suelo forestal húmedo y rocoso próximo a lagos con actividad hidrotermal silícea en el Carbonífero inferior."
+    },
+    "paleoCoordinates": {
+      "lat": 4.0,
+      "lon": 10.0
+    }
+  },
+  {
+    "id": "dimetrodon-limbatus",
+    "commonName": "Dimetrodon",
+    "scientificName": "Dimetrodon limbatus",
+    "clade": "Synapsida (Sphenacodontidae)",
+    "periodId": "permico",
+    "startMa": 295,
+    "endMa": 272,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 3.5,
+      "weightTons": 0.25,
+      "heightMeters": 1.8
+    },
+    "paleoLocation": [
+      "Pangea",
+      "Texas y Oklahoma (EE. UU.)",
+      "Alemania"
+    ],
+    "description": "El sinápsido más emblemático del Pérmico, estrechamente emparentado con el linaje que dio origen a los mamíferos. Su alta vela dorsal sustentada por espinas vertebrales vascularizadas le permitía regular rápidamente su temperatura corporal y comunicarse visualmente con congéneres.",
+    "media": {
+      "imageUrl": "assets/species/dimetrodon_mundo.jpg",
+      "imageAuthor": "Mundo Prehistórico / Dmitry Bogdanov",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 33.6,
+      "lng": -99.3
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Edward Drinker Cope",
+      "yearDiscovered": 1877,
+      "describedBy": "Edward Drinker Cope, 1878",
+      "geologicalFormation": "Lechos Rojos de Texas (Formación Wichita / Clear Fork)",
+      "typeSpecimen": "AMNH 4060",
+      "museum": "American Museum of Natural History (Nueva York, EE. UU.)",
+      "modernCountry": "Estados Unidos (Texas, Oklahoma)",
+      "holotypeSpecimen": "AMNH 4022"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras de inundación fluviales estacionales",
+      "landmass": "Ecuador de Pangea central (Suroeste de Laurentia)",
+      "depthOrBiome": "Llanuras aluviales semiáridas con bosques de coníferas primitivas y charcas temporales",
+      "paleoZoneDescription": "Cuencas de sedimentos rojos con estaciones secas prolongadas, donde regulaba su temperatura mediante su vela dorsal."
+    },
+    "paleoCoordinates": {
+      "lat": 7.0,
+      "lon": -15.0
+    }
+  },
+  {
+    "id": "inostrancevia-alexandri",
+    "commonName": "Inostrancevia",
+    "scientificName": "Inostrancevia alexandri",
+    "clade": "Synapsida (Gorgonopsia)",
+    "periodId": "permico",
+    "startMa": 259,
+    "endMa": 252,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 3.5,
+      "weightTons": 0.3,
+      "heightMeters": 1.4
+    },
+    "paleoLocation": [
+      "Pangea Septentrional",
+      "Rusia Europea (Río Dvina)"
+    ],
+    "description": "El mayor gorgonópsido conocido, depredador cumbre del Pérmico tardío. Sus colmillos de sable de hasta 15 cm y su mandíbula con bisagra de amplia apertura estaban adaptados para perforar la densa coraza osteodérmica de pareiasaurios herbívoros.",
+    "media": {
+      "imageUrl": "assets/species/inostrancevia.jpg",
+      "imageAuthor": "Dmitry Bogdanov",
+      "imageLicense": "CC-BY-SA 3.0"
+    },
+    "coordinates": {
+      "lat": 62.8,
+      "lng": 43.1
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Vladimir P. Amalitsky",
+      "yearDiscovered": 1899,
+      "describedBy": "Vladimir P. Amalitsky, 1922 (nombrado en honor al geólogo A. A. Inostrantsev)",
+      "geologicalFormation": "Yacimiento de Sokolki (Río Dviná Septentrional, Óblast de Arcángel, Rusia)",
+      "typeSpecimen": "PIN 1758/1",
+      "museum": "Instituto Paleontológico Borissiak (Moscú, Rusia)",
+      "modernCountry": "Rusia (cuenca del Dviná) y Sudáfrica",
+      "holotypeSpecimen": "PIN 1758/1"
+    },
+    "paleogeography": {
+      "waterBody": "Grandes sistemas fluviales meándricos de Sokolki",
+      "landmass": "Pangea septentrional (Plataforma Rusa / Cratón de Europa Oriental)",
+      "depthOrBiome": "Valles fluviales templado-cálidos con vegetación de Glossopteris y cordaites",
+      "paleoZoneDescription": "Planicies aluviales templadas del Pérmico tardío anteriores a la colosal erupción de los Traps Siberianos."
+    },
+    "paleoCoordinates": {
+      "lat": 44.0,
+      "lon": 45.0
+    }
+  },
+  {
+    "id": "scutosaurus-karpinskii",
+    "commonName": "Escutosaurio",
+    "scientificName": "Scutosaurus karpinskii",
+    "clade": "Parareptilia (Pareiasauridae)",
+    "periodId": "permico",
+    "startMa": 259,
+    "endMa": 252,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3,
+      "weightTons": 1.2,
+      "heightMeters": 1.6
+    },
+    "paleoLocation": [
+      "Pangea Septentrional",
+      "Óblast de Arcángel (Rusia)"
+    ],
+    "description": "Tanque biológico herbívoro del Pérmico tardío con patas columnares masivas dispuestas bajo el cuerpo. Su piel estaba acorazada por placas óseas dérmicas soldadas que lo protegían de los gorgonópsidos mientras procesaba grandes volúmenes de vegetación fibrosa.",
+    "media": {
+      "imageUrl": "assets/species/scutosaurus.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": 61.2,
+      "lng": 46.5
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Vladimir P. Amalitsky",
+      "yearDiscovered": 1899,
+      "describedBy": "Vladimir P. Amalitsky, 1922",
+      "geologicalFormation": "Yacimiento de Sokolki (Río Dviná Septentrional, Rusia)",
+      "typeSpecimen": "PIN 2005/1532",
+      "museum": "Instituto Paleontológico Borissiak (Moscú, Rusia)",
+      "modernCountry": "Rusia",
+      "holotypeSpecimen": "PIN 2005/1532"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras de inundación semiáridas",
+      "landmass": "Pangea septentrional (Cratón Europeo Oriental)",
+      "depthOrBiome": "Estepas semiáridas y cuencas fluviales estacionales",
+      "paleoZoneDescription": "Grandes manadas de herbívoros acorazados que migraban a lo largo de las riberas pérmicas de Eurasia."
+    },
+    "paleoCoordinates": {
+      "lat": 43.0,
+      "lon": 46.0
+    }
+  },
+  {
+    "id": "plateosaurus-trossingensis",
+    "commonName": "Plateosaurio",
+    "scientificName": "Plateosaurus trossingensis",
+    "clade": "Sauropodomorpha (Plateosauridae)",
+    "periodId": "triasico",
+    "startMa": 214,
+    "endMa": 204,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 8,
+      "weightTons": 2.5,
+      "heightMeters": 3.8
+    },
+    "paleoLocation": [
+      "Pangea Central",
+      "Alemania",
+      "Suiza",
+      "Francia",
+      "Groenlandia"
+    ],
+    "description": "Uno de los primeros grandes dinosaurios prosaurópodos herbívoros de la historia. Capaz de caminar bípedamente para alcanzar hojas a más de 4 metros de altura, utilizaba el gran pulgar garfio de sus manos para acercarse las ramas.",
+    "media": {
+      "imageUrl": "assets/species/plateosaurus.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": 48.07,
+      "lng": 8.63
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Christian Erich Hermann von Meyer",
+      "yearDiscovered": 1837,
+      "describedBy": "Hermann von Meyer, 1837; Friedrich von Huene, 1907 (cantera de Trossingen)",
+      "geologicalFormation": "Formación Trossingen (Knollenmergel, Keuper Superior, Alemania)",
+      "typeSpecimen": "SMNS 13200",
+      "museum": "Staatliches Museum für Naturkunde Stuttgart (Alemania)",
+      "modernCountry": "Alemania, Suiza, Francia y Groenlandia",
+      "holotypeSpecimen": "SMNS 13200"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras de inundación fangosas y sabanas estacionales",
+      "landmass": "Pangea central (Cuenca Germánica)",
+      "depthOrBiome": "Llanuras áridas de playa y zonas aluviales con lluvias monzónicas",
+      "paleoZoneDescription": "Vastas llanuras de inundación de Pangea central donde se congregaban grandes manadas de sauropodomorfos basales."
+    },
+    "paleoCoordinates": {
+      "lat": 24.0,
+      "lon": -2.0
+    }
+  },
+  {
+    "id": "herrerasaurus-ischigualastensis",
+    "commonName": "Herrerasaurio",
+    "scientificName": "Herrerasaurus ischigualastensis",
+    "clade": "Saurischia basal (Herrerasauridae)",
+    "periodId": "triasico",
+    "startMa": 231.4,
+    "endMa": 228,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 4.5,
+      "weightTons": 0.25,
+      "heightMeters": 1.5
+    },
+    "paleoLocation": [
+      "Gondwana",
+      "Ischigualasto, San Juan (Argentina)"
+    ],
+    "description": "Uno de los dinosaurios carnívoros más antiguos y completos descubiertos en el Valle de la Luna. Presentaba patas traseras largas para la carrera rápida y una articulación mandibular flexible para sujetar presas en forcejeo.",
+    "media": {
+      "imageUrl": "assets/species/herrerasaurus.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": -30.15,
+      "lng": -67.85
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Victorino Herrera / Osvaldo Reig",
+      "yearDiscovered": 1958,
+      "describedBy": "Osvaldo Reig, 1963",
+      "geologicalFormation": "Formación Ischigualasto (Valle de la Luna, San Juan, Argentina)",
+      "typeSpecimen": "PVL 2566",
+      "museum": "Instituto Miguel Lillo (Tucumán, Argentina) / Museo de San Juan",
+      "modernCountry": "Argentina (Cuenca de Ischigualasto-Villa Unión)",
+      "holotypeSpecimen": "PVL 2566"
+    },
+    "paleogeography": {
+      "waterBody": "Cuenca de rift intramontana de Ischigualasto",
+      "landmass": "Gondwana sudoccidental (Supercontinente Pangea)",
+      "depthOrBiome": "Valles fluviales volcánicos con bosques de helechos con semilla (Dicroidium)",
+      "paleoZoneDescription": "Cuenca de rift activa con ríos perennes y cenizas volcánicas donde florecieron los primeros dinosaurios verdaderos."
+    },
+    "paleoCoordinates": {
+      "lat": -30.0,
+      "lon": -14.0
+    }
+  },
+  {
+    "id": "allosaurus-fragilis",
+    "commonName": "Alosaurio",
+    "scientificName": "Allosaurus fragilis",
+    "clade": "Theropoda (Allosauridae)",
+    "periodId": "jurasico",
+    "startMa": 155,
+    "endMa": 145,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 9.5,
+      "weightTons": 2.3,
+      "heightMeters": 3.2
+    },
+    "paleoLocation": [
+      "Laurasia",
+      "Formación Morrison (Utah, EE. UU.)",
+      "Portugal"
+    ],
+    "description": "El superdepredador más icónico del Jurásico tardío norteamericano. Su cráneo presentaba una amplia apertura de mordida y dientes curvados y aserrados con los que asestaba golpes tajantes como un hacha para desangrar estegosáuridos y saurópodos.",
+    "media": {
+      "imageUrl": "assets/species/allosaurus.jpg",
+      "imageAuthor": "Mundo Prehistórico / Fred Wierum",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 39.3,
+      "lng": -110.8
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Ferdinand Vandiveer Hayden / Othniel Charles Marsh",
+      "yearDiscovered": 1877,
+      "describedBy": "Othniel Charles Marsh, 1877",
+      "geologicalFormation": "Formación Morrison (Cantera Cleveland-Lloyd, Utah)",
+      "typeSpecimen": "YPM 1930 / UUVP 6000",
+      "museum": "Peabody Museum of Natural History (Yale) / Natural History Museum of Utah",
+      "modernCountry": "Estados Unidos, Portugal y Tanzania",
+      "holotypeSpecimen": "USNM 4734"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras aluviales de la Cuenca de Morrison",
+      "landmass": "Laurasia occidental (Norteamérica jurásica)",
+      "depthOrBiome": "Llanuras de inundación semiáridas con bosques de galería y lagos estacionales",
+      "paleoZoneDescription": "Vastas llanuras aluviales jurásicas entre las montañas Ancestrales del oeste y el mar somero de Sundance."
+    },
+    "paleoCoordinates": {
+      "lat": 33.5,
+      "lon": -42.0
+    }
+  },
+  {
+    "id": "stegosaurus-stenops",
+    "commonName": "Estegosaurio",
+    "scientificName": "Stegosaurus stenops",
+    "clade": "Ornithischia (Stegosauridae)",
+    "periodId": "jurasico",
+    "startMa": 155,
+    "endMa": 150,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 9,
+      "weightTons": 5,
+      "heightMeters": 4
+    },
+    "paleoLocation": [
+      "Laurasia",
+      "Formación Morrison (Colorado y Utah, EE. UU.)"
+    ],
+    "description": "Emblemático dinosaurio cuadrúpedo con una doble hilera de placas óseas dérmicas dorsales usadas para termorregulación y cortejo, además de un letal thagomizer de cuatro púas óseas en la cola con el que hería mortalmente a terópodos como Allosaurus.",
+    "media": {
+      "imageUrl": "assets/species/stegosaurus.jpg",
+      "imageAuthor": "Mundo Prehistórico / Nobu Tamura",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 40.4,
+      "lng": -108.5
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Marshall P. Felch / Othniel Charles Marsh",
+      "yearDiscovered": 1877,
+      "describedBy": "Othniel Charles Marsh, 1887",
+      "geologicalFormation": "Formación Morrison (Garden Park, Cañon City, Colorado)",
+      "typeSpecimen": "USNM 4934 ('El esqueleto de carretera')",
+      "museum": "Smithsonian National Museum of Natural History (Washington D.C., EE. UU.)",
+      "modernCountry": "Estados Unidos y Portugal",
+      "holotypeSpecimen": "USNM 4934"
+    },
+    "paleogeography": {
+      "waterBody": "Sistemas de abanicos aluviales y ríos trenzados",
+      "landmass": "Laurasia occidental (Cuenca de Morrison)",
+      "depthOrBiome": "Sabana arbolada con cícadas, helechos y coníferas primitivas",
+      "paleoZoneDescription": "Llanuras de inundación templadas y abiertas de Morrison dominadas por megaconíferas y ríos estacionales."
+    },
+    "paleoCoordinates": {
+      "lat": 34.0,
+      "lon": -40.5
+    }
+  },
+  {
+    "id": "brachiosaurus-altithorax",
+    "commonName": "Braquiosaurio",
+    "scientificName": "Brachiosaurus altithorax",
+    "clade": "Sauropoda (Brachiosauridae)",
+    "periodId": "jurasico",
+    "startMa": 154,
+    "endMa": 150,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 23,
+      "weightTons": 35,
+      "heightMeters": 12
+    },
+    "paleoLocation": [
+      "Laurasia",
+      "Formación Morrison (Colorado, EE. UU.)"
+    ],
+    "description": "Titánico saurópodo cuyas extremidades anteriores eran significativamente más largas que las traseras, otorgando a su lomo una postura inclinada semejante a una jirafa gigante para ramonear directamente en las copas de las coníferas.",
+    "media": {
+      "imageUrl": "assets/species/brachiosaurus.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": 39.05,
+      "lng": -108.7
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Elmer S. Riggs",
+      "yearDiscovered": 1900,
+      "describedBy": "Elmer S. Riggs, 1903",
+      "geologicalFormation": "Formación Morrison (Grand River Valley, Fruita, Colorado)",
+      "typeSpecimen": "FMNH P 25107",
+      "museum": "Field Museum of Natural History (Chicago, EE. UU.)",
+      "modernCountry": "Estados Unidos",
+      "holotypeSpecimen": "FMNH P 25107"
+    },
+    "paleogeography": {
+      "waterBody": "Cuencas fluviales de Morrison",
+      "landmass": "Laurasia meridional",
+      "depthOrBiome": "Bosques ribereños frondosos de Araucaria y Ginkgo",
+      "paleoZoneDescription": "Riberas fértiles y bosques densos de Laurasia capaces de sustentar la ingente demanda calórica de los macronarios."
+    },
+    "paleoCoordinates": {
+      "lat": 32.5,
+      "lon": -41.5
+    }
+  },
+  {
+    "id": "diplodocus-carnegii",
+    "commonName": "Diplodoco",
+    "scientificName": "Diplodocus carnegii",
+    "clade": "Sauropoda (Diplodocidae)",
+    "periodId": "jurasico",
+    "startMa": 154,
+    "endMa": 152,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 27,
+      "weightTons": 14,
+      "heightMeters": 4.5
+    },
+    "paleoLocation": [
+      "Laurasia",
+      "Wyoming y Utah (EE. UU.)"
+    ],
+    "description": "Saurópodo extraordinariamente largo y esbelto con una cola formada por más de 80 vértebras que funcionaba como un látigo supersónico para defender a la manada y disuadir a los carnívoros.",
+    "media": {
+      "imageUrl": "assets/species/diplodocus.jpg",
+      "imageAuthor": "Dmitry Bogdanov",
+      "imageLicense": "CC-BY-SA 3.0"
+    },
+    "coordinates": {
+      "lat": 41.5,
+      "lng": -106
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Jacob L. Wortman / John Bell Hatcher",
+      "yearDiscovered": 1899,
+      "describedBy": "John Bell Hatcher, 1901 (patrocinado por el magnate Andrew Carnegie)",
+      "geologicalFormation": "Formación Morrison (Sheep Creek, Albany County, Wyoming)",
+      "typeSpecimen": "CM 84 (El célebre 'Dippy')",
+      "museum": "Carnegie Museum of Natural History (Pittsburgh, EE. UU.)",
+      "modernCountry": "Estados Unidos",
+      "holotypeSpecimen": "CM 84"
+    },
+    "paleogeography": {
+      "waterBody": "Planicies aluviales de meandros",
+      "landmass": "Laurasia central",
+      "depthOrBiome": "Humedales y praderas de helechos de porte bajo",
+      "paleoZoneDescription": "Extensas llanuras de inundación donde pastaba la vegetación baja del estrato rasante jurásico."
+    },
+    "paleoCoordinates": {
+      "lat": 35.0,
+      "lon": -41.0
+    }
+  },
+  {
+    "id": "archaeopteryx-lithographica",
+    "commonName": "Arqueópterix",
+    "scientificName": "Archaeopteryx lithographica",
+    "clade": "Avialae basal",
+    "periodId": "jurasico",
+    "startMa": 150.8,
+    "endMa": 148.5,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 0.5,
+      "weightTons": 0.0008,
+      "heightMeters": 0.25
+    },
+    "paleoLocation": [
+      "Archipiélago Europeo",
+      "Solnhofen, Baviera (Alemania)"
+    ],
+    "description": "El fósil de transición más célebre de la historia de la ciencia, evidenciando de forma irrefutable el origen terópodo de las aves al combinar dientes cónicos, garras alares y cola ósea reptiliana con plumas de vuelo asimétricas modernas.",
+    "media": {
+      "imageUrl": "assets/species/archaeopteryx.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": 48.89,
+      "lng": 11
+    },
+    "environment": "aerial",
+    "discovery": {
+      "discoverer": "Hermann von Meyer / Friedrich Müller",
+      "yearDiscovered": 1861,
+      "describedBy": "Hermann von Meyer, 1861",
+      "geologicalFormation": "Caliza litográfica de Solnhofen (Baviera, Alemania)",
+      "typeSpecimen": "Ejemplar de Londres (BMNH 37001) / Ejemplar de Berlín (HMN 1880)",
+      "museum": "Museum für Naturkunde (Berlín) / Natural History Museum (Londres)",
+      "modernCountry": "Alemania",
+      "holotypeSpecimen": "HMN 1880 (Espécimen de Berlín)"
+    },
+    "paleogeography": {
+      "waterBody": "Lagunas litorales de carbonatos del Mar de Tetis",
+      "landmass": "Archipiélago insular de Solnhofen (Europa jurásica)",
+      "depthOrBiome": "Islas coralinas subtropicales con vegetación arbustiva xerófila y lagunas hipersalinas",
+      "paleoZoneDescription": "Archipiélago de atolones y lagunas anóxicas en el margen norte del océano Tetis donde se fosilizó con detalle de plumas."
+    },
+    "paleoCoordinates": {
+      "lat": 29.0,
+      "lon": 22.5
+    }
+  },
+  {
+    "id": "spinosaurus-aegyptiacus",
+    "commonName": "Espinosaurio",
+    "scientificName": "Spinosaurus aegyptiacus",
+    "clade": "Theropoda (Spinosauridae)",
+    "periodId": "cretacico-medio",
+    "startMa": 99,
+    "endMa": 93.5,
+    "diet": "Piscívoro",
+    "metrics": {
+      "lengthMeters": 15,
+      "weightTons": 7.5,
+      "heightMeters": 4.8
+    },
+    "paleoLocation": [
+      "Norte de África",
+      "Egipto",
+      "Marruecos (Kem Kem)"
+    ],
+    "description": "El dinosaurio carnívoro más largo conocido, altamente adaptado a la vida semiacuática en los ríos del Sahara Cretácico. Presentaba una gran vela dorsal de hasta 1.8 metros, huesos densos para inmersión y una cola en forma de aleta natatoria.",
+    "media": {
+      "imageUrl": "assets/species/spinosaurus_mundo.jpg",
+      "imageAuthor": "Mundo Prehistórico / Davide Bonadonna",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 31,
+      "lng": 28.5
+    },
+    "environment": "amphibious",
+    "discovery": {
+      "discoverer": "Richard Markgraf / Ernst Stromer (1915)",
+      "yearDiscovered": 1912,
+      "describedBy": "Ernst Stromer, 1915; Neotipo: Nizar Ibrahim et al., 2014",
+      "geologicalFormation": "Formación Bahariya (Egipto) / Lechos de Kem Kem (Marruecos)",
+      "typeSpecimen": "BSPG 1912 VIII 19 (destruido en Múnich en 1944) / Neotipo FSAC-KK 11888",
+      "museum": "Facultad de Ciencias de Casablanca (Marruecos) / Museo Cívico de Milán",
+      "modernCountry": "Egipto y Marruecos",
+      "holotypeSpecimen": "BSPG 1912 VIII 19"
+    },
+    "paleogeography": {
+      "waterBody": "Sistemas de manglares y estuarios del proto-Mediterráneo / Tetis",
+      "landmass": "Margen norteafricano de Gondwana",
+      "depthOrBiome": "Deltas de marea, manglares tropicales y ríos gigantescos de corriente lenta",
+      "paleoZoneDescription": "El 'río de los gigantes', un vasto sistema estuarino y pantanoso de aguas cálidas repleto de peces celacantos y peces sierra."
+    },
+    "paleoCoordinates": {
+      "lat": 18.5,
+      "lon": 21.5
+    }
+  },
+  {
+    "id": "argentinosaurus-huinculensis",
+    "commonName": "Argentinosaurio",
+    "scientificName": "Argentinosaurus huinculensis",
+    "clade": "Sauropoda (Titanosauria)",
+    "periodId": "cretacico-medio",
+    "startMa": 97,
+    "endMa": 93.5,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 35,
+      "weightTons": 75,
+      "heightMeters": 8.5
+    },
+    "paleoLocation": [
+      "Gondwana",
+      "Patagonia (Argentina)"
+    ],
+    "description": "Uno de los mayores animales terrestres que jamás hayan pisado el planeta, con una masa estimada de más de 70 toneladas. Sus vértebras dorsales alcanzaban 1.6 metros de altura y estaban reforzadas con complejas articulaciones para soportar su inmenso peso corporal.",
+    "media": {
+      "imageUrl": "assets/species/argentinosaurus.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine / Mark Witton",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": -38.9,
+      "lng": -69.2
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Guillermo Heredia / José Bonaparte y Rodolfo Coria (1993)",
+      "yearDiscovered": 1987,
+      "describedBy": "José Fernando Bonaparte y Rodolfo Coria, 1993",
+      "geologicalFormation": "Formación Huincul (Grupo Río Limay, Plaza Huincul, Cuenca Neuquina)",
+      "typeSpecimen": "PVPH-1",
+      "museum": "Museo Municipal Carmen Funes (Plaza Huincul, Neuquén, Argentina)",
+      "modernCountry": "Argentina",
+      "holotypeSpecimen": "PVPH-1"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras fluviales del Grupo Río Limay",
+      "landmass": "Sudamérica (continente isla en separación de África)",
+      "depthOrBiome": "Planicies aluviales templadas con bosques de araucarias y ríos trenzados",
+      "paleoZoneDescription": "Llanuras de inundación fértiles de la Patagonia cretácica aislada, cuna de los mayores titanosaurios del planeta."
+    },
+    "paleoCoordinates": {
+      "lat": -28.0,
+      "lon": -30.0
+    }
+  },
+  {
+    "id": "giganotosaurus-carolinii",
+    "commonName": "Giganotosaurio",
+    "scientificName": "Giganotosaurus carolinii",
+    "clade": "Theropoda (Carcharodontosauridae)",
+    "periodId": "cretacico-medio",
+    "startMa": 99.6,
+    "endMa": 97,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 13.2,
+      "weightTons": 8.2,
+      "heightMeters": 3.9
+    },
+    "paleoLocation": [
+      "Gondwana",
+      "Neuquén, Patagonia (Argentina)"
+    ],
+    "description": "Colosal terópodo carcharodontosáurido del Cretácico sudamericano que rivalizaba en tamaño con Tyrannosaurus rex. Sus mandíbulas provistas de dientes de filo aserrado comprimidos lateralmente estaban adaptadas para infligir profundas heridas a los titanosaurios.",
+    "media": {
+      "imageUrl": "assets/species/giganotosaurus.jpg",
+      "imageAuthor": "Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": -39.2,
+      "lng": -68.8
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Rubén Darío Carolini / Rodolfo Coria y Leonardo Salgado (1995)",
+      "yearDiscovered": 1993,
+      "describedBy": "Rodolfo Coria y Leonardo Salgado, 1995",
+      "geologicalFormation": "Formación Candeleros (Grupo Río Limay, El Chocón, Neuquén)",
+      "typeSpecimen": "MUCPv-Ch1",
+      "museum": "Museo Paleontológico Ernesto Bachmann (Villa El Chocón, Argentina)",
+      "modernCountry": "Argentina",
+      "holotypeSpecimen": "MMCh-PV 95"
+    },
+    "paleogeography": {
+      "waterBody": "Sistemas de ríos entrelazados y campos de dunas aluviales",
+      "landmass": "Sudamérica cretácica",
+      "depthOrBiome": "Estepas semiáridas y cuencas aluviales con cursos de agua perennes",
+      "paleoZoneDescription": "Llanuras aluviales de la Formación Candeleros donde acechaba como superdepredador ápice sobre titanosaurios juveniles."
+    },
+    "paleoCoordinates": {
+      "lat": -28.5,
+      "lon": -31.0
+    }
+  },
+  {
+    "id": "tyrannosaurus-rex",
+    "commonName": "Tiranosaurio Rex",
+    "scientificName": "Tyrannosaurus rex",
+    "clade": "Theropoda (Tyrannosauridae)",
+    "periodId": "cretacico-tardio",
+    "startMa": 68,
+    "endMa": 66,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 12.3,
+      "weightTons": 8.8,
+      "heightMeters": 3.8
+    },
+    "paleoLocation": [
+      "Laramidia",
+      "Montana, Wyoming, Dakota (EE. UU.)",
+      "Canadá"
+    ],
+    "description": "El superdepredador supremo del Cretácico tardío con una fuerza de mordedura de hasta 57,000 N capaz de pulverizar huesos enteros de Triceratops. Poseía visión binocular tridimensional superior a las águilas y un sentido olfativo extraordinariamente desarrollado.",
+    "media": {
+      "imageUrl": "assets/species/tyrannosaurus_mundo.jpg",
+      "imageAuthor": "Mundo Prehistórico / RJ Palmer",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 47.5,
+      "lng": -106.5
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Barnum Brown / Henry Fairfield Osborn (1905)",
+      "yearDiscovered": 1902,
+      "describedBy": "Henry Fairfield Osborn, 1905",
+      "geologicalFormation": "Formación Hell Creek (Condado de Garfield, Montana)",
+      "typeSpecimen": "CM 9380 (holotipo original) / FMNH PR 2081 ('Sue')",
+      "museum": "Carnegie Museum of Natural History (Pittsburgh) / Field Museum (Chicago)",
+      "modernCountry": "Estados Unidos y Canadá",
+      "holotypeSpecimen": "CM 9380 (originalmente AMNH 973)"
+    },
+    "paleogeography": {
+      "waterBody": "Costa occidental del Mar Interior Occidental (Western Interior Seaway)",
+      "landmass": "Laramidia (masa continental occidental norteamericana)",
+      "depthOrBiome": "Llanuras de inundación subtropicales húmedas y deltas boscosos",
+      "paleoZoneDescription": "Planicies costeras ricas en vegetación de angiospermas y bosques de coníferas en el límite temporal previo al impacto de Chicxulub."
+    },
+    "paleoCoordinates": {
+      "lat": 50.0,
+      "lon": -74.0
+    }
+  },
+  {
+    "id": "triceratops-horridus",
+    "commonName": "Triceratops",
+    "scientificName": "Triceratops horridus",
+    "clade": "Ornithischia (Ceratopsidae)",
+    "periodId": "cretacico-tardio",
+    "startMa": 68,
+    "endMa": 66,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 9,
+      "weightTons": 9,
+      "heightMeters": 3
+    },
+    "paleoLocation": [
+      "Laramidia",
+      "Formación Hell Creek y Lance (EE. UU.)"
+    ],
+    "description": "Ceratópsido masivo provisto de dos cuernos supraorbitales de más de 1 metro y un cuerno nasal, respaldados por una sólida gola ósea posterior que protegía su cuello y servía para combates de apareamiento e interacciones territoriales.",
+    "media": {
+      "imageUrl": "assets/species/triceratops.jpg",
+      "imageAuthor": "Mundo Prehistórico / Nobu Tamura",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 44,
+      "lng": -104.5
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "John Bell Hatcher / Othniel Charles Marsh",
+      "yearDiscovered": 1888,
+      "describedBy": "Othniel Charles Marsh, 1889",
+      "geologicalFormation": "Formación Lance (Niobrara County, Wyoming) / Hell Creek",
+      "typeSpecimen": "YPM 1820",
+      "museum": "Peabody Museum of Natural History (Yale University, EE. UU.)",
+      "modernCountry": "Estados Unidos y Canadá",
+      "holotypeSpecimen": "YPM 1820"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras aluviales cercanas al Mar Interior en retroceso",
+      "landmass": "Laramidia oriental",
+      "depthOrBiome": "Bosques templado-cálidos de plátanos, palmeras y helechos con abundante sotobosque",
+      "paleoZoneDescription": "Llanuras boscosas de Laramidia donde constituía el herbívoro de gran porte más abundante del Cretácico terminal."
+    },
+    "paleoCoordinates": {
+      "lat": 48.0,
+      "lon": -73.0
+    }
+  },
+  {
+    "id": "ankylosaurus-magniventris",
+    "commonName": "Anquilosaurio",
+    "scientificName": "Ankylosaurus magniventris",
+    "clade": "Ornithischia (Ankylosauridae)",
+    "periodId": "cretacico-tardio",
+    "startMa": 68,
+    "endMa": 66,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 8,
+      "weightTons": 6,
+      "heightMeters": 1.7
+    },
+    "paleoLocation": [
+      "Laramidia",
+      "Montana (EE. UU.)",
+      "Alberta (Canadá)"
+    ],
+    "description": "Tanque viviente acorazado con placas osteodérmicas y espinas óseas incrustadas a lo largo de todo su lomo e incluso párpados. Al final de su cola fusionada portaba una pesada maza ósea capaz de fracturar huesos con un golpe lateral.",
+    "media": {
+      "imageUrl": "assets/species/ankylosaurus.jpg",
+      "imageAuthor": "Mundo Prehistórico / Emily Willoughby",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 47.2,
+      "lng": -107
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Barnum Brown / Peter Kaisen",
+      "yearDiscovered": 1906,
+      "describedBy": "Barnum Brown, 1908",
+      "geologicalFormation": "Formación Hell Creek (Gilbert Creek, Montana)",
+      "typeSpecimen": "AMNH 5895",
+      "museum": "American Museum of Natural History (Nueva York, EE. UU.)",
+      "modernCountry": "Estados Unidos y Canadá",
+      "holotypeSpecimen": "AMNH 5895"
+    },
+    "paleogeography": {
+      "waterBody": "Cuencas de llanura costera",
+      "landmass": "Laramidia septentrional",
+      "depthOrBiome": "Bosques densos y claros aluviales con vegetación baja de matorral",
+      "paleoZoneDescription": "Zonas boscosas y aluviales de Hell Creek donde su formidable blindaje osteodérmico lo protegía del T-Rex."
+    },
+    "paleoCoordinates": {
+      "lat": 51.0,
+      "lon": -75.0
+    }
+  },
+  {
+    "id": "velociraptor-mongoliensis",
+    "commonName": "Velociraptor",
+    "scientificName": "Velociraptor mongoliensis",
+    "clade": "Theropoda (Dromaeosauridae)",
+    "periodId": "cretacico-tardio",
+    "startMa": 75,
+    "endMa": 71,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 2,
+      "weightTons": 0.015,
+      "heightMeters": 0.5
+    },
+    "paleoLocation": [
+      "Asia Central",
+      "Desierto de Gobi (Mongolia / China)"
+    ],
+    "description": "Dromeosáurido ágil enteramente emplumado dotado de una formidable garra curvada en hoz en el segundo dedo de cada pie. Los famosos fósiles de 'Dinosaurios Luchadores' atestiguan combates cuerpo a cuerpo directos contra Protoceratops en las dunas de Gobi.",
+    "media": {
+      "imageUrl": "assets/species/velociraptor.jpg",
+      "imageAuthor": "Mundo Prehistórico / Emily Willoughby",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 44.15,
+      "lng": 103.2
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Peter Kaisen (Expedición de Roy Chapman Andrews)",
+      "yearDiscovered": 1923,
+      "describedBy": "Henry Fairfield Osborn, 1924",
+      "geologicalFormation": "Formación Djadochta (Bayn Dzak, Acantilados Llameantes, Desierto de Gobi)",
+      "typeSpecimen": "AMNH 6515",
+      "museum": "American Museum of Natural History / Museo de Paleontología de Mongolia",
+      "modernCountry": "Mongolia y China (Desierto de Gobi)",
+      "holotypeSpecimen": "AMNH 6515"
+    },
+    "paleogeography": {
+      "waterBody": "Oasis efímeros y cuencas endorreicas desérticas",
+      "landmass": "Continente de Asia central",
+      "depthOrBiome": "Dunas de arena eólicas activas y oasis semiáridos con vegetación xerófila",
+      "paleoZoneDescription": "Campos de dunas del desierto cretácico del Gobi con tormentas de arena que sepultaron especímenes en combate activo."
+    },
+    "paleoCoordinates": {
+      "lat": 44.15,
+      "lon": 103.2
+    }
+  },
+  {
+    "id": "quetzalcoatlus-northropi",
+    "commonName": "Quetzalcoatlus",
+    "scientificName": "Quetzalcoatlus northropi",
+    "clade": "Pterosauria (Azhdarchidae)",
+    "periodId": "cretacico-tardio",
+    "startMa": 68,
+    "endMa": 66,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 11,
+      "weightTons": 0.22,
+      "heightMeters": 5.5
+    },
+    "paleoLocation": [
+      "Laramidia",
+      "Formación Javelina, Texas (EE. UU.)"
+    ],
+    "description": "Uno de los mayores seres voladores de la historia terrestre con una envergadura alar de 11 metros semejante a una avioneta y una altura erguida comparable a una jirafa macho adulta. Caminaba a cuatro patas patrullando el suelo para cazar pequeños dinosaurios.",
+    "media": {
+      "imageUrl": "assets/species/quetzalcoatlus.jpg",
+      "imageAuthor": "Mundo Prehistórico / Mark Witton",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 29.25,
+      "lng": -103.25
+    },
+    "environment": "aerial",
+    "discovery": {
+      "discoverer": "Douglas A. Lawson",
+      "yearDiscovered": 1971,
+      "describedBy": "Douglas A. Lawson, 1975",
+      "geologicalFormation": "Formación Javelina (Parque Nacional Big Bend, Texas)",
+      "typeSpecimen": "TMM 41450-3",
+      "museum": "Texas Memorial Museum (Austin, Texas, EE. UU.)",
+      "modernCountry": "Estados Unidos",
+      "holotypeSpecimen": "TMM 41450-3"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras de inundación interiores lejos de la costa marina",
+      "landmass": "Laramidia meridional (Cuenca de Tornillo)",
+      "depthOrBiome": "Planicies semiáridas interiores con ríos sinuosos y bosques de galería",
+      "paleoZoneDescription": "Vastas llanuras continentales interiores donde cazaba en tierra a pequeños vertebrados como una cigüeña gigante."
+    },
+    "paleoCoordinates": {
+      "lat": 32.5,
+      "lon": -70.0
+    }
+  },
+  {
+    "id": "mosasaurus-hoffmannii",
+    "commonName": "Mosasaurio",
+    "scientificName": "Mosasaurus hoffmannii",
+    "clade": "Squamata (Mosasauridae)",
+    "periodId": "cretacico-tardio",
+    "startMa": 70,
+    "endMa": 66,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 17,
+      "weightTons": 14,
+      "heightMeters": 2.2
+    },
+    "paleoLocation": [
+      "Mares Epicontinentales Globales",
+      "Países Bajos",
+      "Norteamérica"
+    ],
+    "description": "Colosal reptil marino escamoso emparentado con los varanos actuales que dominó la cúspide de la cadena trófica marina cretácica. Poseía doble hilera de dientes en el paladar y una aleta caudal bilobulada para emboscadas veloces.",
+    "media": {
+      "imageUrl": "assets/species/mosasaurus.jpg",
+      "imageAuthor": "Mundo Prehistórico / Dmitry Bogdanov",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 50.85,
+      "lng": 5.68
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Jean-Baptiste Drouin / Dr. C. K. Hoffmann (1764) / Georges Cuvier (1808)",
+      "yearDiscovered": 1764,
+      "describedBy": "Gideon Mantell, 1829 (el histórico 'Gran Animal de Maastricht')",
+      "geologicalFormation": "Formación Maastricht (Cantera de Sint-Pietersberg, Países Bajos)",
+      "typeSpecimen": "MNHN AC 9648",
+      "museum": "Muséum National d'Histoire Naturelle (París, Francia)",
+      "modernCountry": "Países Bajos, Bélgica, EE. UU., Marruecos y Nueva Zelanda",
+      "holotypeSpecimen": "MNHN AC 9648"
+    },
+    "paleogeography": {
+      "waterBody": "Mar epicontinental de Maastricht / Mar de Tetis boreal",
+      "landmass": "Archipiélago europeo de creta",
+      "depthOrBiome": "Mares someros de aguas cálidas ricas en carbonatos y arrecifes de rudistas (10-50 m)",
+      "paleoZoneDescription": "Mares someros cálidos de la Europa cretácica donde reinaba como depredador marino supremo de reptiles y amonites."
+    },
+    "paleoCoordinates": {
+      "lat": 45.0,
+      "lon": 4.0
+    }
+  },
+  {
+    "id": "titanoboa-cerrejonensis",
+    "commonName": "Titanoboa",
+    "scientificName": "Titanoboa cerrejonensis",
+    "clade": "Squamata (Boidae)",
+    "periodId": "paleogeno",
+    "startMa": 60,
+    "endMa": 58,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 12.8,
+      "weightTons": 1.13,
+      "heightMeters": 1
+    },
+    "paleoLocation": [
+      "Sudamérica",
+      "Cerrejón, La Guajira (Colombia)"
+    ],
+    "description": "La mayor serpiente de la historia geológica, con una masa de más de una tonelada que habitó los humedales ecuatoriales hipertermales post-impacto del Paleoceno. Acechaba en ríos devorando cocodrilos dyrosáuridos y peces de agua dulce gigantes.",
+    "media": {
+      "imageUrl": "assets/species/titanoboa.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 11.1,
+      "lng": -72.6
+    },
+    "environment": "amphibious",
+    "discovery": {
+      "discoverer": "Carlos Jaramillo, Jonathan Bloch y Edwin Cadena",
+      "yearDiscovered": 2009,
+      "describedBy": "Jason J. Head et al., 2009",
+      "geologicalFormation": "Formación Cerrejón (Mina de Carbón del Cerrejón, La Guajira, Colombia)",
+      "typeSpecimen": "UF/IGM 1",
+      "museum": "Instituto de Investigaciones Geológicas (Bogotá, Colombia) / Florida Museum",
+      "modernCountry": "Colombia",
+      "holotypeSpecimen": "UF/IGM 1"
+    },
+    "paleogeography": {
+      "waterBody": "Grandes deltas fluviales y ciénagas tropicales costeras",
+      "landmass": "Sudamérica noroccidental (aislada)",
+      "depthOrBiome": "Selva lluviosa tropical hipertermal (32-34°C) con bosques pantanosos inundados",
+      "paleoZoneDescription": "Primera selva tropical neotropical del planeta tras el K-Pg, con temperaturas y lluvias extremas que permitieron el gigantismo de reptiles."
+    },
+    "paleoCoordinates": {
+      "lat": 8.5,
+      "lon": -54.0
+    }
+  },
+  {
+    "id": "otodus-megalodon",
+    "commonName": "Megalodón",
+    "scientificName": "Otodus megalodon",
+    "clade": "Chondrichthyes (Otodontidae)",
+    "periodId": "neogeno",
+    "startMa": 23,
+    "endMa": 3.6,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 18,
+      "weightTons": 50,
+      "heightMeters": 3.5
+    },
+    "paleoLocation": [
+      "Océanos Templados y Cálidos Globales",
+      "Pacífico y Atlántico"
+    ],
+    "description": "El tiburón macrófago más colosal de todos los tiempos. Provisto de mandíbulas de más de 2 metros de apertura armadas con 250 dientes aserrados de hasta 18 cm, ejercía una fuerza de mordida de más de 180,000 N capaz de aplastar ballenas barbadas.",
+    "media": {
+      "imageUrl": "assets/species/megalodon.jpg",
+      "imageAuthor": "Karen Carr / Wikimedia Commons",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": 31.95,
+      "lng": -80.95
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Louis Agassiz (1835) / Niels Stensen (1667, identificación anatómica de dientes fósiles)",
+      "yearDiscovered": 1835,
+      "describedBy": "Louis Agassiz, 1835 (reclasificado en género Otodus en 2016)",
+      "geologicalFormation": "Formación Yorktown (EE. UU.) / Formación Pisco (Perú) / Cuenca de Bone Valley",
+      "typeSpecimen": "Diente holotipo de la colección Agassiz",
+      "museum": "Smithsonian National Museum of Natural History / Natural History Museum (Londres)",
+      "modernCountry": "Distribución fósil global (océanos templados y tropicales de todo el planeta)",
+      "holotypeSpecimen": "MHNN FOS 112"
+    },
+    "paleogeography": {
+      "waterBody": "Océanos Atlántico, Pacífico y Tetis costeros",
+      "landmass": "Distribución oceánica global cosmopolita",
+      "depthOrBiome": "Plataformas continentales costeras templadas y cálidas con alta concentración de cetáceos",
+      "paleoZoneDescription": "Costas someras y zonas de surgencia marina donde patrullaba cazando ballenas barbadas primitivas y pinnípedos."
+    },
+    "paleoCoordinates": {
+      "lat": 30.0,
+      "lon": -70.0
+    }
+  },
+  {
+    "id": "paraceratherium-transouralicum",
+    "commonName": "Paraceraterio",
+    "scientificName": "Paraceratherium transouralicum",
+    "clade": "Perissodactyla (Hyracodontidae)",
+    "periodId": "paleogeno",
+    "startMa": 34,
+    "endMa": 23,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 7.4,
+      "weightTons": 15,
+      "heightMeters": 4.8
+    },
+    "paleoLocation": [
+      "Eurasia Central",
+      "Kazajistán",
+      "Pakistán",
+      "China"
+    ],
+    "description": "Uno de los mayores mamíferos terrestres que jamás hayan existido, un rinoceronte desprovisto de cuernos con cuello elongado y masa de 15 toneladas capaz de ramonear en las copas de los árboles.",
+    "media": {
+      "imageUrl": "assets/species/paraceratherium.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine / Dmitry Bogdanov",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 44.5,
+      "lng": 65.5
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Aleksei Borissiak (1915) / Clive Forster-Cooper (1911)",
+      "yearDiscovered": 1911,
+      "describedBy": "C. Forster-Cooper, 1911; Osborn, 1923",
+      "geologicalFormation": "Formación Chitarwata (Pakistán) / Formación Hsanda Gol (Mongolia)",
+      "typeSpecimen": "NHMUK M 10450",
+      "museum": "Natural History Museum (Londres) / PIN Moscú",
+      "modernCountry": "Pakistán, Kazajistán, Mongolia y China",
+      "holotypeSpecimen": "PIN 473-1"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras aluviales continentales tras el retiro del Mar de Turgai",
+      "landmass": "Continente eurasiático central",
+      "depthOrBiome": "Sabanas boscosas subtropicales y bosques de hoja caduca con cursos de agua abiertos",
+      "paleoZoneDescription": "Llanuras abiertas de Asia central donde ramoneaba las copas de los árboles en el Oligoceno cálido."
+    },
+    "paleoCoordinates": {
+      "lat": 44.5,
+      "lon": 65.5
+    }
+  },
+  {
+    "id": "purussaurus-brasiliensis",
+    "commonName": "Purussauro",
+    "scientificName": "Purussaurus brasiliensis",
+    "clade": "Crocodylia (Alligatoridae)",
+    "periodId": "neogeno",
+    "startMa": 13,
+    "endMa": 8,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 12.5,
+      "weightTons": 8.4,
+      "heightMeters": 1.6
+    },
+    "paleoLocation": [
+      "Sistema Pebas Sudamericano",
+      "Amazonas (Brasil)",
+      "Perú",
+      "Colombia"
+    ],
+    "description": "Monstruoso caimán gigante de 12.5 metros con una fuerza de mordida superior a 69,000 N que dominó los lagos cálidos protoamazónicos del Mioceno alimentándose de tortugas gigantes y ungulados nativos.",
+    "media": {
+      "imageUrl": "assets/species/purussaurus.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": -9.5,
+      "lng": -70.5
+    },
+    "environment": "amphibious",
+    "discovery": {
+      "discoverer": "João Rodrigues Peixoto / Barbosa Rodrigues",
+      "yearDiscovered": 1892,
+      "describedBy": "João Barbosa Rodrigues, 1892",
+      "geologicalFormation": "Formación Solimões (Acre, Brasil) / Formación Urumaco (Venezuela)",
+      "typeSpecimen": "DGM 527-R",
+      "museum": "Museu Nacional (Río de Janeiro, Brasil)",
+      "modernCountry": "Brasil, Perú, Colombia y Venezuela",
+      "holotypeSpecimen": "DGM 527-R"
+    },
+    "paleogeography": {
+      "waterBody": "Mega-humedales, ciénagas y lagos del Lago Pebas",
+      "landmass": "Cuenca Amazónica occidental (Sistema Pebas)",
+      "depthOrBiome": "Inmensos lagos tropicales de agua dulce, pantanos y ríos lentos de la proto-Amazonia",
+      "paleoZoneDescription": "El Sistema Pebas, un descomunal mar interior de agua dulce y pantanos que cubría más de 1 millón de km2 en el Mioceno."
+    },
+    "paleoCoordinates": {
+      "lat": -8.0,
+      "lon": -67.0
+    }
+  },
+  {
+    "id": "basilosaurus-cetoides",
+    "commonName": "Basilosaurio",
+    "scientificName": "Basilosaurus cetoides",
+    "clade": "Cetacea (Basilosauridae)",
+    "periodId": "paleogeno",
+    "startMa": 41.3,
+    "endMa": 33.9,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 18,
+      "weightTons": 15,
+      "heightMeters": 1.8
+    },
+    "paleoLocation": [
+      "Mar de Tetis y Atlántico",
+      "Egipto (Wadi Al-Hitan)",
+      "Alabama (EE. UU.)"
+    ],
+    "description": "Ballena arqueoceta primitiva de cuerpo sumamente elongado y ondulante que nadaba en los mares cálidos del Eoceno. Aún conservaba diminutas extremidades traseras vestigiales y una dentición heterodonta con afilados dientes carnívoros.",
+    "media": {
+      "imageUrl": "assets/species/basilosaurus.jpg",
+      "imageAuthor": "Antigravity PaleoArt Engine",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 29.27,
+      "lng": 30.04
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "John Finch (1824) / Richard Harlan (1834) / Charles William Andrews",
+      "yearDiscovered": 1834,
+      "describedBy": "Richard Harlan, 1834; reclasificado como cetáceo por Richard Owen en 1839",
+      "geologicalFormation": "Valle de las Ballenas (Wadi Al-Hitan, Egipto) / Formación Yazoo (Alabama, EE. UU.)",
+      "typeSpecimen": "USNM 4679 / UM 97507",
+      "museum": "Smithsonian National Museum of Natural History (Washington D.C., EE. UU.)",
+      "modernCountry": "Estados Unidos y Egipto (Valle de las Ballenas)",
+      "holotypeSpecimen": "ANSP 12948"
+    },
+    "paleogeography": {
+      "waterBody": "Océano Tetis en estrechamiento / Golfo de México eocénico",
+      "landmass": "Margen norte de África / Costa atlántica de Norteamérica",
+      "depthOrBiome": "Mares someros tropicales, bahías protegidas y arrecifes de coral (15-60 m)",
+      "paleoZoneDescription": "Aguas cálidas y poco profundas de Tetis donde los ancestros de los cetáceos aún conservaban diminutas extremidades posteriores vestigiales."
+    },
+    "paleoCoordinates": {
+      "lat": 28.0,
+      "lon": 24.0
+    }
+  },
+  {
+    "id": "glyptodon-clavipes",
+    "commonName": "Gliptodonte",
+    "scientificName": "Glyptodon clavipes",
+    "clade": "Xenarthra (Cingulata / Chlamyphoridae)",
+    "periodId": "pleistoceno",
+    "startMa": 2,
+    "endMa": 0.01,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3.3,
+      "weightTons": 2,
+      "heightMeters": 1.5
+    },
+    "paleoLocation": [
+      "Sudamérica",
+      "Pampas Argentinas",
+      "Uruguay",
+      "Brasil"
+    ],
+    "description": "Colosal mamífero emparentado con los armadillos protegido por un caparazón de más de 1,000 osteodermos óseos de 2.5 cm de grosor. Su cola anillada funcionaba como bate defensivo y para combates territoriales; convivió con los primeros pobladores humanos de las pampas.",
+    "media": {
+      "imageUrl": "assets/species/glyptodon.jpg",
+      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": -34.6,
+      "lng": -58.38
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Sir Richard Owen",
+      "yearDiscovered": 1839,
+      "describedBy": "Richard Owen, 1839",
+      "geologicalFormation": "Formación Pampas (Barrancas del Río de la Plata, Buenos Aires, Argentina)",
+      "typeSpecimen": "NHMUK 516",
+      "museum": "Natural History Museum (Londres) / Museo de La Plata (Argentina)",
+      "modernCountry": "Argentina, Uruguay y Brasil",
+      "holotypeSpecimen": "NHMUK PV OR 19894"
+    },
+    "paleogeography": {
+      "waterBody": "Cuencas fluviales del Paraná y Río de la Plata",
+      "landmass": "Llanura Chaco-Pampeana de Sudamérica",
+      "depthOrBiome": "Pastizales templados, estepas graminosas y bordes de lagunas pampeanas",
+      "paleoZoneDescription": "Llanuras abiertas del Cono Sur adaptadas al pastoreo intensivo en los períodos glaciares e interglaciares del Pleistoceno."
+    },
+    "paleoCoordinates": {
+      "lat": -34.6,
+      "lon": -58.38
+    }
+  },
+  {
+    "id": "smilodon-populator",
+    "commonName": "Tigre Dientes de Sable",
+    "scientificName": "Smilodon populator",
+    "clade": "Carnivora (Felidae / Machairodontinae)",
+    "periodId": "pleistoceno",
+    "startMa": 2.5,
+    "endMa": 0.01,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 2.6,
+      "weightTons": 0.4,
+      "heightMeters": 1.25
+    },
+    "paleoLocation": [
+      "América del Sur y Norte",
+      "Pampas",
+      "Lagoa Santa",
+      "La Brea"
+    ],
+    "description": "El felino macairodontino más robusto y masivo de la historia, alcanzando más de 400 kg. Sus colmillos superiores en forma de sable de hasta 28 cm infligían mortales mordiscos degolladores de precisión tras inmovilizar a sus presas con poderosos antebrazos.",
+    "media": {
+      "imageUrl": "assets/species/smilodon_mundo.jpg",
+      "imageAuthor": "Mundo Prehistórico / Durbed",
+      "imageLicense": "CC-BY-SA 3.0"
+    },
+    "coordinates": {
+      "lat": -31.42,
+      "lng": -64.18
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Peter Wilhelm Lund",
+      "yearDiscovered": 1842,
+      "describedBy": "Peter Wilhelm Lund, 1842 (en las cavernas de Lagoa Santa)",
+      "geologicalFormation": "Cavernas de Lagoa Santa (Minas Gerais, Brasil) / Formación Luján (Argentina)",
+      "typeSpecimen": "ZMUC 1842",
+      "museum": "Museo Zoológico de Copenhague (Dinamarca) / Museo de La Plata",
+      "modernCountry": "Brasil, Argentina, Uruguay, Bolivia y Chile",
+      "holotypeSpecimen": "ZMUC 194"
+    },
+    "paleogeography": {
+      "waterBody": "Valles fluviales pampeanos y cavernas kársticas",
+      "landmass": "Sudamérica (post-Gran Intercambio Biótico Americano)",
+      "depthOrBiome": "Sabanas boscosas, matorrales densos y estepas abiertas",
+      "paleoZoneDescription": "Depredador ápice felino del Pleistoceno sudamericano especializado en la caza por emboscada de megaherbívoros acorazados."
+    },
+    "paleoCoordinates": {
+      "lat": -31.42,
+      "lon": -64.18
+    }
+  },
+  {
+    "id": "mammuthus-primigenius",
+    "commonName": "Mamut Lanudo",
+    "scientificName": "Mammuthus primigenius",
+    "clade": "Proboscidea (Elephantidae)",
+    "periodId": "pleistoceno",
+    "startMa": 0.4,
+    "endMa": 0.004,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3.8,
+      "weightTons": 6,
+      "heightMeters": 3.4
+    },
+    "paleoLocation": [
+      "Estepa de Mamuts Euroasiática y Beringiana",
+      "Siberia",
+      "Norteamérica"
+    ],
+    "description": "Emblema biológico de la última Edad de Hielo con abrigo bicapa de pelo lanoso de 90 cm y colmillos curvados en espiral de hasta 4.2 metros para retirar la nieve periglacial. Una población relicta sobrevivió en la Isla de Wrangel hasta hace 4,000 años.",
+    "media": {
+      "imageUrl": "assets/species/mamut_mundo.jpg",
+      "imageAuthor": "Mundo Prehistórico / Mauricio Antón",
+      "imageLicense": "CC-BY 2.5"
+    },
+    "coordinates": {
+      "lat": 67.5,
+      "lng": 133.4
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Johann Friedrich Blumenbach (1799) / Hans Sloane",
+      "yearDiscovered": 1799,
+      "describedBy": "Johann Friedrich Blumenbach, 1799",
+      "geologicalFormation": "Permafrost siberiano (Río Indigirka / Lena) / Terrazas fluviales del Támesis y Rin",
+      "typeSpecimen": "Cráneo de Bad Cannstatt (Alemania)",
+      "museum": "Instituto Zoológico de San Petersburgo (Rusia) / Muséum de París",
+      "modernCountry": "Rusia (Siberia), Canadá, Alaska y norte de Europa",
+      "holotypeSpecimen": "ZIN 27103 (Mamut del Lena / Adams)"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras periglaciales con ríos congelados",
+      "landmass": "Estepa de Mamuts (Eurasia septentrional y puente de Beringia)",
+      "depthOrBiome": "Tundra-estepa fría y seca dominada por gramíneas, sauces enanos y líquenes",
+      "paleoZoneDescription": "El mayor bioma del Pleistoceno, una llanura ininterrumpida y fría que conectaba Europa occidental con Alaska a través de Beringia."
+    },
+    "paleoCoordinates": {
+      "lat": 67.5,
+      "lon": 133.4
+    }
+  },
+  {
+    "id": "megatherium-americanum",
+    "commonName": "Megaterio",
+    "scientificName": "Megatherium americanum",
+    "clade": "Xenarthra (Folivora / Megatheriidae)",
+    "periodId": "pleistoceno",
+    "startMa": 2,
+    "endMa": 0.01,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 6,
+      "weightTons": 4,
+      "heightMeters": 4.2
+    },
+    "paleoLocation": [
+      "Sudamérica",
+      "Pampas Argentinas",
+      "Bolivia",
+      "Brasil"
+    ],
+    "description": "Titánico perezoso terrestre cuadrúpedo que se erguía sobre un trípode formado por sus musculosas patas traseras y su cola para ramonear copas de árboles a más de 4 metros de altura, defendiéndose de carnívoros con garras de 30 cm.",
+    "media": {
+      "imageUrl": "assets/species/megaterio.jpg",
+      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": -38.52,
+      "lng": -60.25
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Fray Manuel Torres (1787) / Georges Cuvier (1796)",
+      "yearDiscovered": 1787,
+      "describedBy": "Georges Cuvier, 1796 (uno de los primeros fósiles descritos de la historia)",
+      "geologicalFormation": "Riberas del Río Luján (Provincia de Buenos Aires, Argentina)",
+      "typeSpecimen": "MNCN 1553 (Montado en Madrid en 1795 por Juan Bautista Bru)",
+      "museum": "Museo Nacional de Ciencias Naturales (Madrid, España) / Museo de La Plata",
+      "modernCountry": "Argentina, Uruguay, Bolivia y Brasil",
+      "holotypeSpecimen": "MNCN 1553 (Madrid, primer esqueleto fósil montado de la historia)"
+    },
+    "paleogeography": {
+      "waterBody": "Cuencas de inundación pampeanas",
+      "landmass": "Llanuras meridionales de Sudamérica",
+      "depthOrBiome": "Praderas templadas, matorrales y bosques de espinal",
+      "paleoZoneDescription": "Pastizales y sabanas abiertas donde ramoneaba bípedamente las copas de arbustos y árboles usando sus descomunales garras."
+    },
+    "paleoCoordinates": {
+      "lat": -38.52,
+      "lon": -60.25
+    }
+  },
+  {
+    "id": "macrauchenia-patachonica",
+    "commonName": "Macrauquenia",
+    "scientificName": "Macrauchenia patachonica",
+    "clade": "Litopterna (Macraucheniidae)",
+    "periodId": "pleistoceno",
+    "startMa": 2,
+    "endMa": 0.01,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3,
+      "weightTons": 1,
+      "heightMeters": 2
+    },
+    "paleoLocation": [
+      "Sudamérica",
+      "Patagonia Argentina",
+      "Chile",
+      "Bolivia"
+    ],
+    "description": "Singular ungulado nativo sudamericano descubierto por Charles Darwin con cuello semejante al de un camello y fosas nasales dorsales que sugieren una corta probóscide prehensil o labio muscular extensible para ramonear.",
+    "media": {
+      "imageUrl": "assets/species/macrauchenia.jpg",
+      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": -50.12,
+      "lng": -69.8
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Charles Darwin (1834, viaje del HMS Beagle) / Sir Richard Owen (1838)",
+      "yearDiscovered": 1834,
+      "describedBy": "Sir Richard Owen, 1838",
+      "geologicalFormation": "Puerto San Julián (Santa Cruz, Patagonia, Argentina)",
+      "typeSpecimen": "NHMUK M 1438",
+      "museum": "Natural History Museum (Londres, Reino Unido)",
+      "modernCountry": "Argentina, Chile, Bolivia y Brasil",
+      "holotypeSpecimen": "NHMUK PV M 434"
+    },
+    "paleogeography": {
+      "waterBody": "Cuencas estépicas y cañadones fluviales",
+      "landmass": "Patagonia y Pampas del Cono Sur",
+      "depthOrBiome": "Estepa patagónica semiárida y llanuras áridas arbustivas",
+      "paleoZoneDescription": "Litopterno endémico con trompa móvil adaptado a pastorear en las frías y ventosas mesetas patagónicas."
+    },
+    "paleoCoordinates": {
+      "lat": -50.12,
+      "lon": -69.8
+    }
+  },
+  {
+    "id": "toxodon-platensis",
+    "commonName": "Toxodonte",
+    "scientificName": "Toxodon platensis",
+    "clade": "Notoungulata (Toxodontidae)",
+    "periodId": "pleistoceno",
+    "startMa": 2,
+    "endMa": 0.01,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 2.7,
+      "weightTons": 1.5,
+      "heightMeters": 1.5
+    },
+    "paleoLocation": [
+      "Sudamérica",
+      "Entre Ríos y Buenos Aires (Argentina)",
+      "Brasil"
+    ],
+    "description": "Uno de los últimos y más exitosos notoungulados con aspecto semejante a un rinoceronte o hipopótamo. Sus incisivos curvados de crecimiento continuo en forma de arco cortaban vegetación dura y plantas acuáticas con alto contenido de sílice.",
+    "media": {
+      "imageUrl": "assets/species/toxodon.jpg",
+      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": -31.73,
+      "lng": -60.53
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Charles Darwin (1833, viaje del HMS Beagle) / Sir Richard Owen (1837)",
+      "yearDiscovered": 1833,
+      "describedBy": "Richard Owen, 1837 (lo describió como 'quizá el animal más extraño jamás descubierto')",
+      "geologicalFormation": "Barrancas de Sarandí (Río de la Plata, Uruguay / Argentina)",
+      "typeSpecimen": "NHMUK M 1435",
+      "museum": "Natural History Museum (Londres, Reino Unido)",
+      "modernCountry": "Argentina, Uruguay, Paraguay y Brasil",
+      "holotypeSpecimen": "NHMUK PV M 1656"
+    },
+    "paleogeography": {
+      "waterBody": "Riberas del Río Paraná y Uruguay",
+      "landmass": "Cuenca del Plata y sabanas de Sudamérica",
+      "depthOrBiome": "Bañados, deltas fluviales y pastizales inundables semiacuáticos",
+      "paleoZoneDescription": "Notoungulado robusto de hábitos anfibios similares a un hipopótamo en las cuencas fluviales pampeanas."
+    },
+    "paleoCoordinates": {
+      "lat": -31.73,
+      "lon": -60.53
+    }
+  },
+  {
+    "id": "mammut-americanum",
+    "commonName": "Mastodonte Americano",
+    "scientificName": "Mammut americanum",
+    "clade": "Proboscidea (Mammutidae)",
+    "periodId": "pleistoceno",
+    "startMa": 3.7,
+    "endMa": 0.01,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 4.5,
+      "weightTons": 5.5,
+      "heightMeters": 3
+    },
+    "paleoLocation": [
+      "Norteamérica",
+      "Kentucky, Ohio, Nueva York (EE. UU.)",
+      "Alaska"
+    ],
+    "description": "Proboscídeo de linaje más antiguo que los mamuts, caracterizado por molares con cúspides cónicas pronunciadas para desmenuzar ramas de coníferas y un cuerpo más achaparrado y robusto.",
+    "media": {
+      "imageUrl": "assets/species/mastodonte_americano.jpg",
+      "imageAuthor": "Mundo Prehistórico / Charles R. Knight",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": 39.82,
+      "lng": -84.9
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Charles Le Moyne de Longueuil (1739) / Georges Cuvier (1806)",
+      "yearDiscovered": 1739,
+      "describedBy": "Mammut americanum",
+      "geologicalFormation": "Salinas de Big Bone Lick (Condado de Boone, Kentucky, EE. UU.)",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Kentucky, Ohio, Nueva York (EE. UU.)",
+      "holotypeSpecimen": "MNHN 1806-MA"
+    },
+    "paleogeography": {
+      "waterBody": "Pantanos de turbera y lagos postglaciares",
+      "landmass": "Continente de Norteamérica",
+      "depthOrBiome": "Bosques boreales densos de coníferas, ciénagas de abetos y turberas húmedas",
+      "paleoZoneDescription": "Bosques húmedos templados y boreales donde ramoneaba ramas de pino, abeto y vegetación leñosa."
+    },
+    "paleoCoordinates": {
+      "lat": 38.89,
+      "lon": -84.75
+    }
+  },
+  {
+    "id": "aenocyon-dirus",
+    "commonName": "Lobo Terrible",
+    "scientificName": "Aenocyon dirus",
+    "clade": "Carnivora (Canidae)",
+    "periodId": "pleistoceno",
+    "startMa": 1.8,
+    "endMa": 0.01,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 1.8,
+      "weightTons": 0.085,
+      "heightMeters": 0.85
+    },
+    "paleoLocation": [
+      "América del Norte y del Sur",
+      "Rancho La Brea (Los Ángeles, EE. UU.)"
+    ],
+    "description": "Cánido pleistocénico 25% más macizo que un lobo gris moderno con mandíbulas reforzadas para triturar hueso. Miles de esqueletos fosilizados en los pozos de brea de La Brea evidencian su caza cooperativa en jauría.",
+    "media": {
+      "imageUrl": "assets/species/lobo_gigante.jpg",
+      "imageAuthor": "Mundo Prehistórico / Mauricio Antón",
+      "imageLicense": "CC-BY 2.5"
+    },
+    "coordinates": {
+      "lat": 34.06,
+      "lng": -118.36
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Joseph Leidy (1854) / John C. Merriam (1912)",
+      "yearDiscovered": 1854,
+      "describedBy": "Aenocyon dirus",
+      "geologicalFormation": "Pozos de brea de La Brea (Rancho La Brea Tar Pits, Los Ángeles, California)",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Rancho La Brea (Los Ángeles, EE. UU.)",
+      "holotypeSpecimen": "ANSP 11626"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras aluviales y trampas naturales de asfalto",
+      "landmass": "América del Norte y del Sur",
+      "depthOrBiome": "Pastizales templados, chaparral costero y sabanas abiertas de megafauna",
+      "paleoZoneDescription": "Cazador social gregario con mandíbulas capaces de quebrar huesos, abundante alrededor de las lagunas de brea natural."
+    },
+    "paleoCoordinates": {
+      "lat": 34.06,
+      "lon": -118.36
+    }
+  },
+  {
+    "id": "ursus-spelaeus",
+    "commonName": "Oso de las Cavernas",
+    "scientificName": "Ursus spelaeus",
+    "clade": "Carnivora (Ursidae)",
+    "periodId": "pleistoceno",
+    "startMa": 0.3,
+    "endMa": 0.024,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3.5,
+      "weightTons": 0.8,
+      "heightMeters": 1.4
+    },
+    "paleoLocation": [
+      "Europa y Eurasia",
+      "Cuevas Kársticas de Francia, España y Rumania"
+    ],
+    "description": "Colosal úrsido europeo que alcanzaba 3.5 metros erguido. Su dieta era mayormente vegetariana y pasaba largos inviernos glaciares hibernando en profundas cuevas kársticas donde se acumularon millares de osamentas fósiles.",
+    "media": {
+      "imageUrl": "assets/species/oso_cavernario.jpg",
+      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": 44.38,
+      "lng": 4.41
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Johann Friedrich Esper (1774) / Johann Christian Rosenmüller (1794)",
+      "yearDiscovered": 1774,
+      "describedBy": "Ursus spelaeus",
+      "geologicalFormation": "Cueva de Zoolithenhöhle (Gailenreuth, Baviera, Alemania) / Cueva de Chauvet",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Cuevas Kársticas de Francia, España y Rumania",
+      "holotypeSpecimen": "IPUW 1794-US"
+    },
+    "paleogeography": {
+      "waterBody": "Sistemas cársticos y valles montañosos",
+      "landmass": "Europa y macizo alpino pleistoceno",
+      "depthOrBiome": "Bosques mixtos caducifolios de montaña y redes de cavernas profundas",
+      "paleoZoneDescription": "Cavernas kársticas donde hibernaba durante los inviernos de la última glaciación europea alimentándose casi exclusivamente de materia vegetal."
+    },
+    "paleoCoordinates": {
+      "lat": 49.78,
+      "lon": 11.26
+    }
+  },
+  {
+    "id": "coelodonta-antiquitatis",
+    "commonName": "Rinoceronte Lanudo",
+    "scientificName": "Coelodonta antiquitatis",
+    "clade": "Perissodactyla (Rhinocerotidae)",
+    "periodId": "pleistoceno",
+    "startMa": 0.46,
+    "endMa": 0.014,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3.7,
+      "weightTons": 2.5,
+      "heightMeters": 1.9
+    },
+    "paleoLocation": [
+      "Estepa de Mamuts Euroasiática",
+      "Siberia",
+      "Ucrania",
+      "Europa Central"
+    ],
+    "description": "Rinoceronte adaptado a la tundra periglacial por un espeso pelaje lanoso rojizo y un colosal cuerno anterior de queratina aplanado lateralmente de más de 1.3 metros con el que apartaba la nieve invernal para pastar.",
+    "media": {
+      "imageUrl": "assets/species/rinoceronte_lanudo.jpg",
+      "imageAuthor": "Mundo Prehistórico / Mauricio Antón",
+      "imageLicense": "CC-BY 2.5"
+    },
+    "coordinates": {
+      "lat": 49.84,
+      "lng": 24.03
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Johann Friedrich Blumenbach",
+      "yearDiscovered": 1799,
+      "describedBy": "Coelodonta antiquitatis",
+      "geologicalFormation": "Yacimientos periglaciares de Starunia (Ucrania) / Permafrost de Sajá (Rusia)",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Siberia",
+      "holotypeSpecimen": "ZIN 10705"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras periglaciales de deshielo",
+      "landmass": "Eurasia septentrional (Estepa de Mamuts)",
+      "depthOrBiome": "Estepa fría abierta y tundra seca con suelo permafrost",
+      "paleoZoneDescription": "Estepas periglaciales euroasiáticas donde utilizaba su cuerno nasal aplanado lateralmente para apartar la nieve y consumir pastos."
+    },
+    "paleoCoordinates": {
+      "lat": 50.45,
+      "lon": 30.52
+    }
+  },
+  {
+    "id": "megaloceros-giganteus",
+    "commonName": "Megalocero",
+    "scientificName": "Megaloceros giganteus",
+    "clade": "Artiodactyla (Cervidae)",
+    "periodId": "pleistoceno",
+    "startMa": 0.4,
+    "endMa": 0.007,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3.2,
+      "weightTons": 0.7,
+      "heightMeters": 2.1
+    },
+    "paleoLocation": [
+      "Eurasia",
+      "Irlanda (Ballybetagh)",
+      "Alemania",
+      "Siberia"
+    ],
+    "description": "Ciervo gigante que ostentaba la cornamenta más monumental de la historia animal: hasta 3.65 metros de envergadura y 40 kg de masa ósea neta que los machos regeneraban anualmente para el cortejo y las batallas de exhibición.",
+    "media": {
+      "imageUrl": "assets/species/megalocero.jpg",
+      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": 53.25,
+      "lng": -6.2
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Thomas Molyneux (1697) / Johann Friedrich Blumenbach (1799)",
+      "yearDiscovered": 1799,
+      "describedBy": "Megaloceros giganteus",
+      "geologicalFormation": "Turberas de Ballybetagh (Condado de Dublín, Irlanda)",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Irlanda (Ballybetagh)",
+      "holotypeSpecimen": "NMI F14264"
+    },
+    "paleogeography": {
+      "waterBody": "Lagos de turba y llanuras lacustres",
+      "landmass": "Eurasia templada y occidental",
+      "depthOrBiome": "Llanuras abiertas de pastizal, estepas templadas y claros de bosque",
+      "paleoZoneDescription": "Praderas abiertas euroasiáticas donde lucía su cornamenta de hasta 3.6 metros de envergadura, el mayor cérvido conocido."
+    },
+    "paleoCoordinates": {
+      "lat": 53.22,
+      "lon": -6.21
+    }
+  },
+  {
+    "id": "diprotodon-optatum",
+    "commonName": "Diprotodonte",
+    "scientificName": "Diprotodon optatum",
+    "clade": "Diprotodontia (Diprotodontidae)",
+    "periodId": "pleistoceno",
+    "startMa": 1.6,
+    "endMa": 0.025,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3.8,
+      "weightTons": 2.8,
+      "heightMeters": 2
+    },
+    "paleoLocation": [
+      "Australia (Sahul)",
+      "Lago Callabonna",
+      "Queensland",
+      "Nueva Gales del Sur"
+    ],
+    "description": "El mayor marsupial de todos los tiempos, de la corpulencia de un rinoceronte blanco. Dotado de incisivos en cincel y una bolsa marsupial orientada hacia atrás, recorría las llanuras semiáridas australianas en manadas migratorias.",
+    "media": {
+      "imageUrl": "assets/species/diprotodon.jpg",
+      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": -31.8,
+      "lng": 136.5
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Major Thomas Mitchell (1830) / Sir Richard Owen (1838)",
+      "yearDiscovered": 1838,
+      "describedBy": "Diprotodon optatum",
+      "geologicalFormation": "Lago Callabonna (Australia del Sur) / Darling Downs (Queensland)",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Lago Callabonna",
+      "holotypeSpecimen": "NHMUK PV M 10796"
+    },
+    "paleogeography": {
+      "waterBody": "Lagos salinos y cuencas endorreicas estacionales",
+      "landmass": "Supercontinente Sahul (Australia y Nueva Guinea unidas)",
+      "depthOrBiome": "Sabanas semiáridas arboladas, matorrales de eucalipto y planicies salinas",
+      "paleoZoneDescription": "El mayor marsupial de todos los tiempos, que migraba siguiendo las fuentes estacionales de agua y sal en el interior de Sahul."
+    },
+    "paleoCoordinates": {
+      "lat": -29.7,
+      "lon": 139.9
+    }
+  },
+  {
+    "id": "procoptodon-goliah",
+    "commonName": "Canguro Gigante de Cara Corta",
+    "scientificName": "Procoptodon goliah",
+    "clade": "Diprotodontia (Macropodidae / Sthenurinae)",
+    "periodId": "pleistoceno",
+    "startMa": 1.6,
+    "endMa": 0.03,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 2.7,
+      "weightTons": 0.24,
+      "heightMeters": 2.7
+    },
+    "paleoLocation": [
+      "Australia (Sahul)",
+      "Menindee Lakes",
+      "Naracoorte"
+    ],
+    "description": "El canguro más colosal conocido con rostro simiesco chato y visión binocular. A diferencia de los canguros modernos que saltan, caminaba bípedamente a zancadas sobre un único dedo ungulado modificado, alzando sus brazos para ramonear hojas de eucalipto.",
+    "media": {
+      "imageUrl": "assets/species/procoptodon.jpg",
+      "imageAuthor": "Mundo Prehistórico / Nobu Tamura",
+      "imageLicense": "CC-BY 3.0"
+    },
+    "coordinates": {
+      "lat": -32.5,
+      "lng": 142.3
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Sir Richard Owen",
+      "yearDiscovered": 1845,
+      "describedBy": "Procoptodon goliah",
+      "geologicalFormation": "Cuevas de Naracoorte (Australia del Sur) / Darling Downs",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Menindee Lakes",
+      "holotypeSpecimen": "NHMUK PV OR 1899"
+    },
+    "paleogeography": {
+      "waterBody": "Llanuras aluviales de ríos efímeros",
+      "landmass": "Continente de Sahul (Australia pleistocena)",
+      "depthOrBiome": "Estepas semiáridas y matorrales abiertos con plantas de hoja dura (saltbush)",
+      "paleoZoneDescription": "Canguro gigante de marcha bípeda y rostro corto, adaptado para masticar vegetación dura y fibrosa durante los períodos de aridez."
+    },
+    "paleoCoordinates": {
+      "lat": -37.0,
+      "lon": 140.8
+    }
+  },
+  {
+    "id": "varanus-priscus",
+    "commonName": "Megalania",
+    "scientificName": "Varanus priscus",
+    "clade": "Squamata (Varanidae)",
+    "periodId": "pleistoceno",
+    "startMa": 1.6,
+    "endMa": 0.03,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 6.5,
+      "weightTons": 0.8,
+      "heightMeters": 1.2
+    },
+    "paleoLocation": [
+      "Australia (Sahul)",
+      "Darling Downs (Queensland)"
+    ],
+    "description": "El mayor lagarto terrestre conocido, duplicando la longitud y multiplicando por diez el peso del Dragón de Komodo actual. Con dientes serrados curvados y glándulas de veneno, era el superdepredador cumbre de la megafauna pleistocénica australiana.",
+    "media": {
+      "imageUrl": "assets/species/megalania.jpg",
+      "imageAuthor": "Mundo Prehistórico / Dmitry Bogdanov",
+      "imageLicense": "CC-BY-SA 3.0"
+    },
+    "coordinates": {
+      "lat": -27.5,
+      "lng": 148
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Sir Richard Owen",
+      "yearDiscovered": 1859,
+      "describedBy": "Varanus priscus",
+      "geologicalFormation": "Aluviones de Darling Downs (Queensland, Australia)",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Darling Downs (Queensland)",
+      "holotypeSpecimen": "NHMUK PV OR 32908"
+    },
+    "paleogeography": {
+      "waterBody": "Cursos fluviales estacionales y abrevaderos naturales",
+      "landmass": "Sahul oriental",
+      "depthOrBiome": "Bosques abiertos de eucaliptos y pastizales ribereños cálidos",
+      "paleoZoneDescription": "Lagarto terrestre gigante de hasta 7 metros y veneno letal, depredador ápice de la megafauna marsupial australiana."
+    },
+    "paleoCoordinates": {
+      "lat": -27.5,
+      "lon": 151.5
+    }
+  },
+  {
+    "id": "coelophysis-bauri",
+    "commonName": "Coelophysis",
+    "scientificName": "Coelophysis bauri",
+    "clade": "Theropoda (Coelophysidae)",
+    "periodId": "triasico",
+    "startMa": 228,
+    "endMa": 201.3,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 3,
+      "weightTons": 0.02,
+      "heightMeters": 1
+    },
+    "paleoLocation": [
+      "Pangea",
+      "Ghost Ranch, Nuevo México (EE. UU.)"
+    ],
+    "description": "Dinosaurio terópodo primitivo sumamente ágil, con huesos huecos y esqueleto ligero. Cazaba en grupos pequeños reptiles y sinápsidos en las cuencas semiáridas de Pangea durante el Triásico tardío.",
+    "media": {
+      "imageUrl": "assets/species/coelophysis.jpg",
+      "imageAuthor": "Museo Paleontológico / Reconstrucción HD",
+      "imageLicense": "CC-BY-SA 4.0",
+      "phylopicSvgUrl": "https://images.phylopic.org/images/841fb002-c9a1-4328-86d7-ffb491fa9a5e/vector.svg"
+    },
+    "coordinates": {
+      "lat": 36.33,
+      "lng": -106.47
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Edward Drinker Cope (1889) / Edwin H. Colbert (1947)",
+      "yearDiscovered": 1889,
+      "describedBy": "Coelophysis bauri",
+      "geologicalFormation": "Formación Chinle (Miembro Rock Point, Cantera Ghost Ranch, Nuevo México)",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Ghost Ranch, Nuevo México (EE. UU.)",
+      "holotypeSpecimen": "AMNH 2701"
+    },
+    "paleogeography": {
+      "waterBody": "Cuenca fluvial semiárida de Chinle",
+      "landmass": "Supercontinente Pangea (Suroeste de Laurentia)",
+      "depthOrBiome": "Cuencas fluviales estacionales semiáridas con bosques de coníferas y arroyos efímeros",
+      "paleoZoneDescription": "Interior semiárido de Pangea con valles fluviales estacionales sujetos a inundaciones repentinas catastróficas."
+    },
+    "paleoCoordinates": {
+      "lat": 19.5,
+      "lon": -36.0
+    }
+  },
+  {
+    "id": "postosuchus-kirkpatricki",
+    "commonName": "Postosuchus",
+    "scientificName": "Postosuchus kirkpatricki",
+    "clade": "Pseudosuchia (Rauisuchidae)",
+    "periodId": "triasico",
+    "startMa": 228,
+    "endMa": 208,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 4.5,
+      "weightTons": 0.4,
+      "heightMeters": 1.4
+    },
+    "paleoLocation": [
+      "Pangea",
+      "Formación Chinle, Arizona y Texas (EE. UU.)"
+    ],
+    "description": "Superdepredador ápice terrestre del Triásico tardío anterior al dominio de los grandes dinosaurios. Pseudosuquio acorazado con un cráneo profundo similar al de un tiranosauro y mandíbulas capaces de triturar huesos.",
+    "media": {
+      "imageUrl": "assets/species/postosuchus.jpg",
+      "imageAuthor": "Smithsonian Paleoart",
+      "imageLicense": "CC-BY-SA 4.0",
+      "phylopicSvgUrl": "https://images.phylopic.org/images/841fb002-c9a1-4328-86d7-ffb491fa9a5e/vector.svg"
+    },
+    "coordinates": {
+      "lat": 34.9,
+      "lng": -109.8
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Sankar Chatterjee (1985) / Ermine Cowles Case (1922)",
+      "yearDiscovered": 1985,
+      "describedBy": "Postosuchus kirkpatricki",
+      "geologicalFormation": "Formación Cooper Canyon / Bull Canyon (Grupo Dockum, Texas y Nuevo México)",
+      "typeSpecimen": "Holotipo registrado en catálogo paleobiológico",
+      "museum": "Museo de Ciencias Naturales y Paleontología",
+      "modernCountry": "Formación Chinle, Arizona y Texas (EE. UU.)",
+      "holotypeSpecimen": "TTU-P 9000"
+    },
+    "paleogeography": {
+      "waterBody": "Sistemas de ríos entrelazados de Dockum",
+      "landmass": "Supercontinente Pangea central",
+      "depthOrBiome": "Tierras altas boscosas y márgenes de ríos estacionales de Pangea",
+      "paleoZoneDescription": "Depredador ápice dominante de las planicies y bosques de coníferas triásicas antes de la extinción Tr-J."
+    },
+    "paleoCoordinates": {
+      "lat": 18.0,
+      "lon": -34.0
+    }
+  },
+  {
+    "id": "charnia-masoni",
+    "commonName": "Charnia",
+    "scientificName": "Charnia masoni",
+    "clade": "Rangeomorpha (Petalonamae)",
+    "periodId": "ediacarico",
+    "startMa": 570,
+    "endMa": 550,
+    "diet": "Filtrador",
+    "metrics": {
+      "lengthMeters": 0.65,
+      "weightTons": 0.001,
+      "heightMeters": 0.65
+    },
+    "paleoLocation": [
+      "Rodinia / Gondwana",
+      "Charnwood Forest (Reino Unido)",
+      "Península de Avalon (Canadá)"
+    ],
+    "description": "Enigmático organismo bentónico con aspecto de fronda marina anclado al fondo abisal. Su crecimiento fractal modular fue pionero en la organización anatómica pluricelular compleja del Precámbrico.",
+    "media": {
+      "imageUrl": "assets/species/charnia.jpg",
+      "imageAuthor": "Museo Británico de Historia Natural",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": 52.73,
+      "lng": -1.28
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Roger Mason y Tina Negus (1956) / Martin Glaessner (1958)",
+      "yearDiscovered": 1957,
+      "describedBy": "Trevor D. Ford, 1958 (primer fósil precámbrico indiscutible)",
+      "geologicalFormation": "Formación Bradgate (Charnwood Forest, Leicestershire, Reino Unido)",
+      "typeSpecimen": "LEICS G1.1958",
+      "museum": "New Walk Museum and Art Gallery (Leicester, Reino Unido)",
+      "modernCountry": "Reino Unido, Terranova (Canadá) y Australia",
+      "holotypeSpecimen": "LEICS G1.1958"
+    },
+    "paleogeography": {
+      "waterBody": "Océano de Avalonia / Mar profundo ediacárico",
+      "landmass": "Arco de islas volcánicas de Avalonia (margen de Gondwana)",
+      "depthOrBiome": "Fondo marino abisal y taludes submarinos por debajo de la acción de las olas (>200 m)",
+      "paleoZoneDescription": "Fondos marinos oscuros profundos cubiertos periódicamente por ceniza volcánica, donde se fijaba al lecho con un disco basal."
+    },
+    "paleoCoordinates": {
+      "lat": -48.0,
+      "lon": 88.0
+    }
+  },
+  {
+    "id": "dickinsonia-costata",
+    "commonName": "Dickinsonia",
+    "scientificName": "Dickinsonia costata",
+    "clade": "Diciostegida (Proarticulata)",
+    "periodId": "ediacarico",
+    "startMa": 560,
+    "endMa": 550,
+    "diet": "Filtrador",
+    "metrics": {
+      "lengthMeters": 0.35,
+      "weightTons": 0.0005,
+      "heightMeters": 0.03
+    },
+    "paleoLocation": [
+      "Cordillera Flinders (Australia)",
+      "Mar Blanco (Rusia)"
+    ],
+    "description": "Fósil distintivo del Ediacárico con morfología plana y segmentos en bandas que absorbía nutrientes directamente de esteras microbianas. El hallazgo de moléculas fósiles de colesterol demostró que pertenece al reino animal.",
+    "media": {
+      "imageUrl": "assets/species/dickinsonia.jpg",
+      "imageAuthor": "Australian Museum / Reconstrucción HD",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": -31.45,
+      "lng": 138.6
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Reginald Sprigg",
+      "yearDiscovered": 1947,
+      "describedBy": "Reginald C. Sprigg, 1947 (comprobado animal por esteroles en 2018)",
+      "geologicalFormation": "Arenisca de Pound (Miembro Ediacara, Flinders Ranges, Australia del Sur)",
+      "typeSpecimen": "SAM P4001",
+      "museum": "South Australian Museum (Adelaida, Australia)",
+      "modernCountry": "Australia, Rusia (Mar Blanco) y Ucrania",
+      "holotypeSpecimen": "SAM P13705"
+    },
+    "paleogeography": {
+      "waterBody": "Mares litorales someros del Ediacárico",
+      "landmass": "Plataforma marina somera de Gondwana oriental",
+      "depthOrBiome": "Tapetes microbianos en fondos marinos arenosos someros bajo la zona fótica (5-30 m)",
+      "paleoZoneDescription": "Fondos marinos litorales protegidos donde se desplazaba lentamente sobre tapetes microbianos de los cuales absorbía nutrientes."
+    },
+    "paleoCoordinates": {
+      "lat": -28.0,
+      "lon": 92.0
+    }
+  },
+  {
+    "id": "estromatolitos-precambricos",
+    "commonName": "Estromatolitos (Cianobacterias)",
+    "scientificName": "Stromatolites / Archaea-Cyanobacteria",
+    "clade": "Eubacteria (Cyanobacteria)",
+    "periodId": "criogenico",
+    "startMa": 3500,
+    "endMa": 0,
+    "diet": "Filtrador",
+    "metrics": {
+      "lengthMeters": 1.5,
+      "weightTons": 0.8,
+      "heightMeters": 1.2
+    },
+    "paleoLocation": [
+      "Global",
+      "Shark Bay (Australia)",
+      "Cinturón de Isua (Groenlandia)"
+    ],
+    "description": "Bioconstrucciones carbonatadas formadas por comunidades microbianas primitivas. Protagonistas de la oxigenación planetaria y supervivientes clave en oasis hidrotermales durante la glaciación global de la Tierra Bola de Nieve.",
+    "media": {
+      "imageUrl": "assets/species/stromatolites.jpg",
+      "imageAuthor": "Geological Society / Paleobiology Atlas",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": -26.15,
+      "lng": 113.68
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Ernst Kalkowsky",
+      "yearDiscovered": 1908,
+      "describedBy": "Ernst Kalkowsky, 1908; Phillip Playford (Bahía Shark, 1956)",
+      "geologicalFormation": "Grupo Warrawoona (Pilbara, Australia) / Cinturón de Isua (Groenlandia) / Bahía Shark",
+      "typeSpecimen": "Estructuras biosedimentarias laminadas",
+      "museum": "Western Australian Museum (Perth) / Geological Museum of Denmark",
+      "modernCountry": "Australia (Shark Bay), Groenlandia y Sudáfrica",
+      "holotypeSpecimen": "BMR-Warrawoona-3465"
+    },
+    "paleogeography": {
+      "waterBody": "Océanos arcaicos y proterozoicos hipersalinos",
+      "landmass": "Cratones primigenios de Pilbara / Rodinia / Pannotia",
+      "depthOrBiome": "Llanuras de marea litorales someras, lagunas hipersalinas y arrecifes primordiales (0-5 m)",
+      "paleoZoneDescription": "Costas someras tropicales donde colonias de cianobacterias fotosintéticas produjeron el evento de la Gran Oxidación planetaria."
+    },
+    "paleoCoordinates": {
+      "lat": -18.0,
+      "lon": 40.0
+    }
+  },
+  {
+    "id": "spriggina-floundersi",
+    "commonName": "Spriggina",
+    "scientificName": "Spriggina floundersi",
+    "clade": "Proarticulata (Sprigginidae)",
+    "periodId": "ediacarico",
+    "startMa": 555,
+    "endMa": 550,
+    "diet": "Filtrador",
+    "metrics": {
+      "lengthMeters": 0.05,
+      "weightTons": 1e-05,
+      "heightMeters": 0.01
+    },
+    "paleoLocation": [
+      "Cordillera Flinders (Australia Meridional)"
+    ],
+    "description": "Fósil enigmático segmentado del Ediacárico con un escudo cefálico diferenciado. Constituye uno de los candidatos más tempranos a representar un ancestro con simetría bilateral previa a la radiación cámbrica.",
+    "media": {
+      "imageUrl": "assets/species/spriggina.jpg",
+      "imageAuthor": "Museo de Australia Meridional",
+      "imageLicense": "CC-BY-SA 4.0"
+    },
+    "coordinates": {
+      "lat": -31.4,
+      "lng": 138.65
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Reginald Sprigg / Ben Flounders",
+      "yearDiscovered": 1957,
+      "describedBy": "Martin Glaessner, 1958",
+      "geologicalFormation": "Arenisca de Pound (Flinders Ranges, Australia del Sur)",
+      "typeSpecimen": "SAM P3892",
+      "museum": "South Australian Museum (Adelaida, Australia)",
+      "modernCountry": "Australia",
+      "holotypeSpecimen": "SAM P13706"
+    },
+    "paleogeography": {
+      "waterBody": "Mares epicontinentales ediacáricos de Gondwana",
+      "landmass": "Plataforma marina somera de Adelaida",
+      "depthOrBiome": "Lecho marino sobre esteras microbianas oxigenadas (10-40 m)",
+      "paleoZoneDescription": "Mares someros del Ediacárico tardío, uno de los organismos con simetría bilateral y cefalización más antiguos del registro fósil."
+    },
+    "paleoCoordinates": {
+      "lat": -28.2,
+      "lon": 92.2
+    }
+  }
+]

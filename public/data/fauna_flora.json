@@ -1,0 +1,2203 @@
+{
+  "periods": [
+    {
+      "id": "present_0ma",
+      "name": "Presente (Holoceno / Antropoceno)",
+      "period": "Cuaternario",
+      "era": "Cenozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 0,
+      "iugsColor": "#F9F97F",
+      "textureFile": "textures/paleomap/0ma.jpg",
+      "climate": {
+        "temperature": 15,
+        "tempDelta": "0°C (Referencia actual)",
+        "oxygen": 21,
+        "co2": 420,
+        "seaLevel": "Referencia actual",
+        "description": "Periodo interglaciar caracterizado por casquetes polares en Groenlandia y Antártida, y una biosfera fuertemente modelada por la actividad humana."
+      },
+      "atmosphere": {
+        "o2": "21%",
+        "co2": "420 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Atmósfera rica en nitrógeno (78%) y oxígeno (21%), con niveles de dióxido de carbono en aumento antropogénico."
+      },
+      "flora": [
+        "Dominancia global de angiospermas (plantas con flor)",
+        "Grandes extensiones de pastizales y praderas templadas",
+        "Bosques boreales (taiga) y selvas tropicales ecuatoriales"
+      ],
+      "fauna": [
+        "Mamíferos placentarios dominantes en todos los nichos terrestres y marinos",
+        "Aves modernas neornites de alta diversidad",
+        "Homo sapiens como superdepredador y agente global de cambio"
+      ],
+      "species": [
+        {
+          "id": "glyptodon",
+          "name": "Glyptodon clavipes",
+          "commonName": "Gliptodonte",
+          "image": "assets/species/glyptodon.jpg",
+          "group": "Mamífero acorazado (Cingulado gliptodóntido)",
+          "diet": "Herbívoro (Gramíneas duras y vegetación palustre)",
+          "habitat": "Terrestre (Pampas, estepas y sabanas abiertas de Sudamérica)",
+          "length": "3.3 m",
+          "weight": "2.0 toneladas",
+          "scaleVsHuman": "Del tamaño y peso de un automóvil utilitario compacto (Volkswagen Escarabajo).",
+          "description": "Colosal mamífero emparentado con los armadillos, protegido por un caparazón rígido de más de 1,000 osteodermos óseos hexagonales de hasta 2.5 cm de grosor. Su cola acorazada con anillos óseos funcionaba como un bate defensivo frente a depredadores. Convivió con los primeros grupos humanos en las pampas sudamericanas.",
+          "lat": -34.6,
+          "lon": -58.38,
+          "fossilSite": "Formación Luján, Pampas Argentinas (Sudamérica)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "smilodon",
+          "name": "Smilodon populator",
+          "commonName": "Tigre Dientes de Sable",
+          "image": "assets/species/smilodon_mundo.jpg",
+          "group": "Mamífero carnívoro (Félido macairodontino)",
+          "diet": "Carnívoro (Superdepredador de megaherbívoros)",
+          "habitat": "Terrestre (Llanuras, bosques abiertos y matorrales americanos)",
+          "length": "2.6 m",
+          "weight": "400 kg",
+          "scaleVsHuman": "Mucho más robusto y masivo que un león o tigre moderno, hombros hipertrofiados.",
+          "description": "El mayor felino dientes de sable de la historia del planeta. Poseía colmillos curvados aserrados de hasta 28 cm con los que infligía mordiscos degolladores de extrema precisión tras inmovilizar a sus presas con unas patas delanteras descomunales.",
+          "lat": -31.42,
+          "lon": -64.18,
+          "fossilSite": "Cueva de Lagoa Santa (Brasil) y Rancho La Brea (EE. UU.)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "mammuthus",
+          "name": "Mammuthus primigenius",
+          "commonName": "Mamut Lanudo",
+          "image": "assets/species/mamut_mundo.jpg",
+          "group": "Mamífero proboscídeo (Elefántidos)",
+          "diet": "Herbívoro (Gramíneas, juncos y musgos de la estepa)",
+          "habitat": "Terrestre (Estepa de mamuts periglacial euroasiática y beringiana)",
+          "length": "3.8 m",
+          "weight": "6.0 toneladas",
+          "scaleVsHuman": "Más de 3.4 m a la cruz, duplicando la altura de un ser humano.",
+          "description": "El icono de las Edades de Hielo. Equipado con un abrigo de doble capa de pelo de hasta 90 cm, colmillos en espiral de hasta 4.2 metros para retirar la nieve invernal y una joroba adiposa de reserva energética en la espalda. Abundantemente retratado en el arte parietal paleolítico.",
+          "lat": 67.5,
+          "lon": 133.4,
+          "fossilSite": "Permafrost del Río Lena y Siberia Oriental (Rusia)",
+          "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
+          "zoneRadius": 1.5
+        },
+        {
+          "id": "megatherium",
+          "name": "Megatherium americanum",
+          "commonName": "Megaterio (Perezoso Terrestre Gigante)",
+          "image": "assets/species/megaterio.jpg",
+          "group": "Mamífero xenartro (Folívoro megatérido)",
+          "diet": "Herbívoro ramoneador (Hojas tiernas, brotes de copa y raíces)",
+          "habitat": "Terrestre (Bosques templados, matorrales y pampas sudamericanas)",
+          "length": "6.0 m",
+          "weight": "4.0 toneladas",
+          "scaleVsHuman": "Al erguirse sobre dos patas alcanzaba más de 4 metros de altura, rivalizando con los mayores proboscídeos.",
+          "description": "Titánico perezoso terrestre cuadrúpedo y facultativamente bípedo. Poseía una sólida pelvis y una cola musculosa que formaban un trípode para erguirse a ramonear ramas altas, armado con formidables garras curvadas de 30 cm con las que repelía a depredadores como Smilodon.",
+          "lat": -38.52,
+          "lon": -60.25,
+          "fossilSite": "Barrancas del Río Quequén Grande (Buenos Aires, Argentina)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "macrauchenia",
+          "name": "Macrauchenia patachonica",
+          "commonName": "Macrauquenia",
+          "image": "assets/species/macrauchenia.jpg",
+          "group": "Mamífero litopterno (Litopterna)",
+          "diet": "Herbívoro (Hojas, hierbas y vegetación arbustiva)",
+          "habitat": "Terrestre (Llanuras aluviales y estepas patagónicas de Sudamérica)",
+          "length": "3.0 m",
+          "weight": "1,000 kg",
+          "scaleVsHuman": "Aproximadamente 2 metros de altura al lomo, complexión comparable a un gran camello.",
+          "description": "Enigmático ungulado sudamericano descubierto por Charles Darwin. Con extremidades largas adaptadas a cambios rápidos de dirección para escapar de depredadores, fosas nasales en la parte superior del cráneo que sugieren una corta trompa prehensil o labio muscular extensible, y tres dedos en cada pata.",
+          "lat": -50.12,
+          "lon": -69.8,
+          "fossilSite": "Puerto San Julián, Santa Cruz (Patagonia, Argentina)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "toxodon",
+          "name": "Toxodon platensis",
+          "commonName": "Toxodonte",
+          "image": "assets/species/toxodon.jpg",
+          "group": "Mamífero notoungulado (Toxodóntido)",
+          "diet": "Herbívoro mixto (Pastos duros y vegetación ripícola)",
+          "habitat": "Terrestre / Semiacuático (Humedales, orillas de ríos y sabanas sudamericanas)",
+          "length": "2.7 m",
+          "weight": "1,500 kg",
+          "scaleVsHuman": "Morfología y masa semejante a la de un rinoceronte sin cuernos o hipopótamo común.",
+          "description": "Uno de los últimos y más exitosos representantes de los notoungulados, un linaje autóctono sudamericano de ungulados. Sus incisivos curvados y de crecimiento continuo en forma de arco (de ahí su nombre 'diente en arco') le permitían cortar vegetación abrasiva con un alto contenido de sílice.",
+          "lat": -31.73,
+          "lon": -60.53,
+          "fossilSite": "Formación Arroyo Feliciano, Entre Ríos (Argentina)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "mastodonte_americano",
+          "name": "Mammut americanum",
+          "commonName": "Mastodonte Americano",
+          "image": "assets/species/mastodonte_americano.jpg",
+          "group": "Mamífero proboscídeo (Mamútidos)",
+          "diet": "Herbívoro ramoneador (Ramas de abetos, coníferas y vegetación de humedal)",
+          "habitat": "Terrestre (Bosques boreales de coníferas y turberas de Norteamérica)",
+          "length": "4.5 m",
+          "weight": "5.5 toneladas",
+          "scaleVsHuman": "Algo más bajo pero mucho más ancho y fornido que los mamuts contemporáneos.",
+          "description": "Proboscídeo de ramas evolutivas distintas a los verdaderos elefantes. Se caracterizaba por sus molares con cúspides cónicas pronunciadas (bunodontos) diseñados para desmenuzar ramas leñosas, un pelaje áspero castaño y defensas alargadas ligeramente divergentes.",
+          "lat": 39.82,
+          "lon": -84.9,
+          "fossilSite": "Big Bone Lick State Park, Kentucky (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "lobo_gigante",
+          "name": "Aenocyon dirus",
+          "commonName": "Lobo Terrible / Lobo Gigante",
+          "image": "assets/species/lobo_gigante.jpg",
+          "group": "Mamífero carnívoro (Cánido hiperdepredador)",
+          "diet": "Carnívoro (Cazador en jauría y carroñero facultativo)",
+          "habitat": "Terrestre (Pastizales, bosques y llanuras abiertas de América)",
+          "length": "1.8 m",
+          "weight": "85 kg",
+          "scaleVsHuman": "25% más macizo que un lobo gris moderno, con cráneo ancho y dientes trituradores de hueso.",
+          "description": "El cánido más famoso del Pleistoceno, popularizado por los miles de esqueletos hallados en los pozos de brea de La Brea. Poseía una mordida devastadora capaz de fracturar huesos mayores para consumir médula ósea, compitiendo directamente con Smilodon por los grandes herbívoros.",
+          "lat": 34.06,
+          "lon": -118.36,
+          "fossilSite": "Pozos de alquitrán de Rancho La Brea, Los Ángeles (California, EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "oso_cavernario",
+          "name": "Ursus spelaeus",
+          "commonName": "Oso de las Cavernas",
+          "image": "assets/species/oso_cavernario.jpg",
+          "group": "Mamífero carnívoro (Úrsido)",
+          "diet": "Mayormente herbívoro especializado / Omnívoro estacional",
+          "habitat": "Terrestre (Valles alpinos, bosques templados y cuevas kársticas de Europa)",
+          "length": "3.5 m erguido",
+          "weight": "800 kg",
+          "scaleVsHuman": "Notable frente abultada, hasta 1.35 m a la cruz y más de 3 metros al ponerse de pie.",
+          "description": "Colosal úrsido del Pleistoceno europeo con una frente empinada característica. Pasaba los duros inviernos glaciares hibernando en profundas cuevas kársticas, donde morían miles de individuos ancianos o débiles, dejando ingentes acumulaciones de esqueletos que asombraron a los primeros naturalistas.",
+          "lat": 44.38,
+          "lon": 4.41,
+          "fossilSite": "Cueva de Chauvet-Pont d'Arc (Ardèche, Francia)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "leon_cavernas",
+          "name": "Panthera spelaea",
+          "commonName": "León de las Cavernas Euroasiático",
+          "image": "assets/species/leon_cavernas.jpg",
+          "group": "Mamífero carnívoro (Félido panterino)",
+          "diet": "Carnívoro superdepredador (Renos, bisontes esteparios y crías de proboscídeos)",
+          "habitat": "Terrestre (Estepas frías, tundra periglacial y bosques de Eurasia)",
+          "length": "2.5 m (sin cola)",
+          "weight": "340 kg",
+          "scaleVsHuman": "Entre un 15% y 25% más voluminoso que los leones subsaharianos actuales.",
+          "description": "El mayor gran felino del hemisferio norte durante el Cuaternario. Los recientes hallazgos de cachorros congelados en el permafrost siberiano han revelado su pelaje pardo amarillento denso adaptado al clima gélido y la carencia de melena abundante en los machos, corroborando fielmente las pinturas rupestres paleolíticas.",
+          "lat": 67.45,
+          "lon": 138.8,
+          "fossilSite": "Cuenca del Río Uyandina y Cueva Denisova (Siberia, Rusia)",
+          "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
+          "zoneRadius": 1.5
+        },
+        {
+          "id": "rinoceronte_lanudo",
+          "name": "Coelodonta antiquitatis",
+          "commonName": "Rinoceronte Lanudo",
+          "image": "assets/species/rinoceronte_lanudo.jpg",
+          "group": "Mamífero perisodáctilo (Rinocerótidos)",
+          "diet": "Herbívoro (Gramíneas, líquenes, musgos y arbustos enanos de tundra)",
+          "habitat": "Terrestre (Estepa fría euroasiática desde las Islas Británicas hasta el Extremo Oriente)",
+          "length": "3.7 m",
+          "weight": "2.5 toneladas",
+          "scaleVsHuman": "Casi 2 metros de altura al hombro, con un colosal cuerno frontal curvado.",
+          "description": "Pariente acorazado por un espeso vellón de pelo lanoso de dos capas y grasa subcutánea. Ostentaba un cuerno anterior de queratina aplanado lateralmente de más de 1.3 metros con el que apartaba la densa capa de nieve para alcanzar el pasto bajo el suelo helado.",
+          "lat": 49.84,
+          "lon": 24.03,
+          "fossilSite": "Minas de ozokerita de Starunia (Ucrania) y Yana RHS (Siberia)",
+          "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
+          "zoneRadius": 1.5
+        },
+        {
+          "id": "megalocero",
+          "name": "Megaloceros giganteus",
+          "commonName": "Megalocero (Ciervo Gigante / Alce Irlandés)",
+          "image": "assets/species/megalocero.jpg",
+          "group": "Mamífero artiodáctilo (Cérvidos)",
+          "diet": "Herbívoro (Gramíneas ricas en calcio y fósforo de praderas abiertas)",
+          "habitat": "Terrestre (Llanuras y estepas arbustivas templadas de Europa y Asia)",
+          "length": "3.2 m",
+          "weight": "700 kg",
+          "scaleVsHuman": "2.1 metros de altura a la cruz, con astas que superaban holgadamente la envergadura de cualquier vehículo.",
+          "description": "Poseedor de la cornamenta más monumental de la historia evolutiva: hasta 3.65 metros de punta a punta y 40 kg de masa ósea neta que los machos regeneraban anualmente. La demanda extrema de minerales para mineralizar semejante estructura ósea pudo acelerar su extinción al cambiar la vegetación postglaciar.",
+          "lat": 53.25,
+          "lon": -6.2,
+          "fossilSite": "Turberas de Ballybetagh Bog (Dublín, Irlanda)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "diprotodon",
+          "name": "Diprotodon optatum",
+          "commonName": "Diprotodonte (Vómbat Gigante)",
+          "image": "assets/species/diprotodon.jpg",
+          "group": "Mamífero marsupial (Diprotodóntidos)",
+          "diet": "Herbívoro (Arbustos salinos, hojas de eucalipto y pastos semiáridos)",
+          "habitat": "Terrestre (Sabanas abiertas, matorrales y bosques de Australia)",
+          "length": "3.8 m",
+          "weight": "2.8 toneladas",
+          "scaleVsHuman": "El mayor marsupial de todos los tiempos: del tamaño y corpulencia de un rinoceronte blanco.",
+          "description": "El gigante indiscutible de la megafauna australiana. Este marsupial dotado de una bolsa marsupial orientada hacia atrás poseía enormes incisivos en forma de cincel y patas digitígradas que le permitían recorrer cientos de kilómetros en busca de fuentes de agua durante los ciclos de sequía continental.",
+          "lat": -31.8,
+          "lon": 136.5,
+          "fossilSite": "Yacimiento lacustre del Lago Callabonna (Australia Meridional)",
+          "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
+          "zoneRadius": 1.3
+        },
+        {
+          "id": "procoptodon",
+          "name": "Procoptodon goliah",
+          "commonName": "Procoptodonte (Canguro Gigante de Cara Corta)",
+          "image": "assets/species/procoptodon.jpg",
+          "group": "Mamífero marsupial (Macropódido estenurino)",
+          "diet": "Herbívoro ramoneador (Hojas duras de acacias y arbustos esclerófilos)",
+          "habitat": "Terrestre (Llanuras semiáridas y sabanas arbustivas de Australia central y oriental)",
+          "length": "2.7 m erguido",
+          "weight": "240 kg",
+          "scaleVsHuman": "Casi el triple del peso de un canguro rojo actual, con un rostro simiesco chato.",
+          "description": "El canguro más descomunal que haya existido. A diferencia de los canguros modernos que saltan, la anatomía articular de sus caderas y su pata rematada en un único dedo ungulado modificado indican que se desplazaba caminando a grandes zancadas bípedas, alzando sus brazos prensiles para deshojar ramas altas.",
+          "lat": -32.5,
+          "lon": 142.3,
+          "fossilSite": "Lagos Menindee y Cueva de Naracoorte (Nueva Gales del Sur, Australia)",
+          "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
+          "zoneRadius": 1.3
+        },
+        {
+          "id": "megalania",
+          "name": "Varanus priscus",
+          "commonName": "Megalania (Lagarto Gigante Australiano)",
+          "image": "assets/species/megalania.jpg",
+          "group": "Reptil escamoso (Varánidos gigantes)",
+          "diet": "Carnívoro superdepredador y carroñero de megafauna",
+          "habitat": "Terrestre (Llanuras aluviales, matorrales y bosques australianos)",
+          "length": "6.5 m",
+          "weight": "800 kg",
+          "scaleVsHuman": "Más del doble de largo y hasta 10 veces más pesado que el Dragón de Komodo actual.",
+          "description": "El lagarto terrestre más gigantesco conocido por la ciencia. Equipado con dientes aserrados recurvados hacia atrás y posiblemente glándulas de veneno anticoagulante, acechaba a los grandes marsupiales como Diprotodon en emboscadas cerca de puntos de agua dulce en la Australia pleistocénica.",
+          "lat": -27.5,
+          "lon": 148,
+          "fossilSite": "Depósitos aluviales de Darling Downs, Queensland (Australia)",
+          "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
+          "zoneRadius": 1.3
+        }
+      ],
+      "events": [
+        "Retroceso de los últimos glaciares continentales hace ~11,700 años.",
+        "Desarrollo de la agricultura, revolución industrial y urbanización planetaria.",
+        "Configuración tectónica actual con cuencas oceánicas maduras."
+      ],
+      "fossilSites": [
+        {
+          "name": "Rancho La Brea",
+          "lat": 34.06,
+          "lon": -118.36,
+          "period": "Pleistoceno Superior",
+          "desc": "Pozos de asfalto natural que atraparon miles de carnívoros como Smilodon y lobos gigantes."
+        },
+        {
+          "name": "Cueva de Chauvet",
+          "lat": 44.38,
+          "lon": 4.41,
+          "period": "Paleolítico Superior",
+          "desc": "Santuario de arte rupestre con pinturas parietales de mamuts, leones y rinocerontes lanudos."
+        }
+      ]
+    },
+    {
+      "id": "miocene_20ma",
+      "name": "Mioceno (Neógeno)",
+      "period": "Mioceno",
+      "era": "Cenozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 20,
+      "iugsColor": "#FFFF00",
+      "textureFile": "textures/paleomap/20ma.jpg",
+      "climate": {
+        "temperature": 18,
+        "tempDelta": "+3°C vs actual",
+        "oxygen": 20,
+        "co2": 500,
+        "seaLevel": "+25 m vs actual",
+        "description": "Clima cálido global que dio paso a una paulatina aridificación y expansión masiva de pastizales de gramíneas C4."
+      },
+      "atmosphere": {
+        "o2": "20%",
+        "co2": "500 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Condiciones atmosféricas muy similares a las modernas pero con mayor humedad y temperatura en latitudes altas."
+      },
+      "flora": [
+        "Radiación explosiva de las gramíneas (pastos C4)",
+        "Retirada de los densos bosques tropicales hacia los trópicos",
+        "Aparición de las primeras sabanas abiertas de tipo africano"
+      ],
+      "fauna": [
+        "Evolución de caballos veloces hipsodontos adaptados a pastar sílice",
+        "Surgimiento de cetáceos dentados modernos y superdepredadores marinos",
+        "Diversificación de félidos y cánidos corredores"
+      ],
+      "species": [
+        {
+          "id": "megalodon",
+          "name": "Otodus megalodon",
+          "commonName": "Megalodón (Tiburón Megadentado)",
+          "image": "assets/species/megalodon.jpg",
+          "group": "Condrictio carnívoro (Otodóntidos)",
+          "diet": "Carnívoro (Superdepredador marino de cetáceos)",
+          "habitat": "Marino costero y pelágico global en aguas cálidas y templadas",
+          "length": "18.0 m",
+          "weight": "50 toneladas",
+          "scaleVsHuman": "Su boca abierta de más de 2 metros permitía que un humano adulto se pusiera de pie en su interior.",
+          "description": "El mayor tiburón depredador de la historia geológica. Sus mandíbulas armadas con más de 250 dientes triangulares aserrados de hasta 18 cm generaban la mayor fuerza de mordida estimada en el reino animal (~180,000 N), capaz de aplastar las costillas de ballenas barbadas.",
+          "lat": 31.95,
+          "lon": -80.95,
+          "fossilSite": "Formación Yorktown y Sharktooth Hill (EE. UU. / Cuenca Pacífica)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "titanis",
+          "name": "Titanis walleri",
+          "commonName": "Titánis (Ave del Terror Gigante)",
+          "image": "assets/species/titanis.jpg",
+          "group": "Ave fororrácida carnívora (Phorusrhacidae)",
+          "diet": "Carnívoro veloz (Cazador activo de mamíferos ungulados medianos)",
+          "habitat": "Terrestre (Sabanas, pastizales y bosques abiertos subtropicales de Norteamérica)",
+          "length": "2.5 m de altura",
+          "weight": "150 kg",
+          "scaleVsHuman": "Su cabeza armada con un pico ganchudo macizo superaba la altura de un caballo.",
+          "description": "La única especie de las temibles 'aves del terror' fororrácidas sudamericanas que logró cruzar exitosamente hacia Norteamérica durante el Gran Intercambio Biótico Americano. Cazador corredor excepcionalmente veloz que utilizaba su hacha craneal para noquear presas.",
+          "lat": 29.65,
+          "lon": -82.6,
+          "fossilSite": "Yacimientos fósiles del Río Santa Fe (Florida, EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "paraceratherium",
+          "name": "Paraceratherium transouralicum",
+          "commonName": "Paraceraterio (Indricoterio)",
+          "image": "assets/species/paraceratherium.jpg",
+          "group": "Mamífero perisodáctilo (Hiracodóntidos)",
+          "diet": "Herbívoro ramoneador (Hojas de copa alta)",
+          "habitat": "Terrestre (Bosques de galería y llanuras de Eurasia central)",
+          "length": "7.4 m",
+          "weight": "15 toneladas",
+          "scaleVsHuman": "Casi 5 metros de altura al hombro; miraba por encima del segundo piso de un edificio.",
+          "description": "Uno de los mayores mamíferos terrestres que jamás hayan caminado sobre el planeta, un rinoceronte sin cuernos de cuello elongado capaz de ramonear las copas de los árboles.",
+          "lat": 44.5,
+          "lon": 65.5,
+          "fossilSite": "Formación Chitarwata (Pakistán) y Kazajistán",
+          "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
+          "zoneRadius": 1.5
+        },
+        {
+          "id": "purussaurus",
+          "name": "Purussaurus brasiliensis",
+          "commonName": "Purussauro (Caimán Gigante del Amazonas)",
+          "image": "assets/species/purussaurus.jpg",
+          "group": "Reptil crocodilio (Aligatórido)",
+          "diet": "Carnívoro superdepredador de aguas dulces",
+          "habitat": "Fluvial y lacustre (Sistema de humedales Pebas protoamazónico)",
+          "length": "12.5 m",
+          "weight": "8.4 toneladas",
+          "scaleVsHuman": "Cráneo colosal de 1.4 m de longitud, casi el doble de largo que el mayor cocodrilo marino moderno.",
+          "description": "Monstruoso caimán gigante que dominó las cálidas aguas tropicales del sistema Pebas miocénico, alimentándose de tortugas gigantes de caparazón duro, mamíferos notoungulados y peces de gran tamaño.",
+          "lat": -9.5,
+          "lon": -70.5,
+          "fossilSite": "Formación Solimões, Cuenca del Río Purus (Amazonia, Brasil/Perú)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        }
+      ],
+      "events": [
+        "Colisión de la placa arábiga con Eurasia cerrando progresivamente el mar de Tetis.",
+        "Aislamiento de la Antártida y fortalecimiento de la Corriente Circumpolar Antártica.",
+        "Elevación tectónica acelerada de la cordillera del Himalaya y los Andes."
+      ],
+      "fossilSites": [
+        {
+          "name": "Humedales de Pebas",
+          "lat": -4.5,
+          "lon": -73.2,
+          "period": "Mioceno Medio",
+          "desc": "Megasistema lacustre protoamazónico con tortugas colosales (Stupendemys) y caimanes gigantes."
+        }
+      ]
+    },
+    {
+      "id": "eocene_50ma",
+      "name": "Eoceno Temprano",
+      "period": "Eoceno",
+      "era": "Cenozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 50,
+      "iugsColor": "#FDC07A",
+      "textureFile": "textures/paleomap/50ma.jpg",
+      "climate": {
+        "temperature": 25,
+        "tempDelta": "+10°C vs actual",
+        "oxygen": 22,
+        "co2": 1200,
+        "seaLevel": "+100 m vs actual",
+        "description": "Periodo 'Hothouse' (Tierra Invernadero) sin hielo polar permanente; bosques templados y cocodrilos poblaban el archipiélago ártico."
+      },
+      "atmosphere": {
+        "o2": "22%",
+        "co2": "1200 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Efecto invernadero natural extremo debido a pulsos de liberación masiva de metano e intensa actividad volcánica."
+      },
+      "flora": [
+        "Selvas tropicales y paratropicales cubriendo Europa y Norteamérica",
+        "Bosques de coníferas y palmeras creciendo cerca de los polos ártico y antártico",
+        "Proliferación del helecho flotante Azolla en el océano Ártico dulceacuícola"
+      ],
+      "fauna": [
+        "Primeros ancestros de los órdenes de mamíferos modernos (cetáceos, proboscídeos, équidos)",
+        "Aves no voladoras gigantes ocupando nichos de depredadores ápice",
+        "Diversificación explosiva de pequeños primates primitivos adapiformes"
+      ],
+      "species": [
+        {
+          "id": "basilosaurus",
+          "name": "Basilosaurus cetoides",
+          "commonName": "Ballena Primitiva Alargada",
+          "image": "assets/species/basilosaurus.jpg",
+          "group": "Cetáceo arqueoceto (Basilosáurido)",
+          "diet": "Carnívoro marino",
+          "habitat": "Marino (Mares someros del Tetis)",
+          "length": "18.0 m",
+          "weight": "14 toneladas",
+          "scaleVsHuman": "Cuerpo serpentiforme equivalente al largo de un autobús articulado.",
+          "description": "Cetáceo arcaico con cuerpo extremadamente alargado que aún conservaba patas traseras vestigiales articuladas con diminutos dedos, testimonio directo de su origen terrestre a partir de ungulados artiodáctilos.",
+          "lat": 31.8,
+          "lon": -88.1,
+          "fossilSite": "Wadi El Hitan (Valle de las Ballenas, Egipto)",
+          "distributionZone": "Plataformas Marinas y Océano Epicontinental",
+          "zoneRadius": 1.8
+        },
+        {
+          "id": "ambulocetus",
+          "name": "Ambulocetus natans",
+          "commonName": "La Ballena Andante de Pakistán",
+          "image": "assets/species/ambulocetus.jpg",
+          "group": "Cetáceo arqueoceto basal",
+          "diet": "Carnívoro (Depredador de emboscada)",
+          "habitat": "Anfibio (Costas salobres y estuarios)",
+          "length": "3.0 m",
+          "weight": "220 kg",
+          "scaleVsHuman": "Similar al tamaño de un león marino grande.",
+          "description": "Forma de transición fósil crucial que evidencia cómo los ancestros de las ballenas se adaptaron a nadar ondulando la columna vertebral mientras aún conservaban cuatro patas funcionales para caminar en tierra.",
+          "lat": 33.6,
+          "lon": 72.8,
+          "fossilSite": "Formación Kuldana (Panyab, Pakistán)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "gastornis",
+          "name": "Gastornis gigantea",
+          "commonName": "Ave Colosal de Pico Robusto",
+          "image": "assets/species/gastornis.jpg",
+          "group": "Ave anseriforme (Gastornítidos)",
+          "diet": "Herbívoro / Frugívoro (Triturador de frutos duros)",
+          "habitat": "Terrestre (Bosques densos subtropicales)",
+          "length": "2.1 m",
+          "weight": "160 kg",
+          "scaleVsHuman": "Superaba en altura a un humano adulto medio, con un pico de 45 cm.",
+          "description": "Enorme ave terrestre áptera con patas fornidas y un pico colosal y comprimido lateralmente. Inicialmente supuesta carnívora temible, análisis isotópicos de calcio demostraron que consumía nueces duras y semillas.",
+          "lat": 49.2,
+          "lon": 3.4,
+          "fossilSite": "Cuenca de París (Francia) y Formación Willwood (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "titanoboa",
+          "name": "Titanoboa cerrejonensis",
+          "commonName": "Serpiente Gigante del Cerrejón",
+          "image": "assets/species/titanoboa.jpg",
+          "group": "Reptil escamado (Boidae)",
+          "diet": "Carnívoro / Piscívoro",
+          "habitat": "Fluvial / Selva pantanosa ecuatorial",
+          "length": "13.0 m",
+          "weight": "1.1 toneladas",
+          "scaleVsHuman": "Su cuerpo superaba el metro de diámetro; pesaba más que un automóvil utilitario.",
+          "description": "La serpiente más gigantesca jamás documentada. Vivió en los bosques pantanosos ultra-cálidos del Paleoceno-Eoceno en Colombia, donde las temperaturas de 32-34°C permitieron su colosal metabolismo poiquilotermo.",
+          "lat": 11.1,
+          "lon": -72.6,
+          "fossilSite": "Mina de carbón del Cerrejón (La Guajira, Colombia)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        }
+      ],
+      "events": [
+        "Máximo Térmico del Paleoceno-Eoceno (PETM hace ~56 Ma) con pico térmico planetario.",
+        "Inicio del choque tectónico entre el subcontinente indio y Eurasia.",
+        "Océano Ártico casi cerrado cubierto de agua dulce y densas matas del helecho Azolla."
+      ],
+      "fossilSites": [
+        {
+          "name": "Messel Pit (Fosa de Messel)",
+          "lat": 49.92,
+          "lon": 8.75,
+          "period": "Eoceno Medio",
+          "desc": "Yacimiento de conservación excepcional con mamíferos tempranos completos, pelos y contenido estomacal fosilizados."
+        }
+      ]
+    },
+    {
+      "id": "cretaceous_66ma",
+      "name": "Límite Cretácico-Paleógeno (K-Pg)",
+      "period": "Cretácico",
+      "era": "Mesozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 66,
+      "iugsColor": "#80FF68",
+      "textureFile": "textures/paleomap/66ma.jpg",
+      "climate": {
+        "temperature": 22,
+        "tempDelta": "+7°C vs actual",
+        "oxygen": 24,
+        "co2": 900,
+        "seaLevel": "+80 m vs actual",
+        "description": "Clima global cálido y uniforme antes del colapso cataclísmico por el impacto del asteroide Chicxulub."
+      },
+      "atmosphere": {
+        "o2": "24%",
+        "co2": "900 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Elevada concentración de oxígeno que sostenía gigantescas tasas metabólicas en dinosaurios y pterosaurios."
+      },
+      "flora": [
+        "Bosques de coníferas, cícadas, ginkgos y helechos",
+        "Rápida diversificación y dominancia de las plantas con flor (angiospermas)",
+        "Primeros árboles con frutos y flores polinizadas por insectos modernos"
+      ],
+      "fauna": [
+        "Dinosaurios no avianos en la cúspide trófica terrestre hasta el impacto",
+        "Pterosaurios azdárquidos de tamaños descomunales surcando los cielos",
+        "Mosasaurios y plesiosaurios dominando los mares cálidos someros"
+      ],
+      "species": [
+        {
+          "id": "tyrannosaurus",
+          "name": "Tyrannosaurus rex",
+          "commonName": "Tiranosaurio Rex",
+          "image": "assets/species/tyrannosaurus_mundo.jpg",
+          "group": "Dinosaurio terópodo (Tiranosáuridos)",
+          "diet": "Carnívoro (Superdepredador alfa y carroñero oportunista)",
+          "habitat": "Terrestre (Llanuras aluviales y bosques subtropicales de Laramidia)",
+          "length": "12.3 m",
+          "weight": "8.8 toneladas",
+          "scaleVsHuman": "3.7 metros de altura a la cadera, cráneo de 1.5 metros provisto de 60 dientes trituradores de hueso.",
+          "description": "El superdepredador indiscutible del Cretácico tardío en Norteamérica. Poseía la mayor fuerza de mordedura medida en animales terrestres (~57,000 N), visión binocular tridimensional estereoscópica superior a la de las aves de presa actuales y un fino sentido del olfato para detectar carroña a kilómetros de distancia.",
+          "lat": 47.5,
+          "lon": -106.5,
+          "fossilSite": "Formación Hell Creek, Montana (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "triceratops",
+          "name": "Triceratops horridus",
+          "commonName": "Triceratops (Tres Cuernos)",
+          "image": "assets/species/triceratops.jpg",
+          "group": "Dinosaurio ornitisquio (Ceratópsidos)",
+          "diet": "Herbívoro (Palmas, cícadas y helechos de sotobosque)",
+          "habitat": "Terrestre (Bosques húmedos y valles fluviales de Norteamérica)",
+          "length": "9.0 m",
+          "weight": "9.0 toneladas",
+          "scaleVsHuman": "3 metros de altura, macizo como dos elefantes africanos, con una gola ósea impenetrable.",
+          "description": "El ceratópsido más colosal y reconocible. Ostentaba dos grandes cuernos supraorbitales de más de 1 metro de longitud y un cuerno nasal, respaldados por una sólida gola ósea posterior que protegía su cuello y servía para el cortejo y las batallas territoriales frente a rivales de su misma especie y ataques de T-Rex.",
+          "lat": 44,
+          "lon": -104.5,
+          "fossilSite": "Formación Lance, Wyoming (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "ankylosaurus",
+          "name": "Ankylosaurus magniventris",
+          "commonName": "Anquilosaurio (Tanque Acorazado)",
+          "image": "assets/species/ankylosaurus.jpg",
+          "group": "Dinosaurio ornitisquio (Tireóforos anquilosáuridos)",
+          "diet": "Herbívoro bajo (Matorrales, raíces y tubérculos)",
+          "habitat": "Terrestre (Llanuras costeras y bosques de Norteamérica occidental)",
+          "length": "8.0 m",
+          "weight": "6.0 toneladas",
+          "scaleVsHuman": "Un tanque biológico bajo y acorazado con una porra caudal maciza capaz de quebrar huesos.",
+          "description": "El último y mayor de los anquilosáuridos. Su lomo estaba enteramente blindado por placas osteodérmicas y espinas óseas incrustadas en la piel, hasta en los párpados. Al final de su cola fusionada portaba una pesada maza ósea que blandía lateralmente con fuerza suficiente para fracturar las patas de un Tiranosaurio.",
+          "lat": 47.2,
+          "lon": -107,
+          "fossilSite": "Formación Hell Creek, Montana y Alberta (Canadá)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "velociraptor",
+          "name": "Velociraptor mongoliensis",
+          "commonName": "Velociraptor",
+          "image": "assets/species/velociraptor.jpg",
+          "group": "Dinosaurio terópodo (Dromeosáuridos emplumados)",
+          "diet": "Carnívoro ágil (Depredador activo de pequeños dinosaurios y reptiles)",
+          "habitat": "Terrestre (Dunas desérticas y oasis áridos de Asia Central)",
+          "length": "2.0 m",
+          "weight": "15 kg",
+          "scaleVsHuman": "Del tamaño de un pavo grande o lobo pequeño, cubierto de plumaje denso.",
+          "description": "Terópodo ágil dotado de plumas penáceas completas y una formidable garra en forma de hoz hipertrofiada en el segundo dedo de cada pie. El famoso fósil de los 'Dinosaurios Luchadores' demostró que empleaba sus garras para someter a presas como Protoceratops en combates a muerte en el desierto de Gobi.",
+          "lat": 44.15,
+          "lon": 103.2,
+          "fossilSite": "Acantilados Llameantes de Bayan Mandahu y Formación Djadochta (Desierto de Gobi, Mongolia)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "quetzalcoatlus",
+          "name": "Quetzalcoatlus northropi",
+          "commonName": "Quetzalcoatlus (Reptil Volador Gigante)",
+          "image": "assets/species/quetzalcoatlus.jpg",
+          "group": "Reptil volador (Pterosaurio azdárquido)",
+          "diet": "Carnívoro / Piscívoro (Depredador terrestre acechador y carroñero)",
+          "habitat": "Aéreo y terrestre (Llanuras de inundación interiores)",
+          "length": "11.0 m de envergadura alar",
+          "weight": "220 kg",
+          "scaleVsHuman": "Caminaba a cuatro patas erguido con la misma altura que una jirafa macho adulta (5.5 m).",
+          "description": "Uno de los mayores animales voladores de la historia terrestre. Con una envergadura equivalente a la de un avión Cessna y un pico desdentado puntiagudo de casi 2 metros, patrullaba el suelo a zancadas alimentándose de presas de tamaño medio que engullía enteras.",
+          "lat": 29.25,
+          "lon": -103.25,
+          "fossilSite": "Formación Javelina, Big Bend, Texas (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "mosasaurus",
+          "name": "Mosasaurus hoffmannii",
+          "commonName": "Mosasaurio (Lagarto del Río Mosa)",
+          "image": "assets/species/mosasaurus.jpg",
+          "group": "Reptil marino escamoso (Mosasáuridos)",
+          "diet": "Carnívoro (Superdepredador marino de ammonites, tortugas y tiburones)",
+          "habitat": "Marino costero y de plataforma en mares epicontinentales cálidos",
+          "length": "17.0 m",
+          "weight": "14 toneladas",
+          "scaleVsHuman": "Casi el triple de largo que una orca marina, con aletas hidrodinámicas y cola bilobulada.",
+          "description": "Reptil escamoso marino emparentado con los varanos y serpientes. Poseía una doble fila de dientes en el paladar (dientes pterigoideos) que impedían que las presas resbalaran de su fauce, y una potente aleta caudal con la que propulsaba emboscadas letales a gran velocidad.",
+          "lat": 50.85,
+          "lon": 5.68,
+          "fossilSite": "Canteras de caliza de Maastricht (Río Mosa, Países Bajos)",
+          "distributionZone": "Plataformas Marinas y Océano Epicontinental",
+          "zoneRadius": 1.8
+        },
+        {
+          "id": "parasaurolophus",
+          "name": "Parasaurolophus walkeri",
+          "commonName": "Parasaurolofo (Pico de Pato de Cresta Tubular)",
+          "image": "assets/species/parasaurolophus.jpg",
+          "group": "Dinosaurio ornitisquio (Hadrosáuridos lambeosaurinos)",
+          "diet": "Herbívoro ramoneador (Acículas de pino, hojas y semillas duras)",
+          "habitat": "Terrestre (Bosques húmedos ribereños y deltas costeros de Laramidia)",
+          "length": "10.0 m",
+          "weight": "3.5 toneladas",
+          "scaleVsHuman": "Casi 4 metros de altura, con una espectacular cresta tubular curva de hasta 1.8 metros hacia atrás.",
+          "description": "Emblemático dinosaurio herbívoro 'pico de pato'. Su espectacular cresta craneal hueca albergaba conductos nasales complejos que funcionaban como una caja de resonancia acústica para emitir llamadas subsónicas de baja frecuencia a lo largo de kilómetros de bosque, además de servir como llamativo display visual.",
+          "lat": 50.7,
+          "lon": -111.5,
+          "fossilSite": "Parque Provincial del Dinosaurio, Formación Dinosaur Park, Alberta (Canadá)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        }
+      ],
+      "events": [
+        "Impacto del asteroide de Chicxulub (10-15 km de diámetro) en la península de Yucatán hace 66.04 Ma.",
+        "Megavolcanismo masivo de los Traps del Decán en la placa india.",
+        "Extinción masiva del 75% de todas las especies del planeta, incluidos los dinosaurios no aviares."
+      ],
+      "fossilSites": [
+        {
+          "name": "Cráter de Chicxulub",
+          "lat": 21.3,
+          "lon": -89.5,
+          "period": "Límite K-Pg (66.0 Ma)",
+          "desc": "Estructura de impacto de 180 km sepultada bajo sedimentos en Yucatán, causante de la extinción masiva."
+        },
+        {
+          "name": "Formación Hell Creek",
+          "lat": 47,
+          "lon": -106,
+          "period": "Maastrichtiense",
+          "desc": "El yacimiento continental más rico del mundo con registros del ocaso de los dinosaurios."
+        }
+      ]
+    },
+    {
+      "id": "cretaceous_105ma",
+      "name": "Cretácico Medio",
+      "period": "Cretácico",
+      "era": "Mesozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 105,
+      "iugsColor": "#93FF7A",
+      "textureFile": "textures/paleomap/105ma.jpg",
+      "climate": {
+        "temperature": 24,
+        "tempDelta": "+9°C vs actual",
+        "oxygen": 23,
+        "co2": 1400,
+        "seaLevel": "+150 m vs actual",
+        "description": "Superinvernadero cretácico con extensos mares interiores someros que inundaban gran parte de Norteamérica, Eurasia y África."
+      },
+      "atmosphere": {
+        "o2": "23%",
+        "co2": "1400 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Altos niveles de CO2 promovidos por el magmatismo submarino de mesetas basálticas oceánicas (Ontong Java)."
+      },
+      "flora": [
+        "Expansión revolucionaria de las angiospermas (plantas con flor)",
+        "Bosques templados de coníferas primitivas (Araucariaceae, Podocarpaceae)",
+        "Helechos arborescentes poblando llanuras de inundación"
+      ],
+      "fauna": [
+        "Dinosaurios terópodos de dimensiones titánicas (espinosáuridos y carcarodontosáuridos)",
+        "Titanosaurios gigantes alcanzando masas colosales",
+        "Cocodrilomorfos gigantes de agua dulce ocupando deltas fluviales"
+      ],
+      "species": [
+        {
+          "id": "spinosaurus",
+          "name": "Spinosaurus aegyptiacus",
+          "commonName": "Espinosaurio (Lagarto de Espina)",
+          "image": "assets/species/spinosaurus_mundo.jpg",
+          "group": "Dinosaurio terópodo (Espinosáuridos semiacuáticos)",
+          "diet": "Piscívoro especializado y carnívoro de ribera (Peces celacantos gigantes y celurosaurios)",
+          "habitat": "Semiacuático (Sistemas de deltas fluviales y manglares del Sahara)",
+          "length": "15.0 m",
+          "weight": "7.5 toneladas",
+          "scaleVsHuman": "Más largo que Tyrannosaurus rex, con una vela dorsal de 1.8 m y cola en forma de aleta natatoria.",
+          "description": "El dinosaurio carnívoro más largo conocido. Altamente adaptado a la vida acuática en los sistemas fluviales del norte de África, con huesos densos para controlar la flotabilidad, una cola aplanada lateralmente como una aleta de tritón, hocico cónico similar al de un gavial y una monumental vela dorsal.",
+          "lat": 31,
+          "lon": 28.5,
+          "fossilSite": "Formación Bahariya (Egipto) y Lechos de Kem Kem (Marruecos)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "giganotosaurus",
+          "name": "Giganotosaurus carolinii",
+          "commonName": "Giganotosaurio (Lagarto Gigante del Sur)",
+          "image": "assets/species/giganotosaurus.jpg",
+          "group": "Dinosaurio terópodo (Carcharodontosáuridos)",
+          "diet": "Carnívoro superdepredador (Cazador de saurópodos titanosaurios)",
+          "habitat": "Terrestre (Llanuras de inundación y valles aluviales de la Patagonia)",
+          "length": "13.2 m",
+          "weight": "8.2 toneladas",
+          "scaleVsHuman": "Rivalizaba o superaba en tamaño a Tyrannosaurus rex, con dientes como dagas aserradas.",
+          "description": "Colosal terópodo carcharodontosáurido del Cretácico medio sudamericano. Dotado de mandíbulas armadas con dientes comprimidos lateralmente de hasta 15 cm aptos para desgarrar grandes masas de carne mediante ataques de corte rápido contra titanosaurios como Argentinosaurus.",
+          "lat": -39.2,
+          "lon": -68.8,
+          "fossilSite": "Formación Candeleros, Villa El Chocón, Neuquén (Patagonia, Argentina)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "iguanodon",
+          "name": "Iguanodon bernissartensis",
+          "commonName": "Iguanodonte (Diente de Iguana)",
+          "image": "assets/species/iguanodon.jpg",
+          "group": "Dinosaurio ornitisquio (Ornitópodos iguanodontianos)",
+          "diet": "Herbívoro (Helechos arborescentes, equisetos y coníferas)",
+          "habitat": "Terrestre (Llanuras aluviales y valles pantanosos europeos)",
+          "length": "10.0 m",
+          "weight": "4.5 toneladas",
+          "scaleVsHuman": "Capaz de marchar a cuatro o a dos patas, con un espolón defensivo cónico de 15 cm en el pulgar.",
+          "description": "Uno de los primeros dinosaurios nombrados en la historia de la ciencia. Sus manos exhibían pulgares modificados en afiladas púas cónicas que utilizaba tanto para defensa activa frente a terópodos como para manipular ramas duras.",
+          "lat": 50.48,
+          "lon": 3.65,
+          "fossilSite": "Mina de carbón de Bernissart (Bélgica) y Wealden (Reino Unido)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "argentinosaurus",
+          "name": "Argentinosaurus huinculensis",
+          "commonName": "Argentinosaurio (Titán de la Patagonia)",
+          "image": "assets/species/argentinosaurus.jpg",
+          "group": "Dinosaurio saurópodo (Titanosaurios)",
+          "diet": "Herbívoro de gran altura (Coníferas gigantes y cícadas)",
+          "habitat": "Terrestre (Llanuras aluviales de Sudamérica)",
+          "length": "35.0 m",
+          "weight": "75 toneladas",
+          "scaleVsHuman": "Una sola de sus vértebras dorsales medía más de 1.6 metros de altura, rivalizando con la estatura humana.",
+          "description": "Considerado uno de los animales terrestres más pesados y masivos que jamás hayan existido sobre la Tierra, con vértebras reforzadas por articulaciones accesorias hiposfeno-hipantro para soportar un peso superior a 70 toneladas métricas.",
+          "lat": -38.9,
+          "lon": -69.2,
+          "fossilSite": "Formación Huincul, Plaza Huincul, Neuquén (Argentina)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        }
+      ],
+      "events": [
+        "Apertura acelerada del Océano Atlántico Sur, separando definitivamente Sudamérica de África.",
+        "Formación del Mar Interior Occidental que dividió Norteamérica en dos subcontinentes (Laramidia y Appalachia).",
+        "Eventos anóxicos oceánicos (OAE) que depositaron lutitas ricas en hidrocarburos."
+      ],
+      "fossilSites": [
+        {
+          "name": "Lechos de Kem Kem",
+          "lat": 31,
+          "lon": -4,
+          "period": "Cenomaniense",
+          "desc": "El lugar más peligroso de la historia de la Tierra por su concentración insólita de superdepredadores carnívoros."
+        }
+      ]
+    },
+    {
+      "id": "jurassic_150ma",
+      "name": "Jurásico Tardío",
+      "period": "Jurásico",
+      "era": "Mesozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 150,
+      "iugsColor": "#34B2C9",
+      "textureFile": "textures/paleomap/150ma.jpg",
+      "climate": {
+        "temperature": 20,
+        "tempDelta": "+5°C vs actual",
+        "oxygen": 22,
+        "co2": 1100,
+        "seaLevel": "+60 m vs actual",
+        "description": "Clima cálido, templado y húmedo a escala global; ausencia total de casquetes de hielo polares."
+      },
+      "atmosphere": {
+        "o2": "22%",
+        "co2": "1100 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Atmósfera rica en dióxido de carbono que fomentó un crecimiento vegetal colosal y gigantescas biomasas de saurópodos."
+      },
+      "flora": [
+        "Bosques exhuberantes dominados por coníferas gigantes (ancestros de secuoyas y araucarias)",
+        "Bosquetes de cícadas, bennettitales y ginkgos",
+        "Extensas praderas de helechos que cubrían las planicies"
+      ],
+      "fauna": [
+        "Gigantescos dinosaurios saurópodos de cuello largo dominando el ramoneo alto",
+        "Terópodos alosáuridos como superdepredadores de tierra firme",
+        "Origen y primeros vuelos de las aves primitivas a partir de manirraptores"
+      ],
+      "species": [
+        {
+          "id": "allosaurus",
+          "name": "Allosaurus fragilis",
+          "commonName": "Alosaurio (Lagarto Extraño)",
+          "image": "assets/species/allosaurus.jpg",
+          "group": "Dinosaurio terópodo (Alosáuridos)",
+          "diet": "Carnívoro (Superdepredador jurásico de estegosáuridos y saurópodos)",
+          "habitat": "Terrestre (Llanuras semiáridas con bosques de galería de Norteamérica)",
+          "length": "9.5 m",
+          "weight": "2.3 toneladas",
+          "scaleVsHuman": "3 metros de altura a la cruz, con crestas lagrimales rojas sobre los ojos y brazos de tres garras.",
+          "description": "El león del Jurásico tardío. Con una apertura de mandíbula excepcionalmente amplia de más de 80 grados, utilizaba su maxilar superior a modo de hacha cortante para golpear y desangrar a grandes presas herbívoras.",
+          "lat": 39.3,
+          "lon": -110.8,
+          "fossilSite": "Cantera de Cleveland-Lloyd, Formación Morrison, Utah (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "stegosaurus",
+          "name": "Stegosaurus stenops",
+          "commonName": "Estegosaurio (Lagarto con Tejado)",
+          "image": "assets/species/stegosaurus.jpg",
+          "group": "Dinosaurio ornitisquio (Estegosáuridos)",
+          "diet": "Herbívoro bajo (Musgos, helechos y cícadas)",
+          "habitat": "Terrestre (Llanuras aluviales jurásicas)",
+          "length": "9.0 m",
+          "weight": "5.0 toneladas",
+          "scaleVsHuman": "4 metros de altura hasta la cúspide de sus placas dorsales, con cola armada con púas óseas (thagomizer).",
+          "description": "Reconocible al instante por la doble fila alterna de 17 placas óseas triangulares a lo largo del lomo, utilizadas tanto para termorregulación vascular como para display visual, y cuatro púas defensivas de 60 cm en la punta de la cola (thagomizer) con las que hería mortalmente a Alosaurios.",
+          "lat": 40.4,
+          "lon": -108.5,
+          "fossilSite": "Monumento Nacional de los Dinosaurios, Formación Morrison, Colorado/Utah (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "diplodocus",
+          "name": "Diplodocus carnegii",
+          "commonName": "Diplodoco (Doble Viga)",
+          "image": "assets/species/diplodocus.jpg",
+          "group": "Dinosaurio saurópodo (Diplodócidos)",
+          "diet": "Herbívoro ramoneador bajo y medio (Helechos y coníferas)",
+          "habitat": "Terrestre (Llanuras fluviales de Norteamérica)",
+          "length": "27.0 m",
+          "weight": "14 toneladas",
+          "scaleVsHuman": "Longitud de un autobús articulado doble; su cola en látigo superaba la velocidad del sonido al restallar.",
+          "description": "Saurópodo icónico de complexión esbelta pero extraordinaria longitud. Poseía una cola finísima compuesta por más de 80 vértebras que funcionaba como un látigo supersónico para disuadir depredadores y defender a la manada.",
+          "lat": 41.5,
+          "lon": -106,
+          "fossilSite": "Cantera Sheep Creek, Formación Morrison, Wyoming (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "brachiosaurus",
+          "name": "Brachiosaurus altithorax",
+          "commonName": "Braquiosaurio (Lagarto con Brazos)",
+          "image": "assets/species/brachiosaurus.jpg",
+          "group": "Dinosaurio saurópodo (Braquiosáuridos)",
+          "diet": "Herbívoro de copa alta (Coníferas, ginkgos y cícadas arborescentes)",
+          "habitat": "Terrestre (Valles fluviales y bosques altos del Jurásico)",
+          "length": "23.0 m",
+          "weight": "35 toneladas",
+          "scaleVsHuman": "Más de 12 metros de altura total; alcanzaba la altura de un cuarto piso sin despegar las patas del suelo.",
+          "description": "Monumento viviente del Jurásico con extremidades anteriores más largas que las posteriores, lo que otorgaba a su lomo una postura inclinada hacia arriba semejante a la de una colosal jirafa, facilitándole el ramoneo directo en las copas de las coníferas.",
+          "lat": 39.05,
+          "lon": -108.7,
+          "fossilSite": "Grand River Valley, Formación Morrison, Colorado (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "archaeopteryx",
+          "name": "Archaeopteryx lithographica",
+          "commonName": "Arqueópterix (Ala Antigua)",
+          "image": "assets/species/archaeopteryx.jpg",
+          "group": "Aves basales / Dinosaurio terópodo avialano",
+          "diet": "Carnívoro insectívoro (Insectos, pequeños lagartos)",
+          "habitat": "Insular y costero (Archipiélago de lagunas salobres de Solnhofen)",
+          "length": "0.5 m",
+          "weight": "0.8 kg",
+          "scaleVsHuman": "Del tamaño de un cuervo o urraca europea.",
+          "description": "El fósil de transición más célebre de la paleontología evolutiva. Reveló de manera inequívoca el vínculo directo entre los dinosaurios terópodos y las aves modernas: combinaba dientes afilados, garras en las alas y una larga cola ósea de reptil con plumas de vuelo asimétricas idénticas a las actuales.",
+          "lat": 48.89,
+          "lon": 11,
+          "fossilSite": "Calizas litográficas de Solnhofen, Baviera (Alemania)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "kentrosaurus",
+          "name": "Kentrosaurus aethiopicus",
+          "commonName": "Centrosaurio (Lagarto Puntiagudo)",
+          "image": "assets/species/kentrosaurus.jpg",
+          "group": "Dinosaurio ornitisquio (Estegosáuridos espinosos)",
+          "diet": "Herbívoro bajo (Matorrales y helechos)",
+          "habitat": "Terrestre (Bosques costeros tropicales del este de Gondwana)",
+          "length": "4.5 m",
+          "weight": "1.2 toneladas",
+          "scaleVsHuman": "Menor que Stegosaurus pero con temibles púas pares laterales en hombros y caderas.",
+          "description": "Estegosáurido africano caracterizado por una transición gradual de pequeñas placas óseas en el cuello a enormes púas gemelas afiladas a lo largo de la espalda, flancos y cola, transformándolo en una fortaleza viviente ante terópodos.",
+          "lat": -9.85,
+          "lon": 39.3,
+          "fossilSite": "Yacimiento de Tendaguru (Tanzania, África Oriental)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        }
+      ],
+      "events": [
+        "Fragmentación activa de Pangea: separación del bloque norte (Laurasia) y sur (Gondwana).",
+        "Inundación del Mar de Tetis formando un archipiélago cálido en Europa central.",
+        "Apertura incipiente de la cuenca del Atlántico Norte."
+      ],
+      "fossilSites": [
+        {
+          "name": "Formación Morrison",
+          "lat": 39.7,
+          "lon": -105.2,
+          "period": "Jurásico Superior",
+          "desc": "La cantera de dinosaurios gigantes más célebre de Norteamérica."
+        },
+        {
+          "name": "Caliza de Solnhofen",
+          "lat": 48.9,
+          "lon": 11,
+          "period": "Kimmeridgiense",
+          "desc": "Lagerstätte lagunar donde se preservaron las plumas microscópicas de Archaeopteryx."
+        }
+      ]
+    },
+    {
+      "id": "triassic_200ma",
+      "name": "Triásico Tardío",
+      "period": "Triásico",
+      "era": "Mesozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 200,
+      "iugsColor": "#812B92",
+      "textureFile": "textures/paleomap/200ma.jpg",
+      "climate": {
+        "temperature": 22,
+        "tempDelta": "+7°C vs actual",
+        "oxygen": 16,
+        "co2": 1800,
+        "seaLevel": "+20 m vs actual",
+        "description": "Supercontinente Pangea con un interior extremadamente árido y desértico, y costas monzónicas hiperestacionales."
+      },
+      "atmosphere": {
+        "o2": "16%",
+        "co2": "1800 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Niveles de oxígeno deprimidos que favorecieron el desarrollo de sacos aéreos respiratorios unidireccionales en arcosaurios."
+      },
+      "flora": [
+        "Bosques de coníferas resistentes a la sequía (Voltziales)",
+        "Cícadas y helechos adaptados a climas estacionales extremos",
+        "Ausencia absoluta de flores y pastos"
+      ],
+      "fauna": [
+        "Primeros dinosaurios primitivos ágiles de pequeño y mediano porte",
+        "Pseudosuquios (parientes de cocodrilos) dominando la cúspide terrestre",
+        "Ictiosaurios gigantes colonizando el superocéano Pantalasa"
+      ],
+      "species": [
+        {
+          "id": "plateosaurus",
+          "name": "Plateosaurus trossingensis",
+          "commonName": "Plateosaurio (Lagarto Plano)",
+          "image": "assets/species/plateosaurus.jpg",
+          "group": "Dinosaurio prosaurópodo (Plateosáuridos)",
+          "diet": "Herbívoro ramoneador (Cícadas, ginkgos y helechos altos)",
+          "habitat": "Terrestre (Llanuras de inundación áridas de Pangea central)",
+          "length": "8.0 m",
+          "weight": "2.5 toneladas",
+          "scaleVsHuman": "Capaz de alzarse bípedamente para ramonear a más de 4 metros de altura.",
+          "description": "Uno de los primeros grandes dinosaurios herbívoros de la historia. Caminaba de forma bípeda y poseía manos provistas de un pulgar con garra curvada prensil para acercar ramas a su boca, prefigurando la radiación colosal de los saurópodos jurásicos.",
+          "lat": 48.07,
+          "lon": 8.63,
+          "fossilSite": "Trossingen y Frick, Formación Löwenstein (Alemania / Suiza)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "herrerasaurus",
+          "name": "Herrerasaurus ischigualastensis",
+          "commonName": "Herrerasaurio",
+          "image": "assets/species/herrerasaurus.jpg",
+          "group": "Dinosaurio saurisquio basal (Herrerasáuridos)",
+          "diet": "Carnívoro veloz (Cazador de rincosaurios y cinodontes)",
+          "habitat": "Terrestre (Valles fluviales semiáridos del suroeste de Pangea)",
+          "length": "4.5 m",
+          "weight": "250 kg",
+          "scaleVsHuman": "Depredador ágil y esbelto con patas traseras largas adaptadas a la carrera veloz.",
+          "description": "Uno de los dinosaurios carnívoros más primitivos y completos del registro fósil mundial. Presentaba una articulación mandibular móvil que le permitía sujetar presas forcejeantes con sus dientes aserrados curvados hacia atrás.",
+          "lat": -30.15,
+          "lon": -67.85,
+          "fossilSite": "Parque Provincial Ischigualasto, Valle de la Luna, San Juan (Argentina)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "eoraptor",
+          "name": "Eoraptor lunensis",
+          "commonName": "Eoraptor (Ladrón del Amanecer)",
+          "image": "assets/species/eoraptor.jpg",
+          "group": "Dinosaurio saurisquio basal",
+          "diet": "Omnívoro / Carnívoro facultativo",
+          "habitat": "Terrestre (Valles aluviales de Pangea)",
+          "length": "1.0 m",
+          "weight": "10 kg",
+          "scaleVsHuman": "Del tamaño de un perro pequeño o zorro, muy grácil y veloz.",
+          "description": "El amanecer de la era de los dinosaurios. Descubierto en 1991 en las áridas rocas triásicas de Ischigualasto, su dentición mixta atestigua el origen común de los linajes carnívoros y herbívoros.",
+          "lat": -30.1,
+          "lon": -67.8,
+          "fossilSite": "Formación Ischigualasto, San Juan (Argentina)",
+          "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
+          "zoneRadius": 1.2
+        }
+      ],
+      "events": [
+        "Provincia Magmática del Atlántico Central (CAMP): erupciones de basalto a escala continental.",
+        "Extinción masiva del Triásico-Jurásico (eliminó a la mayoría de los pseudosúquidos y sinápsidos arcaicos).",
+        "Supercontinente Pangea en su punto de máxima amalgama territorial."
+      ],
+      "fossilSites": [
+        {
+          "name": "Ghost Ranch",
+          "lat": 36.3,
+          "lon": -106.4,
+          "period": "Noriense",
+          "desc": "Cantera famosa con cientos de esqueletos articulados de Coelophysis congregados por una riada."
+        },
+        {
+          "name": "Parque Provincial Ischigualasto",
+          "lat": -30.1,
+          "lon": -67.8,
+          "period": "Carniense",
+          "desc": "Valle de la Luna argentino con los fósiles más completos de los primeros dinosaurios como Herrerasaurus y Eoraptor."
+        }
+      ]
+    },
+    {
+      "id": "permian_250ma",
+      "name": "Límite Pérmico-Triásico ('La Gran Mortandad')",
+      "period": "Pérmico",
+      "era": "Paleozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 250,
+      "iugsColor": "#F04028",
+      "textureFile": "textures/paleomap/250ma.jpg",
+      "climate": {
+        "temperature": 28,
+        "tempDelta": "+13°C vs actual",
+        "oxygen": 15,
+        "co2": 2500,
+        "seaLevel": "+10 m vs actual",
+        "description": "Supercalentamiento global catastrófico desatado por los Traps Siberianos; océanos anóxicos y acidificados hasta el 96% de letalidad."
+      },
+      "atmosphere": {
+        "o2": "15%",
+        "co2": "2500 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Colapso de la capa de ozono y liberación masiva de sulfuro de hidrógeno tóxico en atmósfera y mares."
+      },
+      "flora": [
+        "Flora de Glossopteris en el hemisferio sur (Gondwana)",
+        "Bosques de coníferas tempranas y cícadas en Pangea ecuatorial",
+        "Colapso masivo de la biomasa arbórea y proliferación efímera de hongos ('pico fúngico')"
+      ],
+      "fauna": [
+        "Sinápsidos no mamíferos (terápsidos y gorgonópsidos) dominando la tierra firme",
+        "Trilobites, euriptéridos y corales rugosos extinguiéndose para siempre",
+        "Anfibios temnospóndilos de cráneos acorazados en deltas y ríos"
+      ],
+      "species": [
+        {
+          "id": "dimetrodon",
+          "name": "Dimetrodon limbatus",
+          "commonName": "Dimetrodon (Dos Medidas de Dientes)",
+          "image": "assets/species/dimetrodon_mundo.jpg",
+          "group": "Sinápsido esfenacodóntido (Linaje ancestral de los mamíferos)",
+          "diet": "Carnívoro (Superdepredador pérmico de anfibios y reptiles)",
+          "habitat": "Terrestre / Ripícola (Llanuras deltaicas áridas y pantanos)",
+          "length": "3.5 m",
+          "weight": "250 kg",
+          "scaleVsHuman": "Más de 1.8 metros de altura en la cumbre de su vela dorsal membranosa vascularizada.",
+          "description": "El sinápsido más emblemático del Pérmico. Aunque comúnmente confundido con un dinosaurio, está mucho más estrechamente emparentado con los mamíferos que con los reptiles. Su espectacular vela dorsal sostenida por prolongaciones vertebrales servía como termorregulador solar y reclamo reproductor.",
+          "lat": 33.6,
+          "lon": -99.3,
+          "fossilSite": "Red Beds de Texas y Oklahoma (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "inostrancevia",
+          "name": "Inostrancevia alexandri",
+          "commonName": "Inostrancevia (Gorgonópsido Gigante)",
+          "image": "assets/species/inostrancevia.jpg",
+          "group": "Sinápsido terápsido (Gorgonópsidos)",
+          "diet": "Carnívoro superdepredador (Especializado en cazar pareiasaurios blindados)",
+          "habitat": "Terrestre (Llanuras semiáridas aluviales de la Rusia pérmica)",
+          "length": "3.5 m",
+          "weight": "300 kg",
+          "scaleVsHuman": "Del porte de un león o un gran oso, con descomunales caninos de sable de 15 cm.",
+          "description": "El tigre de dientes de sable del Pérmico tardío. Sus colmillos de sable y su cráneo reforzado estaban adaptados para perforar la dura armadura osteodérmica de herbívoros contemporáneos como Scutosaurus en las costas de Pangea septentrional.",
+          "lat": 62.8,
+          "lon": 43.1,
+          "fossilSite": "Yacimientos del Río Dvina Septentrional, Óblast de Arcángel (Rusia)",
+          "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
+          "zoneRadius": 1.5
+        },
+        {
+          "id": "scutosaurus",
+          "name": "Scutosaurus karpinskii",
+          "commonName": "Escutosaurio (Reptil Escudo)",
+          "image": "assets/species/scutosaurus.jpg",
+          "group": "Anápsido pararreptil (Pareiasáuridos)",
+          "diet": "Herbívoro (Vegetación fibrosa baja y helechos pérmicos)",
+          "habitat": "Terrestre (Planicies aluviales semiáridas)",
+          "length": "3.0 m",
+          "weight": "1,200 kg",
+          "scaleVsHuman": "Cuerpo cilíndrico robusto de patas columnares gruesas como un rinoceronte.",
+          "description": "Tanque biológico del Pérmico tardío. Todo su cuerpo estaba cubierto de placas óseas dérmicas soldadas y protuberancias en las mejillas, adaptado para procesar enormes cantidades de vegetación dura en su espacioso abdomen fermentador.",
+          "lat": 61.2,
+          "lon": 46.5,
+          "fossilSite": "Sokolki, Río Malaya Severnaya Dvina (Rusia)",
+          "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
+          "zoneRadius": 1.5
+        },
+        {
+          "id": "edaphosaurus",
+          "name": "Edaphosaurus pogonias",
+          "commonName": "Edafosaurio",
+          "image": "assets/species/edaphosaurus.jpg",
+          "group": "Sinápsido pelicosaurio (Edafosaúridos)",
+          "diet": "Herbívoro (Equisetos, helechos y plantas ricas en celulosa)",
+          "habitat": "Húmedo y pantanoso",
+          "length": "3.2 m",
+          "weight": "200 kg",
+          "scaleVsHuman": "Vela con barras transversales óseas perpendiculares semejantes a varillas de antena.",
+          "description": "Uno de los primeros vertebrados herbívoros terrestres de gran porte. Poseía placas de dientes en el paladar para moler plantas y una vela dorsal con protuberancias transversales únicas.",
+          "lat": 33.5,
+          "lon": -99,
+          "fossilSite": "Archer County, Texas (EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        }
+      ],
+      "events": [
+        "Erupción cataclísmica de los Traps Siberianos (millones de km³ de basalto fundido quemando capas de carbón).",
+        "La Gran Mortandad (Extinción P-Tr): pereció el 96% de la vida marina y el 70% de los vertebrados terrestres.",
+        "Anoxia oceánica global y emisión de gases letales de sulfuro de hidrógeno (H2S)."
+      ],
+      "fossilSites": [
+        {
+          "name": "Meishan (Sección GSSP)",
+          "lat": 31.08,
+          "lon": 119.7,
+          "period": "Límite Changhsingiense-Induense",
+          "desc": "El estrato tipo mundial del límite P-Tr que registra la mayor extinción masiva de la biosfera."
+        }
+      ]
+    },
+    {
+      "id": "carboniferous_300ma",
+      "name": "Carbonífero Tardío",
+      "period": "Carbonífero",
+      "era": "Paleozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 300,
+      "iugsColor": "#67A599",
+      "textureFile": "textures/paleomap/300ma.jpg",
+      "climate": {
+        "temperature": 12,
+        "tempDelta": "-3°C vs actual",
+        "oxygen": 35,
+        "co2": 350,
+        "seaLevel": "-40 m vs actual",
+        "description": "Hiperoxigenación planetaria histórica (35% O2) combinada con una glaciación masiva en el polo sur de Gondwana."
+      },
+      "atmosphere": {
+        "o2": "35%",
+        "co2": "350 ppm",
+        "pressure": "1.15 atm",
+        "summary": "El pico más alto de oxígeno en los 4.500 millones de años de la Tierra, permitiendo el gigantismo de los artrópodos terrestres."
+      },
+      "flora": [
+        "Selvas pantanosas ecuatoriales de licofitas gigantes (Lepidodendron y Sigillaria de 30 metros)",
+        "Colas de caballo colosales (Calamites) formando densos cañaverales",
+        "Primeras coníferas y helechos con semilla (Pteridospermatophyta)"
+      ],
+      "fauna": [
+        "Artrópodos gigantes terrestres y aéreos aprovechando el hiperoxígeno",
+        "Anfibios temnospóndilos diversificándose en ríos y pantanos",
+        "Evolución del huevo amniótico: independencia reproductiva total del agua"
+      ],
+      "species": [
+        {
+          "id": "arthropleura",
+          "name": "Arthropleura armata",
+          "commonName": "Milpiés Gigante Acorazado",
+          "image": "assets/species/arthropleura.jpg",
+          "group": "Artrópodo miriápodo",
+          "diet": "Herbívoro / Detritívoro (Troncos y hojas descompuestas)",
+          "habitat": "Terrestre (Selvas pantanosas ecuatoriales)",
+          "length": "2.6 m",
+          "weight": "50 kg",
+          "scaleVsHuman": "Más largo que un humano adulto recostado; el mayor invertebrado terrestre de todos los tiempos.",
+          "description": "Miriápodo titánico con más de 30 segmentos corporales acorazados. Su gigantesco tamaño sólo fue biológicamente posible gracias a la asombrosa concentración del 35% de oxígeno atmosférico que alimentaba su sistema de tráqueas pasivas.",
+          "lat": 55.5,
+          "lon": -1.6,
+          "fossilSite": "Howick Bay (Northumberland, Reino Unido)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "meganeura",
+          "name": "Meganeura monyi",
+          "commonName": "Libélula Gigante de los Pantanos",
+          "image": "assets/species/meganeura.jpg",
+          "group": "Insecto meganisóptero (Grifoflíteros)",
+          "diet": "Carnívoro aéreo",
+          "habitat": "Aéreo (Bosques pantanosos de carbón)",
+          "length": "0.45 m (Envergadura: 75 cm)",
+          "weight": "450 g",
+          "scaleVsHuman": "Envergadura de alas comparable a la de un halcón o un cuervo moderno.",
+          "description": "El insecto volador más grande conocido. Como depredador aéreo de primer orden, atrapaba al vuelo otros insectos gigantes e incluso anfibios pequeños en los frondosos bosques del Carbonífero.",
+          "lat": 46.3,
+          "lon": 2.8,
+          "fossilSite": "Yacimientos hulleros de Commentry (Allier, Francia)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "pulmonoscorpius",
+          "name": "Pulmonoscorpius kirktonensis",
+          "commonName": "Escorpión Gigante Pulmonado",
+          "image": "assets/species/pulmonoscorpius.jpg",
+          "group": "Arácnido escorpiónido",
+          "diet": "Carnívoro (Depredador venenoso)",
+          "habitat": "Terrestre (Sotobosque húmedo)",
+          "length": "0.7 m",
+          "weight": "4.5 kg",
+          "scaleVsHuman": "Casi 10 veces más grande que un escorpión emperador actual.",
+          "description": "Escorpión terrestre de tamaño descomunal provisto de pulmones en libro hiperdesarrollados y un aguijón bulboso con el que sometía anfibios y artrópodos.",
+          "lat": 55.9,
+          "lon": -3.5,
+          "fossilSite": "East Kirkton Quarry (West Lothian, Escocia)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "hylonomus",
+          "name": "Hylonomus lyelli",
+          "commonName": "Primer Reptil Amniota Verdadero",
+          "image": "assets/species/eryops.jpg",
+          "group": "Reptil sauropsido basal (Protorotirídidos)",
+          "diet": "Insectívoro",
+          "habitat": "Terrestre (Troncos huecos de licofitas)",
+          "length": "0.2 m",
+          "weight": "100 g",
+          "scaleVsHuman": "Similar a una lagartija pequeña contemporánea.",
+          "description": "El reptil más antiguo indiscutido del registro fósil. Protagonizó la mayor revolución reproductiva terrestre: el huevo amniótico con cáscara protectora impermeable que permitió a los vertebrados colonizar el interior de los continentes sin depender del agua para desovar.",
+          "lat": 45.7,
+          "lon": -64.4,
+          "fossilSite": "Acantilados fosilíferos de Joggins (Nueva Escocia, Canadá)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        }
+      ],
+      "events": [
+        "Acumulación masiva de biomasa vegetal sin bacterias capaces de degradar la lignina, originando los yacimientos mundiales de carbón.",
+        "Glaciación Karoo en Gondwana polar sur.",
+        "Convergencia orogénica de Laurrusia y Gondwana creando los Montes Apalaches y Urales."
+      ],
+      "fossilSites": [
+        {
+          "name": "Acantilados de Joggins",
+          "lat": 45.7,
+          "lon": -64.4,
+          "period": "Pensilvánico",
+          "desc": "Patrimonio Mundial de la UNESCO con tocones fósiles erguidos donde quedaron atrapados los primeros reptiles."
+        }
+      ]
+    },
+    {
+      "id": "devonian_375ma",
+      "name": "Devónico Tardío (La Conquista de la Tierra)",
+      "period": "Devónico",
+      "era": "Paleozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 375,
+      "iugsColor": "#CB8C37",
+      "textureFile": "textures/paleomap/370ma.jpg",
+      "climate": {
+        "temperature": 20,
+        "tempDelta": "+5°C vs actual",
+        "oxygen": 18,
+        "co2": 2000,
+        "seaLevel": "+180 m vs actual",
+        "description": "La 'Era de los Peces'. Primeros bosques verdaderos sobre tierra firme e inicio de la transición de los vertebrados hacia las extremidades con dedos."
+      },
+      "atmosphere": {
+        "o2": "18%",
+        "co2": "2000 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Caída drástica del CO2 provocada por el desarrollo de raíces profundas de los primeros árboles arborescentes (Archaeopteris)."
+      },
+      "flora": [
+        "Primeros bosques verdaderos formados por Archaeopteris (progimnospermas)",
+        "Desarrollo de sistemas radiculares profundos que aceleraron la meteorización química del suelo",
+        "Primeras plantas con semillas verdaderas en el sotobosque"
+      ],
+      "fauna": [
+        "Peces placodermos con blindaje cefálico gobernando los océanos",
+        "Peces sarcopterigios de aletas lobuladas adaptándose a aguas someras",
+        "Primeros tetrapodomorfos respirando aire y explorando orillas fluviales"
+      ],
+      "species": [
+        {
+          "id": "dunkleosteus",
+          "name": "Dunkleosteus terrelli",
+          "commonName": "Placodermo Blindado",
+          "image": "assets/species/dunkleosteus.jpg",
+          "group": "Pez placodermo (Artrodiro)",
+          "diet": "Carnívoro (Superdepredador marino)",
+          "habitat": "Marino (Arrecifes someros y mares epicontinentales)",
+          "length": "6.0 m",
+          "weight": "1.0 tonelada",
+          "scaleVsHuman": "Casi 3.5 veces la estatura humana; placas óseas craneales de 5 cm de grosor.",
+          "description": "El superdepredador marino definitivo del Devónico. No tenía dientes convencionales, sino placas óseas dérmicas en forma de cuchillas que se autoafilaban al cerrar la boca con una fuerza de cizalla de más de 5,000 N.",
+          "lat": 41.5,
+          "lon": -81.7,
+          "fossilSite": "Cleveland Shale (Ohio, EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "tiktaalik",
+          "name": "Tiktaalik roseae",
+          "commonName": "El Pez que Caminó",
+          "image": "assets/species/tiktaalik.jpg",
+          "group": "Sarcopterigio (Tetrapodomorfo)",
+          "diet": "Carnívoro de aguas someras",
+          "habitat": "Fluvial / Ribereño somero",
+          "length": "2.7 m",
+          "weight": "60 kg",
+          "scaleVsHuman": "Similar al tamaño de un cocodrilo joven; cráneo aplanado de 30 cm.",
+          "description": "El icono fósil supremo de la evolución: el eslabón entre peces y animales terrestres de cuatro patas. Poseía escamas y branquias de pez, pero también cuello móvil articulado, costillas capaces de sostener el cuerpo fuera del agua y aletas con hombro, codo y muñeca funcional.",
+          "lat": 77,
+          "lon": -86,
+          "fossilSite": "Isla de Ellesmere (Nunavut, Ártico Canadiense)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "ichthyostega",
+          "name": "Ichthyostega stensioei",
+          "commonName": "Tetrapodomorfo Primitivo",
+          "image": "assets/species/ichthyostega.jpg",
+          "group": "Tetrapodomorfo basal (Ictiostégidos)",
+          "diet": "Carnívoro / Piscívoro",
+          "habitat": "Anfibio (Ciénagas costeras y orillas)",
+          "length": "1.5 m",
+          "weight": "35 kg",
+          "scaleVsHuman": "Similar en tamaño a una salamandra gigante del Japón.",
+          "description": "Uno de los primeros vertebrados terrestres con extremidades pentadáctilas y polidáctilas (7 dedos en sus patas traseras), caja torácica robusta para evitar el colapso de los pulmones en tierra firme y cola con aleta natatoria reminiscente de los peces.",
+          "lat": 73.5,
+          "lon": -23,
+          "fossilSite": "Formación Aina Dal (Groenlandia Oriental)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "materpiscis",
+          "name": "Materpiscis attenboroughi",
+          "commonName": "Placodermo Vivíparo con Cordón Umbilical",
+          "image": "assets/species/dunkleosteus.jpg",
+          "group": "Pez placodermo (Ptictodóntido)",
+          "diet": "Durofagia (Moluscos y corales con concha)",
+          "habitat": "Marino (Arrecife fósil de Gogo)",
+          "length": "0.25 m",
+          "weight": "800 g",
+          "scaleVsHuman": "Tamaño similar a una lubina o trucha mediana.",
+          "description": "Hallazgo asombroso: el fósil de una hembra con un embrión intrauterino conectado mediante un cordón umbilical fosilizado. Adelantó el origen de la reproducción vivípara interna en los vertebrados en más de 200 millones de años.",
+          "lat": -18.3,
+          "lon": 125.8,
+          "fossilSite": "Formación Gogo (Kimberley, Australia Occidental)",
+          "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
+          "zoneRadius": 1.3
+        }
+      ],
+      "events": [
+        "Extinción masiva del Devónico Tardío (Evento Kellwasser y Hangenberg).",
+        "Eutrofización global de los océanos provocada por el arrastre de nutrientes de los nuevos suelos boscosos terrestres.",
+        "Aparición del suelo moderno (pedogénesis avanzada)."
+      ],
+      "fossilSites": [
+        {
+          "name": "Cantera de Red Hill",
+          "lat": 41.3,
+          "lon": -77.3,
+          "period": "Fameniense",
+          "desc": "Yacimiento clave en Pensilvania que ilustra la ecología de los primeros tetrápodos fluviales."
+        },
+        {
+          "name": "Arrecife de Gogo",
+          "lat": -18.3,
+          "lon": 125.8,
+          "period": "Frasniense",
+          "desc": "Preservación tridimensional en nódulos calcáreos de la anatomía muscular y vasos de peces devónicos."
+        }
+      ]
+    },
+    {
+      "id": "silurian_430ma",
+      "name": "Silúrico Medio",
+      "period": "Silúrico",
+      "era": "Paleozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 430,
+      "iugsColor": "#B3E1B6",
+      "textureFile": "textures/paleomap/430ma.jpg",
+      "climate": {
+        "temperature": 17,
+        "tempDelta": "+2°C vs actual",
+        "oxygen": 14,
+        "co2": 3000,
+        "seaLevel": "+120 m vs actual",
+        "description": "Estabilización climática tras la deglaciación ordovícica; surgimiento de los primeros arrecifes de coral y expansión vegetal pionera a orillas del agua."
+      },
+      "atmosphere": {
+        "o2": "14%",
+        "co2": "3000 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Consolidación de una capa de ozono protectora (O3) que permitió por primera vez a los seres vivos colonizar tierra firme sin letalidad ultravioleta."
+      },
+      "flora": [
+        "Primeras plantas vasculares verdaderas (Cooksonia) colonizando zonas húmedas ribereñas",
+        "Briofitas y tapetes de musgos y líquenes extendiéndose sobre las rocas desnudas",
+        "Hongos descomponedores primitivos fijando el suelo biológico"
+      ],
+      "fauna": [
+        "Euriptéridos (escorpiones marinos gigantes) como depredadores ápice",
+        "Primeros peces con mandíbulas verdaderas (Gnathostomata)",
+        "Primeros artrópodos terrestres (milpiés pneumodesmidos con espiráculos)"
+      ],
+      "species": [
+        {
+          "id": "eurypterus",
+          "name": "Eurypterus remipes",
+          "commonName": "Escorpión Marino Silúrico",
+          "image": "assets/species/eurypterus.jpg",
+          "group": "Quelicerado euriptérido",
+          "diet": "Carnívoro bentónico",
+          "habitat": "Marino somero y lagunar salobre",
+          "length": "1.3 m",
+          "weight": "12 kg",
+          "scaleVsHuman": "Cuerpo segmentado que alcanzaba la cintura de un humano adulto.",
+          "description": "Artrópodo depredador marino de gran éxito evolutivo. Nadaba con sus aletas traseras en forma de remo y atrapaba trilobites y peces sin mandíbulas con sus quelíceros espinosos.",
+          "lat": 43,
+          "lon": -75,
+          "fossilSite": "Formación Furlong / Bertie (Nueva York, EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "cooksonia",
+          "name": "Cooksonia caledonica",
+          "commonName": "Pionera de las Plantas Vasculares",
+          "image": "assets/species/prototaxites.jpg",
+          "group": "Traqueofita polisporangiada",
+          "diet": "Autótrofo fotosintético",
+          "habitat": "Ribereño / Húmedo de agua dulce",
+          "length": "0.08 m",
+          "weight": "2 g",
+          "scaleVsHuman": "Diminuta ramificación de 5 a 8 cm de altura.",
+          "description": "La primera planta vascular confirmada en la historia de la Tierra. Presentaba tallos fotosintéticos verdes sin hojas verdaderas bifurcados en Y, rematados en esporangios globosos para dispersar esporas por el viento.",
+          "lat": 56.5,
+          "lon": -3.5,
+          "fossilSite": "Old Red Sandstone (Gales y Escocia)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "birkenia",
+          "name": "Birkenia elegans",
+          "commonName": "Pez Ágnato sin Mandíbulas",
+          "image": "assets/species/haikouichthys.jpg",
+          "group": "Vertebrado ágnato (Anaspida)",
+          "diet": "Detritívoro / Filtrador",
+          "habitat": "Marino somero y estuarino",
+          "length": "0.1 m",
+          "weight": "25 g",
+          "scaleVsHuman": "Tamaño de un boquerón o anchoa pequeña.",
+          "description": "Pez primitivo desprovisto de mandíbulas articuladas, recubierto de pequeñas escamas rómbicas de hueso dérmico que le conferían flexibilidad para nadar con ondulaciones laterales.",
+          "lat": 55.6,
+          "lon": -3.9,
+          "fossilSite": "Lesmahagow Inlier (Lanarkshire, Escocia)",
+          "distributionZone": "Plataformas Marinas y Océano Epicontinental",
+          "zoneRadius": 1.8
+        },
+        {
+          "id": "prototaxites",
+          "name": "Prototaxites loganii",
+          "commonName": "Hongo Troncal Gigante",
+          "image": "assets/species/prototaxites.jpg",
+          "group": "Hongo descomponedor (Fungi incertae sedis)",
+          "diet": "Heterótrofo saprófito",
+          "habitat": "Terrestre (Llanuras aluviales)",
+          "length": "8.0 m de altura",
+          "weight": "1.5 toneladas",
+          "scaleVsHuman": "Columnas gigantes de 1 metro de diámetro en la base y 8 metros de alto.",
+          "description": "El organismo terrestre más colosal del Silúrico y Devónico temprano. Mucho antes de que existieran árboles verdaderos, estos misteriosos troncos fungiformes dominaban el horizonte terrestre descomponiendo biomasa microbiana.",
+          "lat": 48,
+          "lon": -66,
+          "fossilSite": "Formación Battery Point (Península de Gaspesia, Quebec, Canadá)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        }
+      ],
+      "events": [
+        "Orogenia Caledoniana: choque entre Laurentia, Báltica y Avalonia.",
+        "Formación de los primeros arrecifes de estromatopóridos y corales tabulados.",
+        "Consolidación de las primeras cadenas tróficas terrestres (detritívoros y hongos)."
+      ],
+      "fossilSites": [
+        {
+          "name": "Yacimientos de Gotland",
+          "lat": 57.5,
+          "lon": 18.5,
+          "period": "Wenlockiense",
+          "desc": "Arrecifes silúricos de coral y crinoideos conservados con pureza cristalina en Suecia."
+        }
+      ]
+    },
+    {
+      "id": "ordovician_470ma",
+      "name": "Ordovícico Medio",
+      "period": "Ordovícico",
+      "era": "Paleozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 470,
+      "iugsColor": "#009270",
+      "textureFile": "textures/paleomap/470ma.jpg",
+      "climate": {
+        "temperature": 16,
+        "tempDelta": "+1°C vs actual",
+        "oxygen": 12,
+        "co2": 4200,
+        "seaLevel": "+220 m vs actual",
+        "description": "Gran Radiación Biológica del Ordovícico (GOBE). Mares templados que dieron paso al enfriamiento y formación de un sistema de anillos de polvo asteroidial ecuatorial."
+      },
+      "atmosphere": {
+        "o2": "12%",
+        "co2": "4200 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Altas concentraciones de gases invernadero que fueron contrarrestadas hacia el final del periodo por la sombra cósmica del anillo de escombros asteroidial."
+      },
+      "flora": [
+        "Algas verdes marinas filamentosas poblando aguas someras",
+        "Primeras criptoesporas de plantas terrestres no vasculares en orillas húmedas",
+        "Colonias microbianas fijadoras de carbonatos"
+      ],
+      "fauna": [
+        "Moluscos cefalópodos nautiloideos gigantes de concha recta (ortoconos)",
+        "Diversificación explosiva de trilobites con periscopios oculares",
+        "Primeros peces acorazados ostracodermos sin mandíbulas"
+      ],
+      "species": [
+        {
+          "id": "cameroceras",
+          "name": "Cameroceras trentonense",
+          "commonName": "Ortocono Gigante",
+          "image": "assets/species/cameroceras.jpg",
+          "group": "Molusco cefalópodo (Endocerátido)",
+          "diet": "Carnívoro (Superdepredador de aguas profundas)",
+          "habitat": "Marino bentónico y pelágico",
+          "length": "6.0 m",
+          "weight": "600 kg",
+          "scaleVsHuman": "Concha cónica recta equivalente a la longitud de un camión mediano.",
+          "description": "El superdepredador más gigantesco del Paleozoico temprano. Habitaba una concha cónica recta con cámaras de flotación y tentáculos prensiles con los que atrapaba peces acorazados y trilobites para quebrarlos con su pico quitinoso.",
+          "lat": 43.5,
+          "lon": -75.3,
+          "fossilSite": "Trenton Limestone (Nueva York, EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "asaphus",
+          "name": "Asaphus kowalewskii",
+          "commonName": "Trilobites con Ojos de Periscopio",
+          "image": "assets/species/trilobites_mundo.jpg",
+          "group": "Artrópodo trilobites (Asaphida)",
+          "diet": "Detritívoro / Depredador bentónico",
+          "habitat": "Marino (Fondos fangosos someros)",
+          "length": "0.08 m",
+          "weight": "40 g",
+          "scaleVsHuman": "Cabe en la palma de una mano humana.",
+          "description": "Famoso trilobites que evolucionó ojos montados sobre largos pedúnculos erectos de calcita. Esto le permitía permanecer completamente enterrado en el sedimento del fondo marino observando posibles depredadores como un periscopio submarino.",
+          "lat": 59.9,
+          "lon": 31,
+          "fossilSite": "Río Vóljov (Región de San Petersburgo, Rusia)",
+          "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
+          "zoneRadius": 1.5
+        },
+        {
+          "id": "astraspis",
+          "name": "Astraspis desiderata",
+          "commonName": "Pez Acorazado con Escudo Estrellado",
+          "image": "assets/species/haikouichthys.jpg",
+          "group": "Vertebrado ágnato (Ostracodermo)",
+          "diet": "Micrófago bentónico",
+          "habitat": "Marino costero somero",
+          "length": "0.2 m",
+          "weight": "180 g",
+          "scaleVsHuman": "Largo similar al antebrazo de un adulto humano.",
+          "description": "Pez basal desprovisto de mandíbulas y aletas pares, cuyo cuerpo anterior estaba protegido por placas óseas dérmicas con tubérculos poligonales en forma de estrella que constituían su armadura defensiva.",
+          "lat": 38.4,
+          "lon": -105.2,
+          "fossilSite": "Formación Harding Sandstone (Colorado, EE. UU.)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "promissum",
+          "name": "Promissum pulchrum",
+          "commonName": "Conodonto Gigante de Ojos Complejos",
+          "image": "assets/species/cameroceras.jpg",
+          "group": "Cordado conodonto (Prioniodontida)",
+          "diet": "Depredador nectónico",
+          "habitat": "Marino pelágico frío",
+          "length": "0.4 m",
+          "weight": "250 g",
+          "scaleVsHuman": "Casi 10 veces más grande que los conodontos habituales (de 2-3 cm).",
+          "description": "Uno de los conodontos fósiles mejor preservados del mundo. Poseía una notocorda dorsal, ojos grandes con conos musculares y una faringe provista de un complejo aparato de elementos dentados fosfatados mineralizados.",
+          "lat": -32.3,
+          "lon": 18.9,
+          "fossilSite": "Lagerstätte Soom Shale (Cabo Occidental, Sudáfrica)",
+          "distributionZone": "Plataformas Marinas y Océano Epicontinental",
+          "zoneRadius": 1.8
+        }
+      ],
+      "events": [
+        "Desintegración de un asteroide condrítico L en el límite de Roche terrestre, formando un anillo de escombros ecuatorial transitorio (~466 Ma, Tomkins et al., 2024).",
+        "Gran Radiación Biológica del Ordovícico (GOBE): multiplicación por cuatro de las familias biológicas marinas.",
+        "Glaciación Hirnantiana en Gondwana polar sur y extinción masiva del final del Ordovícico."
+      ],
+      "fossilSites": [
+        {
+          "name": "Estratos del Río Vóljov",
+          "lat": 59.9,
+          "lon": 31,
+          "period": "Arenigiense",
+          "desc": "Canteras rusas famosas por la conservación tridimensional de trilobites asáfidos con ojos pedunculados."
+        }
+      ]
+    },
+    {
+      "id": "cambrian_540ma",
+      "name": "Cámbrico Temprano ('La Explosión Cámbrica')",
+      "period": "Cámbrico",
+      "era": "Paleozoico",
+      "eon": "Fanerozoico",
+      "timeMa": 540,
+      "iugsColor": "#7FA056",
+      "textureFile": "textures/paleomap/540ma.jpg",
+      "climate": {
+        "temperature": 21,
+        "tempDelta": "+6°C vs actual",
+        "oxygen": 12,
+        "co2": 4500,
+        "seaLevel": "+160 m vs actual",
+        "description": "La mayor radiación evolutiva de la historia biológica: aparición repentina en el registro fósil de casi todos los filos animales modernos con exoesqueletos mineralizados."
+      },
+      "atmosphere": {
+        "o2": "12%",
+        "co2": "4500 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Incremento sostenido del oxígeno disuelto en las capas superiores del océano que desbloqueó el costo metabólico de producir caparazones y exoesqueletos de carbonato."
+      },
+      "flora": [
+        "Algas marinas macroscópicas filamentosas (rodófitas y clorófitas)",
+        "Tapetes bacterianos y algales que cubrían el fondo marino",
+        "Tierra firme completamente estéril sin vida vegetal macroscópica"
+      ],
+      "fauna": [
+        "Primeros superdepredadores con ojos compuestos (radiodontos)",
+        "Artrópodos primitivos de morfologías experimentales extravagantes",
+        "Primeros cordados con notocorda dorsal (origen de los vertebrados)"
+      ],
+      "species": [
+        {
+          "id": "anomalocaris",
+          "name": "Anomalocaris canadensis",
+          "commonName": "Anomalocaris (Gamba Extraña)",
+          "image": "assets/species/anomalocaris_mundo.jpg",
+          "group": "Radiodonto artrópodo basal (Anomalocarídidos)",
+          "diet": "Carnívoro (Superdepredador ápice de los mares cámbricos)",
+          "habitat": "Marino bentónico y pelágico de plataforma",
+          "length": "1.0 m",
+          "weight": "4.0 kg",
+          "scaleVsHuman": "El leviatán de su tiempo; en un océano donde la mayoría de los seres medían pocos centímetros.",
+          "description": "El superdepredador por excelencia de la Explosión Cámbrica. Poseía dos ojos compuestos pedunculados formados por más de 16,000 lentes individuales, dos apéndices frontales articulados espinosos para atrapar presas y una boca circular en forma de rodaja de piña armada con placas concéntricas trituradoras.",
+          "lat": 51.4,
+          "lon": -116.5,
+          "fossilSite": "Burgess Shale, Parque Nacional Yoho (Columbia Británica, Canadá)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "trilobites",
+          "name": "Olenoides serratus",
+          "commonName": "Trilobites Cámbrico",
+          "image": "assets/species/trilobites_mundo.jpg",
+          "group": "Artrópodo extinto (Trilobita)",
+          "diet": "Bentónico detritívoro y carnívoro de fondo",
+          "habitat": "Marino bentónico (Fondos oceánicos someros cámbricos)",
+          "length": "10 cm",
+          "weight": "50 g",
+          "scaleVsHuman": "Del tamaño de la palma de una mano humana, con exoesqueleto trilobulado calcificado.",
+          "description": "El artrópodo más exitoso de la era Paleozoica temprana. Con un exoesqueleto articulado de calcita dividido en tres lóbulos longitudinales y ojos de calcita pura con óptica bifocal perfecta, dominó los fondos marinos durante casi 300 millones de años.",
+          "lat": 51.45,
+          "lon": -116.48,
+          "fossilSite": "Burgess Shale (Canadá) y Esquisto de Maotianshan (Chengjiang, China)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "opabinia",
+          "name": "Opabinia regalis",
+          "commonName": "Opabinia (Cinco Ojos)",
+          "image": "assets/species/opabinia.jpg",
+          "group": "Artrópodo basal (Opabínidos)",
+          "diet": "Carnívoro de fondo (Cazador de pequeños gusanos e invertebrados blandos)",
+          "habitat": "Marino bentónico somero",
+          "length": "7 cm",
+          "weight": "20 g",
+          "scaleVsHuman": "Cuerpo alargado y suave de pocos centímetros con 5 ojos dorsales.",
+          "description": "Una de las criaturas más asombrosas y desconcertantes de la fauna de Burgess Shale. Dotada de cinco ojos pedunculados con visión panorámica de 360 grados y una trompa frontal flexible extensible rematada en pinzas dentadas con la que atrapaba invertebrados de los sedimentos marinos.",
+          "lat": 51.41,
+          "lon": -116.51,
+          "fossilSite": "Cantera de Walcott, Burgess Shale (Canadá)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        },
+        {
+          "id": "pikaia",
+          "name": "Pikaia gracilens",
+          "commonName": "Pikaia (Ancestro de los Cordados)",
+          "image": "assets/species/pikaia.jpg",
+          "group": "Cordado primitivo (Linaje de los vertebrados)",
+          "diet": "Filtrador bentónico / Suspensívoro",
+          "habitat": "Marino libre nadador somero",
+          "length": "5 cm",
+          "weight": "5 g",
+          "scaleVsHuman": "Poco mayor que un dedo meñique humano; el tatarabuelo de todos los animales con columna vertebral.",
+          "description": "Especie crucial para entender nuestros propios orígenes evolutivos. Este animal vermiforme dotado de una notocorda dorsal precursora de la columna vertebral y miómeros musculares en forma de zig-zag es el representante más representativo de los primeros cordados.",
+          "lat": 51.42,
+          "lon": -116.49,
+          "fossilSite": "Cresta de los Fósiles, Burgess Shale (Columbia Británica, Canadá)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        }
+      ],
+      "events": [
+        "Explosión Cámbrica: radiación biológica explosiva de los planos corporales bilaterales en 20 millones de años.",
+        "Aparición generalizada de esqueletos duros biomineralizados (calcita y fosfato de calcio).",
+        "Revolución agronómica del sustrato marino: organismos excavadores comenzaron a remover el fango del fondo."
+      ],
+      "fossilSites": [
+        {
+          "name": "Burgess Shale",
+          "lat": 51.4,
+          "lon": -116.5,
+          "period": "Cámbrico Medio (Wuliuense)",
+          "desc": "El yacimiento fosilífero más influyente del mundo por la preservación exquisita de tejidos blandos cámbricos."
+        },
+        {
+          "name": "Chengjiang Biota",
+          "lat": 24.6,
+          "lon": 102.9,
+          "period": "Cámbrico Inferior",
+          "desc": "Patrimonio UNESCO en Yunnan con los primeros fósiles de peces y cordados jamás descubiertos."
+        }
+      ]
+    },
+    {
+      "id": "ediacaran_600ma",
+      "name": "Ediacárico Tardío",
+      "period": "Ediacárico",
+      "era": "Neoproterozoico",
+      "eon": "Proterozoico",
+      "timeMa": 600,
+      "iugsColor": "#FFC0CB",
+      "textureFile": "textures/paleomap/600ma.jpg",
+      "climate": {
+        "temperature": 14,
+        "tempDelta": "-1°C vs actual",
+        "oxygen": 8,
+        "co2": 3000,
+        "seaLevel": "+80 m vs actual",
+        "description": "El amanecer de la vida macroscópica compleja tras las colosales glaciaciones globales del Criogénico."
+      },
+      "atmosphere": {
+        "o2": "8%",
+        "co2": "3000 ppm",
+        "pressure": "1.0 atm",
+        "summary": "Incremento crucial de la oxigenación oceánica profunda que permitió por primera vez el crecimiento de organismos pluricelulares de gran tamaño."
+      },
+      "flora": [
+        "Esteras microbianas espesas cubriendo la totalidad del lecho marino",
+        "Colonias de algas rojas y verdes bentónicas",
+        "Ausencia absoluta de cualquier forma de vida vegetal en tierra firme"
+      ],
+      "fauna": [
+        "Biota de Ediacara: organismos frondosos, acolchados y en forma de disco",
+        "Seres con simetría de deslizamiento y ramificación fractal sin boca ni ano conocidos",
+        "Primeros organismos con movilidad bilateral activa (Kimberella)"
+      ],
+      "species": [
+        {
+          "id": "dickinsonia",
+          "name": "Dickinsonia costata",
+          "commonName": "Dickinsonia",
+          "image": "assets/species/dickinsonia.jpg",
+          "group": "Organismo ediacárico (Vendobionta / Proarticulata)",
+          "diet": "Osmotrofia (Absorción directa de nutrientes a través del tegumento)",
+          "habitat": "Marino bentónico (Sobre esteras microbianas)",
+          "length": "0.4 m (Hasta 1.4 m en especímenes gigantes)",
+          "weight": "1.2 kg",
+          "scaleVsHuman": "Disco ovalado del tamaño de un plato de servir grande o rueda de bicicleta.",
+          "description": "El organismo fósil más emblemático del Ediacárico. En 2018, el análisis de biomarcadores moleculares en fósiles del Mar Blanco confirmó la presencia de moléculas de colesterol intactas, demostrando concluyentemente que Dickinsonia era un animal verdadero y el animal confirmado más antiguo de la Tierra.",
+          "lat": -31.5,
+          "lon": 138.5,
+          "fossilSite": "Colinas de Ediacara (Montes Flinders, Australia Meridional)",
+          "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
+          "zoneRadius": 1.3
+        },
+        {
+          "id": "charnia",
+          "name": "Charnia masoni",
+          "commonName": "Fronda Fractal Abisal",
+          "image": "assets/species/charnia.jpg",
+          "group": "Organismo ediacárico (Rangeomorpha)",
+          "diet": "Osmótrofo filtrador de agua profunda",
+          "habitat": "Marino bentónico profundo (Bajo la zona fótica)",
+          "length": "0.6 m (Hasta 2.0 m)",
+          "weight": "1.5 kg",
+          "scaleVsHuman": "Fronda erguida de medio metro a dos metros de altura fijada por un disco basal.",
+          "description": "Extraordinario organismo sésil con arquitectura corporal puramente fractal: cada rama de la fronda repite a escala menor la misma estructura de la hoja completa. Vivía en aguas abisales oscuras fijado al lecho mediante un disco de anclaje.",
+          "lat": 52.7,
+          "lon": -1.3,
+          "fossilSite": "Bosque de Charnwood (Leicestershire, Inglaterra)",
+          "distributionZone": "Plataformas Marinas y Océano Epicontinental",
+          "zoneRadius": 1.8
+        },
+        {
+          "id": "kimberella",
+          "name": "Kimberella quadrata",
+          "commonName": "Criatura Bilateral con Rádula",
+          "image": "assets/species/spriggina.jpg",
+          "group": "Bilaterio troncal (Probable ancestro de moluscos)",
+          "diet": "Herbívoros micrófagos de esteras bacterianas",
+          "habitat": "Marino bentónico somero",
+          "length": "0.05 m",
+          "weight": "20 g",
+          "scaleVsHuman": "Forma de babosa o lapa que cabe en la palma de la mano.",
+          "description": "Uno de los bilaterios más tempranos y activos. Se arrastraba sobre las alfombras microbianas raspando el sedimento con una probóscide dentada similar a la rádula de los moluscos, dejando huellas fósiles de raspado (Radulichnus).",
+          "lat": 65.5,
+          "lon": 39.5,
+          "fossilSite": "Costa del Mar Blanco (Región de Arcángel, Rusia)",
+          "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
+          "zoneRadius": 1.5
+        },
+        {
+          "id": "spriggina",
+          "name": "Spriggina floundersi",
+          "commonName": "Organismo de Simetría Deslizante",
+          "image": "assets/species/spriggina.jpg",
+          "group": "Proarticulado ediacárico",
+          "diet": "Detritívoro / Absorción bentónica",
+          "habitat": "Marino bentónico",
+          "length": "0.04 m",
+          "weight": "5 g",
+          "scaleVsHuman": "Menudo cuerpo segmentado de 3 a 5 cm de longitud.",
+          "description": "Curioso organismo dotado de un escudo cefálico anterior en forma de herradura y un cuerpo alargado formado por segmentos alternados que no guardan simetría bilateral estricta, sino simetría de deslizamiento (isómeros).",
+          "lat": -31.5,
+          "lon": 138.5,
+          "fossilSite": "Montes Flinders (Australia)",
+          "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
+          "zoneRadius": 1.3
+        }
+      ],
+      "events": [
+        "Glaciación Gaskiers (~580 Ma), el último episodio glaciar frío antes del Cámbrico.",
+        "Ruptura final del supercontinente Rodinia y ensamblaje transitorio de Pannotia.",
+        "Primeros animales de cuerpo blando preservados en areniscas de cuarzo."
+      ],
+      "fossilSites": [
+        {
+          "name": "Mistaken Point",
+          "lat": 46.6,
+          "lon": -53.2,
+          "period": "Ediacárico (565 Ma)",
+          "desc": "Reserva ecológica de Terranova (UNESCO) con miles de fósiles ediacáricos sepultados por ceniza volcánica submarina."
+        },
+        {
+          "name": "Montes Flinders",
+          "lat": -31.5,
+          "lon": 138.5,
+          "period": "Ediacárico",
+          "desc": "El estrato tipo de Australia que dio nombre a este periodo geológico en la escala temporal IUGS."
+        }
+      ]
+    },
+    {
+      "id": "cryogenian_750ma",
+      "name": "Criogénico ('Tierra Bola de Nieve')",
+      "period": "Criogénico",
+      "era": "Neoproterozoico",
+      "eon": "Proterozoico",
+      "timeMa": 750,
+      "iugsColor": "#E090A0",
+      "textureFile": "textures/paleomap/750ma.jpg",
+      "climate": {
+        "temperature": -35,
+        "tempDelta": "-50°C vs actual",
+        "oxygen": 2,
+        "co2": 12000,
+        "seaLevel": "-300 m vs actual (Hielo global)",
+        "description": "Glaciación Sturtiana: el evento climático más extremo de la historia de la Tierra. Capas de hielo de hasta 1 km de espesor cubrieron los océanos desde los polos hasta el ecuador."
+      },
+      "atmosphere": {
+        "o2": "2%",
+        "co2": "12000 ppm",
+        "pressure": "1.1 atm",
+        "summary": "Acumulación titánica de CO2 de origen volcánico que no podía ser absorbido por meteorización al estar la corteza congelada, hasta provocar un superdeshielo súbito."
+      },
+      "flora": [
+        "Cianobacterias extremófilas sobreviviendo en grietas de hielo y manantiales hidrotermales",
+        "Algas unicelulares eucariotas refugiadas en oasis polinias ecuatoriales",
+        "Cero vegetación terrestre macroscópica"
+      ],
+      "fauna": [
+        "Ausencia de animales macroscópicos complejos",
+        "Microfósiles de esponjas basales primitivas con cámaras internas (Otavia)",
+        "Acritarcos y protistas eucariotas con cubiertas orgánicas protectoras"
+      ],
+      "species": [
+        {
+          "id": "otavia",
+          "name": "Otavia antiqua",
+          "commonName": "Microfósil Esponja Basal de Namibia",
+          "image": "assets/species/stromatolites.jpg",
+          "group": "Porifera basal / Animal celular",
+          "diet": "Filtrador micrófago de nutrientes",
+          "habitat": "Marino bentónico (Bajo el hielo marino somero)",
+          "length": "0.003 m (0.5 a 5 mm)",
+          "weight": "0.05 g",
+          "scaleVsHuman": "Diminuta estructura del tamaño de un grano de arena o cabeza de alfiler.",
+          "description": "Descubierto en calizas fosilíferas de Namibia con una edad de entre 760 y 550 millones de años. Su cámara fosfatada interna con microporos sugiere que es uno de los animales pluricelulares más primitivos de la historia, sobreviviendo indemne a las dos glaciaciones globales de la Tierra Bola de Nieve.",
+          "lat": -19.5,
+          "lon": 17.5,
+          "fossilSite": "Formación Ombaatjie / Etosha (Namibia)",
+          "distributionZone": "Plataformas Marinas y Océano Epicontinental",
+          "zoneRadius": 1.8
+        },
+        {
+          "id": "stromatolites",
+          "name": "Estromatolitos de Cianobacterias",
+          "commonName": "Arrecifes Microbianos Oxigenadores",
+          "image": "assets/species/stromatolites.jpg",
+          "group": "Consorcio microbiano cianobacteriano",
+          "diet": "Autótrofo fotosintético",
+          "habitat": "Mares someros hipersalinos y aguas termales",
+          "length": "1.5 m (Estructura de domo)",
+          "weight": "500 kg",
+          "scaleVsHuman": "Montículos rocosos del tamaño de rocas o bañeras en la orilla.",
+          "description": "Estructuras organosedimentarias laminadas construidas por capas sucesivas de cianobacterias fotosintéticas. Fueron los grandes constructores de la biosfera primordial y los artífices de la Gran Oxidación que transformó para siempre la atmósfera terrestre.",
+          "lat": -26.3,
+          "lon": 114.1,
+          "fossilSite": "Cuenca de Amadeus (Australia) y Hamelin Pool (Shark Bay)",
+          "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
+          "zoneRadius": 1.3
+        },
+        {
+          "id": "acritarchs",
+          "name": "Acritarcos y Eucariotas Marinos",
+          "commonName": "Microfósiles de Pared Orgánica Resistente",
+          "image": "assets/species/stromatolites.jpg",
+          "group": "Eucariotas unicelulares (Quistes de dinoflagelados / algas)",
+          "diet": "Fotosintéticos / Osmótrofos",
+          "habitat": "Pelágico marino (En grietas y lagunas de hielo)",
+          "length": "0.0001 m (100 µm)",
+          "weight": "0.000001 g",
+          "scaleVsHuman": "Visible únicamente bajo microscopio petrográfico de luz transmitida.",
+          "description": "Resistentes quistes de pared orgánica gruesa con espinas microscópicas producidos por algas eucariotas primitivas para resistir las condiciones gélidas y la sequía líquida durante los 50 millones de años de congelación planetaria.",
+          "lat": 78.2,
+          "lon": 15.6,
+          "fossilSite": "Formación Elbobreen (Spitsbergen, Svalbard, Noruega)",
+          "distributionZone": "Zona Terrestre y Aluvial Continental",
+          "zoneRadius": 1.2
+        },
+        {
+          "id": "bangiomorpha",
+          "name": "Bangiomorpha pubescens",
+          "commonName": "Alga Roja Multicelular (Primer Sexo)",
+          "image": "assets/species/stromatolites.jpg",
+          "group": "Alga roja eucariota (Rhodophyta)",
+          "diet": "Autótrofo fotosintético",
+          "habitat": "Marino somero intermareal",
+          "length": "0.002 m (2 mm)",
+          "weight": "0.001 g",
+          "scaleVsHuman": "Filamento pluricelular visible con lupa de mano.",
+          "description": "El organismo multicelular complejo más antiguo conocido en el que se ha comprobado diferenciación celular sexual (gametos masculinos y femeninos), clave evolutiva para la recombinación genética y la futura explosión biológica.",
+          "lat": 72.5,
+          "lon": -80,
+          "fossilSite": "Formación Hunting (Isla Somerset, Ártico de Canadá)",
+          "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
+          "zoneRadius": 1.4
+        }
+      ],
+      "events": [
+        "Glaciación Sturtiana (hace ~717-660 Ma) y Glaciación Marinoana (hace ~650-635 Ma).",
+        "Efecto albedo desbocado: el hielo polar reflejó tanta radiación solar que congeló los trópicos.",
+        "Superinvernadero terminal con deposición de 'Cap Carbonates' (carbonatos de capa) gigantescos tras el deshielo."
+      ],
+      "fossilSites": [
+        {
+          "name": "Depósitos Glaciares de Port Askaig",
+          "lat": 55.8,
+          "lon": -6.1,
+          "period": "Criogénico",
+          "desc": "Estratos de tilitas glaciares y rocas estriadas depositadas bajo masas de hielo continentales en Escocia."
+        }
+      ]
+    }
+  ],
+  "bibliography": [
+    {
+      "title": "The Story of Earth: The First 4.5 Billion Years, from Stardust to Living Planet",
+      "author": "Robert M. Hazen",
+      "year": 2012,
+      "publisher": "W. W. Norton & Company",
+      "isbn": "978-0393345407",
+      "topic": "Evolución mineralógica, disco protoplanetario de Theia, coevolución geosfera-biosfera"
+    },
+    {
+      "title": "Otherlands: A Journey Through Earth's Extinct Worlds (Tierras remotas)",
+      "author": "Thomas Halliday",
+      "year": 2022,
+      "publisher": "Penguin Random House / Allen Lane",
+      "isbn": "978-0241405741",
+      "topic": "Paleoecología y reconstrucción inmersiva de 16 biomas prehistóricos desde el Pleistoceno al Ediacárico"
+    },
+    {
+      "title": "Life: A Natural History of the First Four Billion Years of Life on Earth",
+      "author": "Richard Fortey",
+      "year": 1999,
+      "publisher": "Vintage Books / The Natural History Museum",
+      "isbn": "978-0375702617",
+      "topic": "Evolución biológica y geológica, trilobites y dinámica tectónica continental"
+    },
+    {
+      "title": "Atlas of Earth History: Volume 1, Paleogeography",
+      "author": "Dr. Christopher R. Scotese",
+      "year": 2001,
+      "publisher": "PALEOMAP Project / University of Texas",
+      "isbn": "PALEOMAP-01",
+      "topic": "Reconstrucciones paleogeográficas y tectónica de placas en alta resolución (base de mapas 3D)"
+    },
+    {
+      "title": "A (Very) Short History of Life on Earth: 4.6 Billion Years in 12 Pithy Chapters",
+      "author": "Henry Gee",
+      "year": 2021,
+      "publisher": "St. Martin's Press / Nature Publishing",
+      "isbn": "978-1250276650",
+      "topic": "Grandes hitos de la evolución terrestre y transiciones atmosféricas"
+    },
+    {
+      "title": "Evidence of a 466-million-year-old asteroid ring system around Earth",
+      "author": "Andrew G. Tomkins, Erin L. Martin, Peter A. Cawood",
+      "year": 2024,
+      "journal": "Earth and Planetary Science Letters, Vol. 646, 118991",
+      "doi": "10.1016/j.epsl.2024.118991",
+      "topic": "Evidencia del sistema de anillos ecuatoriales asteroides de la Tierra durante el Ordovícico"
+    }
+  ]
+}

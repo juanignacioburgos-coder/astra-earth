@@ -1,0 +1,1721 @@
+{
+  "periods": {
+    "present_0ma": {
+      "timeMa": 0,
+      "periodName": "Presente (Holoceno)",
+      "description": "Mosaico moderno de 7 placas litosféricas mayores y decenas de placas menores en continua dinámica tectónica.",
+      "plates": [
+        {
+          "id": "pacific-plate",
+          "name": "Placa del Pacífico",
+          "type": "oceanic",
+          "centroid": {
+            "lat": 0,
+            "lon": -160
+          },
+          "motion": "Noroeste ~8.1 cm/año",
+          "area": "103.3M km²",
+          "context": "La mayor placa litosférica del planeta. Su subducción bajo arcos insulares genera el Cinturón de Fuego del Pacífico."
+        },
+        {
+          "id": "north-american-plate",
+          "name": "Placa Norteamericana",
+          "type": "continental",
+          "centroid": {
+            "lat": 48,
+            "lon": -100
+          },
+          "motion": "Suroeste ~2.3 cm/año",
+          "area": "75.9M km²",
+          "context": "Comprende Norteamérica, Groenlandia y parte de Siberia Oriental. Borde divergente en la Dorsal Mesoatlántica."
+        },
+        {
+          "id": "south-american-plate",
+          "name": "Placa Sudamericana",
+          "type": "continental",
+          "centroid": {
+            "lat": -20,
+            "lon": -60
+          },
+          "motion": "Oeste ~1.8 cm/año",
+          "area": "43.6M km²",
+          "context": "Su margen occidental colisiona con la Placa de Nazca, levantando la Cordillera de los Andes mediante subducción continua."
+        },
+        {
+          "id": "eurasian-plate",
+          "name": "Placa Euroasiática",
+          "type": "continental",
+          "centroid": {
+            "lat": 50,
+            "lon": 60
+          },
+          "motion": "Este-Sureste ~1.4 cm/año",
+          "area": "67.8M km²",
+          "context": "Abarca la mayor masa continental. Su límite sur sufre la colisión activa de la Placa Índica y la Arábiga."
+        },
+        {
+          "id": "african-plate",
+          "name": "Placa Africana",
+          "type": "continental",
+          "centroid": {
+            "lat": 5,
+            "lon": 20
+          },
+          "motion": "Norte ~2.1 cm/año",
+          "area": "61.3M km²",
+          "context": "En proceso de partición en su sector oriental a través del Gran Valle del Rift (Placas Somalí y Nubia)."
+        },
+        {
+          "id": "indo-australian-plate",
+          "name": "Placa Indo-Australiana",
+          "type": "continental",
+          "centroid": {
+            "lat": -25,
+            "lon": 135
+          },
+          "motion": "Norte-Noreste ~5.6 cm/año",
+          "area": "58.9M km²",
+          "context": "Fusión de las placas continental australiana e india; su empuje contra Eurasia eleva la meseta tibetana."
+        },
+        {
+          "id": "antarctic-plate",
+          "name": "Placa Antártica",
+          "type": "continental",
+          "centroid": {
+            "lat": -80,
+            "lon": 0
+          },
+          "motion": "Rotación lenta ~1.0 cm/año",
+          "area": "60.9M km²",
+          "context": "Casi completamente rodeada por dorsales oceánicas divergentes que la aíslan térmicamente en el polo sur."
+        },
+        {
+          "id": "nazca-plate",
+          "name": "Placa de Nazca",
+          "type": "oceanic",
+          "centroid": {
+            "lat": -15,
+            "lon": -95
+          },
+          "motion": "Este ~7.7 cm/año",
+          "area": "15.6M km²",
+          "context": "Placa oceánica densa que subduce bajo Sudamérica, causando potente vulcanismo andino y megaterremotos."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "mid-atlantic-ridge",
+          "name": "Dorsal Mesoatlántica",
+          "type": "divergent",
+          "motionRate": "2.5 cm/año",
+          "description": "Límite divergente que separa América de Eurasia y África, generando nueva corteza oceánica basáltica.",
+          "coordinates": [
+            [
+              75,
+              -5
+            ],
+            [
+              65,
+              -18
+            ],
+            [
+              50,
+              -30
+            ],
+            [
+              35,
+              -40
+            ],
+            [
+              20,
+              -45
+            ],
+            [
+              0,
+              -25
+            ],
+            [
+              -15,
+              -14
+            ],
+            [
+              -30,
+              -14
+            ],
+            [
+              -45,
+              -17
+            ],
+            [
+              -60,
+              -20
+            ]
+          ]
+        },
+        {
+          "id": "andean-subduction",
+          "name": "Fosa Perú-Chile (Zona de Subducción Andina)",
+          "type": "convergent",
+          "motionRate": "7.7 cm/año",
+          "description": "Subducción de la Placa de Nazca bajo la corteza continental sudamericana; motor orogénico de los Andes.",
+          "coordinates": [
+            [
+              5,
+              -78
+            ],
+            [
+              -5,
+              -81
+            ],
+            [
+              -15,
+              -76
+            ],
+            [
+              -25,
+              -71
+            ],
+            [
+              -35,
+              -73
+            ],
+            [
+              -45,
+              -75
+            ],
+            [
+              -55,
+              -70
+            ]
+          ]
+        },
+        {
+          "id": "marianas-trench",
+          "name": "Fosa de las Marianas y Cinturón Occidental",
+          "type": "convergent",
+          "motionRate": "6.0 cm/año",
+          "description": "La zona más profunda de la hidrósfera terrestre (Challenger Deep, ~11,000 m). Subducción pacífica.",
+          "coordinates": [
+            [
+              35,
+              142
+            ],
+            [
+              28,
+              143
+            ],
+            [
+              20,
+              146
+            ],
+            [
+              12,
+              144
+            ],
+            [
+              5,
+              138
+            ],
+            [
+              -5,
+              145
+            ]
+          ]
+        },
+        {
+          "id": "san-andreas-fault",
+          "name": "Falla de San Andrés",
+          "type": "transform",
+          "motionRate": "3.5 cm/año",
+          "description": "Falla transformante de rumbo dextral que conecta la dorsal del Pacífico Oriental con la fosa de Cascadia.",
+          "coordinates": [
+            [
+              40,
+              -125
+            ],
+            [
+              38,
+              -123
+            ],
+            [
+              36,
+              -120
+            ],
+            [
+              34,
+              -117
+            ],
+            [
+              31,
+              -114
+            ]
+          ]
+        },
+        {
+          "id": "himalayan-collision",
+          "name": "Sutura del Himalaya (Zona de Colisión Continental)",
+          "type": "collision",
+          "motionRate": "4.8 cm/año",
+          "description": "Colisión continental frontal entre la India y Eurasia, elevando los picos más altos del planeta.",
+          "coordinates": [
+            [
+              34,
+              72
+            ],
+            [
+              32,
+              78
+            ],
+            [
+              28,
+              85
+            ],
+            [
+              27,
+              92
+            ],
+            [
+              28,
+              97
+            ]
+          ]
+        },
+        {
+          "id": "east-pacific-rise",
+          "name": "Dorsal del Pacífico Oriental",
+          "type": "divergent",
+          "motionRate": "12.0 cm/año",
+          "description": "Dorsal de expansión ultra-rápida que separa la Placa del Pacífico de las placas de Cocos, Nazca y Antártica.",
+          "coordinates": [
+            [
+              15,
+              -105
+            ],
+            [
+              5,
+              -103
+            ],
+            [
+              -5,
+              -107
+            ],
+            [
+              -15,
+              -112
+            ],
+            [
+              -30,
+              -111
+            ],
+            [
+              -45,
+              -110
+            ],
+            [
+              -55,
+              -120
+            ]
+          ]
+        }
+      ]
+    },
+    "miocene_20ma": {
+      "timeMa": 20,
+      "periodName": "Mioceno (20 Ma)",
+      "description": "Cierre definitivo del Océano Tetis y aislamiento progresivo de la Antártida con la Corriente Circumpolar activa.",
+      "plates": [
+        {
+          "id": "eurasia-miocene",
+          "name": "Placa Euroasiática",
+          "type": "continental",
+          "centroid": {
+            "lat": 48,
+            "lon": 55
+          },
+          "motion": "Este ~1.2 cm/año",
+          "area": "65.0M km²",
+          "context": "Choque tectónico masivo en su margen sur con Arabia e India."
+        },
+        {
+          "id": "indian-miocene",
+          "name": "Placa Índica",
+          "type": "continental",
+          "centroid": {
+            "lat": 22,
+            "lon": 78
+          },
+          "motion": "Norte ~5.2 cm/año",
+          "area": "12.0M km²",
+          "context": "Fase culminante del levantamiento del Himalaya y la meseta del Tíbet."
+        },
+        {
+          "id": "african-arabian",
+          "name": "Placa Afro-Arábiga",
+          "type": "continental",
+          "centroid": {
+            "lat": 10,
+            "lon": 25
+          },
+          "motion": "Norte ~2.0 cm/año",
+          "area": "58.0M km²",
+          "context": "Contacto con Anatolia y Eurasia; desecación periódica y fragmentación del Tetis."
+        },
+        {
+          "id": "south-america-miocene",
+          "name": "Placa Sudamericana",
+          "type": "continental",
+          "centroid": {
+            "lat": -22,
+            "lon": -62
+          },
+          "motion": "Oeste ~2.0 cm/año",
+          "area": "42.0M km²",
+          "context": "Auge del levantamiento andino central y formación del paleolago Pebas en la Amazonia."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "tethys-closure-zone",
+          "name": "Zona de Cierre y Sutura del Tetis",
+          "type": "collision",
+          "motionRate": "3.2 cm/año",
+          "description": "Aplastamiento de la cuenca oceánica del Tetis formando los Alpes, Zagros y el Cáucaso.",
+          "coordinates": [
+            [
+              44,
+              8
+            ],
+            [
+              42,
+              18
+            ],
+            [
+              38,
+              30
+            ],
+            [
+              36,
+              44
+            ],
+            [
+              32,
+              54
+            ],
+            [
+              28,
+              65
+            ]
+          ]
+        },
+        {
+          "id": "andean-orogeny-miocene",
+          "name": "Fosa Andina del Mioceno",
+          "type": "convergent",
+          "motionRate": "8.5 cm/año",
+          "description": "Subducción acelerada que origina el colosal relieve de la Cordillera de los Andes.",
+          "coordinates": [
+            [
+              8,
+              -75
+            ],
+            [
+              -4,
+              -80
+            ],
+            [
+              -16,
+              -75
+            ],
+            [
+              -26,
+              -70
+            ],
+            [
+              -36,
+              -72
+            ],
+            [
+              -48,
+              -74
+            ]
+          ]
+        },
+        {
+          "id": "proto-atlantic-divergence",
+          "name": "Dorsal Atlántica en Maduración",
+          "type": "divergent",
+          "motionRate": "2.4 cm/año",
+          "description": "Expansión simétrica del Atlántico Norte y Sur, ampliando la distancia intercontinental.",
+          "coordinates": [
+            [
+              70,
+              -10
+            ],
+            [
+              55,
+              -28
+            ],
+            [
+              35,
+              -38
+            ],
+            [
+              10,
+              -35
+            ],
+            [
+              -10,
+              -18
+            ],
+            [
+              -35,
+              -15
+            ],
+            [
+              -55,
+              -20
+            ]
+          ]
+        }
+      ]
+    },
+    "eocene_50ma": {
+      "timeMa": 50,
+      "periodName": "Eoceno Temprano (50 Ma)",
+      "description": "El subcontinente indio colisiona violentamente con Asia. Separación definitiva de Australia de la Antártida.",
+      "plates": [
+        {
+          "id": "india-island",
+          "name": "Continente Isla Indio",
+          "type": "continental",
+          "centroid": {
+            "lat": 10,
+            "lon": 72
+          },
+          "motion": "Norte rápido ~15 cm/año",
+          "area": "10.5M km²",
+          "context": "Cierra a gran velocidad la Cuenca Neotetis tras cruzar el hotspot de Reunión."
+        },
+        {
+          "id": "farallon-plate",
+          "name": "Placa de Farallón",
+          "type": "oceanic",
+          "centroid": {
+            "lat": 25,
+            "lon": -125
+          },
+          "motion": "Noreste ~9.0 cm/año",
+          "area": "45.0M km²",
+          "context": "Subduce casi horizontalmente bajo Norteamérica, generando la Orogenia Laramide."
+        },
+        {
+          "id": "laurentia-eocene",
+          "name": "Norteamérica",
+          "type": "continental",
+          "centroid": {
+            "lat": 46,
+            "lon": -95
+          },
+          "motion": "Oeste ~2.8 cm/año",
+          "area": "68.0M km²",
+          "context": "Clima subtropical global con selvas densas hasta latitudes del Ártico."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "indio-asian-collision",
+          "name": "Zona de Impacto Inicial Indo-Asiático",
+          "type": "collision",
+          "motionRate": "12.0 cm/año",
+          "description": "Primer contacto continental entre la cuña india y el arco volcánico de Kohistan-Ladakh en el sur de Asia.",
+          "coordinates": [
+            [
+              22,
+              68
+            ],
+            [
+              24,
+              75
+            ],
+            [
+              26,
+              82
+            ],
+            [
+              25,
+              90
+            ]
+          ]
+        },
+        {
+          "id": "farallon-trench-eocene",
+          "name": "Fosa de Farallón (Orogenia Laramide)",
+          "type": "convergent",
+          "motionRate": "9.5 cm/año",
+          "description": "Subducción de ángulo ultra-bajo que levanta las Montañas Rocosas a más de 1,500 km tierra adentro.",
+          "coordinates": [
+            [
+              55,
+              -135
+            ],
+            [
+              45,
+              -125
+            ],
+            [
+              35,
+              -118
+            ],
+            [
+              25,
+              -108
+            ],
+            [
+              15,
+              -98
+            ]
+          ]
+        },
+        {
+          "id": "australia-antarctica-rift",
+          "name": "Rift Australo-Antártico",
+          "type": "divergent",
+          "motionRate": "4.5 cm/año",
+          "description": "Separación continental final entre Tasmania/Australia y la Tierra de Wilkes en la Antártida.",
+          "coordinates": [
+            [
+              -55,
+              115
+            ],
+            [
+              -58,
+              125
+            ],
+            [
+              -60,
+              138
+            ],
+            [
+              -58,
+              150
+            ]
+          ]
+        }
+      ]
+    },
+    "cretaceous_66ma": {
+      "timeMa": 66,
+      "periodName": "Límite Cretácico-Paleógeno (66 Ma)",
+      "description": "El asteroide de Chicxulub impacta en una Tierra con océanos estrechos y continentes casi en posiciones modernas.",
+      "plates": [
+        {
+          "id": "north-america-kpg",
+          "name": "Norteamérica (Laramidia & Appalachia)",
+          "type": "continental",
+          "centroid": {
+            "lat": 45,
+            "lon": -95
+          },
+          "motion": "Oeste ~3.0 cm/año",
+          "area": "60.0M km²",
+          "context": "Recesión final del Western Interior Seaway que dividía el continente en dos."
+        },
+        {
+          "id": "deccan-india",
+          "name": "Bloque Índico (Traps del Decán)",
+          "type": "continental",
+          "centroid": {
+            "lat": -15,
+            "lon": 65
+          },
+          "motion": "Norte veloz ~18 cm/año",
+          "area": "9.0M km²",
+          "context": "Erupción colosal de basaltos de inundación coincidiendo con el impacto de Chicxulub."
+        },
+        {
+          "id": "south-america-kpg",
+          "name": "Sudamérica Insular",
+          "type": "continental",
+          "centroid": {
+            "lat": -25,
+            "lon": -55
+          },
+          "motion": "Oeste ~2.5 cm/año",
+          "area": "38.0M km²",
+          "context": "Continente aislado rodeado de océanos cálidos con fauna de titanosaurios endémica."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "proto-south-atlantic-ridge",
+          "name": "Dorsal del Atlántico Sur Cretácica",
+          "type": "divergent",
+          "motionRate": "4.0 cm/año",
+          "description": "Apertura marina madura separando Brasil y la Cuenca del Congo.",
+          "coordinates": [
+            [
+              2,
+              -22
+            ],
+            [
+              -10,
+              -18
+            ],
+            [
+              -22,
+              -15
+            ],
+            [
+              -35,
+              -18
+            ],
+            [
+              -48,
+              -25
+            ]
+          ]
+        },
+        {
+          "id": "kpg-pacific-trench",
+          "name": "Fosa de Subducción Circumpacífica Occidental",
+          "type": "convergent",
+          "motionRate": "8.0 cm/año",
+          "description": "Cinturón continuo de fosas que consumían la Placa de Farallón y la Placa de Kula.",
+          "coordinates": [
+            [
+              60,
+              -145
+            ],
+            [
+              48,
+              -130
+            ],
+            [
+              35,
+              -122
+            ],
+            [
+              20,
+              -105
+            ],
+            [
+              5,
+              -85
+            ],
+            [
+              -12,
+              -78
+            ],
+            [
+              -32,
+              -72
+            ],
+            [
+              -52,
+              -74
+            ]
+          ]
+        }
+      ]
+    },
+    "cretaceous_105ma": {
+      "timeMa": 105,
+      "periodName": "Cretácico Medio (105 Ma)",
+      "description": "Máximo térmico global con niveles de mar +200 m sobre el actual. Mar Interior Occidental inundando Norteamérica.",
+      "plates": [
+        {
+          "id": "laramidia",
+          "name": "Bloque Occidental de Laramidia",
+          "type": "continental",
+          "centroid": {
+            "lat": 45,
+            "lon": -115
+          },
+          "motion": "Oeste ~3.2 cm/año",
+          "area": "22.0M km²",
+          "context": "Franja de tierra emergida donde evolucionaron diversas especies de tiranosáuridos y ceratópsidos."
+        },
+        {
+          "id": "gondwana-fragmenting",
+          "name": "Fragmento de Gondwana (Sudamérica-África)",
+          "type": "continental",
+          "centroid": {
+            "lat": -10,
+            "lon": -10
+          },
+          "motion": "Rifting este-oeste",
+          "area": "70.0M km²",
+          "context": "Rifting continental activo abriendo el Atlántico Sur entre lagunas evaporíticas gigantes."
+        },
+        {
+          "id": "eurasia-cretaceous",
+          "name": "Archipiélago Euroasiático",
+          "type": "continental",
+          "centroid": {
+            "lat": 40,
+            "lon": 40
+          },
+          "motion": "Rotación ~1.5 cm/año",
+          "area": "50.0M km²",
+          "context": "Europa constituía una cadena de islas tropicales someras en el Océano Tetis."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "south-atlantic-rift-105ma",
+          "name": "Rift Proto-Atlántico Sur",
+          "type": "divergent",
+          "motionRate": "5.2 cm/año",
+          "description": "Invasión marina inicial en la fractura entre Brasil y África Occidental.",
+          "coordinates": [
+            [
+              5,
+              -12
+            ],
+            [
+              -8,
+              -10
+            ],
+            [
+              -20,
+              -12
+            ],
+            [
+              -32,
+              -18
+            ],
+            [
+              -44,
+              -28
+            ]
+          ]
+        },
+        {
+          "id": "tethys-north-trench",
+          "name": "Fosa de Subducción Septentrional de Tetis",
+          "type": "convergent",
+          "motionRate": "6.5 cm/año",
+          "description": "Consunción del suelo oceánico de Tetis bajo el borde sur de Eurasia.",
+          "coordinates": [
+            [
+              32,
+              10
+            ],
+            [
+              30,
+              25
+            ],
+            [
+              28,
+              42
+            ],
+            [
+              26,
+              60
+            ],
+            [
+              22,
+              80
+            ]
+          ]
+        }
+      ]
+    },
+    "jurassic_150ma": {
+      "timeMa": 150,
+      "periodName": "Jurásico Tardío (150 Ma)",
+      "description": "Pangea se fragmenta en Laurasia al norte y Gondwana al sur mediante la apertura del Atlántico Central.",
+      "plates": [
+        {
+          "id": "laurasia-jurassic",
+          "name": "Supercontinente Laurasia",
+          "type": "continental",
+          "centroid": {
+            "lat": 42,
+            "lon": -40
+          },
+          "motion": "Noreste ~2.2 cm/año",
+          "area": "62.0M km²",
+          "context": "Norteamérica y Eurasia unidas en una gran masa continental subtropical dominada por saurópodos colosales."
+        },
+        {
+          "id": "gondwana-jurassic",
+          "name": "Supercontinente Gondwana",
+          "type": "continental",
+          "centroid": {
+            "lat": -35,
+            "lon": 20
+          },
+          "motion": "Sur-Sureste ~1.8 cm/año",
+          "area": "88.0M km²",
+          "context": "Integraba Sudamérica, África, Antártida, Australia e India en un bloque colosal."
+        },
+        {
+          "id": "panthalassa-jurassic",
+          "name": "Superocéano Panthalassa",
+          "type": "oceanic",
+          "centroid": {
+            "lat": 0,
+            "lon": 160
+          },
+          "motion": "Circulación global",
+          "area": "280.0M km²",
+          "context": "Cubría más del 65% de la superficie del globo terráqueo."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "central-atlantic-rift-150ma",
+          "name": "Rift del Atlántico Central",
+          "type": "divergent",
+          "motionRate": "3.8 cm/año",
+          "description": "Nacimiento del Océano Atlántico Central, separando la costa este de EE. UU. del noroeste de África.",
+          "coordinates": [
+            [
+              35,
+              -50
+            ],
+            [
+              28,
+              -42
+            ],
+            [
+              20,
+              -32
+            ],
+            [
+              14,
+              -22
+            ],
+            [
+              8,
+              -12
+            ]
+          ]
+        },
+        {
+          "id": "circumpangean-trench",
+          "name": "Gran Fosa de Subducción Circumpangeana",
+          "type": "convergent",
+          "motionRate": "7.0 cm/año",
+          "description": "Cinturón de fosas continuo a lo largo de todo el borde exterior de Pangea frente a Panthalassa.",
+          "coordinates": [
+            [
+              62,
+              -130
+            ],
+            [
+              45,
+              -118
+            ],
+            [
+              25,
+              -100
+            ],
+            [
+              5,
+              -80
+            ],
+            [
+              -18,
+              -68
+            ],
+            [
+              -42,
+              -60
+            ],
+            [
+              -62,
+              -50
+            ]
+          ]
+        }
+      ]
+    },
+    "triassic_200ma": {
+      "timeMa": 200,
+      "periodName": "Triásico Tardío (200 Ma)",
+      "description": "Aparición de los primeros dinosaurios y mamíferos primitivos en el supercontinente Pangea.",
+      "plates": [
+        {
+          "id": "pangea-triassic",
+          "name": "Supercontinente Pangea",
+          "type": "continental",
+          "centroid": {
+            "lat": 10,
+            "lon": 0
+          },
+          "motion": "Ruptura incipiente",
+          "area": "150.0M km²",
+          "context": "Masa de tierra continua extendida de polo a polo rodeada por Panthalassa y el Golfo de Tetis."
+        },
+        {
+          "id": "cimmeria-block",
+          "name": "Placa Continental de Cimmeria",
+          "type": "microplate",
+          "centroid": {
+            "lat": 15,
+            "lon": 55
+          },
+          "motion": "Norte ~6.5 cm/año",
+          "area": "8.0M km²",
+          "context": "Franja de microcontinentes (Turquía, Irán, Tíbet) migrando hacia el norte y cerrando el Paleotetis."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "camp-rift-zone",
+          "name": "Zona de Rifting CAMP (Provincia Magmática del Atlántico Central)",
+          "type": "divergent",
+          "motionRate": "2.8 cm/año",
+          "description": "Fracturas tectónicas gigantescas acompañadas de masivas extrusiones de lava basáltica que causaron la extinción de finales del Triásico.",
+          "coordinates": [
+            [
+              40,
+              -35
+            ],
+            [
+              30,
+              -25
+            ],
+            [
+              20,
+              -18
+            ],
+            [
+              10,
+              -10
+            ],
+            [
+              0,
+              -5
+            ]
+          ]
+        },
+        {
+          "id": "paleotethys-trench",
+          "name": "Fosa de Subducción del Paleotetis",
+          "type": "convergent",
+          "motionRate": "5.5 cm/año",
+          "description": "Cierre activo de la cuenca oceánica del Paleotetis mientras Cimmeria choca contra Eurasia.",
+          "coordinates": [
+            [
+              35,
+              30
+            ],
+            [
+              38,
+              48
+            ],
+            [
+              37,
+              65
+            ],
+            [
+              35,
+              82
+            ]
+          ]
+        }
+      ]
+    },
+    "permian_250ma": {
+      "timeMa": 250,
+      "periodName": "Límite Pérmico-Triásico (250 Ma)",
+      "description": "La mayor extinción en masa ('La Gran Mortandad'). Enorme actividad volcánica en los Traps Siberianos.",
+      "plates": [
+        {
+          "id": "pangea-permian",
+          "name": "Supercontinente Pangea",
+          "type": "continental",
+          "centroid": {
+            "lat": 0,
+            "lon": 0
+          },
+          "motion": "Consolidación total",
+          "area": "155.0M km²",
+          "context": "Concentraba prácticamente toda la corteza continental del planeta en una única masa con climas hiperáridos interiores."
+        },
+        {
+          "id": "siberian-craton",
+          "name": "Placa / Cratón Siberiano",
+          "type": "continental",
+          "centroid": {
+            "lat": 65,
+            "lon": 95
+          },
+          "motion": "Erupciones de pluma del manto",
+          "area": "25.0M km²",
+          "context": "Epicentro de los Traps Siberianos: más de 3 millones de km³ de lava basáltica envenenando la atmósfera."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "panthalassa-subduction-250ma",
+          "name": "Megafosa de Subducción Panthalásica",
+          "type": "convergent",
+          "motionRate": "8.0 cm/año",
+          "description": "Anillo de subducción masivo consumiendo corteza oceánica alrededor del perímetro occidental y oriental de Pangea.",
+          "coordinates": [
+            [
+              65,
+              -120
+            ],
+            [
+              45,
+              -105
+            ],
+            [
+              20,
+              -90
+            ],
+            [
+              0,
+              -75
+            ],
+            [
+              -25,
+              -60
+            ],
+            [
+              -55,
+              -45
+            ]
+          ]
+        }
+      ]
+    },
+    "carboniferous_300ma": {
+      "timeMa": 300,
+      "periodName": "Carbonífero Tardío (300 Ma)",
+      "description": "Colisión continental orogénica masiva formando Pangea. Bosques de licofitas y helechos gigantes con O₂ al 35%.",
+      "plates": [
+        {
+          "id": "laurussia-carboniferous",
+          "name": "Laurussia (Euramérica)",
+          "type": "continental",
+          "centroid": {
+            "lat": 15,
+            "lon": -25
+          },
+          "motion": "Sur ~3.0 cm/año",
+          "area": "55.0M km²",
+          "context": "Unión de Laurentia, Báltica y Avalonia, cubierta por pantanos de carbón ecuatoriales."
+        },
+        {
+          "id": "gondwana-carboniferous",
+          "name": "Supercontinente Gondwana",
+          "type": "continental",
+          "centroid": {
+            "lat": -45,
+            "lon": 15
+          },
+          "motion": "Norte ~3.5 cm/año",
+          "area": "85.0M km²",
+          "context": "Colisiona frontalmente contra Laurussia en el ecuador, cerrando el Océano Reico."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "variscan-alleghenian-suture",
+          "name": "Sutura Orogénica Varisca-Alegheniana",
+          "type": "collision",
+          "motionRate": "4.5 cm/año",
+          "description": "Colisión continental que levantó montañas del tamaño del Himalaya a través del centro de Pangea (Apalaches / Macizo Ibérico / Europa Central).",
+          "coordinates": [
+            [
+              25,
+              -65
+            ],
+            [
+              28,
+              -50
+            ],
+            [
+              25,
+              -35
+            ],
+            [
+              22,
+              -18
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              15,
+              18
+            ]
+          ]
+        },
+        {
+          "id": "rheic-ocean-closure",
+          "name": "Zona de Cierre del Océano Reico",
+          "type": "convergent",
+          "motionRate": "6.0 cm/año",
+          "description": "Consunción total del fondo oceánico del Océano Reico entre Laurussia y Gondwana.",
+          "coordinates": [
+            [
+              12,
+              -45
+            ],
+            [
+              10,
+              -30
+            ],
+            [
+              8,
+              -15
+            ],
+            [
+              5,
+              5
+            ]
+          ]
+        }
+      ]
+    },
+    "devonian_375ma": {
+      "timeMa": 375,
+      "periodName": "Devónico Tardío (375 Ma)",
+      "description": "Los primeros tetrápodos conquistan la tierra firme. Arrecifes gigantescos de corales rugosos y estromatopóridos.",
+      "plates": [
+        {
+          "id": "euramerica-devonian",
+          "name": "Continente Euramérica (Areniscas Rojas)",
+          "type": "continental",
+          "centroid": {
+            "lat": 5,
+            "lon": -30
+          },
+          "motion": "Rotación ecuatorial",
+          "area": "50.0M km²",
+          "context": "Cuna de los primeros bosques y plantas con raíces profundas (Archaeopteris)."
+        },
+        {
+          "id": "gondwana-devonian",
+          "name": "Gondwana Devónico",
+          "type": "continental",
+          "centroid": {
+            "lat": -50,
+            "lon": 20
+          },
+          "motion": "Deriva hacia el norte",
+          "area": "82.0M km²",
+          "context": "Cubre el polo sur y latitudes intermedias con mares epicontinentales templados."
+        },
+        {
+          "id": "siberia-devonian",
+          "name": "Cratón Siberiano Aislado",
+          "type": "continental",
+          "centroid": {
+            "lat": 30,
+            "lon": 100
+          },
+          "motion": "Norte ~1.5 cm/año",
+          "area": "22.0M km²",
+          "context": "Continente insular en latitudes medias septentrionales con mares ricos en peces acantodios."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "rheic-ocean-trench",
+          "name": "Fosa Oceánica del Mar Reico",
+          "type": "convergent",
+          "motionRate": "5.0 cm/año",
+          "description": "Subducción activa que aproxima a Gondwana hacia el borde meridional de Euramérica.",
+          "coordinates": [
+            [
+              -5,
+              -45
+            ],
+            [
+              -8,
+              -25
+            ],
+            [
+              -10,
+              -5
+            ],
+            [
+              -12,
+              15
+            ]
+          ]
+        },
+        {
+          "id": "uralian-seaway-subduction",
+          "name": "Fosa Uraliana",
+          "type": "convergent",
+          "motionRate": "3.5 cm/año",
+          "description": "Aproximación de los arcos insulares de Kazajstán hacia el este de Báltica.",
+          "coordinates": [
+            [
+              40,
+              55
+            ],
+            [
+              30,
+              60
+            ],
+            [
+              20,
+              65
+            ],
+            [
+              10,
+              68
+            ]
+          ]
+        }
+      ]
+    },
+    "silurian_430ma": {
+      "timeMa": 430,
+      "periodName": "Silúrico Medio (430 Ma)",
+      "description": "Cierre del Océano Jápeto y choque de Laurentia con Báltica (Orogenia Caledoniana).",
+      "plates": [
+        {
+          "id": "laurentia-silurian",
+          "name": "Cratón de Laurentia",
+          "type": "continental",
+          "centroid": {
+            "lat": -5,
+            "lon": -40
+          },
+          "motion": "Este-Noreste ~3.0 cm/año",
+          "area": "38.0M km²",
+          "context": "Ubicado en el ecuador, colisionando con Báltica."
+        },
+        {
+          "id": "baltica-silurian",
+          "name": "Cratón de Báltica",
+          "type": "continental",
+          "centroid": {
+            "lat": -15,
+            "lon": -15
+          },
+          "motion": "Oeste ~3.2 cm/año",
+          "area": "18.0M km²",
+          "context": "Colisión que da origen a la Cordillera Caledoniana en Escandinavia y Escocia."
+        },
+        {
+          "id": "gondwana-silurian",
+          "name": "Supercontinente Gondwana",
+          "type": "continental",
+          "centroid": {
+            "lat": -60,
+            "lon": 10
+          },
+          "motion": "Lenta deriva polar",
+          "area": "80.0M km²",
+          "context": "Recuperación post-glaciar con transgresión marina global y mares someros cálidos."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "caledonian-suture",
+          "name": "Sutura de Colisión Caledoniana",
+          "type": "collision",
+          "motionRate": "4.0 cm/año",
+          "description": "Choque frontal entre Laurentia y Báltica, cerrando definitivamente el Océano Jápeto septentrional.",
+          "coordinates": [
+            [
+              15,
+              -25
+            ],
+            [
+              5,
+              -28
+            ],
+            [
+              -5,
+              -28
+            ],
+            [
+              -15,
+              -25
+            ]
+          ]
+        },
+        {
+          "id": "iapetus-remnant-trench",
+          "name": "Fosa Residual de Jápeto",
+          "type": "convergent",
+          "motionRate": "4.8 cm/año",
+          "description": "Consunción de la última corteza oceánica del Océano Jápeto.",
+          "coordinates": [
+            [
+              -8,
+              -50
+            ],
+            [
+              -18,
+              -42
+            ],
+            [
+              -25,
+              -35
+            ]
+          ]
+        }
+      ]
+    },
+    "ordovician_470ma": {
+      "timeMa": 470,
+      "periodName": "Ordovícico Medio (470 Ma)",
+      "description": "Gran Radiación Ordovícica (GOBE). El microcontinente Avalonia se separa de Gondwana cruzando el Jápeto.",
+      "plates": [
+        {
+          "id": "laurentia-ordovician",
+          "name": "Cratón de Laurentia",
+          "type": "continental",
+          "centroid": {
+            "lat": -10,
+            "lon": -55
+          },
+          "motion": "Ecuatorial",
+          "area": "36.0M km²",
+          "context": "Inundada por mares cálidos epicontinentales repletos de cefalópodos ortoconos y trilobites."
+        },
+        {
+          "id": "avalonia-microplate",
+          "name": "Microcontinente Avalonia",
+          "type": "microplate",
+          "centroid": {
+            "lat": -35,
+            "lon": -25
+          },
+          "motion": "Norte rápido ~7.0 cm/año",
+          "area": "4.5M km²",
+          "context": "Fragmento continental desprendido de Gondwana que abrió el Océano Reico tras de sí."
+        },
+        {
+          "id": "gondwana-ordovician",
+          "name": "Supercontinente Gondwana Polar",
+          "type": "continental",
+          "centroid": {
+            "lat": -70,
+            "lon": 0
+          },
+          "motion": "Centrado en el Polo Sur",
+          "area": "78.0M km²",
+          "context": "El norte de África y Sudamérica ocupaban el polo sur, preparándose para la glaciación hirnantiana."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "taconic-subduction-zone",
+          "name": "Zona de Subducción Tacónica",
+          "type": "convergent",
+          "motionRate": "6.2 cm/año",
+          "description": "Subducción que colisiona un arco insular volcánico contra el margen oriental de Laurentia (Orogenia Tacónica).",
+          "coordinates": [
+            [
+              5,
+              -58
+            ],
+            [
+              -5,
+              -60
+            ],
+            [
+              -18,
+              -58
+            ],
+            [
+              -28,
+              -52
+            ]
+          ]
+        },
+        {
+          "id": "iapetus-spreading-ridge",
+          "name": "Dorsal Oceánica de Jápeto",
+          "type": "divergent",
+          "motionRate": "5.0 cm/año",
+          "description": "Dorsal que generaba corteza oceánica en el centro de Jápeto antes de su cierre.",
+          "coordinates": [
+            [
+              -15,
+              -45
+            ],
+            [
+              -25,
+              -40
+            ],
+            [
+              -35,
+              -35
+            ],
+            [
+              -45,
+              -28
+            ]
+          ]
+        }
+      ]
+    },
+    "cambrian_540ma": {
+      "timeMa": 540,
+      "periodName": "Cámbrico Temprano (540 Ma)",
+      "description": "La 'Explosión Cámbrica' de la vida biológica tras la ruptura del supercontinente Pannotia.",
+      "plates": [
+        {
+          "id": "laurentia-cambrian",
+          "name": "Cratón de Laurentia",
+          "type": "continental",
+          "centroid": {
+            "lat": -5,
+            "lon": -65
+          },
+          "motion": "Rift divergente",
+          "area": "34.0M km²",
+          "context": "Márgenes continentales pasivos donde florecieron las comunidades del Burgess Shale."
+        },
+        {
+          "id": "baltica-cambrian",
+          "name": "Cratón de Báltica",
+          "type": "continental",
+          "centroid": {
+            "lat": -35,
+            "lon": -40
+          },
+          "motion": "Rotado ~90°",
+          "area": "16.0M km²",
+          "context": "Invertido respecto a su orientación actual, rodeado de mares someros fríos."
+        },
+        {
+          "id": "siberia-cambrian",
+          "name": "Cratón Siberiano Ecuatorial",
+          "type": "continental",
+          "centroid": {
+            "lat": 10,
+            "lon": 85
+          },
+          "motion": "Noreste ~2.0 cm/año",
+          "area": "20.0M km²",
+          "context": "Aguas cálidas hipercarbonatadas con los primeros biohermos de arqueociátidos."
+        },
+        {
+          "id": "gondwana-cambrian",
+          "name": "Supercontinente Gondwana",
+          "type": "continental",
+          "centroid": {
+            "lat": -40,
+            "lon": 20
+          },
+          "motion": "Ensamblaje final",
+          "area": "75.0M km²",
+          "context": "Masa colosal unificando la mayoría de cratones del hemisferio sur."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "proto-iapetus-rift",
+          "name": "Rift del Océano Jápeto Primigenio",
+          "type": "divergent",
+          "motionRate": "4.5 cm/año",
+          "description": "Apertura oceánica que separa Laurentia del resto de fragmentos de Pannotia.",
+          "coordinates": [
+            [
+              10,
+              -60
+            ],
+            [
+              0,
+              -58
+            ],
+            [
+              -12,
+              -52
+            ],
+            [
+              -25,
+              -45
+            ]
+          ]
+        },
+        {
+          "id": "panthalassa-margin-trench",
+          "name": "Margen Activo de Panthalassa",
+          "type": "convergent",
+          "motionRate": "6.0 cm/año",
+          "description": "Subducción continua bajo los márgenes exteriores de Gondwana.",
+          "coordinates": [
+            [
+              -20,
+              100
+            ],
+            [
+              -35,
+              110
+            ],
+            [
+              -50,
+              125
+            ],
+            [
+              -65,
+              140
+            ]
+          ]
+        }
+      ]
+    },
+    "ediacaran_600ma": {
+      "timeMa": 600,
+      "periodName": "Ediacárico Tardío (600 Ma)",
+      "description": "Primeros ecosistemas de fauna compleja de cuerpo blando (Biota de Ediacara). Ensamblaje de Gondwana.",
+      "plates": [
+        {
+          "id": "pannotia-ediacaran",
+          "name": "Supercontinente Pannotia",
+          "type": "continental",
+          "centroid": {
+            "lat": -30,
+            "lon": 0
+          },
+          "motion": "Ensamblaje transitorio",
+          "area": "130.0M km²",
+          "context": "Supercontinente de corta duración formado por la unión de cratones pan-africanos antes de fragmentarse en el Cámbrico."
+        },
+        {
+          "id": "panthalassa-ediacaran",
+          "name": "Superocéano Panthalassa Primordial",
+          "type": "oceanic",
+          "centroid": {
+            "lat": 10,
+            "lon": -150
+          },
+          "motion": "Convección global",
+          "area": "310.0M km²",
+          "context": "Dominio hidrográfico que cubría casi tres cuartas partes del globo terrestre."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "pan-african-orogenic-belt",
+          "name": "Cinturón Orogénico Pan-Africano / Brasiliano",
+          "type": "collision",
+          "motionRate": "3.5 cm/año",
+          "description": "Suturas colosales de colisión entre cratones de África Occidental, Amazonia, Congo y Kalahari.",
+          "coordinates": [
+            [
+              15,
+              0
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              -15,
+              8
+            ],
+            [
+              -30,
+              12
+            ],
+            [
+              -45,
+              15
+            ]
+          ]
+        }
+      ]
+    },
+    "cryogenian_750ma": {
+      "timeMa": 750,
+      "periodName": "Criogénico (750 Ma)",
+      "description": "Ruptura del supercontinente Rodinia previa al colapso climático de la 'Tierra Bola de Nieve'.",
+      "plates": [
+        {
+          "id": "rodinia-core",
+          "name": "Núcleo del Supercontinente Rodinia",
+          "type": "continental",
+          "centroid": {
+            "lat": 5,
+            "lon": 0
+          },
+          "motion": "Superpluma del manto rifting",
+          "area": "140.0M km²",
+          "context": "Laurentia ocupaba el núcleo central de Rodinia, flanqueada por Australia, Antártida y Báltica en latitudes ecuatoriales."
+        },
+        {
+          "id": "mirovia-ocean",
+          "name": "Superocéano Mirovia",
+          "type": "oceanic",
+          "centroid": {
+            "lat": 0,
+            "lon": 180
+          },
+          "motion": "Circulación global fría",
+          "area": "320.0M km²",
+          "context": "Océano que circundaba Rodinia y que pronto quedaría cubierto por una capa de hielo de cientos de metros de espesor."
+        }
+      ],
+      "boundaries": [
+        {
+          "id": "rodinia-super-rift",
+          "name": "Gran Sistema de Rifting de Rodinia",
+          "type": "divergent",
+          "motionRate": "5.5 cm/año",
+          "description": "Fracturación continental mayor causada por una superpluma del manto, abriendo la cuenca proto-pacífica e inundando el planeta con basaltos alterables que absorbieron masivamente CO₂ atmosférico.",
+          "coordinates": [
+            [
+              45,
+              10
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              0,
+              -10
+            ],
+            [
+              -25,
+              -20
+            ],
+            [
+              -50,
+              -30
+            ]
+          ]
+        },
+        {
+          "id": "mirovia-subduction-belt",
+          "name": "Cinturón de Subducción Circun-Rodinia",
+          "type": "convergent",
+          "motionRate": "7.0 cm/año",
+          "description": "Subducción periférica en los bordes oceánicos exteriores de Rodinia.",
+          "coordinates": [
+            [
+              60,
+              -80
+            ],
+            [
+              30,
+              -70
+            ],
+            [
+              0,
+              -65
+            ],
+            [
+              -30,
+              -65
+            ],
+            [
+              -60,
+              -70
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

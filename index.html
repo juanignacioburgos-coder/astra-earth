@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tierra Antigua 3D | Deriva Continental y Paleobiología HD</title>
+    <meta name="description" content="Globo terráqueo 3D interactivo en HD que visualiza la deriva continental a través del tiempo geológico (PALEOMAP), con ilustraciones científicas de fauna, flora, atmósfera y yacimientos de fósiles." />
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Tierra Antigua 3D - Deriva Continental y Paleobiología HD" />
+    <meta property="og:description" content="Explora 750 millones de años de historia terrestre, tectónica de placas y evolución biológica en 3D con Three.js e ilustraciones científicas." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <!-- Google Fonts: Space Grotesk for cinematic headers, Outfit for clean UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%231976d2'/><path d='M25 45 Q35 30 55 35 T85 50 T65 75 T35 70 Z' fill='%234caf50'/></svg>" />
+  </head>
+  <body class="astra-cinematic-active">
+    <div id="app">
+      <!-- 3D Canvas Viewport -->
+      <div id="globe-container"></div>
+
+      <!-- Top Navigation & Luxury Header -->
+      <header class="app-header glass-panel">
+        <div class="brand" id="brand-home" role="button" tabindex="0" title="Volver a la vista principal">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="9"></circle>
+              <ellipse cx="12" cy="12" rx="11" ry="4" stroke="currentColor" stroke-width="1.6" transform="rotate(-24 12 12)"></ellipse>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <h1 class="brand-title">ASTRA EARTH</h1>
+            <span class="brand-subtitle">Atlas Paleogeográfico 3D</span>
+          </div>
+        </div>
+
+        <!-- Center Navigation Links -->
+        <nav class="header-nav">
+          <button class="nav-item active" id="nav-btn-hero">Inicio</button>
+          <button class="nav-item" id="nav-btn-eras">Eras</button>
+          <button class="nav-item" id="nav-btn-catalog" title="Explorar catálogo enciclopédico de las 57 especies fósiles (Tecla C)">📚 Catálogo Completo</button>
+          <button class="nav-item" id="nav-btn-fossil" title="Explorar fauna fósil del periodo actual en el lateral (Tecla F)">🦖 Paleobiología</button>
+          <button class="nav-item" id="nav-btn-timeline">Línea de Tiempo</button>
+          <button class="nav-item" id="nav-btn-methodology">Metodología</button>
+        </nav>
+
+        <!-- Header Actions & Controls -->
+        <div class="header-actions">
+          <!-- City Search Widget (Continental Drift Tracker) -->
+          <div class="city-search-box" id="city-search-box">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="city-search-input" placeholder="Buscar ciudad en el tiempo (ej. Buenos Aires, Madrid)..." autocomplete="off" spellcheck="false" />
+              <button id="btn-clear-city" class="btn-clear-search" style="display: none;" title="Quitar marcador de ciudad">&times;</button>
+            </div>
+            <div class="city-suggestions-dropdown" id="city-suggestions" style="display: none;"></div>
+          </div>
+
+          <button id="btn-toggle-tectonics-header" class="pill-btn" title="Ver Fallas Geológicas, Rifts y Límites de Placas 3D (Tecla P)" aria-label="Tectónica de Placas 3D">
+            <span>🌍 Tectónica de Placas</span>
+          </button>
+
+          <button id="btn-toggle-extinctions-header" class="pill-btn extinction-pill-btn" title="Simulador de Extinciones Masivas 3D (Tecla E)" aria-label="Extinciones Masivas 3D">
+            <span>🌋 Extinciones 3D</span>
+          </button>
+
+          <button id="btn-fullscreen" class="icon-btn" title="Pantalla completa" aria-label="Pantalla completa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Active City Drift Floating HUD -->
+      <div id="active-city-hud" class="active-city-hud glass-panel" style="display: none;">
+        <div class="city-hud-header">
+          <div class="city-hud-badge">
+            <span class="city-beacon-dot"></span>
+            <span id="city-hud-title">Buenos Aires (Argentina)</span>
+          </div>
+          <button id="btn-close-city-hud" class="city-hud-close" title="Cerrar seguimiento de ciudad">&times;</button>
+        </div>
+        <div class="city-hud-body">
+          <div class="city-hud-meta-row">
+            <span class="city-plate-tag" id="city-hud-plate">Sudamérica (Gondwana)</span>
+            <span class="city-coords-pill" id="city-coords-text">34.6° S, 58.4° O</span>
+          </div>
+          <div class="city-hud-context" id="city-hud-context">
+            Llanura Chaco-Pampeana moderna
+          </div>
+          <div class="city-hud-hint">
+            📍 Al mover la línea de tiempo, el pin dorado viaja con la deriva continental de esta ciudad.
+          </div>
+        </div>
+      </div>
+
+      <!-- Tectonic Plates & Boundaries Structural HUD -->
+      <div id="tectonics-hud" class="tectonics-hud glass-panel" style="display: none;">
+        <div class="tectonics-hud-header">
+          <div class="tectonics-hud-badge">
+            <span class="tectonics-pulse-dot"></span>
+            <span id="tectonics-hud-title">Placas Tectónicas & Paleofallas</span>
+          </div>
+          <button id="btn-close-tectonics-hud" class="city-hud-close" title="Ocultar capa tectónica">&times;</button>
+        </div>
+        <div class="tectonics-hud-body">
+          <div class="tectonics-period-row">
+            <span class="tectonics-period-tag" id="tectonics-period-name">Presente (0 Ma)</span>
+            <span class="tectonics-count-tag" id="tectonics-features-count">6 Fallas • 8 Paleoplacas</span>
+          </div>
+
+          <div id="tectonics-selected-detail"></div>
+
+          <!-- Pedagogical Explainer for Beginners -->
+          <div class="tectonics-explainer-card">
+            <div class="explainer-header">
+              <span class="explainer-icon">💡</span>
+              <strong>¿Qué representan estas líneas?</strong>
+            </div>
+            <p class="explainer-desc">
+              Son los <strong>límites activos entre placas litosféricas</strong> de la Tierra en esta época. En estas fracturas los continentes chocan (creando montañas), se separan (abriendo océanos) o se deslizan (fallas sísmicas), impulsando la deriva continental a lo largo de millones de años.
+            </p>
+          </div>
+
+          <div class="tectonics-legend">
+            <div class="legend-item" title="Dorsales oceánicas y rifts continentales en expansión">
+              <span class="legend-color-box divergent"></span>
+              <span>Divergente (Dorsal / Rift)</span>
+            </div>
+            <div class="legend-item" title="Fosas de subducción litosférica">
+              <span class="legend-color-box convergent"></span>
+              <span>Convergente (Subducción)</span>
+            </div>
+            <div class="legend-item" title="Fallas de desgarre y rumbo lateral">
+              <span class="legend-color-box transform"></span>
+              <span>Transformante (Rumbo)</span>
+            </div>
+            <div class="legend-item" title="Colisión continental y formación de cordilleras">
+              <span class="legend-color-box collision"></span>
+              <span>Colisión Orogénica</span>
+            </div>
+          </div>
+          <div class="tectonics-hint">
+            💡 Haz clic sobre una falla o etiqueta flotante para enfocarla en el globo 3D.
+          </div>
+        </div>
+      </div>
+
+      <!-- Mass Extinction 3D Simulator Floating HUD (Aula Virtual Paleontológica) -->
+      <div id="extinction-hud" class="extinction-hud glass-panel" style="display: none;">
+        <div class="extinction-hud-header">
+          <div class="extinction-hud-badge">
+            <span class="extinction-pulse-beacon"></span>
+            <div class="extinction-badge-titles">
+              <span class="extinction-badge-sup">AULA VIRTUAL PALEONTOLÓGICA</span>
+              <span class="extinction-badge-title">SIMULADOR DE EXTINCIONES MASIVAS 3D</span>
+            </div>
+          </div>
+          <button id="btn-close-extinction-hud" class="city-hud-close" title="Cerrar simulador de extinciones">&times;</button>
+        </div>
+
+        <div class="extinction-hud-body">
+          <!-- Big 5 Event Selector Chips -->
+          <div class="extinction-tabs-container">
+            <span class="extinction-section-label">LOS "CINCO GRANDES" EVENTOS CATACLÍSMICOS DEL FANEROZOICO:</span>
+            <div class="extinction-event-chips" id="extinction-event-chips">
+              <!-- Dynamically populated chips for the 5 events -->
+            </div>
+          </div>
+
+          <!-- Active Event Header Banner -->
+          <div class="extinction-banner-card">
+            <div class="extinction-banner-main">
+              <div class="extinction-title-group">
+                <span class="extinction-period-badge" id="extinction-period-badge">Hace 66 Ma • Cretácico</span>
+                <h2 class="extinction-event-title" id="extinction-event-title">Extinción Cretácico-Paleógeno (K-Pg)</h2>
+                <div class="extinction-event-subtitle" id="extinction-event-subtitle">El Impacto de Chicxulub y el Fin de los Dinosaurios</div>
+              </div>
+              <div class="extinction-quick-actions">
+                <button id="btn-sync-extinction-era" class="btn-extinction-sync" title="Alinear mapa geológico, placas y fauna a esta era">
+                  <span>🪐 Sincronizar Globo (66 Ma)</span>
+                </button>
+                <button id="btn-focus-extinction-epicenter" class="btn-extinction-focus" title="Centrar cámara 3D en el epicentro de la catástrofe">
+                  <span>🎯 Centrar Epicentro</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic View Sub-Navigation -->
+          <div class="extinction-subnav">
+            <button class="extinction-subnav-btn active" data-subtab="simulation">
+              <span>🎬 Simulación & Fases</span>
+            </button>
+            <button class="extinction-subnav-btn" data-subtab="evidence">
+              <span>🔬 Telemetría & Evidencias</span>
+            </button>
+            <button class="extinction-subnav-btn" data-subtab="biosphere">
+              <span>💀 Impacto Biológico</span>
+            </button>
+          </div>
+
+          <!-- TAB 1: 3D Simulation & Chronological Phase Stepper -->
+          <div id="extinction-tab-simulation" class="extinction-tab-content active">
+            <!-- 3D Cinematic Simulation Player Bar -->
+            <div class="extinction-player-box">
+              <div class="extinction-player-top">
+                <div class="extinction-phase-indicator">
+                  <span class="phase-tag" id="extinction-phase-badge">Fase 1/4</span>
+                  <span class="phase-detail-text" id="extinction-phase-detail">Entrada Hipersónica del Asteroide (20.5 km/s)</span>
+                </div>
+                <div class="extinction-time-display">
+                  <span id="extinction-playback-current">0.0s</span> / <span id="extinction-playback-total">18.0s</span>
+                </div>
+              </div>
+
+              <!-- Scrubber Track -->
+              <div class="extinction-scrubber-wrapper">
+                <input type="range" id="extinction-scrubber" min="0" max="100" value="0" step="0.1" class="extinction-scrubber" title="Línea temporal de la simulación 3D" />
+                <div class="scrubber-fill" id="extinction-scrubber-fill"></div>
+              </div>
+
+              <!-- Player Controls -->
+              <div class="extinction-player-controls">
+                <div class="player-controls-left">
+                  <button id="btn-extinction-play" class="btn-player-action primary" title="Iniciar simulación física 3D">
+                    <span id="extinction-play-icon">▶</span>
+                    <span id="extinction-play-text">Iniciar Simulación 3D</span>
+                  </button>
+                  <button id="btn-extinction-replay" class="btn-player-action secondary" title="Reiniciar desde el segundo 0">
+                    <span>↺ Reiniciar</span>
+                  </button>
+                </div>
+
+                <div class="player-controls-middle">
+                  <button id="btn-phase-prev" class="btn-step-action" title="Fase anterior">
+                    <span>⏮</span>
+                  </button>
+                  <span class="step-label">Fase</span>
+                  <button id="btn-phase-next" class="btn-step-action" title="Siguiente fase">
+                    <span>⏭</span>
+                  </button>
+                </div>
+
+                <div class="player-controls-right">
+                  <span class="speed-label">Velocidad:</span>
+                  <div class="speed-buttons">
+                    <button class="btn-speed active" data-speed="1">1x</button>
+                    <button class="btn-speed" data-speed="1.5">1.5x</button>
+                    <button class="btn-speed" data-speed="0.5">0.5x</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Detailed Phase Didactic Card -->
+            <div class="extinction-phase-card">
+              <div class="phase-card-header">
+                <span class="phase-clock-icon">⏱️</span>
+                <strong id="phase-card-title">Secuencia Cronológica Didáctica</strong>
+              </div>
+              <p class="phase-card-desc" id="phase-card-desc">
+                El asteroide de 12 km ingresa a 20.5 km/s comprimiendo la atmósfera. La fricción genera una columna de plasma incandescente y ondas de choque esféricas que barren los continentes y océanos.
+              </p>
+              <div class="phase-didactic-hint">
+                💡 <em>Observa cómo las ondas de choque esféricas recorren la curvatura del planeta y el polvo estratosférico atenúa la radiación solar.</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: Physical Telemetry & Geological Evidence -->
+          <div id="extinction-tab-evidence" class="extinction-tab-content">
+            <div class="extinction-metrics-grid">
+              <!-- Telemetry Column -->
+              <div class="extinction-card extinction-telemetry-card">
+                <div class="extinction-card-header">
+                  <span class="extinction-card-icon">⚡</span>
+                  <span class="extinction-card-title">Parámetros Geofísicos Reales</span>
+                </div>
+                <div class="extinction-telemetry-items" id="extinction-telemetry-items">
+                  <!-- Dynamically rendered formatted properties -->
+                </div>
+              </div>
+
+              <!-- Scientific Evidence Column -->
+              <div class="extinction-card extinction-evidence-card">
+                <div class="extinction-card-header">
+                  <span class="extinction-card-icon">🧪</span>
+                  <span class="extinction-card-title">Evidencias en el Registro Geológico</span>
+                </div>
+                <div class="evidence-list" id="extinction-evidence-list">
+                  <div class="evidence-item">
+                    <span class="evidence-dot"></span>
+                    <div>
+                      <strong>Capa Global de Iridio:</strong>
+                      <span>Pico geoquímico anómalo de este elemento extraterrestre comprobado en más de 100 yacimientos del planeta.</span>
+                    </div>
+                  </div>
+                  <div class="evidence-item">
+                    <span class="evidence-dot"></span>
+                    <div>
+                      <strong>Cuarzo de Choque:</strong>
+                      <span>Estructuras laminares de deformación planar formadas a presiones extremas superiores a 10 Gigapascales.</span>
+                    </div>
+                  </div>
+                  <div class="evidence-item">
+                    <span class="evidence-dot"></span>
+                    <div>
+                      <strong>Microtectitas & Esférulas:</strong>
+                      <span>Gotas de silicatos fundidos condensadas en la atmósfera tras eyectarse al espacio suborbital.</span>
+                    </div>
+                  </div>
+                  <div class="evidence-item">
+                    <span class="evidence-dot"></span>
+                    <div>
+                      <strong>Pico de Helechos (Fern Spike):</strong>
+                      <span>El colapso de plantas superiores provocó una dominancia exclusiva de esporas de helechos pioneros en el límite.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scientific Context Box -->
+            <div class="extinction-science-box" id="extinction-science-box">
+              <div class="science-quote-icon">🔬</div>
+              <div class="science-quote-text" id="extinction-science-context">
+                <!-- Evidencia geoquímica, anomalía de iridio, núcleos de perforación IODP -->
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: Biosphere Impact (Victims vs Survivors) -->
+          <div id="extinction-tab-biosphere" class="extinction-tab-content">
+            <!-- Casualty Gauge Card -->
+            <div class="extinction-card extinction-casualty-card" style="margin-bottom: 12px;">
+              <div class="extinction-card-header">
+                <span class="extinction-card-icon">💀</span>
+                <span class="extinction-card-title">Mortalidad y Colapso Ecosistémico</span>
+              </div>
+              <div class="casualty-main-stat">
+                <span class="casualty-big-number" id="extinction-casualty-total">76%</span>
+                <span class="casualty-big-label">de todas las especies biológicas del planeta aniquiladas</span>
+              </div>
+              <div class="casualty-bars-container">
+                <div class="casualty-bar-group">
+                  <div class="casualty-bar-label-row">
+                    <span>🌊 Pérdida en Ecosistemas Marinos:</span>
+                    <strong id="extinction-marine-loss">75%</strong>
+                  </div>
+                  <div class="casualty-bar-track">
+                    <div class="casualty-bar-fill marine" id="bar-marine-loss" style="width: 75%;"></div>
+                  </div>
+                </div>
+                <div class="casualty-bar-group">
+                  <div class="casualty-bar-label-row">
+                    <span>🌲 Pérdida en Ecosistemas Terrestres:</span>
+                    <strong id="extinction-terrestrial-loss">78%</strong>
+                  </div>
+                  <div class="casualty-bar-track">
+                    <div class="casualty-bar-fill terrestrial" id="bar-terrestrial-loss" style="width: 78%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pedagogical Rule of Survival -->
+            <div class="survival-rule-box">
+              <strong>📖 La Clave Evolutiva de Supervivencia:</strong>
+              <p>Ningún animal terrestre mayor a 25 kg sobrevivió al pulso de calor y colapso fotosintético. Los únicos supervivientes fueron organismos fosoriales (que vivían en madrigueras), animales de agua dulce dependientes de detritos orgánicos y endotermos pequeños con alta plasticidad ecológica.</p>
+            </div>
+
+            <!-- Biological Fate: Victims vs Survivors -->
+            <div class="extinction-bio-grid">
+              <div class="extinction-card extinction-victims-card">
+                <div class="extinction-card-header victims">
+                  <span class="extinction-card-icon">☠️</span>
+                  <span class="extinction-card-title">Taxones Clave Extintos</span>
+                </div>
+                <ul class="bio-taxa-list" id="extinction-victims-list"></ul>
+              </div>
+
+              <div class="extinction-card extinction-survivors-card">
+                <div class="extinction-card-header survivors">
+                  <span class="extinction-card-icon">🌱</span>
+                  <span class="extinction-card-title">Linajes Clave Supervivientes</span>
+                </div>
+                <ul class="bio-taxa-list" id="extinction-survivors-list"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Astra AI Assistant Concierge Floating Widget (Bottom-Right) -->
+      <div class="astra-concierge-widget" id="astra-concierge">
+        <div class="concierge-bubbles">
+          <div class="concierge-bubble bubble-name">Hola, soy PaleoGuía IA</div>
+          <div class="concierge-bubble bubble-query" id="btn-bubble-query">¿En qué puedo ayudarte?</div>
+        </div>
+        <button class="concierge-avatar-btn" id="btn-concierge-avatar" aria-label="Abrir asistente de navegación">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path>
+            <rect x="3" y="8" width="18" height="12" rx="4"></rect>
+            <circle cx="8.5" cy="13.5" r="1.5" fill="currentColor"></circle>
+            <circle cx="15.5" cy="13.5" r="1.5" fill="currentColor"></circle>
+            <path d="M9 17h6"></path>
+          </svg>
+          <span class="concierge-status-beacon"></span>
+        </button>
+      </div>
+
+      <!-- PaleoGuía IA Conversational Assistant (Chatbot & 3D Interactive Controller) -->
+      <div class="concierge-flyout glass-panel" id="concierge-flyout">
+        <div class="flyout-header">
+          <div class="flyout-title">
+            <span class="bot-avatar-badge">🦖</span>
+            <div class="bot-header-info">
+              <strong>PaleoGuía IA</strong>
+              <span class="bot-status-tag">Asistente Paleontológico en Vivo</span>
+            </div>
+          </div>
+          <div class="flyout-header-controls">
+            <button class="flyout-settings-btn" id="btn-chat-settings" title="Configuración de IA (Opcional)" aria-label="Ajustes">⚙️</button>
+            <button class="flyout-close" id="btn-close-flyout" aria-label="Cerrar asistente">&times;</button>
+          </div>
+        </div>
+
+        <!-- Chat History & Quick Prompts Container -->
+        <div class="chat-viewport" id="chat-viewport">
+          <!-- Suggestion Chips Bar -->
+          <div class="chat-suggestions-carousel" id="chat-suggestions">
+            <button class="chat-suggestion-chip" data-query="¿Qué criaturas dominaban el Cretácico?">🦖 Dinosaurios Cretácico</button>
+            <button class="chat-suggestion-chip" data-query="¿Por qué ocurrió la Gran Mortandad del Pérmico?">🌋 Gran Mortandad (250 Ma)</button>
+            <button class="chat-suggestion-chip" data-query="¿Cómo era el supercontinente Pangea?">🪐 Supercontinente Pangea</button>
+            <button class="chat-suggestion-chip" data-query="¿Cómo se congeló la Tierra Bola de Nieve?">❄️ Tierra Bola de Nieve</button>
+            <button class="chat-suggestion-chip" data-query="¿Dónde estaban los países actuales en Pangea?">📍 Mi País en el Tiempo</button>
+            <button class="chat-suggestion-chip" data-query="Háblame del Megalodón">🦈 Megalodón</button>
+          </div>
+
+          <!-- Message History -->
+          <div class="chat-messages-log" id="chat-messages-log">
+            <div class="chat-message bot-message">
+              <div class="chat-msg-avatar">🦖</div>
+              <div class="chat-msg-content">
+                <div class="chat-msg-author">PaleoGuía IA</div>
+                <p>¡Hola! Soy tu <strong>asistente paleontológico y geológico</strong>. Puedo responder todas tus preguntas sobre dinosaurios, cataclismos, climas prehistóricos y la deriva de continentes.</p>
+                <p>¡También puedo <strong>controlar el globo 3D</strong> por ti! Pídeme: <em>"Llévame al Jurásico"</em>, <em>"Simula el asteroide de Chicxulub"</em> o <em>"Activa las placas tectónicas"</em>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional API Key Settings Panel (Collapsible) -->
+        <div class="chat-settings-tray" id="chat-settings-tray" style="display: none;">
+          <div class="settings-tray-title">🔑 Conexión Externa Opcional</div>
+          <p class="settings-tray-text">El asistente funciona 100% autónomo y gratis en tu navegador. Si deseas conectar tu propia API Key de Google Gemini (capa gratuita), ingrésala aquí:</p>
+          <div class="settings-input-group">
+            <input type="password" id="input-gemini-key" placeholder="Pega tu clave AIzaSy... (opcional)" />
+            <button id="btn-save-gemini-key" class="btn-settings-save">Guardar</button>
+          </div>
+        </div>
+
+        <!-- Chat Input Field & Send Action -->
+        <form class="chat-input-bar" id="chat-input-form">
+          <input type="text" id="chat-user-input" placeholder="Pregunta algo sobre la historia de la Tierra..." autocomplete="off" spellcheck="false" />
+          <button type="submit" id="btn-chat-submit" class="btn-chat-submit" title="Enviar pregunta" aria-label="Enviar pregunta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Eras Geological Selector Dialog -->
+      <dialog id="eras-dialog" class="glass-dialog eras-modal">
+        <div class="dialog-card eras-card">
+          <div class="dialog-header">
+            <h3>Atlas de Periodos Geológicos (750 Ma - Presente)</h3>
+            <button id="btn-close-eras" class="btn-close" aria-label="Cerrar selector">&times;</button>
+          </div>
+          <div class="dialog-body eras-grid" id="eras-list-mount">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </dialog>
+
+      <!-- Sidebar Container for Paleobiology Data & Species Gallery -->
+      <div id="sidebar-mount"></div>
+
+      <!-- Bottom Timeline Scrubber Container -->
+      <div id="timeline-mount"></div>
+
+      <!-- Ficha Paleontológica y Detalle Científico del Espécimen -->
+      <dialog id="specimen-dialog" class="glass-dialog specimen-modal">
+        <div class="dialog-card specimen-card-view">
+          <!-- Modal Header with Breadcrumbs & Clear Back/Exit Actions -->
+          <div class="dialog-header specimen-dialog-header">
+            <div class="specimen-modal-titles">
+              <div class="specimen-breadcrumbs">
+                <span id="specimen-modal-period" class="period-era-tag">Cretácico</span>
+                <span class="specimen-clade-breadcrumb" id="specimen-modal-clade-top">Theropoda • Spinosauridae</span>
+              </div>
+              <h3 id="specimen-modal-common">Tyrannosaurus rex</h3>
+              <div id="specimen-modal-sci" class="specimen-modal-sci">Tyrannosaurus rex Osborn, 1905</div>
+            </div>
+            
+            <div class="specimen-header-actions">
+              <button id="btn-back-specimen" class="btn-dialog-back" title="Volver al globo terráqueo">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                <span>Atrás / Salir</span>
+              </button>
+              <button id="btn-close-specimen" class="btn-close-circle" aria-label="Cerrar ficha" title="Cerrar (Esc)">&times;</button>
+            </div>
+          </div>
+
+          <div class="specimen-modal-body">
+            <!-- Left Column: Visual Showcase & Anatomical Scale Comparison -->
+            <div class="specimen-modal-visual">
+              <div class="specimen-image-container">
+                <img id="specimen-modal-img" src="" alt="Ilustración paleontológica" class="specimen-featured-image" />
+                <div class="specimen-image-glow"></div>
+              </div>
+
+              <div class="specimen-media-meta">
+                <div class="specimen-caption" id="specimen-modal-fossil-site">
+                  📍 Yacimiento: Formación Hell Creek
+                </div>
+                <div class="specimen-license-note" id="specimen-modal-license">
+                  Licencia: Creative Commons / Dominio Público
+                </div>
+              </div>
+
+              <!-- Human Scale Comparison Card (Directly beneath visual representation) -->
+              <div class="specimen-scale-card">
+                <div class="scale-card-header">
+                  <span class="scale-title">
+                    <strong>📏 Escala Anatómica</strong> vs. Humano (1.80 m)
+                  </span>
+                  <span id="specimen-scale-ratio" class="scale-ratio-badge">6.9x más largo</span>
+                </div>
+                <div class="scale-bars-container">
+                  <div class="scale-bar-row human-row">
+                    <div class="scale-actor-label">
+                      <span class="actor-icon">🚶</span>
+                      <span class="actor-name">Humano</span>
+                      <span class="actor-val">1.8 m</span>
+                    </div>
+                    <div class="scale-meter-track">
+                      <div class="meter-bar bar-human" id="specimen-scale-human-bar" style="width: 14%;"></div>
+                    </div>
+                  </div>
+                  <div class="scale-bar-row creature-row">
+                    <div class="scale-actor-label">
+                      <span class="actor-icon">🦖</span>
+                      <span class="actor-name" id="scale-creature-name">Espécimen</span>
+                      <span class="actor-val" id="specimen-scale-tag">12.4 m</span>
+                    </div>
+                    <div class="scale-meter-track">
+                      <div class="meter-bar bar-creature" id="specimen-scale-bar" style="width: 85%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Scientific, Geological & Paleobiological Profile (Scrollable) -->
+            <div class="specimen-modal-info">
+              <!-- Taxonomic Badges Row -->
+              <div class="specimen-pills-row">
+                <span id="specimen-modal-diet" class="diet-pill">Carnívoro</span>
+                <span id="specimen-modal-group" class="group-pill">Terópodo</span>
+                <span id="specimen-modal-range" class="habitat-pill">68 - 66 Ma</span>
+                <span id="specimen-modal-env" class="env-pill">Terrestre</span>
+              </div>
+
+              <!-- Anatomical Metrics Grid -->
+              <div class="specimen-metrics-grid">
+                <div class="metric-card">
+                  <span class="metric-icon">📏</span>
+                  <div class="metric-content">
+                    <span class="metric-label">Longitud</span>
+                    <span id="specimen-modal-length" class="metric-val">12.4 m</span>
+                  </div>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-icon">⚖️</span>
+                  <div class="metric-content">
+                    <span class="metric-label">Masa Estimada</span>
+                    <span id="specimen-modal-weight" class="metric-val">8.5 ton</span>
+                  </div>
+                </div>
+                <div class="metric-card metric-full">
+                  <span class="metric-icon">🗺️</span>
+                  <div class="metric-content">
+                    <span class="metric-label">Distribución Fósil Actual</span>
+                    <span id="specimen-modal-loc" class="metric-val">Norteamérica</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ancestral Paleogeography Card -->
+              <div class="specimen-paleo-card">
+                <div class="paleo-card-header">
+                  <h4 id="specimen-modal-paleo-header">🌊 Cuenca Oceánica o Masa Terrestre Ancestral</h4>
+                </div>
+                <div class="paleo-context-text" id="specimen-modal-paleo-context">
+                  Isla-continente de Laramidia (costa occidental del Mar Interior de Norteamérica)
+                </div>
+                <div class="paleo-biome-text" id="specimen-modal-biome">
+                  Llanuras costeras boscosas subtropicales previas al impacto K-Pg
+                </div>
+              </div>
+
+              <!-- Historical Discovery & Holotype Card -->
+              <div class="specimen-discovery-card">
+                <h4>🏛️ Historial Paleontológico y Holotipo</h4>
+                <div class="discovery-grid">
+                  <div class="disc-item">
+                    <span class="disc-label">👤 Descubridor</span>
+                    <span id="specimen-modal-discoverer" class="disc-val">Barnum Brown (1902)</span>
+                  </div>
+                  <div class="disc-item">
+                    <span class="disc-label">✍️ Descrito Científicamente Por</span>
+                    <span id="specimen-modal-describedby" class="disc-val">Henry Fairfield Osborn, 1905</span>
+                  </div>
+                  <div class="disc-item">
+                    <span class="disc-label">⛏️ Formación Geológica</span>
+                    <span id="specimen-modal-formation" class="disc-val">Formación Hell Creek (Montana, EE. UU.)</span>
+                  </div>
+                  <div class="disc-item">
+                    <span class="disc-label">🏛️ Holotipo & Museo</span>
+                    <span id="specimen-modal-museum" class="disc-val">CM 9380 • Carnegie Museum of Natural History</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Paleobiology Description Box -->
+              <div class="specimen-desc-box">
+                <h4>Adaptaciones Paleoecológicas y Biología</h4>
+                <p id="specimen-modal-desc">Descripción paleobiológica...</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Action Bar with Back / Exit and 3D Focus Actions -->
+          <div class="specimen-modal-footer">
+            <button id="btn-specimen-back-footer" class="btn-modal-back" title="Cerrar ficha y volver al globo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+              <span>Atrás / Volver al Globo</span>
+            </button>
+
+            <button id="btn-specimen-flyto" class="btn-modal-explore" title="Localizar cuenca o zona fósil en el mapa 3D">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="22" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="12" x2="2" y2="12"></line>
+                <line x1="12" y1="6" x2="12" y2="2"></line>
+                <line x1="12" y1="22" x2="12" y2="18"></line>
+              </svg>
+              <span>Ver Cuenca / Zona Fósil en el Globo 3D</span>
+            </button>
+          </div>
+        </div>
+      </dialog>
+
+      <!-- Enciclopedia Paleobiológica Completa (57 Especies Fósiles) -->
+      <dialog id="full-catalog-dialog" class="glass-dialog full-catalog-dialog"></dialog>
+
+      <!-- Modal About & Methodology -->
+      <dialog id="info-dialog" class="glass-dialog">
+        <div class="dialog-card">
+          <div class="dialog-header">
+            <h3>Metodología Científica y Tecnológica</h3>
+            <button id="btn-close-dialog" class="btn-close" aria-label="Cerrar modal">&times;</button>
+          </div>
+          <div class="dialog-body">
+            <h4>🌐 Reconstrucción Paleogeográfica (Deriva Continental)</h4>
+            <p>
+              Esta aplicación implementa las reconstrucciones paleogeográficas de alta resolución del 
+              <strong>PALEOMAP Project (Dr. Christopher Scotese)</strong> y la <strong>Comisión Internacional de Estratigrafía (IUGS)</strong>,
+              cubriendo 750 millones de años de historia geológica con filtrado anisotrópico 16x y mapas de micro-relieve fractal.
+            </p>
+
+            <h4>🪐 ¿La Tierra alguna vez tuvo anillos?</h4>
+            <p>
+              <strong>Sí, pero únicamente en dos episodios transitorios y catastróficos muy concretos:</strong>
+            </p>
+            <ul>
+              <li>
+                <strong>1. El disco protoplanetario del impacto de Theia (~4.510 Ma, Eón Hádico):</strong>
+                Poco después del origen del Sistema Solar, el protoplaneta Theia (del tamaño de Marte) colisionó con la proto-Tierra. El impacto pulverizó miles de millones de toneladas de roca y magma dentro del límite de Roche, formando un denso anillo incandescente de silicatos fundidos que orbitó la Tierra durante semanas a décadas antes de coalescer para formar nuestra Luna (<em>Hazen, 2012</em>).
+              </li>
+              <li>
+                <strong>2. El sistema de anillos asteroides del Ordovícico (~466 Ma, Era Paleozoica):</strong>
+                Un estudio geológico comprobado publicado en 2024 (<em>Tomkins et al., Earth & Planetary Science Letters</em>) demostró que la Tierra capturó un asteroide condrítico L en su límite de Roche. La fuerza de marea lo despedazó, formando un anillo ecuatorial de polvo y fragmentos durante ~40 millones de años. La sombra solar arrojada por este anillo sobre los trópicos enfrió el planeta y precipitó la glaciación Hirnantiana.
+              </li>
+              <li>
+                <strong>3. En el resto de las eras (Jurásico, Cretácico, Pangea y actualidad):</strong>
+                La Tierra <strong>no</strong> tuvo anillos. Por tanto, nuestro modelo 3D representa la Tierra sin anillos por defecto para preservar el máximo rigor científico e histórico.
+              </li>
+            </ul>
+
+            <h4>📚 Libros de Referencia sobre la Historia del Planeta Tierra</h4>
+            <ul>
+              <li>
+                <strong>The Story of Earth: The First 4.5 Billion Years, from Stardust to Living Planet</strong> — Robert M. Hazen (Carnegie Institution for Science / Norton, 2012). <em>Referencia clave sobre la coevolución geosfera-biosfera ("evolución mineral") y el disco de Theia.</em>
+              </li>
+              <li>
+                <strong>Otherlands: A Journey Through Earth's Extinct Worlds (Tierras remotas)</strong> — Thomas Halliday (Penguin / Allen Lane, 2022). <em>Reconstrucción inmersiva y paleoecológica de 16 biomas prehistóricos desde el Pleistoceno hasta el Ediacárico.</em>
+              </li>
+              <li>
+                <strong>Life: A Natural History of the First Four Billion Years of Life on Earth</strong> — Richard Fortey (Natural History Museum de Londres / Vintage, 1999). <em>Obra maestra sobre la radiación de los trilobites, la evolución marina y la dinámica tectónica.</em>
+              </li>
+              <li>
+                <strong>Atlas of Earth History: Volume 1, Paleogeography</strong> — Dr. Christopher R. Scotese (PALEOMAP Project / University of Texas, 2001). <em>Cartografía paleogeográfica fundamental y base de coordenadas de nuestro motor 3D.</em>
+              </li>
+              <li>
+                <strong>A (Very) Short History of Life on Earth: 4.6 Billion Years in 12 Pithy Chapters</strong> — Henry Gee (Editor Senior de <em>Nature</em> / St. Martin's Press, 2021). <em>Síntesis magistral de las transiciones atmosféricas y macroevolutivas.</em>
+              </li>
+              <li>
+                <strong>Evidence of a 466-million-year-old asteroid ring system around Earth</strong> — Andrew G. Tomkins et al. (<em>Earth and Planetary Science Letters</em>, 2024). <em>Estudio geológico del anillo ecuatorial ordovícico.</em>
+              </li>
+            </ul>
+
+            <h4>🦖 Catálogo Paleontológico y Zonas de Distribución</h4>
+            <p>
+              El atlas cuenta con una base de datos curada de fauna fósil icónica clasificada por intervalos geológicos.
+              Cuando no hay una especie seleccionada, el globo terráqueo proyecta los puntos de localización de todos los especímenes fósiles conocidos para la era geológica activa.
+              Al seleccionar una especie específica, el sistema aísla su registro y proyecta su zona de distribución geográfica paleoclimática estimada mediante un disco luminoso delimitado sobre la esfera 3D.
+            </p>
+
+            <h4>🚀 Pila Tecnológica 3D</h4>
+            <ul>
+              <li><strong>Motor 3D:</strong> Three.js con filtrado anisotrópico máximo de GPU (16x), mipmapping trilineal y mapa de micro-relieve fractal para evitar pixelación al hacer zoom.</li>
+              <li><strong>Capa Atmosférica:</strong> Malla concéntrica de nubes con rotación independiente y shader de dispersión Rayleigh.</li>
+              <li><strong>Transición de Texturas:</strong> Carga asíncrona no bloqueante con interpolación de opacidad suave (crossfade a 60 fps).</li>
+              <li><strong>Despliegue Continuo:</strong> GitHub Pages automatizado mediante GitHub Actions CI/CD.</li>
+            </ul>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

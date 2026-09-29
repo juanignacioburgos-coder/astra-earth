@@ -1,0 +1,300 @@
+{
+  "extinctions": [
+    {
+      "id": "k-pg-chicxulub",
+      "name": "Extinción Cretácico-Paleógeno (K-Pg)",
+      "subtitle": "El Impacto de Chicxulub y el Fin de los Dinosaurios",
+      "timeMa": 66,
+      "periodId": "cretaceous_66ma",
+      "casualtyPercent": 76,
+      "marineLoss": 75,
+      "terrestrialLoss": 78,
+      "duration": "Segundos (impacto) a ~30,000 años (invierno de azufre)",
+      "simulationType": "asteroid_impact",
+      "coordinates": {
+        "lat": 21.35,
+        "lon": -89.5,
+        "name": "Península de Yucatán (Cráter de Chicxulub)"
+      },
+      "secondaryCoordinates": {
+        "lat": 18.9,
+        "lon": 73.8,
+        "name": "Traps del Decán (Subcontinente Indio)"
+      },
+      "physicsTelemetry": {
+        "projectile": "Asteroide condrítico carbonáceo",
+        "diameter": "12.0 km de diámetro",
+        "entrySpeed": "20.5 km/s (73,800 km/h)",
+        "impactAngle": "60° hacia el noreste",
+        "kineticEnergy": "4.2 × 10²³ Joules (~100 millones de megatones TNT)",
+        "craterDiameter": "180 km de diámetro • 20 km de profundidad inicial",
+        "megaTsunami": "Olas de 150 a 300 metros de altura en el Golfo de México"
+      },
+      "victims": [
+        "Todos los dinosaurios no aviares (Tyrannosaurus, Triceratops, Ankylosaurus)",
+        "Pterosaurios gigantes (Quetzalcoatlus, Hatzegopteryx)",
+        "Reptiles marinos gigantes (Mosasaurus, Elasmosaurus)",
+        "Ammonites, belemnites y moluscos rudistas arrecifales",
+        "Fitoplancton calcáreo marino (nanoplancton)"
+      ],
+      "survivors": [
+        "Aves modernas (Neornithes, linajes ancestrales de patos y galliformes)",
+        "Mamíferos placentarios, marsupiales y multituberculados de madriguera",
+        "Cocodrilomorfos y tortugas de ecosistemas fluviales",
+        "Peces teleósteos y escualos de aguas profundas",
+        "Helechos y hongos saprófitos (pico global de esporas post-impacto)"
+      ],
+      "environmentalPhases": [
+        {
+          "phase": "0 - 10 minutos (Colisión Hipersónica)",
+          "detail": "El asteroide vaporiza la plataforma carbonatada y anhidrita de Yucatán. Destello térmico que calcina la vegetación en un radio de 2,000 km e inicia megatsunamis."
+        },
+        {
+          "phase": "1 - 24 horas (Reentrada Balística)",
+          "detail": "Billones de toneladas de roca fundida expulsadas al espacio suborbital reentran en la atmósfera como microtectitas incandescentes, calentando el aire a más de 300°C e iniciando incendios forestales globales."
+        },
+        {
+          "phase": "1 - 10 años (Invierno de Impacto)",
+          "detail": "Nubes estratosféricas de hollín y 325 Gt de azufre ($SO_2$) bloquean el 95% de la radiación solar. Colapso de la fotosíntesis marina y terrestre; temperaturas globales caen entre 8°C y 16°C."
+        },
+        {
+          "phase": "1,000 - 100,000 años (Efecto Invernadero Tardío)",
+          "detail": "Disipación de los aerosoles de sulfato seguida de una fuerte hipertermia causada por el $CO_2$ liberado del impacto y las erupciones simultáneas de los Traps del Decán."
+        }
+      ],
+      "scientificContext": "En 1980, Luis y Walter Álvarez descubrieron una anomalía global de iridio en el límite geológico K-Pg. En 1991 se confirmó la estructura circular enterrada de Chicxulub en México. En 2016, la expedición IODP-ICDP 364 perforó el anillo de picos del cráter, revelando que la energía del impacto licuó la corteza granítica terrestre en minutos."
+    },
+    {
+      "id": "tr-j-camp",
+      "name": "Extinción Triásico-Jurásico (Tr-J)",
+      "subtitle": "La Fragmentación de Pangea y la Provincia Magmática CAMP",
+      "timeMa": 200,
+      "periodId": "triassic_200ma",
+      "casualtyPercent": 80,
+      "marineLoss": 82,
+      "terrestrialLoss": 76,
+      "duration": "Aproximadamente 600,000 años en 4 pulsos magmáticos",
+      "simulationType": "camp_volcanism",
+      "coordinates": {
+        "lat": 15.0,
+        "lon": -25.0,
+        "name": "Rift Proto-Atlántico (CAMP - Provincia Magmática del Atlántico Central)"
+      },
+      "secondaryCoordinates": {
+        "lat": 35.0,
+        "lon": -15.0,
+        "name": "Borde Laurentia-Gondwana"
+      },
+      "physicsTelemetry": {
+        "projectile": "Provincia Ígnea Continental (CAMP)",
+        "lavaVolume": "3,000,000 km³ de basalto toleítico",
+        "coveredArea": "11,000,000 km² (la mayor provincia ígnea en área del Fanerozoico)",
+        "co2Emissions": "~100,000 Gt de dióxido de carbono y metano termogénico",
+        "oceanAcidification": "pH oceánico cayó 0.3 - 0.5 unidades",
+        "globalWarming": "Aumento térmico global repentino de +4°C a +7°C"
+      },
+      "victims": [
+        "Conodontos (últimos representantes de este linaje ancestral de microvertebrados)",
+        "Pseudosuquios terrestres no cocodrilianos (Aetosaurios, Rauisuchios como Postosuchus)",
+        "Dicinodontos y terápsidos herbívoros gigantes",
+        "Fitoplancton calcáreo y corales formadores de arrecifes",
+        "Muchos anfibios temnospóndilos de gran tamaño"
+      ],
+      "survivors": [
+        "Primeros dinosaurios primitivos (que sobrevivieron al frío volcánico inicial gracias a plumas y sacos aéreos)",
+        "Crocodilomorfos basales y esfenodontos",
+        "Mamíferos primitivos pequeños (Morganucodóntidos)",
+        "Pterosaurios primitivos (Eudimorphodon)",
+        "Plantas coníferas y ginkgos tolerantes al estrés ambiental"
+      ],
+      "environmentalPhases": [
+        {
+          "phase": "Fase 1: Apertura del Rift y Cenizas de Sulfato",
+          "detail": "Fracturación del supercontinente Pangea con emisión de basaltos masivos y pulsos de aerosoles de azufre que generan breves pero severos inviernos volcánicos."
+        },
+        {
+          "phase": "Fase 2: Calentamiento por Gases de Efecto Invernadero",
+          "detail": "El magma funde estratos de evaporitas y carbón, liberando pulsos masivos de $CO_2$ y $CH_4$ que elevan abruptamente la temperatura global."
+        },
+        {
+          "phase": "Fase 3: Acidificación y Anoxia Oceánica",
+          "detail": "Disolución masiva de dióxido de carbono en las aguas marinas, colapsando los arrecifes de corales escleractinios y la biota calcárea."
+        }
+      ],
+      "scientificContext": "Esta extinción eliminó a los principales competidores arcosaurios cuadrúpedos terrestres que dominaban el Triásico. Esto dejó prácticamente vacíos la totalidad de los nichos ecológicos terrestres, permitiendo que los dinosaurios radiaran de forma explosiva al inicio del Jurásico."
+    },
+    {
+      "id": "p-tr-siberian-traps",
+      "name": "Extinción Pérmico-Triásico (P-Tr)",
+      "subtitle": "La Gran Mortandad y los Basaltos de Inundación de Siberia",
+      "timeMa": 250,
+      "periodId": "permian_250ma",
+      "casualtyPercent": 96,
+      "marineLoss": 96,
+      "terrestrialLoss": 70,
+      "duration": "Aproximadamente 60,000 años en dos pulsos críticos",
+      "simulationType": "siberian_traps",
+      "coordinates": {
+        "lat": 66.0,
+        "lon": 90.0,
+        "name": "Traps Siberianos (Meseta Central Siberiana)"
+      },
+      "secondaryCoordinates": {
+        "lat": 0.0,
+        "lon": 60.0,
+        "name": "Océano Tetis Ecuatorial (Zona de Anoxia Letal)"
+      },
+      "physicsTelemetry": {
+        "projectile": "Pluma Mantélica y Basaltos de Inundación de Siberia",
+        "lavaVolume": "4,000,000 km³ de magma basáltico",
+        "coalCombustion": "Combustión piroclástica de cuencas de carbón de Tunguska",
+        "so2Emissions": "10,000 a 20,000 Gt de dióxido de azufre",
+        "thermalSurge": "Incremento de temperatura ecuatorial marina por encima de 40°C",
+        "ozoneDepletion": "Destrucción del 80% de la capa de ozono estratosférico por halógenos",
+        "h2sPoisoning": "Euxinia global: bacterias emitiendo sulfuro de hidrógeno tóxico a la atmósfera"
+      },
+      "victims": [
+        "Todos los Trilobites (clado icónico que existió durante 270 Ma extinguido definitivamente)",
+        "Euriptéridos (escorpiones marinos gigantes)",
+        "Gorgonópsidos y terápsidos carnívoros dominantes (Inostrancevia)",
+        "Pareiasaurios gigantes (Scutosaurus)",
+        "Corales rugosos y tabulados (extintos al 100%)",
+        "99% de los braquiópodos articulados y blastoideos"
+      ],
+      "survivors": [
+        "Lystrosaurus (sinápsido herbívoro excavador que llegó a constituir el 90% de los vertebrados post-extinción)",
+        "Primeros ancestros de arcosaurios (línea evolutiva que daría origen a los dinosaurios)",
+        "Moluscos bivalvos como Claraia y ammonoideos resistentes",
+        "Procolofónidos pequeños excavadores",
+        "Pocos linajes de coníferas resistentes a la radiación UV"
+      ],
+      "environmentalPhases": [
+        {
+          "phase": "Fase 1: Cataclismo Ígneo Siberiano",
+          "detail": "Una pluma del manto perfora la corteza siberiana, quemando yacimientos masivos de carbón y petróleo. Lluvia ácida sulfúrica y nítrica de pH 2 devasta los bosques del planeta."
+        },
+        {
+          "phase": "Fase 2: Colapso del Ozono y Radiación Mutagénica",
+          "detail": "Halógenos liberados por las intrusiones ígneas destruyen la capa de ozono. El polen fósil revela polen malformado y estéril en masa por radiación ultravioleta B."
+        },
+        {
+          "phase": "Fase 3: Océanos Hirvientes y Anoxia Euxínica",
+          "detail": "Los océanos se calientan hasta 40°C en el ecuador, perdiendo todo el oxígeno disuelto. Bacterias reductoras de sulfato proliferan tiñendo los mares de púrpura y saturando la atmósfera de sulfuro de hidrógeno ($H_2S$) letal."
+        }
+      ],
+      "scientificContext": "Es el mayor evento de extinción de la historia biológica de la Tierra. La vida estuvo al borde de la erradicación total. La biosfera tardó más de 10 millones de años en recuperar niveles de biodiversidad previos, dando inicio a la era de los reptiles en el Triásico."
+    },
+    {
+      "id": "late-devonian-kellwasser",
+      "name": "Extinción del Devónico Tardío",
+      "subtitle": "Crisis Kellwasser: Anoxia Marina y la Radiación de las Plantas",
+      "timeMa": 375,
+      "periodId": "devonian_375ma",
+      "casualtyPercent": 75,
+      "marineLoss": 80,
+      "terrestrialLoss": 35,
+      "duration": "Aproximadamente 2 a 4 millones de años en pulsos discontinuos",
+      "simulationType": "oceanic_anoxia",
+      "coordinates": {
+        "lat": 10.0,
+        "lon": 30.0,
+        "name": "Océano Rheico y Mares Someros Ecuatoriales"
+      },
+      "secondaryCoordinates": {
+        "lat": 60.0,
+        "lon": 115.0,
+        "name": "Provincia Volcánica de Viluy (Siberia Oriental)"
+      },
+      "physicsTelemetry": {
+        "trigger": "Eutrofización continental masiva por raíces de plantas leñosas + Vulcanismo Viluy",
+        "soilWeathering": "Aumento del 300% en meteorización silicatada por sistemas radiculares",
+        "algalBlooms": "Proliferación masiva de algas tóxicas consumiendo todo el oxígeno disuelto",
+        "blackShaleDeposition": "Depósito de pizarras negras orgánicas de Kellwasser",
+        "seaLevelFluctuation": "Oscilaciones glacio-eustáticas abruptas de 60 a 100 m"
+      },
+      "victims": [
+        "Peces Placodermos acorazados gigantes (Dunkleosteus, Titanichthys)",
+        "Estromatopóridos y arrecifes de coral tabulado (los mayores sistemas arrecifales del Paleozoico)",
+        "Muchos grupos de trilobites (solamente una orden sobrevivió al Carbonífero)",
+        "Ostrácodos de aguas profundas y agnatos acorazados (heterostráceos)",
+        "Ammonoideos primitivos"
+      ],
+      "survivors": [
+        "Tetrapodomorfos y primeros anfibios pulmonados (Acanthostega, Ichthyostega)",
+        "Peces osteíctios sarcopterigios (celacantos, dipnoos pulmonados)",
+        "Tiburones primitivos (condrictios) que ocuparon los nichos de depredadores tope dejados por los placodermos",
+        "Primeros bosques de licopodios y progimnospermas (Archaeopteris)",
+        "Artrópodos terrestres (milpiés, escorpiones y arácnidos basales)"
+      ],
+      "environmentalPhases": [
+        {
+          "phase": "Fase 1: La Paradoja de las Raíces Continentales",
+          "detail": "La evolución de los primeros árboles con raíces profundas meteorizó los continentes, vertiendo colosales cantidades de fósforo y nutrientes a los mares epicontinentales."
+        },
+        {
+          "phase": "Fase 2: Zonas Muertas Oceánicas Globales",
+          "detail": "Las mareas rojas y proliferaciones algales provocaron anoxia total en las aguas marinas. Al morir las algas y depositarse en el fondo, secuestraron gigatoneladas de carbono orgánico."
+        },
+        {
+          "phase": "Fase 3: Glaciación Repentina y Asfixia",
+          "detail": "La drástica caída de $CO_2$ por meteorización y fotosíntesis enfrió el planeta, congelando Gondwana y asfixiando los arrecifes de aguas cálidas."
+        }
+      ],
+      "scientificContext": "El Devónico Tardío fue una extinción predominantemente marina que transformó los océanos. El exterminio de los placodermos acorazados permitió la radiación adaptativa de los peces óseos modernos y los tiburones, mientras que los vertebrados con extremidades continuaron su expansión hacia la tierra firme."
+    },
+    {
+      "id": "ordovician-silurian-glaciation",
+      "name": "Extinción Ordovícico-Silúrico (O-S)",
+      "subtitle": "La Glaciación Hirnantiana en Gondwana y la Sombra del Anillo",
+      "timeMa": 443,
+      "periodId": "ordovician_470ma",
+      "casualtyPercent": 85,
+      "marineLoss": 85,
+      "terrestrialLoss": 0,
+      "duration": "Aproximadamente 1.5 millones de años en dos pulsos rápidos",
+      "simulationType": "hirnantian_glaciation",
+      "coordinates": {
+        "lat": -80.0,
+        "lon": 15.0,
+        "name": "Polo Sur en Gondwana (Actual Norte de África / Sahara)"
+      },
+      "secondaryCoordinates": {
+        "lat": 0.0,
+        "lon": 0.0,
+        "name": "Anillo de Polvo Asteroidal Ecuatorial Ordovícico"
+      },
+      "physicsTelemetry": {
+        "trigger": "Glaciación Hirnantiana + Sombra del sistema de anillos asteroides ordovícico",
+        "glacierExtent": "Casquete glaciar polar de más de 30 millones de km² en Gondwana",
+        "seaLevelDrop": "Descenso eustático del nivel del mar de más de 100 metros",
+        "temperaturePlunge": "Descenso térmico global de 5°C a 8°C en aguas tropicales",
+        "ringShadow": "Sombra continua arrojada sobre el ecuador por el anillo de polvo de 466 Ma"
+      },
+      "victims": [
+        "Graptolites planctónicos coloniales (~70% de las familias extintas)",
+        "Braquiópodos y conodontos marinos de aguas someras",
+        "Trilobites de aguas tropicales y de plataforma",
+        "Briozoos y equinodermos primitivos (cistoides)",
+        "Nautiloideos gigantes ortocónicos (Cameroceras)"
+      ],
+      "survivors": [
+        "Linajes adaptados a aguas frías y profundas",
+        "Peces agnatos primitivos (arandaspídidos y astráspidos)",
+        "Trilobites de aguas profundas (Familias Dalmanitidae y Phacopidae)",
+        "Primeras plantas terrestres no vasculares (criptoesporas en orillas)",
+        "Escorpiones marinos basales"
+      ],
+      "environmentalPhases": [
+        {
+          "phase": "Fase 1: Congelamiento Polar y Retirada Marina",
+          "detail": "El supercontinente Gondwana derivó sobre el Polo Sur. Enormes capas de hielo cubrieron el actual Sahara, bajando el nivel del mar más de 100 m y destruyendo las plataformas marinas costeras."
+        },
+        {
+          "phase": "Fase 2: El Pulso Térmico y la Anoxia del Deshielo",
+          "detail": "El abrupto calentamiento y deshielo de los glaciares inundó los mares con aguas dulces estancadas, deteniendo la circulación termohalina y creando una anoxia marina profunda letal."
+        }
+      ],
+      "scientificContext": "Fue la primera de las cinco grandes extinciones masivas del Fanerozoico. La vida estaba casi exclusivamente restringida a los océanos. El descubrimiento en 2024 del sistema de anillos asteroides alrededor de la Tierra (Tomkins et al.) demostró que la sombra del anillo enfrió adicionalmente los trópicos acelerando este cataclismo."
+    }
+  ]
+}
