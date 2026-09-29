@@ -37,9 +37,40 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO FINAL • 548 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_cloudina)" opacity="0.92">
-    <g transform="translate(300, 160)" stroke="currentColor" stroke-width="4" fill="currentColor" opacity="0.85"><path d="M 80 280 L 100 200 L 140 200 L 160 280 Z" opacity="0.4"/><path d="M 90 220 L 110 150 L 150 150 L 170 220 Z" opacity="0.55"/><path d="M 100 170 L 115 100 L 155 100 L 170 170 Z" opacity="0.7"/><path d="M 110 115 L 125 50 L 160 50 L 175 115 Z" opacity="0.85"/><path d="M 120 65 L 130 10 L 160 10 L 170 65 Z" opacity="0.95"/></g>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_cloudina)" opacity="0.95">
+    
+      <!-- Multiple Nested Calcified Funnel Cones (Micro-Structure) -->
+      <g stroke="currentColor" stroke-width="3.5" fill="url(#themeGrad_cloudina)" opacity="0.7">
+        <!-- Basal Cone -->
+        <path d="M 330 440 L 370 360 L 430 360 L 470 440 Z"/>
+        <!-- Cone 2 -->
+        <path d="M 345 370 L 378 300 L 422 300 L 455 370 Z"/>
+        <!-- Cone 3 -->
+        <path d="M 358 310 L 385 240 L 415 240 L 442 310 Z"/>
+        <!-- Cone 4 -->
+        <path d="M 368 250 L 390 180 L 410 180 L 432 250 Z"/>
+        <!-- Cone 5 (Aperture) -->
+        <path d="M 378 190 L 395 130 L 405 130 L 422 190 Z"/>
+      </g>
+      <!-- Concentric Tube Growth Ribs -->
+      <g stroke="#ffffff" stroke-width="2" opacity="0.8">
+        <ellipse cx="400" cy="440" rx="70" ry="12" fill="none"/>
+        <ellipse cx="400" cy="360" rx="55" ry="10" fill="none"/>
+        <ellipse cx="400" cy="300" rx="42" ry="8" fill="none"/>
+        <ellipse cx="400" cy="240" rx="30" ry="6" fill="none"/>
+        <ellipse cx="400" cy="180" rx="20" ry="4" fill="none"/>
+        <ellipse cx="400" cy="130" rx="10" ry="3" fill="#ffffff"/>
+      </g>
+      <!-- Predatory Borehole Fossil Evidence -->
+      <circle cx="420" cy="325" r="7" fill="#020408" stroke="#ef4444" stroke-width="2.5"/>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="400" y="110" text-anchor="middle">Apertura del tubo biocalcificado</text>
+        <text x="450" y="325">Orificio circular de perforación depredadora ➔</text>
+        <text x="230" y="420">Conos cónicos anidados imbricados ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
@@ -64,7 +95,7 @@
 
   <!-- Species Nomenclature & Biometrics Footer -->
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
-  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Primer Metazoo con Concha Calcificada</text>
+  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Primer Metazoo con Concha Calcificada Tubular</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Cloudina hartmannae</text>
-  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Longitud: 5 – 15 cm | Tubos cónicos imbricados calcíticos | Primer esqueleto rígido</text>
+  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Longitud: 5 – 15 cm | Tubos cónicos concéntricos calcíticos | Evidencia más antigua de depredación</text>
 </svg>

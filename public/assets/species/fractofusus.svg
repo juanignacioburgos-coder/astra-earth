@@ -37,9 +37,44 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO • 565 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_fractofusus)" opacity="0.92">
-    <path d="M 400 170 Q 450 250 470 320 Q 450 390 400 440 Q 350 390 330 320 Q 350 250 400 170 Z" fill="currentColor" opacity="0.35" stroke="currentColor" stroke-width="4"/><line x1="400" y1="170" x2="400" y2="440" stroke="currentColor" stroke-width="6"/><path d="M 400 210 Q 440 220 455 240 M 400 210 Q 360 220 345 240 M 400 260 Q 450 270 470 290 M 400 260 Q 350 270 330 290 M 400 310 Q 460 320 475 340 M 400 310 Q 340 320 325 340 M 400 360 Q 450 370 460 390 M 400 360 Q 350 370 340 390 M 400 400 Q 430 410 440 425 M 400 400 Q 370 410 360 425" stroke="currentColor" stroke-width="4" fill="none"/>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_fractofusus)" opacity="0.95">
+    
+      <!-- Elongated Spindle Body Outline -->
+      <path d="M 400 140 C 470 230 490 320 400 450 C 310 320 330 230 400 140 Z" fill="url(#themeGrad_fractofusus)" opacity="0.3" stroke="currentColor" stroke-width="4"/>
+      <!-- Central Rachis / Spindle -->
+      <line x1="400" y1="140" x2="400" y2="450" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+      <!-- Fractal Self-Similar Modular Vanes -->
+      <g stroke="currentColor" stroke-width="3" fill="currentColor" opacity="0.65">
+        <!-- Vane 1 -->
+        <path d="M 400 180 Q 445 195 460 215 Q 430 225 400 215 Z"/>
+        <path d="M 400 180 Q 355 195 340 215 Q 370 225 400 215 Z"/>
+        <!-- Vane 2 -->
+        <path d="M 400 230 Q 465 245 480 270 Q 440 280 400 270 Z"/>
+        <path d="M 400 230 Q 335 245 320 270 Q 360 280 400 270 Z"/>
+        <!-- Vane 3 -->
+        <path d="M 400 285 Q 475 300 490 325 Q 445 335 400 325 Z"/>
+        <path d="M 400 285 Q 325 300 310 325 Q 355 335 400 325 Z"/>
+        <!-- Vane 4 -->
+        <path d="M 400 340 Q 465 355 475 380 Q 435 390 400 380 Z"/>
+        <path d="M 400 340 Q 335 355 325 380 Q 365 390 400 380 Z"/>
+        <!-- Vane 5 -->
+        <path d="M 400 395 Q 440 405 450 425 Q 425 430 400 425 Z"/>
+        <path d="M 400 395 Q 360 405 350 425 Q 375 430 400 425 Z"/>
+      </g>
+      <!-- Micro Fractal Sub-branches -->
+      <g stroke="#ffffff" stroke-width="1.5" opacity="0.6">
+        <line x1="420" y1="200" x2="445" y2="205"/><line x1="380" y1="200" x2="355" y2="205"/>
+        <line x1="430" y1="250" x2="465" y2="260"/><line x1="370" y1="250" x2="335" y2="260"/>
+        <line x1="435" y1="305" x2="470" y2="315"/><line x1="365" y1="305" x2="330" y2="315"/>
+      </g>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="400" y="125" text-anchor="middle">Ápice del huso colonial</text>
+        <text x="510" y="270">Módulos fractales de 3er orden ➔</text>
+        <text x="210" y="360">Superficie de absorción osmótica ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->

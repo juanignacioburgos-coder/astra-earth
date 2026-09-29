@@ -37,9 +37,35 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO • 555 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_parvancorina)" opacity="0.92">
-    <ellipse cx="400" cy="290" rx="110" ry="135" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="4"/><path d="M 320 230 Q 400 180 480 230" stroke="currentColor" stroke-width="14" stroke-linecap="round" fill="none"/><line x1="400" y1="200" x2="400" y2="390" stroke="currentColor" stroke-width="12" stroke-linecap="round"/><circle cx="400" cy="200" r="15" fill="currentColor"/><ellipse cx="400" cy="395" rx="25" ry="14" fill="currentColor" opacity="0.8"/>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_parvancorina)" opacity="0.95">
+    
+      <!-- Shield / Carapace Elliptical Body -->
+      <ellipse cx="400" cy="285" rx="125" ry="155" fill="url(#themeGrad_parvancorina)" opacity="0.35" stroke="currentColor" stroke-width="4.5"/>
+      <!-- Distinct Anchor-Shaped Central Ridge Complex (The "Anchor") -->
+      <!-- Anterior Curved Anchor Bow -->
+      <path d="M 310 215 Q 400 165 490 215" stroke="#ffffff" stroke-width="14" stroke-linecap="round" fill="none"/>
+      <path d="M 310 215 Q 400 165 490 215" stroke="currentColor" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <!-- Median Longitudinal Central Stem / Keel -->
+      <line x1="400" y1="185" x2="400" y2="405" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+      <line x1="400" y1="185" x2="400" y2="405" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+      <!-- Basal Swelling & Apex Button -->
+      <circle cx="400" cy="185" r="14" fill="#ffffff"/>
+      <ellipse cx="400" cy="410" rx="22" ry="12" fill="#ffffff"/>
+      <!-- Fine Lateral Transverse Fine Growth Striations -->
+      <g stroke="currentColor" stroke-width="1.8" opacity="0.5">
+        <line x1="330" y1="260" x2="390" y2="260"/><line x1="410" y1="260" x2="470" y2="260"/>
+        <line x1="320" y1="300" x2="390" y2="300"/><line x1="410" y1="300" x2="480" y2="300"/>
+        <line x1="325" y1="340" x2="390" y2="340"/><line x1="410" y1="340" x2="475" y2="340"/>
+        <line x1="340" y1="380" x2="390" y2="380"/><line x1="410" y1="380" x2="460" y2="380"/>
+      </g>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="400" y="145" text-anchor="middle">Arco anterior de flujo hidrodinámico</text>
+        <text x="490" y="300">Quilla central axial ➔</text>
+        <text x="210" y="320">Surcos branquiales pares ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->

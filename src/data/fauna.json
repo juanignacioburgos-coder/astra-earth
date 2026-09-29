@@ -1951,9 +1951,9 @@
     ],
     "description": "El felino macairodontino más robusto y masivo de la historia, alcanzando más de 400 kg. Sus colmillos superiores en forma de sable de hasta 28 cm infligían mortales mordiscos degolladores de precisión tras inmovilizar a sus presas con poderosos antebrazos.",
     "media": {
-      "imageUrl": "assets/species/smilodon.jpg",
-      "imageAuthor": "Lámina Paleontológica Clásica / Pampas Pleistoceno",
-      "imageLicense": "Dominio Público"
+      "imageUrl": "assets/species/smilodon.svg",
+      "imageAuthor": "Lámina Científica Anatómica Astra Earth (Sin rayas de tigre)",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": -31.42,

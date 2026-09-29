@@ -37,9 +37,30 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO • 555 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_arkarua)" opacity="0.92">
-    <circle cx="400" cy="290" r="110" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="5"/><polygon points="400,210 425,265 485,265 435,300 455,355 400,320 345,355 365,300 315,265 375,265" fill="currentColor" opacity="0.7" stroke="currentColor" stroke-width="4"/><circle cx="400" cy="290" r="24" fill="#020408" stroke="currentColor" stroke-width="3"/>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_arkarua)" opacity="0.95">
+    
+      <!-- Disc Perimeter with Raised Rim -->
+      <circle cx="400" cy="285" r="130" fill="url(#themeGrad_arkarua)" opacity="0.3" stroke="currentColor" stroke-width="4.5"/>
+      <circle cx="400" cy="285" r="105" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.6"/>
+      <!-- Five Radiating Ambulacral-Like Grooves (Pentarradial Symmetry) -->
+      <!-- 72 degrees each -->
+      <g stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+        <line x1="400" y1="285" x2="400" y2="170"/>
+        <line x1="400" y1="285" x2="510" y2="250"/>
+        <line x1="400" y1="285" x2="470" y2="375"/>
+        <line x1="400" y1="285" x2="330" y2="375"/>
+        <line x1="400" y1="285" x2="290" y2="250"/>
+      </g>
+      <!-- Central Apical Star Depression -->
+      <polygon points="400,265 410,280 425,280 412,290 418,305 400,295 382,305 388,290 375,280 390,280" fill="currentColor" stroke="#ffffff" stroke-width="2"/>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="400" y="150" text-anchor="middle">5 Surcos radiales (simetría pentarradial)</text>
+        <text x="400" y="325" text-anchor="middle">Depresión apical central estrellada</text>
+        <text x="545" y="360">Margen periférico elevado ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
@@ -66,5 +87,5 @@
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
   <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Posible Equinodermo Pentarradial Primitivo</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Arkarua adami</text>
-  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Diámetro: 1 cm | Disco abombado con 5 hendiduras radiales | Precursor de estrellas y erizos</text>
+  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Diámetro: 1 cm | Simetría pentarradial de 5 crestas radiales | Ancestro basal de equinodermos</text>
 </svg>

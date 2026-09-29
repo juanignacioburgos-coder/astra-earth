@@ -37,9 +37,33 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO • 555 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_tribrachidium)" opacity="0.92">
-    <circle cx="400" cy="290" r="110" fill="none" stroke="currentColor" stroke-width="12" opacity="0.5"/><path d="M 400 290 Q 430 220 490 200 Q 530 240 480 270 Q 430 290 400 290 M 400 290 Q 340 330 310 390 Q 340 430 380 400 Q 400 350 400 290 M 400 290 Q 420 360 360 410 Q 310 390 330 340 Q 370 300 400 290" fill="currentColor" opacity="0.9"/><circle cx="400" cy="290" r="18" fill="currentColor"/>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_tribrachidium)" opacity="0.95">
+    
+      <!-- Outer Disc Rim with Ciliary Micro-Ridges -->
+      <circle cx="400" cy="285" r="135" fill="url(#themeGrad_tribrachidium)" opacity="0.25" stroke="currentColor" stroke-width="4"/>
+      <circle cx="400" cy="285" r="120" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+      <!-- Three Spiral Arms Meeting at Apex -->
+      <!-- Arm 1 (0 to 120 deg) -->
+      <path d="M 400 285 Q 430 200 500 190 Q 545 220 505 260 Q 450 280 400 285" fill="currentColor" opacity="0.75" stroke="#ffffff" stroke-width="3"/>
+      <!-- Arm 2 (120 to 240 deg) -->
+      <path d="M 400 285 Q 330 330 300 395 Q 330 435 385 410 Q 410 360 400 285" fill="currentColor" opacity="0.75" stroke="#ffffff" stroke-width="3"/>
+      <!-- Arm 3 (240 to 360 deg) -->
+      <path d="M 400 285 Q 420 355 365 415 Q 305 390 325 330 Q 360 295 400 285" fill="currentColor" opacity="0.75" stroke="#ffffff" stroke-width="3"/>
+      <!-- Central Apical Y-Junction Depression -->
+      <circle cx="400" cy="285" r="16" fill="#020408" stroke="#ffffff" stroke-width="3"/>
+      <!-- Surface Ridges radiating out -->
+      <g stroke="currentColor" stroke-width="1.8" opacity="0.5">
+        <line x1="400" y1="150" x2="400" y2="175"/><line x1="515" y1="285" x2="490" y2="285"/>
+        <line x1="300" y1="230" x2="320" y2="245"/><line x1="470" y1="365" x2="450" y2="350"/>
+      </g>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="525" y="180">Brazo espiral hidrodinámico ➔</text>
+        <text x="400" y="270" text-anchor="middle">Depresión apical trifolia</text>
+        <text x="210" y="380">Margen ciliado de filtración ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
@@ -64,7 +88,7 @@
 
   <!-- Species Nomenclature & Biometrics Footer -->
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
-  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Disco Bentónico con Simetría Trirradial</text>
+  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Disco Bentónico con Simetría Trirradial Única</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Tribrachidium heraldicum</text>
   <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Diámetro: 5 cm | Simetría trirradial de 3 brazos espirales | Filtrador sésil</text>
 </svg>

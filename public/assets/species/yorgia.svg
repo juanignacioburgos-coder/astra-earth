@@ -37,9 +37,39 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO • 555 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_yorgia)" opacity="0.92">
-    <ellipse cx="400" cy="290" rx="115" ry="140" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="5"/><path d="M 400 150 L 400 430" stroke="currentColor" stroke-width="6"/><path d="M 400 180 Q 470 190 500 210 M 400 205 Q 330 215 300 235 M 400 230 Q 480 240 510 260 M 400 255 Q 320 265 290 285 M 400 280 Q 485 290 515 310 M 400 305 Q 325 315 295 335 M 400 330 Q 480 340 505 360 M 400 355 Q 330 365 305 385 M 400 380 Q 465 390 485 410 M 400 405 Q 350 415 330 425" stroke="currentColor" stroke-width="4" fill="none"/><circle cx="400" cy="175" r="22" fill="currentColor" opacity="0.8"/>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_yorgia)" opacity="0.95">
+    
+      <!-- Trace Impression (Ghost Feeding Imprint behind) -->
+      <ellipse cx="280" cy="300" rx="90" ry="120" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6,6" opacity="0.3"/>
+      <!-- Main Specimen Oval Disc -->
+      <ellipse cx="440" cy="285" rx="125" ry="155" fill="url(#themeGrad_yorgia)" opacity="0.35" stroke="currentColor" stroke-width="4"/>
+      <!-- Axial Dividing Line with Glide Reflection Offset -->
+      <line x1="440" y1="135" x2="440" y2="435" stroke="#ffffff" stroke-width="4.5"/>
+      <!-- Asymmetrical / Alternating Isomer Segments -->
+      <g stroke="currentColor" stroke-width="3" fill="currentColor" opacity="0.75">
+        <!-- Right side segments -->
+        <path d="M 440 160 Q 520 170 550 190 L 440 195 Z"/>
+        <path d="M 440 210 Q 540 220 560 240 L 440 245 Z"/>
+        <path d="M 440 260 Q 545 270 565 290 L 440 295 Z"/>
+        <path d="M 440 310 Q 540 320 555 340 L 440 345 Z"/>
+        <path d="M 440 360 Q 520 370 535 390 L 440 395 Z"/>
+        <!-- Left side offset segments (Glide symmetry) -->
+        <path d="M 440 185 Q 360 195 330 215 L 440 220 Z"/>
+        <path d="M 440 235 Q 340 245 320 265 L 440 270 Z"/>
+        <path d="M 440 285 Q 335 295 315 315 L 440 320 Z"/>
+        <path d="M 440 335 Q 340 345 325 365 L 440 370 Z"/>
+        <path d="M 440 385 Q 360 395 345 415 L 440 420 Z"/>
+      </g>
+      <!-- Undifferentiated Anterior Plate -->
+      <ellipse cx="440" cy="155" rx="35" ry="18" fill="#ffffff" opacity="0.85"/>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="180" y="270">Huella de alimentación previa ➔</text>
+        <text x="440" y="120" text-anchor="middle">Zona anterior no segmentada</text>
+        <text x="580" y="280">Isómeros en reflexión deslizante ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
@@ -64,7 +94,7 @@
 
   <!-- Species Nomenclature & Biometrics Footer -->
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
-  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Disco Deslizante de Simetría Alterna</text>
+  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Disco Deslizante con Simetría Alterna</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Yorgia moveri</text>
   <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Diámetro: 16 cm | Segmentación alterna por deslizamiento | Rastros fósiles de alimentación</text>
 </svg>

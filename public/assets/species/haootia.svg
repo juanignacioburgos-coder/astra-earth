@@ -37,9 +37,35 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO • 560 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_haootia)" opacity="0.92">
-    <rect x="330" y="220" width="140" height="140" rx="25" fill="currentColor" opacity="0.25" stroke="currentColor" stroke-width="6" transform="rotate(45 400 290)"/><path d="M 400 290 L 300 190 M 400 290 L 500 190 M 400 290 L 500 390 M 400 290 L 300 390" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><circle cx="400" cy="290" r="20" fill="currentColor"/><path d="M 300 190 Q 270 160 250 180 M 500 190 Q 530 160 550 180 M 500 390 Q 530 420 550 400 M 300 390 Q 270 420 250 400" stroke="currentColor" stroke-width="6" fill="none"/>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_haootia)" opacity="0.95">
+    
+      <!-- Basal Pedicle Stalk -->
+      <path d="M 390 360 L 390 450 L 410 450 L 410 360 Z" fill="currentColor" opacity="0.7"/>
+      <ellipse cx="400" cy="450" rx="30" ry="10" fill="currentColor"/>
+      <!-- Quadrangular Calyx with 4 Extending Arms -->
+      <polygon points="400,200 480,270 400,340 320,270" fill="url(#themeGrad_haootia)" opacity="0.4" stroke="currentColor" stroke-width="4"/>
+      <!-- 4 Corner Branches / Tentacles with Feathering -->
+      <g stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round">
+        <path d="M 320 270 Q 240 240 210 200"/>
+        <path d="M 400 200 Q 400 130 400 100"/>
+        <path d="M 480 270 Q 560 240 590 200"/>
+      </g>
+      <!-- Parallel Contractile Muscle Fiber Bundles (Fossil Evidence) -->
+      <g stroke="#ffffff" stroke-width="2.2" opacity="0.8">
+        <line x1="350" y1="245" x2="450" y2="245"/>
+        <line x1="335" y1="260" x2="465" y2="260"/>
+        <line x1="330" y1="275" x2="470" y2="275"/>
+        <line x1="340" y1="290" x2="460" y2="290"/>
+        <line x1="360" y1="305" x2="440" y2="305"/>
+      </g>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="400" y="85" text-anchor="middle">Brazo bifurcado superior</text>
+        <text x="480" y="240">Haces de fibras musculares contráctiles ➔</text>
+        <text x="240" y="380">Disco de fijación peduncular ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
@@ -66,5 +92,5 @@
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
   <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Primer Tejido Muscular Contráctil Fósil</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Haootia quadriformis</text>
-  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Dimensiones: 6 x 6 cm | Simetría cuadrangular con fibras musculares | Cnidario basal</text>
+  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Dimensiones: 6 x 6 cm | Simetría cuadrangular con fibras musculares | Cnidario sésil</text>
 </svg>

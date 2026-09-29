@@ -37,9 +37,29 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO • 555 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_cyanorus)" opacity="0.92">
-    <ellipse cx="400" cy="290" rx="80" ry="130" fill="currentColor" opacity="0.35" stroke="currentColor" stroke-width="5"/><line x1="400" y1="170" x2="400" y2="410" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><g stroke="currentColor" stroke-width="3.5" opacity="0.75"><line x1="340" y1="220" x2="400" y2="235"/><line x1="460" y1="220" x2="400" y2="235"/><line x1="330" y1="260" x2="400" y2="275"/><line x1="470" y1="260" x2="400" y2="275"/><line x1="330" y1="305" x2="400" y2="320"/><line x1="470" y1="305" x2="400" y2="320"/><line x1="340" y1="350" x2="400" y2="365"/><line x1="460" y1="350" x2="400" y2="365"/></g>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_cyanorus)" opacity="0.95">
+    
+      <!-- Elongated Bilateral Organism with Lateral Lobes -->
+      <ellipse cx="400" cy="285" rx="100" ry="145" fill="url(#themeGrad_cyanorus)" opacity="0.35" stroke="currentColor" stroke-width="4.5"/>
+      <!-- Anterior Crescentic Cephalic Crest -->
+      <path d="M 320 200 Q 400 155 480 200" stroke="#ffffff" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <!-- Distinct Longitudinal Axial Groove -->
+      <line x1="400" y1="175" x2="400" y2="415" stroke="#ffffff" stroke-width="4.5"/>
+      <!-- Paired Lateral Lobes / Metameric Flaps -->
+      <g stroke="currentColor" stroke-width="3" opacity="0.75">
+        <line x1="320" y1="240" x2="395" y2="240"/><line x1="405" y1="240" x2="480" y2="240"/>
+        <line x1="310" y1="285" x2="395" y2="285"/><line x1="405" y1="285" x2="490" y2="285"/>
+        <line x1="320" y1="330" x2="395" y2="330"/><line x1="405" y1="330" x2="480" y2="330"/>
+        <line x1="335" y1="375" x2="395" y2="375"/><line x1="405" y1="375" x2="465" y2="375"/>
+      </g>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="400" y="145" text-anchor="middle">Cresta cefálica anterior arqueada</text>
+        <text x="400" y="440" text-anchor="middle">Surco axial medio continuo (simetría bilateral)</text>
+        <text x="500" y="285">Lóbulos laterales pares ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
@@ -64,7 +84,7 @@
 
   <!-- Species Nomenclature & Biometrics Footer -->
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
-  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Bilaterio Móvil con Surco Axial</text>
+  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Pequeño Bilaterio Móvil con Surco Axial</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Cyanorus singularis</text>
-  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Longitud: 3 cm | Surco longitudinal medial con costillas | Bilaterio primitivo nadador/reptador</text>
+  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Longitud: 9 mm | Bilaterio móvil primitivo | Cresta cefálica y surco medio dorsal</text>
 </svg>
