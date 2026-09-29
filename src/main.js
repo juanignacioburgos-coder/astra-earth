@@ -148,8 +148,9 @@ class AncientEarthApp {
       // 8. Populate Geological Eras Dialog
       this._populateErasDialog();
 
-      // 9. Setup Continental Drift City Search
+      // 9. Setup Continental Drift City Search & Dialog
       this._setupCitySearch();
+      this._setupCityDriftDialog();
 
       // 10. Setup 3D Tectonic Plates & Boundaries Controls
       this._setupTectonicsControls();
@@ -164,8 +165,17 @@ class AncientEarthApp {
       await this.globeScene.setPeriod(initialPeriod, initialFauna);
       this.sidebar.update(initialPeriod, initialFauna, null);
 
-      // Start directly in interactive explorer mode on 3D Earth
-      this.enterExplorerMode();
+      // Start in clean Google Earth mode (unobstructed 3D Earth at Present Day 0 Ma)
+      const sidebarPanel = document.getElementById('sidebar-panel');
+      if (sidebarPanel) {
+        sidebarPanel.classList.add('closed');
+      }
+      if (this.sidebar) {
+        this.sidebar.isOpen = false;
+      }
+      document.body.classList.add('explorer-mode-active');
+      const navHero = document.getElementById('nav-btn-hero');
+      if (navHero) navHero.classList.add('active');
       this.globeScene.resetView();
 
       // Pre-warm adjacent periods for silky scrubbing
@@ -185,11 +195,32 @@ class AncientEarthApp {
   filterFauna(targetMa, period = null) {
     if (!this.fauna || this.fauna.length === 0) return [];
 
+    // For Present Day (0 Ma / Holocene / Quaternary), strictly include species of the Quaternary (<= 0.5 Ma)
+    // and period-specific species (Glyptodon, Smilodon, Mammuthus, Megatherium, Macrauchenia).
+    // Prevent Neogene/Miocene creatures like Megalodon (extinct 3.6 Ma ago) from leaking into Present.
+    if (targetMa === 0 || (period && (period.id === 'present_0ma' || period.id === 'quaternary'))) {
+      const quatList = this.fauna.filter(sp => {
+        const end = sp.endMa !== undefined ? sp.endMa : 999;
+        const pId = (sp.periodId || '').toLowerCase();
+        return end <= 0.05 || pId.includes('cuaternario') || pId.includes('holoceno') || pId.includes('pleistoceno');
+      });
+
+      if (period && Array.isArray(period.species) && period.species.length > 0) {
+        const map = new Map();
+        quatList.forEach(sp => map.set(sp.id, sp));
+        period.species.forEach(sp => map.set(sp.id, sp));
+        return Array.from(map.values());
+      }
+      return quatList;
+    }
+
     // Realistic geological tolerance calibrated to era spans
-    const tol = Math.min(28, Math.max(12, targetMa * 0.12));
+    const tol = Math.min(28, Math.max(8, targetMa * 0.10));
 
     let filtered = this.fauna.filter(sp => {
-      return (sp.startMa >= (targetMa - tol)) && (sp.endMa <= (targetMa + tol));
+      const s = sp.startMa ?? 0;
+      const e = sp.endMa ?? 0;
+      return (s >= (targetMa - tol)) && (e <= (targetMa + tol));
     });
 
     // Complement with exact periodId match for historical fidelity
@@ -385,67 +416,183 @@ class AncientEarthApp {
       const btnExt = document.getElementById('btn-toggle-extinctions-header');
       if (btnExt) btnExt.click();
     });
+    bindDrawerLink('mobile-nav-city-drift', () => {
+      const cityDialog = document.getElementById('city-drift-dialog');
+      if (cityDialog) cityDialog.showModal();
+    });
     bindDrawerLink('mobile-nav-methodology', () => {
       const infoDialog = document.getElementById('info-dialog');
       if (infoDialog) infoDialog.showModal();
     });
 
-    // Mobile City Search
-    const mobileSearchInput = document.getElementById('mobile-city-search-input');
-    const mobileSuggestions = document.getElementById('mobile-city-suggestions');
-    const mobileClearBtn = document.getElementById('btn-clear-city-mobile');
+    // Mobile Paleontology Search (Species, Fossils, Eras)
+    const mobileSpInput = document.getElementById('mobile-species-search-input');
+    const mobileSpSuggestions = document.getElementById('mobile-species-suggestions');
+    const mobileSpClearBtn = document.getElementById('btn-clear-species-mobile');
 
-    if (mobileSearchInput && mobileSuggestions) {
-      mobileSearchInput.addEventListener('input', (e) => {
+    if (mobileSpInput && mobileSpSuggestions) {
+      mobileSpInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
-        if (mobileClearBtn) mobileClearBtn.style.display = query ? 'block' : 'none';
+        if (mobileSpClearBtn) mobileSpClearBtn.style.display = query ? 'block' : 'none';
 
         if (!query) {
-          mobileSuggestions.style.display = 'none';
-          mobileSuggestions.innerHTML = '';
+          mobileSpSuggestions.style.display = 'none';
+          mobileSpSuggestions.innerHTML = '';
           return;
         }
 
-        const matches = this.cities.filter(c =>
-          c.name.toLowerCase().includes(query) ||
-          c.country.toLowerCase().includes(query)
-        ).slice(0, 5);
+        const matches = (this.fauna || []).filter(sp => {
+          const common = (sp.commonName || '').toLowerCase();
+          const sci = (sp.scientificName || sp.name || '').toLowerCase();
+          const grp = (sp.clade || sp.group || '').toLowerCase();
+          const env = (sp.environment || '').toLowerCase();
+          const pId = (sp.periodId || '').toLowerCase();
+          return common.includes(query) || sci.includes(query) || grp.includes(query) || env.includes(query) || pId.includes(query);
+        }).slice(0, 6);
 
         if (matches.length > 0) {
-          mobileSuggestions.innerHTML = matches.map(c => `
-            <div class="city-suggestion-item" data-city-name="${c.name}">
-              <div class="city-sug-name">${c.name}</div>
-              <div class="city-sug-country">${c.country} • ${c.plate}</div>
-            </div>
-          `).join('');
-          mobileSuggestions.style.display = 'block';
+          mobileSpSuggestions.innerHTML = matches.map(sp => {
+            const common = sp.commonName || sp.name;
+            const sci = sp.scientificName || sp.name;
+            const era = sp.timeRange || (sp.startMa !== undefined ? `${sp.startMa} Ma` : '');
+            const imgUrl = sp.media ? sp.media.imageUrl : (sp.image || 'assets/species/allosaurus.jpg');
+            return `
+              <div class="species-suggestion-item" data-species-id="${sp.id}">
+                <img src="./${imgUrl}" class="species-sug-thumb" alt="${common}" onerror="this.src='./favicon.svg'; this.style.opacity=0.4;" />
+                <div class="species-sug-info">
+                  <div class="species-sug-name">${common}</div>
+                  <div class="species-sug-meta">${sci} • ⏳ ${era}</div>
+                </div>
+              </div>
+            `;
+          }).join('');
+          mobileSpSuggestions.style.display = 'block';
         } else {
-          mobileSuggestions.style.display = 'none';
+          mobileSpSuggestions.style.display = 'none';
         }
       });
 
-      mobileSuggestions.addEventListener('click', (e) => {
+      mobileSpSuggestions.addEventListener('click', (e) => {
+        const item = e.target.closest('.species-suggestion-item');
+        if (!item) return;
+        const spId = item.dataset.speciesId;
+        const sp = (this.fauna || []).find(s => s.id === spId);
+        if (sp) {
+          closeDrawer();
+          mobileSpInput.value = sp.commonName || sp.name;
+          mobileSpSuggestions.style.display = 'none';
+          
+          // Find matching period and select species
+          let targetPeriod = this.periods[0];
+          let periodIndex = 0;
+          if (this.fullCatalogModal && typeof this.fullCatalogModal.getBestPeriodForSpecies === 'function') {
+            const res = this.fullCatalogModal.getBestPeriodForSpecies(sp);
+            targetPeriod = res.period;
+            periodIndex = res.index;
+          } else {
+            const targetMa = (sp.startMa !== undefined && sp.endMa !== undefined) ? (sp.startMa + sp.endMa) / 2 : (sp.startMa || 0);
+            let minDiff = Infinity;
+            this.periods.forEach((p, idx) => {
+              const diff = Math.abs(p.timeMa - targetMa);
+              if (diff < minDiff) {
+                minDiff = diff;
+                targetPeriod = p;
+                periodIndex = idx;
+              }
+            });
+          }
+          this.selectSpeciesFromCatalog(sp, targetPeriod, periodIndex);
+        }
+      });
+
+      if (mobileSpClearBtn) {
+        mobileSpClearBtn.addEventListener('click', () => {
+          mobileSpInput.value = '';
+          mobileSpClearBtn.style.display = 'none';
+          mobileSpSuggestions.style.display = 'none';
+        });
+      }
+    }
+  }
+
+  /**
+   * Sets up the dedicated City Drift Curiosity & Geographic Reference Dialog
+   */
+  _setupCityDriftDialog() {
+    const dialog = document.getElementById('city-drift-dialog');
+    const btnClose = document.getElementById('btn-close-city-dialog');
+    const input = document.getElementById('dialog-city-search-input');
+    const clearBtn = document.getElementById('btn-clear-city-dialog');
+    const suggestions = document.getElementById('dialog-city-suggestions');
+    const chipsContainer = document.getElementById('popular-cities-chips');
+
+    if (btnClose && dialog) {
+      btnClose.addEventListener('click', () => dialog.close());
+    }
+
+    if (input && suggestions) {
+      input.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
+
+        if (!query) {
+          suggestions.style.display = 'none';
+          suggestions.innerHTML = '';
+          return;
+        }
+
+        const matches = (this.cities || []).filter(c =>
+          c.name.toLowerCase().includes(query) ||
+          c.country.toLowerCase().includes(query)
+        ).slice(0, 6);
+
+        if (matches.length > 0) {
+          suggestions.innerHTML = matches.map(c => `
+            <div class="city-suggestion-item" data-city-name="${c.name}">
+              <div class="city-sug-name">${c.name}</div>
+              <div class="city-sug-country">${c.country} • Placa ${c.plate}</div>
+            </div>
+          `).join('');
+          suggestions.style.display = 'block';
+        } else {
+          suggestions.style.display = 'none';
+        }
+      });
+
+      suggestions.addEventListener('click', (e) => {
         const item = e.target.closest('.city-suggestion-item');
         if (!item) return;
         const cityName = item.dataset.cityName;
-        const city = this.cities.find(c => c.name === cityName);
+        const city = (this.cities || []).find(c => c.name === cityName);
         if (city) {
-          closeDrawer();
+          if (dialog) dialog.close();
           this.selectCity(city);
-          mobileSearchInput.value = `${city.name}, ${city.country}`;
-          mobileSuggestions.style.display = 'none';
-          if (mobileClearBtn) mobileClearBtn.style.display = 'block';
+          input.value = `${city.name}, ${city.country}`;
+          suggestions.style.display = 'none';
         }
       });
 
-      if (mobileClearBtn) {
-        mobileClearBtn.addEventListener('click', () => {
-          mobileSearchInput.value = '';
-          mobileClearBtn.style.display = 'none';
-          mobileSuggestions.style.display = 'none';
-          this.clearCityMarker();
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          input.value = '';
+          clearBtn.style.display = 'none';
+          suggestions.style.display = 'none';
         });
       }
+    }
+
+    // Popular city chips click
+    if (chipsContainer) {
+      chipsContainer.addEventListener('click', (e) => {
+        const chip = e.target.closest('.city-chip');
+        if (!chip) return;
+        const targetName = chip.dataset.city;
+        const city = (this.cities || []).find(c => c.name.toLowerCase() === targetName.toLowerCase());
+        if (city) {
+          if (dialog) dialog.close();
+          this.selectCity(city);
+        }
+      });
     }
   }
 
@@ -816,10 +963,13 @@ class AncientEarthApp {
     });
   }
 
-  enterExplorerMode() {
+  enterExplorerMode(openSidebar = false) {
     document.body.classList.add('explorer-mode-active');
     const sidebarPanel = document.getElementById('sidebar-panel');
-    if (sidebarPanel) sidebarPanel.classList.remove('closed');
+    if (sidebarPanel && openSidebar) {
+      sidebarPanel.classList.remove('closed');
+      if (this.sidebar) this.sidebar.isOpen = true;
+    }
     if (this.globeScene) this.globeScene.resetView();
 
     const navHero = document.getElementById('nav-btn-hero');
@@ -833,6 +983,15 @@ class AncientEarthApp {
 
   resetToHomeView() {
     this.resetSpeciesSelection();
+    // Close sidebar panel so the user enjoys the clean, unobstructed 3D Google Earth view
+    const sidebarPanel = document.getElementById('sidebar-panel');
+    if (sidebarPanel) {
+      sidebarPanel.classList.add('closed');
+    }
+    if (this.sidebar) {
+      this.sidebar.isOpen = false;
+    }
+
     if (this.globeScene) this.globeScene.resetView();
     const navHero = document.getElementById('nav-btn-hero');
     const navTimeline = document.getElementById('nav-btn-timeline');

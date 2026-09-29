@@ -3462,6 +3462,73 @@ html, body {
   box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
 }
 
+.species-suggestions-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: rgba(13, 19, 33, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(56, 189, 248, 0.15);
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 200;
+  padding: 6px;
+}
+
+.species-suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.species-suggestion-item:hover,
+.species-suggestion-item:active {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.species-sug-thumb {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.species-sug-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.species-sug-name {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.species-sug-meta {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .mobile-drawer-nav {
   display: flex;
   flex-direction: column;
@@ -3571,9 +3638,9 @@ html, body {
   /* Timeline Scrubber Dock on Mobile */
   #timeline-mount {
     position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: max(22px, calc(env(safe-area-inset-bottom, 0px) + 16px));
     transform: none;
     width: auto;
     max-width: none;
@@ -3731,18 +3798,29 @@ html, body {
     top: 240px;
   }
 
-  /* Concierge AI Assistant on Mobile */
+  /* Concierge AI Assistant on Mobile: elevated cleanly above the timeline dock */
+  .astra-concierge-widget {
+    bottom: max(96px, calc(env(safe-area-inset-bottom, 0px) + 88px));
+    right: 14px;
+    z-index: 95;
+    gap: 8px;
+  }
+
+  .concierge-bubbles {
+    display: none; /* Keep mobile view clean and unobstructed; glowing avatar is front and center */
+  }
+
+  .concierge-avatar-btn {
+    width: 46px;
+    height: 46px;
+  }
+
   .concierge-flyout {
     width: calc(100vw - 20px);
     right: 10px;
     left: 10px;
-    bottom: 74px;
+    bottom: max(84px, calc(env(safe-area-inset-bottom, 0px) + 78px));
     max-height: 72vh;
-  }
-
-  .concierge-bubble {
-    bottom: 74px;
-    right: 10px;
   }
 }
 
@@ -4600,6 +4678,96 @@ html, body {
   color: #fff;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+}
+
+/* City Drift Curiosity & Geographic Reference Dialog */
+dialog.city-drift-dialog {
+  width: min(580px, 94vw);
+  max-height: 85vh;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  background: rgba(8, 14, 28, 0.96);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.9), 0 0 40px rgba(56, 189, 248, 0.2);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+dialog.city-drift-dialog::backdrop {
+  background: rgba(3, 7, 18, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.city-drift-header-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.city-drift-badge-icon {
+  font-size: 1.5rem;
+}
+
+.city-drift-badge-sub {
+  font-size: 0.76rem;
+  color: #38bdf8;
+  letter-spacing: 0.04em;
+  display: block;
+}
+
+.city-drift-intro {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+}
+
+.city-dialog-input-wrapper {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.popular-cities-section {
+  margin-top: 14px;
+}
+
+.popular-cities-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.popular-cities-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.city-chip {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
+}
+
+.city-chip:hover,
+.city-chip:active {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 /* Full Catalog Dialog Container */

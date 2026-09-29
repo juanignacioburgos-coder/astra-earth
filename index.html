@@ -107,17 +107,17 @@
         </div>
 
         <div class="mobile-drawer-body">
-          <!-- Mobile City Search -->
+          <!-- Mobile Paleontology Search (Species, Fossils, Eras) -->
           <div class="mobile-search-section">
             <div class="search-input-wrapper mobile-search-wrapper">
               <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
-              <input type="text" id="mobile-city-search-input" placeholder="Buscar ciudad en el tiempo..." autocomplete="off" spellcheck="false" />
-              <button id="btn-clear-city-mobile" class="btn-clear-search" style="display: none;" title="Quitar">&times;</button>
+              <input type="text" id="mobile-species-search-input" placeholder="Buscar especie fósil, dinosaurio o era..." autocomplete="off" spellcheck="false" />
+              <button id="btn-clear-species-mobile" class="btn-clear-search" style="display: none;" title="Limpiar">&times;</button>
             </div>
-            <div class="city-suggestions-dropdown" id="mobile-city-suggestions" style="display: none;"></div>
+            <div class="species-suggestions-dropdown" id="mobile-species-suggestions" style="display: none;"></div>
           </div>
 
           <!-- Navigation Items List -->
@@ -126,7 +126,7 @@
               <span class="nav-icon">🏠</span>
               <div class="nav-text-group">
                 <span class="nav-main-text">Inicio</span>
-                <span class="nav-sub-text">Vista orbital global</span>
+                <span class="nav-sub-text">Vista orbital global (Tierra actual)</span>
               </div>
             </button>
 
@@ -175,6 +175,14 @@
               <div class="nav-text-group">
                 <span class="nav-main-text">Extinciones Masivas 3D</span>
                 <span class="nav-sub-text">Chicxulub, Traps Siberianos</span>
+              </div>
+            </button>
+
+            <button class="mobile-nav-link" id="mobile-nav-city-drift">
+              <span class="nav-icon">📍</span>
+              <div class="nav-text-group">
+                <span class="nav-main-text">¿Dónde estaba mi ciudad?</span>
+                <span class="nav-sub-text">Curiosidad: deriva continental en 750 Ma</span>
               </div>
             </button>
 
@@ -792,6 +800,54 @@
 
       <!-- Enciclopedia Paleobiológica Completa (57 Especies Fósiles) -->
       <dialog id="full-catalog-dialog" class="glass-dialog full-catalog-dialog"></dialog>
+
+      <!-- City Drift Geographic Curiosity & Continental Drift Reference Modal -->
+      <dialog id="city-drift-dialog" class="glass-dialog city-drift-dialog">
+        <div class="dialog-card">
+          <div class="dialog-header">
+            <div class="city-drift-header-title">
+              <span class="city-drift-badge-icon">📍</span>
+              <div>
+                <h3>¿Dónde estaba mi ciudad en el tiempo?</h3>
+                <span class="city-drift-badge-sub">Curiosidad Geográfica • Deriva Continental en 750 Ma</span>
+              </div>
+            </div>
+            <button id="btn-close-city-dialog" class="btn-close" aria-label="Cerrar">&times;</button>
+          </div>
+          <div class="dialog-body">
+            <p class="city-drift-intro">
+              Selecciona o busca cualquier ciudad del mundo. El atlas calculará sus coordenadas paleogeográficas a través del movimiento de las placas tectónicas desde Rodinia y Pangea hasta el presente.
+            </p>
+
+            <div class="search-input-wrapper city-dialog-input-wrapper">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="dialog-city-search-input" placeholder="Escribe tu ciudad (ej. Santiago, Buenos Aires, Madrid, Tokio...)" autocomplete="off" spellcheck="false" />
+              <button id="btn-clear-city-dialog" class="btn-clear-search" style="display: none;" title="Limpiar">&times;</button>
+            </div>
+            <div class="city-suggestions-dropdown" id="dialog-city-suggestions" style="display: none;"></div>
+
+            <!-- Popular Reference Cities -->
+            <div class="popular-cities-section">
+              <span class="popular-cities-label">Ciudades de referencia rápida:</span>
+              <div class="popular-cities-chips" id="popular-cities-chips">
+                <button class="city-chip" data-city="Buenos Aires">🇦🇷 Buenos Aires</button>
+                <button class="city-chip" data-city="Santiago">🇨🇱 Santiago</button>
+                <button class="city-chip" data-city="Madrid">🇪🇸 Madrid</button>
+                <button class="city-chip" data-city="Ciudad de México">🇲🇽 Ciudad de México</button>
+                <button class="city-chip" data-city="Bogotá">🇨🇴 Bogotá</button>
+                <button class="city-chip" data-city="Lima">🇵🇪 Lima</button>
+                <button class="city-chip" data-city="Tokio">🇯🇵 Tokio</button>
+                <button class="city-chip" data-city="Nueva York">🇺🇸 Nueva York</button>
+                <button class="city-chip" data-city="Londres">🇬🇧 Londres</button>
+                <button class="city-chip" data-city="Sídney">🇦🇺 Sídney</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
 
       <!-- Modal About & Methodology -->
       <dialog id="info-dialog" class="glass-dialog">
