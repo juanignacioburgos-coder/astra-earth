@@ -1727,18 +1727,27 @@ html, body {
 }
 
 .diet-carnivore {
-  background: rgba(239, 68, 68, 0.85);
+  background: rgba(239, 68, 68, 0.88);
   color: #fff;
+  border: 1px solid rgba(239, 68, 68, 0.5);
 }
 
 .diet-herbivore {
-  background: rgba(34, 197, 94, 0.85);
+  background: rgba(34, 197, 94, 0.88);
   color: #fff;
+  border: 1px solid rgba(34, 197, 94, 0.5);
 }
 
-.diet-marine {
-  background: rgba(6, 182, 212, 0.85);
+.diet-marine, .diet-piscivore {
+  background: rgba(2, 132, 199, 0.88);
   color: #fff;
+  border: 1px solid rgba(56, 189, 248, 0.5);
+}
+
+.diet-filter, .diet-omnivore, .diet-insectivore {
+  background: rgba(245, 158, 11, 0.88);
+  color: #fff;
+  border: 1px solid rgba(245, 158, 11, 0.5);
 }
 
 /* Species Environment & Diet Badges */
@@ -5590,5 +5599,96 @@ dialog.full-catalog-dialog::backdrop {
   .btn-catalog-reset {
     margin-left: 0;
     justify-content: center;
+  }
+}
+
+/* 3D Species Pin Taxonomy Legend */
+.globe-pins-legend {
+  position: absolute;
+  bottom: 84px;
+  left: 20px;
+  z-index: 45;
+  background: rgba(11, 15, 25, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+  user-select: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.pins-legend-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+}
+
+.pins-legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+}
+
+.pin-legend-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.pin-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.pin-dot.red {
+  background-color: #ef4444;
+  color: #ef4444;
+}
+
+.pin-dot.green {
+  background-color: #22c55e;
+  color: #22c55e;
+}
+
+.pin-dot.blue {
+  background-color: #0284c7;
+  color: #00d2ff;
+}
+
+.pin-dot.gold {
+  background-color: #f59e0b;
+  color: #f59e0b;
+}
+
+@media (max-width: 768px) {
+  .globe-pins-legend {
+    bottom: auto;
+    top: 64px;
+    left: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 0.65rem;
+  }
+  
+  .pins-legend-items {
+    gap: 4px 10px;
   }
 }

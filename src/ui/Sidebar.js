@@ -136,8 +136,8 @@ export class Sidebar {
             </svg>
             Fauna de esta Era (${this.activeFauna.length})
           </h3>
-          <button id="btn-open-catalog-sidebar" class="btn-catalog-sidebar" title="Abrir catálogo enciclopédico de las 57 especies (Tecla C)">
-            📚 Catálogo Completo (57)
+          <button id="btn-open-catalog-sidebar" class="btn-catalog-sidebar" title="Abrir catálogo enciclopédico de especies fósiles (Tecla C)">
+            📚 Catálogo Completo
           </button>
         </div>
 
@@ -167,9 +167,11 @@ export class Sidebar {
             const scientific = sp.scientificName || sp.name;
             const clade = sp.clade || sp.group || 'Vertebrata';
             const diet = sp.diet || 'Desconocido';
-            const dietClass = diet.toLowerCase().includes('carnívoro') ? 'diet-carnivore' :
-                              diet.toLowerCase().includes('herbívoro') ? 'diet-herbivore' :
-                              diet.toLowerCase().includes('piscívoro') ? 'diet-piscivore' : 'diet-marine';
+            const dietLower = diet.toLowerCase();
+            const dietClass = (dietLower.includes('filtrador') || dietLower.includes('omnívoro') || dietLower.includes('insectívoro')) ? 'diet-filter' :
+                              dietLower.includes('carnívoro') ? 'diet-carnivore' :
+                              (dietLower.includes('herbívoro') || dietLower.includes('vegetariano')) ? 'diet-herbivore' :
+                              (dietLower.includes('piscívoro') || sp.environment === 'marine') ? 'diet-marine' : 'diet-filter';
             
             const len = sp.metrics?.lengthMeters ? `${sp.metrics.lengthMeters} m` : (sp.length || 'N/D');
             const wt = sp.metrics?.weightTons !== undefined ? 
@@ -181,7 +183,10 @@ export class Sidebar {
             const env = sp.environment || 'terrestrial';
             const envLabel = env === 'marine' ? '🌊 Marino' : (env === 'aerial' ? '🪽 Volador' : (env === 'amphibious' ? '🦎 Anfibio' : '🌲 Terrestre'));
             const formation = sp.discovery?.geologicalFormation || (Array.isArray(sp.paleoLocation) ? sp.paleoLocation.join(', ') : (sp.fossilSite || 'Global'));
-            const paleoHabitat = sp.paleogeography?.waterBody || sp.paleogeography?.landmass || 'Pangea';
+            const isMarine = env === 'marine' || dietLower.includes('piscívoro');
+            const paleoHabitat = isMarine 
+              ? (sp.paleogeography?.waterBody || 'Cuenca oceánica ancestral') 
+              : (sp.paleogeography?.landmass || sp.paleogeography?.waterBody || 'Masa continental ancestral');
             const discoverer = sp.discovery?.discoverer || '';
             const yearDisc = sp.discovery?.yearDiscovered || '';
 

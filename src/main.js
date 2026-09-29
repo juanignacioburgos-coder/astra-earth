@@ -195,23 +195,17 @@ class AncientEarthApp {
   filterFauna(targetMa, period = null) {
     if (!this.fauna || this.fauna.length === 0) return [];
 
-    // For Present Day (0 Ma / Holocene / Quaternary), strictly include species of the Quaternary (<= 0.5 Ma)
-    // and period-specific species (Glyptodon, Smilodon, Mammuthus, Megatherium, Macrauchenia).
-    // Prevent Neogene/Miocene creatures like Megalodon (extinct 3.6 Ma ago) from leaking into Present.
+    // For Present Day (0 Ma / Holocene / Quaternary), strictly include species of the Quaternary (<= 5.0 Ma start, <= 0.05 Ma end)
+    // and period-specific species (Glyptodon, Smilodon, Mammuthus, Megatherium, Macrauchenia, Mastodonte, etc.).
+    // Prevent Neogene/Miocene creatures like Megalodon (extinct 3.6 Ma ago) or Archaic cyanobacteria from leaking into Present.
+    // Strictly rely on canonical this.fauna to prevent duplicate species markers on the 3D globe.
     if (targetMa === 0 || (period && (period.id === 'present_0ma' || period.id === 'quaternary'))) {
-      const quatList = this.fauna.filter(sp => {
+      return this.fauna.filter(sp => {
+        const start = sp.startMa !== undefined ? sp.startMa : 0;
         const end = sp.endMa !== undefined ? sp.endMa : 999;
         const pId = (sp.periodId || '').toLowerCase();
-        return end <= 0.05 || pId.includes('cuaternario') || pId.includes('holoceno') || pId.includes('pleistoceno');
+        return (start <= 5.0) && (end <= 0.05 || pId.includes('cuaternario') || pId.includes('holoceno') || pId.includes('pleistoceno'));
       });
-
-      if (period && Array.isArray(period.species) && period.species.length > 0) {
-        const map = new Map();
-        quatList.forEach(sp => map.set(sp.id, sp));
-        period.species.forEach(sp => map.set(sp.id, sp));
-        return Array.from(map.values());
-      }
-      return quatList;
     }
 
     // Realistic geological tolerance calibrated to era spans

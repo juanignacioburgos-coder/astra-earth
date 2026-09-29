@@ -2289,6 +2289,58 @@
     }
   },
   {
+    "id": "panthera-spelaea",
+    "commonName": "León de las Cavernas Euroasiático",
+    "scientificName": "Panthera spelaea",
+    "clade": "Carnivora (Felidae / Pantherinae)",
+    "periodId": "pleistoceno",
+    "startMa": 0.6,
+    "endMa": 0.013,
+    "diet": "Carnívoro",
+    "metrics": {
+      "lengthMeters": 2.1,
+      "weightTons": 0.34,
+      "heightMeters": 1.2
+    },
+    "paleoLocation": [
+      "Eurasia",
+      "Francia (Chauvet)",
+      "Alemania",
+      "Siberia (Yakutia)"
+    ],
+    "description": "El superdepredador felino dominante de las estepas heladas euroasiáticas durante el Pleistoceno superior. Un 20% más grande que los leones africanos modernos, carecía de melena densa según el arte parietal paleolítico y cazaba bisontes, renos y crías de mamut.",
+    "media": {
+      "imageUrl": "assets/species/leon_cavernas.jpg",
+      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
+      "imageLicense": "Public Domain"
+    },
+    "coordinates": {
+      "lat": 48.85,
+      "lng": 2.35
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Georg August Goldfuss",
+      "yearDiscovered": 1810,
+      "describedBy": "Georg August Goldfuss (1810)",
+      "geologicalFormation": "Cueva de Zoolithenhöhle (Baviera, Alemania) / Cueva de Chauvet (Francia)",
+      "typeSpecimen": "Cráneo holotipo",
+      "museum": "Museo Goldfuß de Bonn (Alemania)",
+      "modernCountry": "Alemania, Francia, España, Rusia",
+      "holotypeSpecimen": "GFM-1810-CS"
+    },
+    "paleogeography": {
+      "waterBody": "Cursos fluviales periglaciales y valles kársticos de Europa",
+      "landmass": "Masa continental euroasiática periglacial",
+      "depthOrBiome": "Estepa de mamuts, tundra fría y bosques periglaciares",
+      "paleoZoneDescription": "Depredador alfa que dominaba la cadena trófica en los ecosistemas esteparios fríos desde la península ibérica hasta Siberia oriental."
+    },
+    "paleoCoordinates": {
+      "lat": 48.85,
+      "lon": 2.35
+    }
+  },
+  {
     "id": "ursus-spelaeus",
     "commonName": "Oso de las Cavernas",
     "scientificName": "Ursus spelaeus",

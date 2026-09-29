@@ -805,23 +805,49 @@ export class GlobeScene {
     const diet = sp.diet || '';
     const loc = sp.fossilSite || (sp.paleoLocation ? sp.paleoLocation.join(', ') : '');
     
-    // Environment badge
+    // Environment badge & Diet classification
+    const env = (sp.environment || '').toLowerCase();
+    const clade = (sp.clade || '').toLowerCase();
+    const dietStr = (sp.diet || '').toLowerCase();
+
+    const isMarine = env === 'marine' || 
+                     dietStr.includes('piscívoro') || 
+                     clade.includes('cetacea') || 
+                     clade.includes('mosasaur') || 
+                     clade.includes('pliosaur') || 
+                     clade.includes('ichthyosaur') ||
+                     clade.includes('ammonit') ||
+                     clade.includes('trilobit');
+
     let envBadge = '🌲 Terrestre';
     let envClass = 'env-terr';
-    if (sp.environment === 'marine' || sp.paleogeography?.waterBody) {
+    if (isMarine) {
       envBadge = '🌊 Marino';
       envClass = 'env-mar';
-    } else if (sp.environment === 'aerial' || sp.clade?.includes('Pterosaur') || sp.clade?.includes('Aves')) {
-      envBadge = '🦅 Aéreo';
+    } else if (env === 'aerial' || clade.includes('pterosaur') || clade.includes('aves')) {
+      envBadge = '🪽 Volador';
       envClass = 'env-aer';
-    } else if (sp.environment === 'amphibious') {
-      envBadge = '🐸 Anfibio';
+    } else if (env === 'amphibious') {
+      envBadge = '🦎 Anfibio';
       envClass = 'env-amp';
     }
 
-    const paleoRealm = sp.paleogeography?.waterBody 
-      ? `🌊 Cuenca: <strong>${sp.paleogeography.waterBody}</strong>`
-      : (sp.paleogeography?.landmass ? `🏔️ Continente: <strong>${sp.paleogeography.landmass}</strong>` : '');
+    let dietBadgeClass = 'diet-carnivore';
+    let dietBadgeColor = '#ef4444';
+    if (dietStr.includes('filtrador') || dietStr.includes('omnívoro') || dietStr.includes('insectívoro')) {
+      dietBadgeClass = 'diet-filter';
+      dietBadgeColor = '#f59e0b';
+    } else if (isMarine) {
+      dietBadgeClass = 'diet-marine';
+      dietBadgeColor = '#00d2ff';
+    } else if (dietStr.includes('herbívoro') || dietStr.includes('vegetariano')) {
+      dietBadgeClass = 'diet-herbivore';
+      dietBadgeColor = '#22c55e';
+    }
+
+    const paleoRealm = isMarine && sp.paleogeography?.waterBody
+      ? `🌊 Cuenca oceánica: <strong>${sp.paleogeography.waterBody}</strong>`
+      : (sp.paleogeography?.landmass ? `🏔️ Masa continental: <strong>${sp.paleogeography.landmass}</strong>` : (sp.paleogeography?.waterBody ? `💧 Humedal / Ribera: <strong>${sp.paleogeography.waterBody}</strong>` : ''));
 
     const formation = sp.discovery?.geologicalFormation 
       ? `<div class="tooltip-sub">🪨 Fm. <em>${sp.discovery.geologicalFormation}</em></div>` 
@@ -834,11 +860,14 @@ export class GlobeScene {
     tooltip.innerHTML = `
       <div class="tooltip-top-row">
         <span class="tooltip-header">${common}</span>
-        <span class="tooltip-env-tag ${envClass}">${envBadge}</span>
+        <div class="tooltip-tags-wrap">
+          <span class="tooltip-diet-tag" style="border: 1px solid ${dietBadgeColor}; color: ${dietBadgeColor}; background: rgba(0,0,0,0.5);">${diet.split(' ')[0]}</span>
+          <span class="tooltip-env-tag ${envClass}">${envBadge}</span>
+        </div>
       </div>
       <div class="tooltip-taxon">${sci} ${sp.clade ? '• ' + sp.clade : ''}</div>
       <div class="tooltip-meta-grid">
-        ${diet ? `<div class="tooltip-diet">🍽️ ${diet}</div>` : ''}
+        ${diet ? `<div class="tooltip-diet" style="color: ${dietBadgeColor}; font-weight: 600;">🍽️ Dieta: ${diet}</div>` : ''}
         ${paleoRealm ? `<div class="tooltip-paleo">${paleoRealm}</div>` : ''}
         <div class="tooltip-loc">📍 Yacimiento: ${loc}</div>
         ${formation}

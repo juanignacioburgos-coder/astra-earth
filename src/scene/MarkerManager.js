@@ -147,14 +147,16 @@ export class MarkerManager {
   }
 
   _initMaterials() {
-    this.defaultPinMaterial = new THREE.MeshStandardMaterial({
-      color: 0x38bdf8,
-      emissive: 0x0284c7,
-      emissiveIntensity: 1.2,
+    // 🔵 Marine / Piscivore Material (Deep vibrant Ocean Cyan/Blue)
+    this.marineMaterial = new THREE.MeshStandardMaterial({
+      color: 0x0284c7,
+      emissive: 0x00d2ff,
+      emissiveIntensity: 1.4,
       roughness: 0.2,
       metalness: 0.4
     });
 
+    // 🔴 Carnivore Material (Radiant Crimson)
     this.carnivoreMaterial = new THREE.MeshStandardMaterial({
       color: 0xef4444,
       emissive: 0xdc2626,
@@ -163,6 +165,7 @@ export class MarkerManager {
       metalness: 0.4
     });
 
+    // 🟢 Herbivore Material (Luminous Emerald)
     this.herbivoreMaterial = new THREE.MeshStandardMaterial({
       color: 0x22c55e,
       emissive: 0x16a34a,
@@ -171,13 +174,16 @@ export class MarkerManager {
       metalness: 0.4
     });
 
-    this.piscivoreMaterial = new THREE.MeshStandardMaterial({
-      color: 0x06b6d4,
-      emissive: 0x0891b2,
+    // 🟡 Filter / Omnivore / Insectivore Material (Radiant Amber Gold)
+    this.filterMaterial = new THREE.MeshStandardMaterial({
+      color: 0xf59e0b,
+      emissive: 0xd97706,
       emissiveIntensity: 1.4,
       roughness: 0.2,
       metalness: 0.4
     });
+
+    this.defaultPinMaterial = this.marineMaterial;
 
     this.ringMaterial = new THREE.MeshBasicMaterial({
       color: 0xffffff,
@@ -223,15 +229,33 @@ export class MarkerManager {
       markerNode.position.copy(position);
       markerNode.lookAt(position.clone().multiplyScalar(2)); // Perpendicular to sphere
 
-      // Color based on diet
-      let pinMat;
+      // Color taxonomy based on agreed standard:
+      // 🔵 Azul = Marino / Piscívoro
+      // 🔴 Rojo = Carnívoro
+      // 🟢 Verde = Herbívoro / Vegetariano
+      // 🟡 Dorado = Filtrador / Omnívoro / Insectívoro
       const dietStr = (sp.diet || '').toLowerCase();
-      if (dietStr.includes('carnívoro')) {
+      const envStr = (sp.environment || '').toLowerCase();
+      const cladeStr = (sp.clade || '').toLowerCase();
+
+      const isMarine = envStr === 'marine' || 
+                       dietStr.includes('piscívoro') || 
+                       cladeStr.includes('cetacea') || 
+                       cladeStr.includes('mosasaur') || 
+                       cladeStr.includes('pliosaur') || 
+                       cladeStr.includes('ichthyosaur') ||
+                       cladeStr.includes('ammonit') ||
+                       cladeStr.includes('trilobit');
+
+      let pinMat;
+      if (dietStr.includes('filtrador') || dietStr.includes('omnívoro') || dietStr.includes('insectívoro')) {
+        pinMat = this.filterMaterial.clone();
+      } else if (isMarine) {
+        pinMat = this.marineMaterial.clone();
+      } else if (dietStr.includes('carnívoro')) {
         pinMat = this.carnivoreMaterial.clone();
-      } else if (dietStr.includes('herbívoro')) {
+      } else if (dietStr.includes('herbívoro') || dietStr.includes('vegetariano')) {
         pinMat = this.herbivoreMaterial.clone();
-      } else if (dietStr.includes('piscívoro') || dietStr.includes('filtrador')) {
-        pinMat = this.piscivoreMaterial.clone();
       } else {
         pinMat = this.defaultPinMaterial.clone();
       }
@@ -295,31 +319,37 @@ export class MarkerManager {
 
     // Determine biological habitat and distribution type
     const diet = (sp.diet || '').toLowerCase();
-    const isMarine = sp.environment === 'marine' || 
-                     diet.includes('piscívoro') || 
-                     sp.clade?.includes('Cetacea') || 
-                     sp.clade?.includes('Mosasaur') || 
-                     sp.clade?.includes('Pliosaur') || 
-                     sp.clade?.includes('Ichthyosaur') ||
-                     sp.clade?.includes('Ammonit') ||
-                     sp.clade?.includes('Trilobit') ||
-                     sp.paleogeography?.waterBody !== undefined;
-    const isAerial = sp.environment === 'aerial' || 
-                     sp.clade?.includes('Pterosaur') || 
-                     sp.clade?.includes('Aves');
+    const env = (sp.environment || '').toLowerCase();
+    const clade = (sp.clade || '').toLowerCase();
 
-    // Pick glowing thematic zone color by environment / diet / taxon
+    const isMarine = env === 'marine' || 
+                     diet.includes('piscívoro') || 
+                     clade.includes('cetacea') || 
+                     clade.includes('mosasaur') || 
+                     clade.includes('pliosaur') || 
+                     clade.includes('ichthyosaur') ||
+                     clade.includes('ammonit') ||
+                     clade.includes('trilobit');
+    const isAerial = env === 'aerial' || 
+                     clade.includes('pterosaur') || 
+                     clade.includes('aves');
+
+    // Pick glowing thematic zone color by agreed standard:
+    // 🔵 Azul = Marino / Piscívoro (#00d2ff)
+    // 🔴 Rojo = Carnívoro (#ef4444)
+    // 🟢 Verde = Herbívoro (#10b981)
+    // 🟡 Dorado = Filtrador / Omnívoro / Insectívoro (#f59e0b)
     let zoneHex = periodColor || '#38bdf8';
-    if (isMarine) {
+    if (diet.includes('filtrador') || diet.includes('omnívoro') || diet.includes('insectívoro')) {
+      zoneHex = '#f59e0b'; // Radiant Gold
+    } else if (isMarine) {
       zoneHex = '#00d2ff'; // Aquatic Electric Cyan / Bathymetric glow
-    } else if (isAerial) {
-      zoneHex = '#38bdf8'; // Sky Cyan
     } else if (diet.includes('carnívoro')) {
       zoneHex = '#ef4444'; // Radiant Crimson
-    } else if (diet.includes('herbívoro')) {
+    } else if (diet.includes('herbívoro') || diet.includes('vegetariano')) {
       zoneHex = '#10b981'; // Luminous Emerald
-    } else if (diet.includes('filtrador') || sp.id?.includes('stromatolite') || sp.id?.includes('charnia')) {
-      zoneHex = '#f59e0b'; // Radiant Gold
+    } else if (isAerial) {
+      zoneHex = '#38bdf8'; // Sky Cyan
     }
 
     // 1. Curved Spherical Cap Mesh

@@ -231,7 +231,7 @@ export class FullCatalogModal {
             <div class="empty-icon">🦖</div>
             <h3>No se encontraron especies</h3>
             <p>No hay especies catalogadas que coincidan con los criterios de búsqueda y filtros seleccionados.</p>
-            <button id="btn-empty-reset" class="btn-catalog-reset-prominent">Ver las 57 Especies</button>
+            <button id="btn-empty-reset" class="btn-catalog-reset-prominent">Ver Todo el Catálogo</button>
           </div>
         </div>
 
@@ -535,10 +535,12 @@ export class FullCatalogModal {
                        (env === 'amphibious' ? '🦎 Anfibio' : '🌲 Terrestre'));
 
       const diet = sp.diet || 'Desconocido';
+      const dietLower = diet.toLowerCase();
       const dietShort = diet.split(' ')[0];
-      const dietClass = diet.toLowerCase().includes('carnívoro') ? 'diet-carnivore' :
-                        diet.toLowerCase().includes('herbívoro') ? 'diet-herbivore' :
-                        diet.toLowerCase().includes('piscívoro') ? 'diet-piscivore' : 'diet-marine';
+      const dietClass = (dietLower.includes('filtrador') || dietLower.includes('omnívoro') || dietLower.includes('insectívoro')) ? 'diet-filter' :
+                        dietLower.includes('carnívoro') ? 'diet-carnivore' :
+                        (dietLower.includes('herbívoro') || dietLower.includes('vegetariano')) ? 'diet-herbivore' :
+                        (dietLower.includes('piscívoro') || env === 'marine') ? 'diet-marine' : 'diet-filter';
 
       const lenStr = sp.metrics?.lengthMeters ? `${sp.metrics.lengthMeters} m` : (sp.length || 'N/D');
       const wtStr = sp.metrics?.weightTons !== undefined ? 
