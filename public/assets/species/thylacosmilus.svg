@@ -37,9 +37,31 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#f97316" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">CENOZOICO • MIOCENO / PLIOCENO • 7 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#f97316" filter="url(#glow_thylacosmilus)" opacity="0.92">
-    <path d="M 220 240 Q 300 230 420 250 Q 490 270 520 300 L 510 420 L 485 420 L 490 330 L 410 330 L 390 420 L 365 420 L 375 320 Q 280 320 240 280 Z" fill="currentColor" opacity="0.5" stroke="currentColor" stroke-width="5"/><path d="M 220 240 Q 260 230 270 270 L 220 290 Z" fill="currentColor" opacity="0.8" stroke="currentColor" stroke-width="4"/><path d="M 230 280 L 235 330 L 245 330 L 245 285" fill="#ffffff" stroke="currentColor" stroke-width="2"/><path d="M 225 285 L 220 345 L 250 345 L 245 295" fill="currentColor" opacity="0.6" stroke="currentColor" stroke-width="3"/><circle cx="255" cy="255" r="7" fill="#020408"/>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#f97316" filter="url(#glow_thylacosmilus)" opacity="0.95">
+    
+      <!-- Muscular Stocky Body Outline -->
+      <path d="M 230 250 Q 300 220 420 230 Q 520 245 560 280 L 545 420 L 520 420 L 525 315 L 435 315 L 415 420 L 390 420 L 400 305 Q 300 310 240 270 Z" fill="url(#themeGrad_thylacosmilus)" opacity="0.45" stroke="currentColor" stroke-width="4.5"/>
+      <!-- Head with Downward Mandibular Flange Sheath -->
+      <path d="M 230 250 L 160 240 Q 140 260 160 280 L 195 285 L 185 365 L 210 365 L 215 295 L 245 285 Z" fill="currentColor" opacity="0.75" stroke="currentColor" stroke-width="3.5"/>
+      <!-- Massive Saber Canine (White) -->
+      <path d="M 175 275 Q 175 350 195 355 L 190 350 Q 185 310 185 275 Z" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="190" cy="255" r="6" fill="#020408" stroke="#ffffff" stroke-width="1.5"/>
+      <!-- Plantigrade Paws and Claws -->
+      <g fill="#ffffff">
+        <circle cx="395" cy="420" r="3"/><circle cx="405" cy="420" r="3"/><circle cx="415" cy="420" r="3"/>
+        <circle cx="525" cy="420" r="3"/><circle cx="535" cy="420" r="3"/><circle cx="545" cy="420" r="3"/>
+      </g>
+      <!-- Marsupial Tail & Shoulder Hump -->
+      <path d="M 560 280 Q 610 320 635 365" stroke="currentColor" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M 280 235 Q 310 215 340 225" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.7"/>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="90" y="360">Vaina ósea mandibular ➔</text>
+        <text x="120" y="225">Caninos en sable perpetuos ➔</text>
+        <text x="350" y="205" text-anchor="middle">Robusta musculatura cervical depresora</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
@@ -66,5 +88,5 @@
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
   <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Dientes de Sable Marsupial Sudamericano</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Thylacosmilus atrox</text>
-  <text x="720" y="523" fill="#f97316" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Longitud: 1.5 m | Peso: 100 kg | Colmillos de crecimiento continuo con vainas mandibulares</text>
+  <text x="720" y="523" fill="#f97316" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Longitud: 1.5 m | Peso: 100 kg | Colmillos caninos de crecimiento perpetuo con vaina ósea</text>
 </svg>

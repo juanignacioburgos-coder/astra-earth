@@ -37,9 +37,31 @@
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
   <text x="715" y="61" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">NEOPROTEROZOICO • EDIACÁRICO • 555 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_kimberella)" opacity="0.92">
-    <ellipse cx="400" cy="320" rx="180" ry="90" fill="currentColor"/><circle cx="260" cy="270" r="45" fill="currentColor"/>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#ec4899" filter="url(#glow_kimberella)" opacity="0.95">
+    
+      <!-- Kimberella Body Outline & Scute Texture -->
+      <ellipse cx="400" cy="285" rx="140" ry="105" fill="url(#themeGrad_kimberella)" opacity="0.3" stroke="currentColor" stroke-width="4"/>
+      <!-- Mantle Rim Fringe -->
+      <path d="M 260 285 Q 260 210 400 200 Q 540 210 540 285 Q 540 360 400 370 Q 260 360 260 285 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="6,4"/>
+      <!-- Inner Dorsal Integument with Segmental Bands -->
+      <ellipse cx="405" cy="285" rx="105" ry="75" fill="currentColor" opacity="0.45" stroke="currentColor" stroke-width="3"/>
+      <path d="M 330 240 L 480 240 M 315 260 L 495 260 M 310 285 L 500 285 M 315 310 L 495 310 M 330 330 L 480 330" stroke="currentColor" stroke-width="2.5" opacity="0.8"/>
+      <!-- Axial Crest & Proboscis Extension -->
+      <line x1="280" y1="285" x2="520" y2="285" stroke="#ffffff" stroke-width="3.5" opacity="0.7"/>
+      <path d="M 260 285 Q 220 280 200 295 Q 185 305 195 315 Q 215 310 240 295" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <!-- Radular Scrape Marks on Mat -->
+      <g stroke="#ffffff" stroke-width="1.8" opacity="0.6">
+        <line x1="170" y1="315" x2="190" y2="330"/><line x1="175" y1="310" x2="195" y2="325"/>
+        <line x1="180" y1="305" x2="200" y2="320"/><line x1="185" y1="300" x2="205" y2="315"/>
+      </g>
+      <!-- Anatomical Annotations -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="150" y="270">Probóscide con Rádula ➔</text>
+        <text x="400" y="175" text-anchor="middle">Caparazón no mineralizado festoneado</text>
+        <text x="560" y="310">Banda muscular axial ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
@@ -64,7 +86,7 @@
 
   <!-- Species Nomenclature & Biometrics Footer -->
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
-  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Criatura Bilateral con Rádula Raspadora</text>
+  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Bilaterio Móvil con Rádula Primitiva</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Kimberella quadrata</text>
-  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Longitud: 5 cm | Simetría bilateral | Probable molusco basal</text>
+  <text x="720" y="523" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Longitud: 15 cm | Moluscoide basal | Rastros fósiles de alimentación (Kimberichnus)</text>
 </svg>

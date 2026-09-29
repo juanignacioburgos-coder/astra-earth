@@ -7,7 +7,7 @@
       <stop offset="100%" stop-color="#020408" stop-opacity="1"/>
     </radialGradient>
     <linearGradient id="themeGrad_homo_neanderthalensis" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.95"/>
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"/>
     </linearGradient>
     <filter id="glow_homo_neanderthalensis" x="-20%" y="-20%" width="140%" height="140%">
@@ -32,19 +32,46 @@
   </g>
 
   <!-- Specimen Holographic Frame Header -->
-  <rect x="60" y="35" width="680" height="42" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="#ef4444" stroke-opacity="0.25"/>
-  <circle cx="85" cy="56" r="6" fill="#ef4444"/>
+  <rect x="60" y="35" width="680" height="42" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="#eab308" stroke-opacity="0.25"/>
+  <circle cx="85" cy="56" r="6" fill="#eab308"/>
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
-  <text x="715" y="61" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">CENOZOICO • PLEISTOCENO • 0.4 – 0.04 MA</text>
+  <text x="715" y="61" fill="#eab308" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">CENOZOICO • PLEISTOCENO • 0.4 – 0.04 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#ef4444" filter="url(#glow_homo_neanderthalensis)" opacity="0.92">
-    <g transform="translate(355, 140)" fill="currentColor" opacity="0.88"><ellipse cx="45" cy="35" rx="28" ry="26" stroke="currentColor" stroke-width="3"/><path d="M 20 68 L 70 68 L 75 175 L 15 175 Z" stroke="currentColor" stroke-width="4"/><line x1="15" y1="85" x2="-10" y2="165" stroke="currentColor" stroke-width="13" stroke-linecap="round"/><line x1="75" y1="85" x2="100" y2="165" stroke="currentColor" stroke-width="13" stroke-linecap="round"/><line x1="25" y1="175" x2="18" y2="290" stroke="currentColor" stroke-width="15" stroke-linecap="round"/><line x1="65" y1="175" x2="72" y2="290" stroke="currentColor" stroke-width="15" stroke-linecap="round"/><line x1="-15" y1="70" x2="-15" y2="320" stroke="#ffd700" stroke-width="4" stroke-linecap="round"/><polygon points="-15,60 -22,80 -8,80" fill="#ffd700"/><circle cx="40" cy="35" r="5" fill="#020408"/></g>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#eab308" filter="url(#glow_homo_neanderthalensis)" opacity="0.95">
+    
+      <!-- Robust Muscular Stance with Fur Cloak & Spear -->
+      <!-- Broad Cranium, Prominent Brow Ridge, Occipital Bun -->
+      <ellipse cx="380" cy="170" rx="26" ry="25" fill="currentColor" opacity="0.85" stroke="currentColor" stroke-width="3"/>
+      <!-- Double Brow Ridge (Torus Supraorbitalis) -->
+      <path d="M 350 165 Q 365 155 380 165 Q 395 155 410 165" stroke="#ffffff" stroke-width="4" fill="none"/>
+      <!-- Large Nose & Receding Chin -->
+      <path d="M 355 168 L 340 185 L 355 195 L 370 200" stroke="currentColor" stroke-width="3.5" fill="none"/>
+      <circle cx="362" cy="172" r="4.5" fill="#020408"/>
+      <!-- Massive Barrel Chest & Shoulders -->
+      <path d="M 330 215 Q 380 205 430 215 L 445 320 Q 380 335 315 320 Z" fill="url(#themeGrad_homo_neanderthalensis)" opacity="0.55" stroke="currentColor" stroke-width="4"/>
+      <!-- Robust Strong Limbs -->
+      <path d="M 340 320 L 335 390 L 330 450" stroke="currentColor" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M 420 320 L 425 390 L 430 450" stroke="currentColor" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <!-- Fur Pelt Covering -->
+      <path d="M 320 220 Q 300 280 315 340 L 445 340 Q 460 280 440 220 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="6,4"/>
+      <!-- Mousterian Spear in Hand -->
+      <line x1="280" y1="120" x2="295" y2="455" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+      <polygon points="280,120 272,145 288,145" fill="#ffffff"/>
+      <!-- Left Arm Gripping Spear -->
+      <path d="M 330 220 L 290 270 L 285 260" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="210" y="150">Lanza con punta musteriense ➔</text>
+        <text x="420" y="155">Toro supraorbital continuo ➔</text>
+        <text x="455" y="270">Tórax en barril hipertrofiado ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
-  <line x1="100" y1="475" x2="700" y2="475" stroke="#ef4444" stroke-opacity="0.4" stroke-width="1.5"/>
-  <g stroke="#ef4444" stroke-opacity="0.5" stroke-width="1.5">
+  <line x1="100" y1="475" x2="700" y2="475" stroke="#eab308" stroke-opacity="0.4" stroke-width="1.5"/>
+  <g stroke="#eab308" stroke-opacity="0.5" stroke-width="1.5">
     <line x1="100" y1="470" x2="100" y2="480"/>
     <line x1="250" y1="472" x2="250" y2="478"/>
     <line x1="400" y1="470" x2="400" y2="480"/>
@@ -59,12 +86,12 @@
     <line x1="4" y1="22" x2="16" y2="22" stroke="rgba(255, 255, 255, 0.28)" stroke-width="3"/>
     <line x1="8" y1="40" x2="5" y2="58" stroke="rgba(255, 255, 255, 0.28)" stroke-width="3"/>
     <line x1="12" y1="40" x2="15" y2="58" stroke="rgba(255, 255, 255, 0.28)" stroke-width="3"/>
-    <text x="10" y="70" fill="rgba(255, 255, 255, 0.45)" font-family="sans-serif" font-size="9" text-anchor="middle">Humano (1.8m)</text>
+    <text x="10" y="70" fill="rgba(255, 255, 255, 0.45)" font-family="sans-serif" font-size="9" text-anchor="middle">Homo sapiens (1.8m)</text>
   </g>
 
   <!-- Species Nomenclature & Biometrics Footer -->
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
-  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Hombre de Neandertal (Cazador Glaciar)</text>
+  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Humano Arcaico Adaptado a la Glaciación</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Homo neanderthalensis</text>
-  <text x="720" y="523" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Altura: 1.65 m | Capacidad craneal: 1,500 cc | Tórax en barril, cultura lítica musteriense y fuego</text>
+  <text x="720" y="523" fill="#eab308" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Capacidad craneal: 1500 cc | Tórax en barril hiper-robusto | Cultura lítica musteriense y entierros</text>
 </svg>

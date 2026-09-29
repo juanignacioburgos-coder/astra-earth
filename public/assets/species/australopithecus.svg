@@ -7,7 +7,7 @@
       <stop offset="100%" stop-color="#020408" stop-opacity="1"/>
     </radialGradient>
     <linearGradient id="themeGrad_australopithecus" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f97316" stop-opacity="0.95"/>
+      <stop offset="0%" stop-color="#eab308" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"/>
     </linearGradient>
     <filter id="glow_australopithecus" x="-20%" y="-20%" width="140%" height="140%">
@@ -32,19 +32,42 @@
   </g>
 
   <!-- Specimen Holographic Frame Header -->
-  <rect x="60" y="35" width="680" height="42" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="#f97316" stroke-opacity="0.25"/>
-  <circle cx="85" cy="56" r="6" fill="#f97316"/>
+  <rect x="60" y="35" width="680" height="42" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="#eab308" stroke-opacity="0.25"/>
+  <circle cx="85" cy="56" r="6" fill="#eab308"/>
   <text x="105" y="61" fill="#f8fafc" font-family="'Space Grotesk', 'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1.5">ARCHIVO PALEONTOLÓGICO 3D</text>
-  <text x="715" y="61" fill="#f97316" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">CENOZOICO • PLIOCENO • 3.7 MA</text>
+  <text x="715" y="61" fill="#eab308" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="end">CENOZOICO • PLIOCENO • 3.7 MA</text>
 
-  <!-- Central Specimen Silhouette Graphic -->
-  <g transform="translate(0, 10)" color="#f97316" filter="url(#glow_australopithecus)" opacity="0.92">
-    <g transform="translate(360, 160)" fill="currentColor" opacity="0.85"><circle cx="40" cy="35" r="26" stroke="currentColor" stroke-width="3"/><path d="M 28 65 L 52 65 L 56 160 L 24 160 Z" stroke="currentColor" stroke-width="3"/><line x1="24" y1="85" x2="0" y2="165" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><line x1="56" y1="85" x2="80" y2="165" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><line x1="30" y1="160" x2="22" y2="270" stroke="currentColor" stroke-width="12" stroke-linecap="round"/><line x1="50" y1="160" x2="58" y2="270" stroke="currentColor" stroke-width="12" stroke-linecap="round"/><circle cx="35" cy="35" r="5" fill="#020408"/></g>
+  <!-- Central Specimen Graphic -->
+  <g transform="translate(0, 10)" color="#eab308" filter="url(#glow_australopithecus)" opacity="0.95">
+    
+      <!-- Walking Upright Bipedal Stance Skeleton/Silhouette -->
+      <!-- Cranium with Prognathism & Brow Ridge -->
+      <ellipse cx="380" cy="180" rx="22" ry="24" fill="currentColor" opacity="0.8" stroke="currentColor" stroke-width="3"/>
+      <path d="M 365 185 L 345 200 L 360 210 L 380 205" fill="currentColor" stroke="currentColor" stroke-width="2.5"/>
+      <circle cx="365" cy="182" r="4.5" fill="#020408"/>
+      <!-- Spine (Curved Lordosis) -->
+      <path d="M 385 205 Q 395 240 385 270 Q 375 295 385 315" stroke="currentColor" stroke-width="6" fill="none"/>
+      <!-- Broad Basin-like Pelvis -->
+      <path d="M 365 315 Q 385 305 405 315 L 395 335 L 375 335 Z" fill="currentColor" opacity="0.85" stroke="currentColor" stroke-width="3"/>
+      <!-- Right Striding Leg (Bicondylar Femur Angle) -->
+      <path d="M 375 330 L 360 390 L 345 450 L 330 455" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- Left Trailing Leg -->
+      <path d="M 395 330 L 415 385 L 435 440 L 450 445" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <!-- Long Arms with Curved Phalanges -->
+      <path d="M 390 220 L 415 270 L 425 330" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M 370 220 L 345 265 L 340 320" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <!-- Callouts -->
+      <g font-family="'Space Grotesk', sans-serif" font-size="10" fill="#f8fafc" opacity="0.85">
+        <text x="310" y="170">Prognatismo y cresta sagital ➔</text>
+        <text x="430" y="315">Pelvis ensanchada tipo cuenco (bipedismo) ➔</text>
+        <text x="240" y="440">Huellas de Laetoli (arco plantar) ➔</text>
+      </g>
+    
   </g>
 
   <!-- Ground Reference Line & Scale Ticks -->
-  <line x1="100" y1="475" x2="700" y2="475" stroke="#f97316" stroke-opacity="0.4" stroke-width="1.5"/>
-  <g stroke="#f97316" stroke-opacity="0.5" stroke-width="1.5">
+  <line x1="100" y1="475" x2="700" y2="475" stroke="#eab308" stroke-opacity="0.4" stroke-width="1.5"/>
+  <g stroke="#eab308" stroke-opacity="0.5" stroke-width="1.5">
     <line x1="100" y1="470" x2="100" y2="480"/>
     <line x1="250" y1="472" x2="250" y2="478"/>
     <line x1="400" y1="470" x2="400" y2="480"/>
@@ -64,7 +87,7 @@
 
   <!-- Species Nomenclature & Biometrics Footer -->
   <rect x="60" y="495" width="680" height="45" rx="8" fill="rgba(10, 16, 26, 0.85)" stroke="rgba(255, 255, 255, 0.08)"/>
-  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Hominino Bípedo del Valle del Rift</text>
+  <text x="80" y="522" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">Hominino Bípedo Clave del Valle del Rift</text>
   <text x="80" y="534" fill="#94a3b8" font-family="'Outfit', sans-serif" font-style="italic" font-size="11">Australopithecus afarensis</text>
-  <text x="720" y="523" fill="#f97316" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Altura: 1.1 – 1.4 m | Peso: 35 – 50 kg | Bipedestación habitual, encéfalo de 400 cc (Fósil Lucy)</text>
+  <text x="720" y="523" fill="#eab308" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Altura: 1.1 – 1.5 m | Peso: 30 – 45 kg | Bipedestación obligada habitual con capacidad arbórea</text>
 </svg>

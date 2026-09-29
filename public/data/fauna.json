@@ -20,9 +20,9 @@
     ],
     "description": "Superdepredador ápice de los mares del Cámbrico dotado de dos apéndices prehensiles espinosos y ojos compuestos pedunculados formados por más de 16,000 lentes con visión estereoscópica. Su boca circular provista de placas dentadas trituraba trilobites e invertebrados de cuerpo blando.",
     "media": {
-      "imageUrl": "assets/species/anomalocaris_mundo.jpg",
-      "imageAuthor": "Mundo Prehistórico / Katrina Kenny",
-      "imageLicense": "CC-BY-SA 4.0",
+      "imageUrl": "assets/species/anomalocaris.jpg",
+      "imageAuthor": "Lámina Paleontológica Clásica / Burgess Shale",
+      "imageLicense": "Dominio Público",
       "phylopicSvgUrl": "https://images.phylopic.org/images/841fb002-c9a1-4328-86d7-ffb491fa9a5e/vector.svg"
     },
     "coordinates": {
@@ -684,9 +684,9 @@
     ],
     "description": "El sinápsido más emblemático del Pérmico, estrechamente emparentado con el linaje que dio origen a los mamíferos. Su alta vela dorsal sustentada por espinas vertebrales vascularizadas le permitía regular rápidamente su temperatura corporal y comunicarse visualmente con congéneres.",
     "media": {
-      "imageUrl": "assets/species/dimetrodon_mundo.jpg",
-      "imageAuthor": "Mundo Prehistórico / Dmitry Bogdanov",
-      "imageLicense": "CC-BY-SA 4.0"
+      "imageUrl": "assets/species/dimetrodon.jpg",
+      "imageAuthor": "Lámina Paleontológica Clásica / Red Beds",
+      "imageLicense": "Dominio Público"
     },
     "coordinates": {
       "lat": 33.6,
@@ -1189,9 +1189,9 @@
     ],
     "description": "El dinosaurio carnívoro más largo conocido, altamente adaptado a la vida semiacuática en los ríos del Sahara Cretácico. Presentaba una gran vela dorsal de hasta 1.8 metros, huesos densos para inmersión y una cola en forma de aleta natatoria.",
     "media": {
-      "imageUrl": "assets/species/spinosaurus_mundo.jpg",
-      "imageAuthor": "Mundo Prehistórico / Davide Bonadonna",
-      "imageLicense": "CC-BY-SA 4.0"
+      "imageUrl": "assets/species/spinosaurus.jpg",
+      "imageAuthor": "Lámina Paleontológica Clásica / Kem Kem Beds",
+      "imageLicense": "Dominio Público"
     },
     "coordinates": {
       "lat": 31,
@@ -1340,9 +1340,9 @@
     ],
     "description": "El superdepredador supremo del Cretácico tardío con una fuerza de mordedura de hasta 57,000 N capaz de pulverizar huesos enteros de Triceratops. Poseía visión binocular tridimensional superior a las águilas y un sentido olfativo extraordinariamente desarrollado.",
     "media": {
-      "imageUrl": "assets/species/tyrannosaurus_mundo.jpg",
-      "imageAuthor": "Mundo Prehistórico / RJ Palmer",
-      "imageLicense": "CC-BY-SA 4.0"
+      "imageUrl": "assets/species/tyrannosaurus.jpg",
+      "imageAuthor": "Reconstrucción Anatómica Científica (Museum Specimen)",
+      "imageLicense": "Dominio Público Educativo"
     },
     "coordinates": {
       "lat": 47.5,
@@ -1951,9 +1951,9 @@
     ],
     "description": "El felino macairodontino más robusto y masivo de la historia, alcanzando más de 400 kg. Sus colmillos superiores en forma de sable de hasta 28 cm infligían mortales mordiscos degolladores de precisión tras inmovilizar a sus presas con poderosos antebrazos.",
     "media": {
-      "imageUrl": "assets/species/smilodon_mundo.jpg",
-      "imageAuthor": "Mundo Prehistórico / Durbed",
-      "imageLicense": "CC-BY-SA 3.0"
+      "imageUrl": "assets/species/smilodon.jpg",
+      "imageAuthor": "Lámina Paleontológica Clásica / Pampas Pleistoceno",
+      "imageLicense": "Dominio Público"
     },
     "coordinates": {
       "lat": -31.42,
@@ -3924,9 +3924,9 @@
     ],
     "description": "Pez agnato ancestral icónico del supercontinente Gondwana. Poseía un caparazón óseo dorsal y ventral y ojos con fosas nasales frontales que le conferían un aspecto inconfundible. Nadaba propulsado por una aleta caudal membranosa sin mandíbulas.",
     "media": {
-      "imageUrl": "assets/species/sacabambaspis.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/sacabambaspis.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Anzaldo Formation Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": -17.8,
@@ -3975,9 +3975,9 @@
     ],
     "description": "Euriptérido marino de talla colosal que alcanzaba más de 2 metros de longitud. Poseía quelíceros agrandados en pinzas aserradas capaces de triturar presas y grandes patas remeras para impulsarse a gran velocidad.",
     "media": {
-      "imageUrl": "assets/species/pterygotus.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/pterygotus.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Old Red Sandstone Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": 56.6,
@@ -4024,9 +4024,9 @@
     ],
     "description": "Fósil extraordinario de placodermo descubierto con un embrión no nacido y un cordón umbilical mineralizado en su interior. Es la prueba de reproducción vivípara interna y cuidado materno más antigua conocida entre los vertebrados.",
     "media": {
-      "imageUrl": "assets/species/materpiscis.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/materpiscis.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Gogo Reef Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": -18.6,
@@ -4075,9 +4075,9 @@
     ],
     "description": "Tiburón ancestral con una insólita estructura en su aleta dorsal con forma de 'yunque' o 'cepillo de cerdas denticulares', complementada con un parche espinoso en la parte superior del cráneo utilizado probablemente para cortejo o intimidación.",
     "media": {
-      "imageUrl": "assets/species/stethacanthus.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/stethacanthus.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Bear Gulch Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": 55.9,
@@ -4125,9 +4125,9 @@
     ],
     "description": "Anfibio lepospóndilo famoso por su descomunal cráneo con cuernos tabulares laterales que le daban forma de bumerán. Esta morfología actuaba como hidroala dinámica para impulsarse verticalmente en el agua y emboscar presas.",
     "media": {
-      "imageUrl": "assets/species/diplocaulus.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/diplocaulus.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Clear Fork Group Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": 33.6,
@@ -4225,9 +4225,9 @@
     ],
     "description": "Pez cartilaginoso dotado de una espiral dental única en el reino animal: una sierra circular integrada en la sínfisis mandibular inferior que conservaba todos los dientes producidos a lo largo de su vida para cortar cefalópodos de cuerpo blando.",
     "media": {
-      "imageUrl": "assets/species/helicoprion.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/helicoprion.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Phosphoria Formation Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": 57.8,
@@ -4326,8 +4326,8 @@
     "description": "Temible pliosaurio hipercarnívoro con un cráneo robusto de hasta 1.5 metros dotado de colmillos convergentes cortantes y cuatro aletas hidrodinámicas de aceleración fulgurante bajo el agua.",
     "media": {
       "imageUrl": "assets/species/liopleurodon.jpg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Oxford Clay Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": 52.4,
@@ -4374,9 +4374,9 @@
     ],
     "description": "«Toro carnívoro»: terópodo ápice sudamericano caracterizado por dos gruesos cuernos frontales sobre los ojos, brazos extremadamente reducidos y una musculatura caudal (m. caudofemoralis longus) colosal que lo convertía en uno de los corredores más veloces del Cretácico.",
     "media": {
-      "imageUrl": "assets/species/carnotaurus.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/carnotaurus.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / La Colonia Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": -43.5,
@@ -4423,9 +4423,9 @@
     ],
     "description": "El dinosaurio que desató el «Renacimiento de los Dinosaurios» impulsado por John Ostrom en 1969. Ágil cazador bípedo emplumado con una garra falciforme hipertrófica retráctil en el segundo dedo del pie y una cola rígida con tendones osificados como balancín.",
     "media": {
-      "imageUrl": "assets/species/deinonychus.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/deinonychus.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Cloverly Formation Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": 45.1,
@@ -4475,8 +4475,8 @@
     "description": "Ave colosal no voladora que habitó los frondosos bosques del Eoceno europeo. Aunque inicialmente se la creía carnívora, los análisis isotópicos de calcio en su esqueleto demostraron que su descomunal pico triturador era usado para abrir semillas leñosas y nueces duras.",
     "media": {
       "imageUrl": "assets/species/gastornis.jpg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageAuthor": "Reconstrucción Eoceno Astra Earth",
+      "imageLicense": "Dominio Público Educativo"
     },
     "coordinates": {
       "lat": 48.9,
@@ -4523,9 +4523,9 @@
     ],
     "description": "El mayor mamífero carnívoro terrestre del Paleógeno. Su cráneo fósil mide nada menos que 83 centímetros de largo, provisto de molares trituradores capaces de partir caparazones de tortugas y triturar huesos de grandes animales.",
     "media": {
-      "imageUrl": "assets/species/andrewsarchus.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/andrewsarchus.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Irdin Manha Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": 43.8,
@@ -4572,9 +4572,9 @@
     ],
     "description": "«Ave del terror» emblemática de Sudamérica: superdepredador de 2.5 metros de altura con un pico curvado masivo de 60 cm y alas con garras vestigiales. Descendía su pico como un hacha para quebrar cráneos de notoungulados y roedores gigantes.",
     "media": {
-      "imageUrl": "assets/species/phorusrhacos.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/phorusrhacos.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Santa Cruz Formation Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": -49.3,
@@ -4621,9 +4621,9 @@
     ],
     "description": "Colosal cachalote depredador macrorraptorial que convivió y rivalizó con el Megalodón en el Mioceno. Poseía los dientes funcionales más grandes del reino animal (36 cm de longitud y 12 cm de diámetro), con los que despedazaba ballenas barbadas.",
     "media": {
-      "imageUrl": "assets/species/livyatan.svg",
-      "imageAuthor": "Astra Scientific Paleontology",
-      "imageLicense": "Creative Commons"
+      "imageUrl": "assets/species/livyatan.jpg",
+      "imageAuthor": "Ilustración Paleontológica Astra Earth / Pisco Formation Specimen",
+      "imageLicense": "CC-BY 4.0"
     },
     "coordinates": {
       "lat": -14.1,
