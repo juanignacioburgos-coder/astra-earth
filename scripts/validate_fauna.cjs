@@ -153,15 +153,33 @@ fauna.forEach((sp, idx) => {
     }
   }
 
-  // Ancestral Paleo Coordinates (if present)
-  if (sp.paleoCoordinates && typeof sp.paleoCoordinates === 'object') {
+  // Ancestral Paleo Coordinates (Mandatory & validated against continental drift)
+  if (!sp.paleoCoordinates || typeof sp.paleoCoordinates !== 'object') {
+    errors.push('Objeto "paleoCoordinates" ausente');
+  } else {
     const plat = sp.paleoCoordinates.lat;
     const plon = sp.paleoCoordinates.lon !== undefined ? sp.paleoCoordinates.lon : sp.paleoCoordinates.lng;
-    if (typeof plat === 'number' && (plat < -90 || plat > 90)) {
-      errors.push(`"paleoCoordinates.lat" fuera de rango (-90 a 90): ${plat}`);
+    if (typeof plat !== 'number' || isNaN(plat) || plat < -90 || plat > 90) {
+      errors.push(`"paleoCoordinates.lat" inválido o fuera de rango: ${plat}`);
     }
-    if (typeof plon === 'number' && (plon < -180 || plon > 180)) {
-      errors.push(`"paleoCoordinates.lon" fuera de rango (-180 a 180): ${plon}`);
+    if (typeof plon !== 'number' || isNaN(plon) || plon < -180 || plon > 180) {
+      errors.push(`"paleoCoordinates.lon" inválido o fuera de rango: ${plon}`);
+    }
+
+    // Verify that ancient species (> 5 Ma) do not copy-paste modern GPS coordinates
+    if (sp.startMa > 5 && sp.coordinates) {
+      const mLat = sp.coordinates.lat;
+      const mLon = sp.coordinates.lng;
+      if (Math.abs(plat - mLat) < 0.1 && Math.abs(plon - mLon) < 0.1) {
+        errors.push(`"paleoCoordinates" idénticas a modernas en era ${sp.startMa} Ma (no contempla deriva continental)`);
+      }
+    }
+
+    // Verify Chilean Mesozoic species: at > 60 Ma, longitude cannot be in modern Pacific Ocean (< -55°)
+    if ((sp.isChilean || sp.discovery?.modernCountry?.includes('Chile')) && sp.startMa > 60) {
+      if (plon < -55) {
+        errors.push(`Fósil chileno mesozoico (${sp.startMa} Ma) con paleolongitud < -55° (${plon}°). Cae en el Océano Pacífico.`);
+      }
     }
   }
 

@@ -50,7 +50,15 @@
           "lon": -58.38,
           "fossilSite": "Formación Pampas (Barrancas del Río de la Plata, Buenos Aires, Argentina)",
           "distributionZone": "Llanura Chaco-Pampeana de Sudamérica",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": -34.6,
+            "lon": -58.38
+          },
+          "coordinates": {
+            "lat": -34.6,
+            "lng": -58.38
+          }
         },
         {
           "id": "smilodon-populator",
@@ -68,7 +76,15 @@
           "lon": -64.18,
           "fossilSite": "Cavernas de Lagoa Santa (Minas Gerais, Brasil) / Formación Luján (Argentina)",
           "distributionZone": "Sudamérica (post-Gran Intercambio Biótico Americano)",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": -31.42,
+            "lon": -64.18
+          },
+          "coordinates": {
+            "lat": -31.42,
+            "lng": -64.18
+          }
         },
         {
           "id": "mammuthus-primigenius",
@@ -86,7 +102,15 @@
           "lon": 133.4,
           "fossilSite": "Permafrost siberiano (Río Indigirka / Lena) / Terrazas fluviales del Támesis y Rin",
           "distributionZone": "Estepa de Mamuts (Eurasia septentrional y puente de Beringia)",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": 67.5,
+            "lon": 133.4
+          },
+          "coordinates": {
+            "lat": 67.5,
+            "lng": 133.4
+          }
         },
         {
           "id": "megatherium-americanum",
@@ -104,7 +128,15 @@
           "lon": -60.25,
           "fossilSite": "Riberas del Río Luján (Provincia de Buenos Aires, Argentina)",
           "distributionZone": "Llanuras meridionales de Sudamérica",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": -38.52,
+            "lon": -60.25
+          },
+          "coordinates": {
+            "lat": -38.52,
+            "lng": -60.25
+          }
         },
         {
           "id": "macrauchenia-patachonica",
@@ -125,7 +157,15 @@
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Antofagasta y Región de Magallanes",
-          "chileanProvince": "Provincia de El Loa / Provincia de Última Esperanza"
+          "chileanProvince": "Provincia de El Loa / Provincia de Última Esperanza",
+          "paleoCoordinates": {
+            "lat": -22.45,
+            "lon": -68.92
+          },
+          "coordinates": {
+            "lat": -22.45,
+            "lng": -68.92
+          }
         },
         {
           "id": "toxodon-platensis",
@@ -143,7 +183,15 @@
           "lon": -60.53,
           "fossilSite": "Barrancas de Sarandí (Río de la Plata, Uruguay / Argentina)",
           "distributionZone": "Cuenca del Plata y sabanas de Sudamérica",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": -31.73,
+            "lon": -60.53
+          },
+          "coordinates": {
+            "lat": -31.73,
+            "lng": -60.53
+          }
         },
         {
           "id": "mammut-americanum",
@@ -157,11 +205,19 @@
           "weight": "5.5 t",
           "scaleVsHuman": "Espécimen de la megafauna pleistocénica.",
           "description": "Proboscídeo de linaje más antiguo que los mamuts, caracterizado por molares con cúspides cónicas pronunciadas para desmenuzar ramas de coníferas y un cuerpo más achaparrado y robusto.",
-          "lat": 38.89,
-          "lon": -84.75,
+          "lat": 39.82,
+          "lon": -84.9,
           "fossilSite": "Salinas de Big Bone Lick (Condado de Boone, Kentucky, EE. UU.)",
           "distributionZone": "Continente de Norteamérica",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": 39.82,
+            "lon": -84.9
+          },
+          "coordinates": {
+            "lat": 39.82,
+            "lng": -84.9
+          }
         },
         {
           "id": "aenocyon-dirus",
@@ -179,7 +235,15 @@
           "lon": -118.36,
           "fossilSite": "Pozos de brea de La Brea (Rancho La Brea Tar Pits, Los Ángeles, California)",
           "distributionZone": "América del Norte y del Sur",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": 34.06,
+            "lon": -118.36
+          },
+          "coordinates": {
+            "lat": 34.06,
+            "lng": -118.36
+          }
         },
         {
           "id": "panthera-spelaea",
@@ -197,7 +261,15 @@
           "lon": 2.35,
           "fossilSite": "Cueva de Zoolithenhöhle (Baviera, Alemania) / Cueva de Chauvet (Francia)",
           "distributionZone": "Masa continental euroasiática periglacial",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": 48.85,
+            "lon": 2.35
+          },
+          "coordinates": {
+            "lat": 48.85,
+            "lng": 2.35
+          }
         },
         {
           "id": "ursus-spelaeus",
@@ -211,11 +283,19 @@
           "weight": "0.8 t",
           "scaleVsHuman": "Espécimen de la megafauna pleistocénica.",
           "description": "Colosal úrsido europeo que alcanzaba 3.5 metros erguido. Su dieta era mayormente vegetariana y pasaba largos inviernos glaciares hibernando en profundas cuevas kársticas donde se acumularon millares de osamentas fósiles.",
-          "lat": 49.78,
-          "lon": 11.26,
+          "lat": 44.38,
+          "lon": 4.41,
           "fossilSite": "Cueva de Zoolithenhöhle (Gailenreuth, Baviera, Alemania) / Cueva de Chauvet",
           "distributionZone": "Europa y macizo alpino pleistoceno",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": 44.38,
+            "lon": 4.41
+          },
+          "coordinates": {
+            "lat": 44.38,
+            "lng": 4.41
+          }
         },
         {
           "id": "coelodonta-antiquitatis",
@@ -229,11 +309,19 @@
           "weight": "2.5 t",
           "scaleVsHuman": "Espécimen de la megafauna pleistocénica.",
           "description": "Rinoceronte adaptado a la tundra periglacial por un espeso pelaje lanoso rojizo y un colosal cuerno anterior de queratina aplanado lateralmente de más de 1.3 metros con el que apartaba la nieve invernal para pastar.",
-          "lat": 50.45,
-          "lon": 30.52,
+          "lat": 49.84,
+          "lon": 24.03,
           "fossilSite": "Yacimientos periglaciares de Starunia (Ucrania) / Permafrost de Sajá (Rusia)",
           "distributionZone": "Eurasia septentrional (Estepa de Mamuts)",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": 49.84,
+            "lon": 24.03
+          },
+          "coordinates": {
+            "lat": 49.84,
+            "lng": 24.03
+          }
         },
         {
           "id": "megaloceros-giganteus",
@@ -247,11 +335,19 @@
           "weight": "0.7 t",
           "scaleVsHuman": "Espécimen de la megafauna pleistocénica.",
           "description": "Ciervo gigante que ostentaba la cornamenta más monumental de la historia animal: hasta 3.65 metros de envergadura y 40 kg de masa ósea neta que los machos regeneraban anualmente para el cortejo y las batallas de exhibición.",
-          "lat": 53.22,
-          "lon": -6.21,
+          "lat": 53.25,
+          "lon": -6.2,
           "fossilSite": "Turberas de Ballybetagh (Condado de Dublín, Irlanda)",
           "distributionZone": "Eurasia templada y occidental",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": 53.25,
+            "lon": -6.2
+          },
+          "coordinates": {
+            "lat": 53.25,
+            "lng": -6.2
+          }
         },
         {
           "id": "diprotodon-optatum",
@@ -265,11 +361,19 @@
           "weight": "2.8 t",
           "scaleVsHuman": "Espécimen de la megafauna pleistocénica.",
           "description": "El mayor marsupial de todos los tiempos, de la corpulencia de un rinoceronte blanco. Dotado de incisivos en cincel y una bolsa marsupial orientada hacia atrás, recorría las llanuras semiáridas australianas en manadas migratorias.",
-          "lat": -29.7,
-          "lon": 139.9,
+          "lat": -31.8,
+          "lon": 136.5,
           "fossilSite": "Lago Callabonna (Australia del Sur) / Darling Downs (Queensland)",
           "distributionZone": "Supercontinente Sahul (Australia y Nueva Guinea unidas)",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": -31.8,
+            "lon": 136.5
+          },
+          "coordinates": {
+            "lat": -31.8,
+            "lng": 136.5
+          }
         },
         {
           "id": "procoptodon-goliah",
@@ -283,11 +387,19 @@
           "weight": "0.24 t",
           "scaleVsHuman": "Espécimen de la megafauna pleistocénica.",
           "description": "El canguro más colosal conocido con rostro simiesco chato y visión binocular. A diferencia de los canguros modernos que saltan, caminaba bípedamente a zancadas sobre un único dedo ungulado modificado, alzando sus brazos para ramonear hojas de eucalipto.",
-          "lat": -37,
-          "lon": 140.8,
+          "lat": -32.5,
+          "lon": 142.3,
           "fossilSite": "Cuevas de Naracoorte (Australia del Sur) / Darling Downs",
           "distributionZone": "Continente de Sahul (Australia pleistocena)",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": -32.5,
+            "lon": 142.3
+          },
+          "coordinates": {
+            "lat": -32.5,
+            "lng": 142.3
+          }
         },
         {
           "id": "varanus-priscus",
@@ -302,10 +414,18 @@
           "scaleVsHuman": "Espécimen de la megafauna pleistocénica.",
           "description": "El mayor lagarto terrestre conocido, duplicando la longitud y multiplicando por diez el peso del Dragón de Komodo actual. Con dientes serrados curvados y glándulas de veneno, era el superdepredador cumbre de la megafauna pleistocénica australiana.",
           "lat": -27.5,
-          "lon": 151.5,
+          "lon": 148,
           "fossilSite": "Aluviones de Darling Downs (Queensland, Australia)",
           "distributionZone": "Sahul oriental",
-          "zoneRadius": 1.2
+          "zoneRadius": 1.2,
+          "paleoCoordinates": {
+            "lat": -27.5,
+            "lon": 148
+          },
+          "coordinates": {
+            "lat": -27.5,
+            "lng": 148
+          }
         },
         {
           "id": "mylodon-darwini",
@@ -326,7 +446,15 @@
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Magallanes y Antártica Chilena",
-          "chileanProvince": "Provincia de Última Esperanza"
+          "chileanProvince": "Provincia de Última Esperanza",
+          "paleoCoordinates": {
+            "lat": -51.58,
+            "lon": -72.62
+          },
+          "coordinates": {
+            "lat": -51.58,
+            "lng": -72.62
+          }
         },
         {
           "id": "notiomastodon-platensis",
@@ -347,7 +475,15 @@
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de O'Higgins / Región de Los Lagos",
-          "chileanProvince": "Provincia de Cachapoal / Provincia de Osorno"
+          "chileanProvince": "Provincia de Cachapoal / Provincia de Osorno",
+          "paleoCoordinates": {
+            "lat": -34.52,
+            "lon": -71.18
+          },
+          "coordinates": {
+            "lat": -34.52,
+            "lng": -71.18
+          }
         }
       ],
       "events": [
@@ -418,8 +554,8 @@
           "weight": "50 toneladas",
           "scaleVsHuman": "Su boca abierta de más de 2 metros permitía que un humano adulto se pusiera de pie en su interior.",
           "description": "El mayor tiburón depredador de la historia geológica. Sus mandíbulas armadas con más de 250 dientes triangulares aserrados de hasta 18 cm generaban la mayor fuerza de mordida estimada en el reino animal (~180,000 N), capaz de aplastar las costillas de ballenas barbadas.",
-          "lat": 31.95,
-          "lon": -80.95,
+          "lat": 34.53,
+          "lon": -68.93,
           "fossilSite": "Formación Yorktown y Sharktooth Hill (EE. UU. / Cuenca Pacífica)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -436,8 +572,8 @@
           "weight": "150 kg",
           "scaleVsHuman": "Su cabeza armada con un pico ganchudo macizo superaba la altura de un caballo.",
           "description": "La única especie de las temibles 'aves del terror' fororrácidas sudamericanas que logró cruzar exitosamente hacia Norteamérica durante el Gran Intercambio Biótico Americano. Cazador corredor excepcionalmente veloz que utilizaba su hacha craneal para noquear presas.",
-          "lat": 29.65,
-          "lon": -82.6,
+          "lat": 32.23,
+          "lon": -70.58,
           "fossilSite": "Yacimientos fósiles del Río Santa Fe (Florida, EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -454,8 +590,8 @@
           "weight": "15 toneladas",
           "scaleVsHuman": "Casi 5 metros de altura al hombro; miraba por encima del segundo piso de un edificio.",
           "description": "Uno de los mayores mamíferos terrestres que jamás hayan caminado sobre el planeta, un rinoceronte sin cuernos de cuello elongado capaz de ramonear las copas de los árboles.",
-          "lat": 44.5,
-          "lon": 65.5,
+          "lat": 41.14,
+          "lon": 57.96,
           "fossilSite": "Formación Chitarwata (Pakistán) y Kazajistán",
           "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
           "zoneRadius": 1.5
@@ -472,8 +608,8 @@
           "weight": "8.4 toneladas",
           "scaleVsHuman": "Cráneo colosal de 1.4 m de longitud, casi el doble de largo que el mayor cocodrilo marino moderno.",
           "description": "Monstruoso caimán gigante que dominó las cálidas aguas tropicales del sistema Pebas miocénico, alimentándose de tortugas gigantes de caparazón duro, mamíferos notoungulados y peces de gran tamaño.",
-          "lat": -9.5,
-          "lon": -70.5,
+          "lat": -8.52,
+          "lon": -59.36,
           "fossilSite": "Formación Solimões, Cuenca del Río Purus (Amazonia, Brasil/Perú)",
           "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
           "zoneRadius": 1.2
@@ -490,14 +626,22 @@
           "weight": "25 kg",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Atacama, Chile.",
           "description": "Una de las aves voladoras más gigantescas que surcaron el cielo en toda la historia de la biosfera, con una envergadura alar de 5.2 metros (más del doble que el albatros moderno). Sus mandíbulas estaban provistas de largas espinas óseas o 'pseudodientes' que brotaban del hueso premaxilar y mandibular, ideales para arponear calamares resbaladizos y peces en vuelo rasante sobre la ancestral Corriente de Humboldt. El holotipo chileno es el esqueleto de pelagornítido más completo y perfectamente preservado del planeta (70% del esqueleto articulado).",
-          "lat": -27.15,
-          "lon": -70.85,
+          "lat": -24.7,
+          "lon": -64.18,
           "fossilSite": "Formación Bahía Inglesa (Mioceno Tardío, Miembro Mina Fosforita) (Bahía Inglesa, Caldera, Chile)",
           "distributionZone": "Región de Atacama, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Atacama",
-          "chileanProvince": "Provincia de Copiapó"
+          "chileanProvince": "Provincia de Copiapó",
+          "paleoCoordinates": {
+            "lat": -24.7,
+            "lon": -64.18
+          },
+          "coordinates": {
+            "lat": -27.15,
+            "lng": -70.85
+          }
         },
         {
           "id": "chilecebus-carrascoensis",
@@ -511,14 +655,22 @@
           "weight": "1 kg",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de O'Higgins, Chile.",
           "description": "El primer mono fósil del orden Platyrrhini descubierto en Chile y uno de los primates fósiles más antiguos y mejor preservados de toda Sudamérica. Su cráneo holotípico preserva de manera única los moldes endocraniales del cerebro y los canales semicirculares del oído interno (estudiados mediante tomografía computarizada de alta resolución por Ni et al. 2010, 2019), demostrando que la encefalización en los ancestros de los monos del Nuevo Mundo ocurrió de forma independiente y que ya habitaban exuberantes bosques andinos templados hace 20 millones de años.",
-          "lat": -34.95,
-          "lon": -70.43,
+          "lat": -32.5,
+          "lon": -63.76,
           "fossilSite": "Formación Abanico (Mioceno Temprano) (Termas del Flaco, Valle de Tinguiririca, Chile)",
           "distributionZone": "Región de O'Higgins, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de O'Higgins",
-          "chileanProvince": "Provincia de Colchagua"
+          "chileanProvince": "Provincia de Colchagua",
+          "paleoCoordinates": {
+            "lat": -32.5,
+            "lon": -63.76
+          },
+          "coordinates": {
+            "lat": -34.95,
+            "lng": -70.43
+          }
         },
         {
           "id": "thalassocnus-sp",
@@ -532,14 +684,22 @@
           "weight": "120 kg",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Atacama, Chile.",
           "description": "Sorprendente perezoso marino que adaptó su fisiología a la vida acuática en las costas del Pacífico sudoccidental. Para bucear eficientemente en busca de alimento desarrolló huesos densos y pesados (paquiosteosclerosis) que funcionaban como cinturón de lastre natural contra la flotabilidad. Su hocico ancho y aplanado le permitía pastar densas praderas de algas marinas bentónicas en los fondos someros de Bahía Inglesa, anclándose a las rocas submarinas con sus poderosas garras curvadas.",
-          "lat": -27.12,
-          "lon": -70.88,
+          "lat": -24.67,
+          "lon": -64.21,
           "fossilSite": "Formación Bahía Inglesa (Miembro Mina Fosforita) (Bahía Inglesa, Caldera, Chile)",
           "distributionZone": "Región de Atacama, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Atacama",
-          "chileanProvince": "Provincia de Copiapó"
+          "chileanProvince": "Provincia de Copiapó",
+          "paleoCoordinates": {
+            "lat": -24.67,
+            "lon": -64.21
+          },
+          "coordinates": {
+            "lat": -27.12,
+            "lng": -70.88
+          }
         },
         {
           "id": "piscophoca-pacifica",
@@ -553,14 +713,22 @@
           "weight": "150 kg",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Atacama, Chile.",
           "description": "Foca fósil ancestral perteneciente a la subfamilia Monachinae que habitó la costa del desierto de Atacama durante el Neógeno. Dotada de extremidades completamente transformadas en aletas hidrodinámicas y una dentición especializada para atrapar peces y cefalópodos en aguas abiertas. El registro chileno documentado por Walsh & Naish (2002) y Valenzuela-Toro et al. (2013, 2016) demuestra la gran diversidad y éxito evolutivo de los mamíferos marinos carnívoros en el Pacífico suroriental.",
-          "lat": -27.1,
-          "lon": -70.92,
+          "lat": -24.65,
+          "lon": -64.25,
           "fossilSite": "Formación Bahía Inglesa (Mioceno Tardío - Plioceno) (Bahía Inglesa, Caldera, Chile)",
           "distributionZone": "Región de Atacama, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Atacama",
-          "chileanProvince": "Provincia de Copiapó"
+          "chileanProvince": "Provincia de Copiapó",
+          "paleoCoordinates": {
+            "lat": -24.65,
+            "lon": -64.25
+          },
+          "coordinates": {
+            "lat": -27.1,
+            "lng": -70.92
+          }
         }
       ],
       "events": [
@@ -624,8 +792,8 @@
           "weight": "14 toneladas",
           "scaleVsHuman": "Cuerpo serpentiforme equivalente al largo de un autobús articulado.",
           "description": "Cetáceo arcaico con cuerpo extremadamente alargado que aún conservaba patas traseras vestigiales articuladas con diminutos dedos, testimonio directo de su origen terrestre a partir de ungulados artiodáctilos.",
-          "lat": 31.8,
-          "lon": -88.1,
+          "lat": 39.38,
+          "lon": -56.08,
           "fossilSite": "Wadi El Hitan (Valle de las Ballenas, Egipto)",
           "distributionZone": "Plataformas Marinas y Océano Epicontinental",
           "zoneRadius": 1.8
@@ -642,8 +810,8 @@
           "weight": "220 kg",
           "scaleVsHuman": "Similar al tamaño de un león marino grande.",
           "description": "Forma de transición fósil crucial que evidencia cómo los ancestros de las ballenas se adaptaron a nadar ondulando la columna vertebral mientras aún conservaban cuatro patas funcionales para caminar en tierra.",
-          "lat": 33.6,
-          "lon": 72.8,
+          "lat": 26.24,
+          "lon": 53.26,
           "fossilSite": "Formación Kuldana (Panyab, Pakistán)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -660,8 +828,8 @@
           "weight": "160 kg",
           "scaleVsHuman": "Superaba en altura a un humano adulto medio, con un pico de 45 cm.",
           "description": "Enorme ave terrestre áptera con patas fornidas y un pico colosal y comprimido lateralmente. Inicialmente supuesta carnívora temible, análisis isotópicos de calcio demostraron que consumía nueces duras y semillas.",
-          "lat": 49.2,
-          "lon": 3.4,
+          "lat": 42.18,
+          "lon": 19.66,
           "fossilSite": "Cuenca de París (Francia) y Formación Willwood (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -678,8 +846,8 @@
           "weight": "1.1 toneladas",
           "scaleVsHuman": "Su cuerpo superaba el metro de diámetro; pesaba más que un automóvil utilitario.",
           "description": "La serpiente más gigantesca jamás documentada. Vivió en los bosques pantanosos ultra-cálidos del Paleoceno-Eoceno en Colombia, donde las temperaturas de 32-34°C permitieron su colosal metabolismo poiquilotermo.",
-          "lat": 11.1,
-          "lon": -72.6,
+          "lat": 20.14,
+          "lon": -39.86,
           "fossilSite": "Mina de carbón del Cerrejón (La Guajira, Colombia)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -746,8 +914,8 @@
           "weight": "8.8 toneladas",
           "scaleVsHuman": "3.7 metros de altura a la cadera, cráneo de 1.5 metros provisto de 60 dientes trituradores de hueso.",
           "description": "El superdepredador indiscutible del Cretácico tardío en Norteamérica. Poseía la mayor fuerza de mordedura medida en animales terrestres (~57,000 N), visión binocular tridimensional estereoscópica superior a la de las aves de presa actuales y un fino sentido del olfato para detectar carroña a kilómetros de distancia.",
-          "lat": 47.5,
-          "lon": -106.5,
+          "lat": 58.08,
+          "lon": -54.48,
           "fossilSite": "Formación Hell Creek, Montana (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -764,8 +932,8 @@
           "weight": "9.0 toneladas",
           "scaleVsHuman": "3 metros de altura, macizo como dos elefantes africanos, con una gola ósea impenetrable.",
           "description": "El ceratópsido más colosal y reconocible. Ostentaba dos grandes cuernos supraorbitales de más de 1 metro de longitud y un cuerno nasal, respaldados por una sólida gola ósea posterior que protegía su cuello y servía para el cortejo y las batallas territoriales frente a rivales de su misma especie y ataques de T-Rex.",
-          "lat": 44,
-          "lon": -104.5,
+          "lat": 54.58,
+          "lon": -52.48,
           "fossilSite": "Formación Lance, Wyoming (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -782,8 +950,8 @@
           "weight": "6.0 toneladas",
           "scaleVsHuman": "Un tanque biológico bajo y acorazado con una porra caudal maciza capaz de quebrar huesos.",
           "description": "El último y mayor de los anquilosáuridos. Su lomo estaba enteramente blindado por placas osteodérmicas y espinas óseas incrustadas en la piel, hasta en los párpados. Al final de su cola fusionada portaba una pesada maza ósea que blandía lateralmente con fuerza suficiente para fracturar las patas de un Tiranosaurio.",
-          "lat": 47.2,
-          "lon": -107,
+          "lat": 57.78,
+          "lon": -54.98,
           "fossilSite": "Formación Hell Creek, Montana y Alberta (Canadá)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -800,8 +968,8 @@
           "weight": "15 kg",
           "scaleVsHuman": "Del tamaño de un pavo grande o lobo pequeño, cubierto de plumaje denso.",
           "description": "Terópodo ágil dotado de plumas penáceas completas y una formidable garra en forma de hoz hipertrofiada en el segundo dedo de cada pie. El famoso fósil de los 'Dinosaurios Luchadores' demostró que empleaba sus garras para someter a presas como Protoceratops en combates a muerte en el desierto de Gobi.",
-          "lat": 44.15,
-          "lon": 103.2,
+          "lat": 32.79,
+          "lon": 71.66,
           "fossilSite": "Acantilados Llameantes de Bayan Mandahu y Formación Djadochta (Desierto de Gobi, Mongolia)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -818,8 +986,8 @@
           "weight": "220 kg",
           "scaleVsHuman": "Caminaba a cuatro patas erguido con la misma altura que una jirafa macho adulta (5.5 m).",
           "description": "Uno de los mayores animales voladores de la historia terrestre. Con una envergadura equivalente a la de un avión Cessna y un pico desdentado puntiagudo de casi 2 metros, patrullaba el suelo a zancadas alimentándose de presas de tamaño medio que engullía enteras.",
-          "lat": 29.25,
-          "lon": -103.25,
+          "lat": 39.83,
+          "lon": -51.23,
           "fossilSite": "Formación Javelina, Big Bend, Texas (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -836,8 +1004,8 @@
           "weight": "14 toneladas",
           "scaleVsHuman": "Casi el triple de largo que una orca marina, con aletas hidrodinámicas y cola bilobulada.",
           "description": "Reptil escamoso marino emparentado con los varanos y serpientes. Poseía una doble fila de dientes en el paladar (dientes pterigoideos) que impedían que las presas resbalaran de su fauce, y una potente aleta caudal con la que propulsaba emboscadas letales a gran velocidad.",
-          "lat": 50.85,
-          "lon": 5.68,
+          "lat": 37.83,
+          "lon": 37.94,
           "fossilSite": "Canteras de caliza de Maastricht (Río Mosa, Países Bajos)",
           "distributionZone": "Plataformas Marinas y Océano Epicontinental",
           "zoneRadius": 1.8
@@ -854,8 +1022,8 @@
           "weight": "3.5 toneladas",
           "scaleVsHuman": "Casi 4 metros de altura, con una espectacular cresta tubular curva de hasta 1.8 metros hacia atrás.",
           "description": "Emblemático dinosaurio herbívoro 'pico de pato'. Su espectacular cresta craneal hueca albergaba conductos nasales complejos que funcionaban como una caja de resonancia acústica para emitir llamadas subsónicas de baja frecuencia a lo largo de kilómetros de bosque, además de servir como llamativo display visual.",
-          "lat": 50.7,
-          "lon": -111.5,
+          "lat": 61.28,
+          "lon": -59.48,
           "fossilSite": "Parque Provincial del Dinosaurio, Formación Dinosaur Park, Alberta (Canadá)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -872,14 +1040,22 @@
           "weight": "150 kg",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Magallanes y Antártica Chilena, Chile.",
           "description": "Sensacional dinosaurio acorazado patagónico que reveló un linaje enteramente nuevo de anquilosaurios de Gondwana: Parankylosauria. Posee un arma defensiva única jamás observada en ningún otro vertebrado fósil o viviente: un 'macuahuitl' caudal formado por 7 pares de placas óseas dérmicas fusionadas lateralmente como la mítica espada de obsidiana mesoamericana. Este blindaje le permitía protegerse de megarraptores en los deltas cretácicos más australes del planeta.",
-          "lat": -51.35,
-          "lon": -72.35,
+          "lat": -40.9,
+          "lon": -47.68,
           "fossilSite": "Formación Dorotea (Campaniense - Maastrichtiense) (Valle del Río de las Chinas (cerca de Torres del Paine), Chile)",
           "distributionZone": "Región de Magallanes y Antártica Chilena, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Magallanes y Antártica Chilena",
-          "chileanProvince": "Provincia de Última Esperanza"
+          "chileanProvince": "Provincia de Última Esperanza",
+          "paleoCoordinates": {
+            "lat": -40.9,
+            "lon": -47.68
+          },
+          "coordinates": {
+            "lat": -51.35,
+            "lng": -72.35
+          }
         },
         {
           "id": "arackar-licanantay",
@@ -893,14 +1069,22 @@
           "weight": "3.5 t",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Atacama, Chile.",
           "description": "Saurópodo titanosaurio de tamaño mediano que habitó el norte de Chile a finales del Cretácico. Su nombre significa 'osamentas de los atacameños' en la lengua originaria kunza (licanantay). Poseía vértebras cervicales y dorsales con una estructura neumática sumamente ligera y una articulación reducida entre los arcos neurales que le conferían un cuello grácil y altamente maniobrable para ramonear copas de árboles en cuencas fluviales semiáridas.",
-          "lat": -27.85,
-          "lon": -70.25,
+          "lat": -17.4,
+          "lon": -45.58,
           "fossilSite": "Formación Hornitos (Cretácico Superior) (Quebrada La Higuera (al sur de Copiapó), Chile)",
           "distributionZone": "Región de Atacama, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Atacama",
-          "chileanProvince": "Provincia de Copiapó"
+          "chileanProvince": "Provincia de Copiapó",
+          "paleoCoordinates": {
+            "lat": -17.4,
+            "lon": -45.58
+          },
+          "coordinates": {
+            "lat": -27.85,
+            "lng": -70.25
+          }
         },
         {
           "id": "atacamatitan-chilensis",
@@ -914,14 +1098,22 @@
           "weight": "5 t",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Antofagasta, Chile.",
           "description": "El primer dinosaurio titanosaurio formalmente descrito y bautizado en territorio chileno continental. Con una longitud estimada en 10 metros, este robusto herbívoro cuadrúpedo dominaba los cursos de agua que cruzaban lo que hoy es el Desierto de Atacama. Sus fémures y vértebras caudales marcadamente procélicas revelan adaptaciones avanzadas para soportar peso en terrenos secos y recorrer largas distancias en busca de oasis de vegetación.",
-          "lat": -22.35,
-          "lon": -69.05,
+          "lat": -11.9,
+          "lon": -44.38,
           "fossilSite": "Formación Tolar (Cretácico Tardío) (Conchi Viejo, Calama, Chile)",
           "distributionZone": "Región de Antofagasta, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Antofagasta",
-          "chileanProvince": "Provincia de El Loa"
+          "chileanProvince": "Provincia de El Loa",
+          "paleoCoordinates": {
+            "lat": -11.9,
+            "lon": -44.38
+          },
+          "coordinates": {
+            "lat": -22.35,
+            "lng": -69.05
+          }
         },
         {
           "id": "gonkoken-nanoi",
@@ -935,14 +1127,22 @@
           "weight": "1 t",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Magallanes y Antártica Chilena, Chile.",
           "description": "Extraordinario dinosaurio pico de pato basal descubierto en el extremo sur de Chile. Su hallazgo en 2023 demostró que la Patagonia austral actuó como un 'refugio biogeográfico' para linajes primitivos de ornitópodos que habían desaparecido millones de años antes en Norteamérica y Asia. Su nombre honra la lengua de los pueblos originarios tehuelches (Aonikenk), donde 'gon' significa 'parecido a' y 'koken' significa 'cisne o pato silvestre', mientras que 'nanoi' homenajea al pionero magallánico Nano Lepe.",
-          "lat": -51.3,
-          "lon": -72.3,
+          "lat": -40.85,
+          "lon": -47.63,
           "fossilSite": "Formación Dorotea (Maastrichtiense inferior) (Valle del Río de las Chinas, cerca de Torres del Paine, Chile)",
           "distributionZone": "Región de Magallanes y Antártica Chilena, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Magallanes y Antártica Chilena",
-          "chileanProvince": "Provincia de Última Esperanza"
+          "chileanProvince": "Provincia de Última Esperanza",
+          "paleoCoordinates": {
+            "lat": -40.85,
+            "lon": -47.63
+          },
+          "coordinates": {
+            "lat": -51.3,
+            "lng": -72.3
+          }
         },
         {
           "id": "magallanodon-baikashkenke",
@@ -956,14 +1156,22 @@
           "weight": "5 kg",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Magallanes y Antártica Chilena, Chile.",
           "description": "El mamífero de la 'Era de los Dinosaurios' más grande descubierto en Chile y el más austral del planeta. Con una masa estimada de hasta 5 kg (similar a un coipo moderno), este extraordinario gondwanaterio poseía molares hipsodontes con profundas crestas de esmalte para masticar vegetación dura y helechos. Convivió en los deltas y bosques magallánicos del fin del Cretácico con grandes titanosaurios, el anquilosaurio Stegouros y el pico de pato Gonkoken.",
-          "lat": -51.32,
-          "lon": -72.33,
+          "lat": -40.87,
+          "lon": -47.66,
           "fossilSite": "Formación Dorotea (Campaniense - Maastrichtiense) (Valle de las Chinas, Cerro Guido, Chile)",
           "distributionZone": "Región de Magallanes y Antártica Chilena, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Magallanes y Antártica Chilena",
-          "chileanProvince": "Provincia de Última Esperanza"
+          "chileanProvince": "Provincia de Última Esperanza",
+          "paleoCoordinates": {
+            "lat": -40.87,
+            "lon": -47.66
+          },
+          "coordinates": {
+            "lat": -51.32,
+            "lng": -72.33
+          }
         }
       ],
       "events": [
@@ -1034,8 +1242,8 @@
           "weight": "7.5 toneladas",
           "scaleVsHuman": "Más largo que Tyrannosaurus rex, con una vela dorsal de 1.8 m y cola en forma de aleta natatoria.",
           "description": "El dinosaurio carnívoro más largo conocido. Altamente adaptado a la vida acuática en los sistemas fluviales del norte de África, con huesos densos para controlar la flotabilidad, una cola aplanada lateralmente como una aleta de tritón, hocico cónico similar al de un gavial y una monumental vela dorsal.",
-          "lat": 31,
-          "lon": 28.5,
+          "lat": 2.92,
+          "lon": 54.04,
           "fossilSite": "Formación Bahariya (Egipto) y Lechos de Kem Kem (Marruecos)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1052,8 +1260,8 @@
           "weight": "8.2 toneladas",
           "scaleVsHuman": "Rivalizaba o superaba en tamaño a Tyrannosaurus rex, con dientes como dagas aserradas.",
           "description": "Colosal terópodo carcharodontosáurido del Cretácico medio sudamericano. Dotado de mandíbulas armadas con dientes comprimidos lateralmente de hasta 15 cm aptos para desgarrar grandes masas de carne mediante ataques de corte rápido contra titanosaurios como Argentinosaurus.",
-          "lat": -39.2,
-          "lon": -68.8,
+          "lat": -14,
+          "lon": -0.04,
           "fossilSite": "Formación Candeleros, Villa El Chocón, Neuquén (Patagonia, Argentina)",
           "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
           "zoneRadius": 1.2
@@ -1070,8 +1278,8 @@
           "weight": "4.5 toneladas",
           "scaleVsHuman": "Capaz de marchar a cuatro o a dos patas, con un espolón defensivo cónico de 15 cm en el pulgar.",
           "description": "Uno de los primeros dinosaurios nombrados en la historia de la ciencia. Sus manos exhibían pulgares modificados en afiladas púas cónicas que utilizaba tanto para defensa activa frente a terópodos como para manipular ramas duras.",
-          "lat": 50.48,
-          "lon": 3.65,
+          "lat": 23.46,
+          "lon": 51.91,
           "fossilSite": "Mina de carbón de Bernissart (Bélgica) y Wealden (Reino Unido)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1088,8 +1296,8 @@
           "weight": "75 toneladas",
           "scaleVsHuman": "Una sola de sus vértebras dorsales medía más de 1.6 metros de altura, rivalizando con la estatura humana.",
           "description": "Considerado uno de los animales terrestres más pesados y masivos que jamás hayan existido sobre la Tierra, con vértebras reforzadas por articulaciones accesorias hiposfeno-hipantro para soportar un peso superior a 70 toneladas métricas.",
-          "lat": -38.9,
-          "lon": -69.2,
+          "lat": -13.7,
+          "lon": -0.44,
           "fossilSite": "Formación Huincul, Plaza Huincul, Neuquén (Argentina)",
           "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
           "zoneRadius": 1.2
@@ -1156,8 +1364,8 @@
           "weight": "2.3 toneladas",
           "scaleVsHuman": "3 metros de altura a la cruz, con crestas lagrimales rojas sobre los ojos y brazos de tres garras.",
           "description": "El león del Jurásico tardío. Con una apertura de mandíbula excepcionalmente amplia de más de 80 grados, utilizaba su maxilar superior a modo de hacha cortante para golpear y desangrar a grandes presas herbívoras.",
-          "lat": 39.3,
-          "lon": -110.8,
+          "lat": 33.88,
+          "lon": -10.78,
           "fossilSite": "Cantera de Cleveland-Lloyd, Formación Morrison, Utah (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1174,8 +1382,8 @@
           "weight": "5.0 toneladas",
           "scaleVsHuman": "4 metros de altura hasta la cúspide de sus placas dorsales, con cola armada con púas óseas (thagomizer).",
           "description": "Reconocible al instante por la doble fila alterna de 17 placas óseas triangulares a lo largo del lomo, utilizadas tanto para termorregulación vascular como para display visual, y cuatro púas defensivas de 60 cm en la punta de la cola (thagomizer) con las que hería mortalmente a Alosaurios.",
-          "lat": 40.4,
-          "lon": -108.5,
+          "lat": 34.98,
+          "lon": -8.48,
           "fossilSite": "Monumento Nacional de los Dinosaurios, Formación Morrison, Colorado/Utah (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1192,8 +1400,8 @@
           "weight": "14 toneladas",
           "scaleVsHuman": "Longitud de un autobús articulado doble; su cola en látigo superaba la velocidad del sonido al restallar.",
           "description": "Saurópodo icónico de complexión esbelta pero extraordinaria longitud. Poseía una cola finísima compuesta por más de 80 vértebras que funcionaba como un látigo supersónico para disuadir depredadores y defender a la manada.",
-          "lat": 41.5,
-          "lon": -106,
+          "lat": 36.08,
+          "lon": -5.98,
           "fossilSite": "Cantera Sheep Creek, Formación Morrison, Wyoming (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1210,8 +1418,8 @@
           "weight": "35 toneladas",
           "scaleVsHuman": "Más de 12 metros de altura total; alcanzaba la altura de un cuarto piso sin despegar las patas del suelo.",
           "description": "Monumento viviente del Jurásico con extremidades anteriores más largas que las posteriores, lo que otorgaba a su lomo una postura inclinada hacia arriba semejante a la de una colosal jirafa, facilitándole el ramoneo directo en las copas de las coníferas.",
-          "lat": 39.05,
-          "lon": -108.7,
+          "lat": 33.63,
+          "lon": -8.68,
           "fossilSite": "Grand River Valley, Formación Morrison, Colorado (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1228,8 +1436,8 @@
           "weight": "0.8 kg",
           "scaleVsHuman": "Del tamaño de un cuervo o urraca europea.",
           "description": "El fósil de transición más célebre de la paleontología evolutiva. Reveló de manera inequívoca el vínculo directo entre los dinosaurios terópodos y las aves modernas: combinaba dientes afilados, garras en las alas y una larga cola ósea de reptil con plumas de vuelo asimétricas idénticas a las actuales.",
-          "lat": 48.89,
-          "lon": 11,
+          "lat": 13.34,
+          "lon": 55.9,
           "fossilSite": "Calizas litográficas de Solnhofen, Baviera (Alemania)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1246,8 +1454,8 @@
           "weight": "1.2 toneladas",
           "scaleVsHuman": "Menor que Stegosaurus pero con temibles púas pares laterales en hombros y caderas.",
           "description": "Estegosáurido africano caracterizado por una transición gradual de pequeñas placas óseas en el cuello a enormes púas gemelas afiladas a lo largo de la espalda, flancos y cola, transformándolo en una fortaleza viviente ante terópodos.",
-          "lat": -9.85,
-          "lon": 39.3,
+          "lat": -38.57,
+          "lon": 26.3,
           "fossilSite": "Yacimiento de Tendaguru (Tanzania, África Oriental)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1264,14 +1472,22 @@
           "weight": "200 kg",
           "scaleVsHuman": "Espécimen fósil descubierto en Región de Aysén, Chile.",
           "description": "Conocido mundialmente como el 'ornitorrinco de los dinosaurios' y uno de los mayores enigmas evolutivos de la paleontología. A pesar de descender del linaje terópodo (el mismo grupo de depredadores que incluye al T-Rex), Chilesaurus evolucionó de manera asombrosa hacia una dieta 100% vegetariana: desarrolló un pico córneo, dientes foliares en espátula para cortar helechos y una pelvis modificada parecida a la de los ornitisquios. Descubierto en 2004 por el niño Diego Suárez (7 años), su descripción en la revista Nature redefinió la comprensión de la radiación temprana de los dinosaurios.",
-          "lat": -46.65,
-          "lon": -72.68,
+          "lat": -27.2,
+          "lon": -28.01,
           "fossilSite": "Formación Toqui (Manto de calizas y tobas volcánicas) (Mallín Grande, Lago General Carrera, Chile)",
           "distributionZone": "Región de Aysén, Chile",
           "zoneRadius": 1.5,
           "isChilean": true,
           "chileanRegion": "Región de Aysén",
-          "chileanProvince": "Provincia General Carrera"
+          "chileanProvince": "Provincia General Carrera",
+          "paleoCoordinates": {
+            "lat": -27.2,
+            "lon": -28.01
+          },
+          "coordinates": {
+            "lat": -46.65,
+            "lng": -72.68
+          }
         }
       ],
       "events": [
@@ -1342,8 +1558,8 @@
           "weight": "2.5 toneladas",
           "scaleVsHuman": "Capaz de alzarse bípedamente para ramonear a más de 4 metros de altura.",
           "description": "Uno de los primeros grandes dinosaurios herbívoros de la historia. Caminaba de forma bípeda y poseía manos provistas de un pulgar con garra curvada prensil para acercar ramas a su boca, prefigurando la radiación colosal de los saurópodos jurásicos.",
-          "lat": 48.07,
-          "lon": 8.63,
+          "lat": 0.52,
+          "lon": 61.53,
           "fossilSite": "Trossingen y Frick, Formación Löwenstein (Alemania / Suiza)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1360,8 +1576,8 @@
           "weight": "250 kg",
           "scaleVsHuman": "Depredador ágil y esbelto con patas traseras largas adaptadas a la carrera veloz.",
           "description": "Uno de los dinosaurios carnívoros más primitivos y completos del registro fósil mundial. Presentaba una articulación mandibular móvil que le permitía sujetar presas forcejeantes con sus dientes aserrados curvados hacia atrás.",
-          "lat": -30.15,
-          "lon": -67.85,
+          "lat": -12.95,
+          "lon": 31.91,
           "fossilSite": "Parque Provincial Ischigualasto, Valle de la Luna, San Juan (Argentina)",
           "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
           "zoneRadius": 1.2
@@ -1378,8 +1594,8 @@
           "weight": "10 kg",
           "scaleVsHuman": "Del tamaño de un perro pequeño o zorro, muy grácil y veloz.",
           "description": "El amanecer de la era de los dinosaurios. Descubierto en 1991 en las áridas rocas triásicas de Ischigualasto, su dentición mixta atestigua el origen común de los linajes carnívoros y herbívoros.",
-          "lat": -30.1,
-          "lon": -67.8,
+          "lat": -12.9,
+          "lon": 31.96,
           "fossilSite": "Formación Ischigualasto, San Juan (Argentina)",
           "distributionZone": "Cuenca y Llanuras de Sudamérica (Pampas / Patagonia)",
           "zoneRadius": 1.2
@@ -1453,8 +1669,8 @@
           "weight": "250 kg",
           "scaleVsHuman": "Más de 1.8 metros de altura en la cumbre de su vela dorsal membranosa vascularizada.",
           "description": "El sinápsido más emblemático del Pérmico. Aunque comúnmente confundido con un dinosaurio, está mucho más estrechamente emparentado con los mamíferos que con los reptiles. Su espectacular vela dorsal sostenida por prolongaciones vertebrales servía como termorregulador solar y reclamo reproductor.",
-          "lat": 33.6,
-          "lon": -99.3,
+          "lat": -23.15,
+          "lon": 0.48,
           "fossilSite": "Red Beds de Texas y Oklahoma (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1471,8 +1687,8 @@
           "weight": "300 kg",
           "scaleVsHuman": "Del porte de un león o un gran oso, con descomunales caninos de sable de 15 cm.",
           "description": "El tigre de dientes de sable del Pérmico tardío. Sus colmillos de sable y su cráneo reforzado estaban adaptados para perforar la dura armadura osteodérmica de herbívoros contemporáneos como Scutosaurus en las costas de Pangea septentrional.",
-          "lat": 62.8,
-          "lon": 43.1,
+          "lat": 13.61,
+          "lon": 36.46,
           "fossilSite": "Yacimientos del Río Dvina Septentrional, Óblast de Arcángel (Rusia)",
           "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
           "zoneRadius": 1.5
@@ -1489,8 +1705,8 @@
           "weight": "1,200 kg",
           "scaleVsHuman": "Cuerpo cilíndrico robusto de patas columnares gruesas como un rinoceronte.",
           "description": "Tanque biológico del Pérmico tardío. Todo su cuerpo estaba cubierto de placas óseas dérmicas soldadas y protuberancias en las mejillas, adaptado para procesar enormes cantidades de vegetación dura en su espacioso abdomen fermentador.",
-          "lat": 61.2,
-          "lon": 46.5,
+          "lat": 38.97,
+          "lon": 63.4,
           "fossilSite": "Sokolki, Río Malaya Severnaya Dvina (Rusia)",
           "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
           "zoneRadius": 1.5
@@ -1507,8 +1723,8 @@
           "weight": "200 kg",
           "scaleVsHuman": "Vela con barras transversales óseas perpendiculares semejantes a varillas de antena.",
           "description": "Uno de los primeros vertebrados herbívoros terrestres de gran porte. Poseía placas de dientes en el paladar para moler plantas y una vela dorsal con protuberancias transversales únicas.",
-          "lat": 33.5,
-          "lon": -99,
+          "lat": -23.25,
+          "lon": 0.78,
           "fossilSite": "Archer County, Texas (EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1575,8 +1791,8 @@
           "weight": "50 kg",
           "scaleVsHuman": "Más largo que un humano adulto recostado; el mayor invertebrado terrestre de todos los tiempos.",
           "description": "Miriápodo titánico con más de 30 segmentos corporales acorazados. Su gigantesco tamaño sólo fue biológicamente posible gracias a la asombrosa concentración del 35% de oxígeno atmosférico que alimentaba su sistema de tráqueas pasivas.",
-          "lat": 55.5,
-          "lon": -1.6,
+          "lat": -36.05,
+          "lon": 63.3,
           "fossilSite": "Howick Bay (Northumberland, Reino Unido)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1593,8 +1809,8 @@
           "weight": "450 g",
           "scaleVsHuman": "Envergadura de alas comparable a la de un halcón o un cuervo moderno.",
           "description": "El insecto volador más grande conocido. Como depredador aéreo de primer orden, atrapaba al vuelo otros insectos gigantes e incluso anfibios pequeños en los frondosos bosques del Carbonífero.",
-          "lat": 46.3,
-          "lon": 2.8,
+          "lat": -45.25,
+          "lon": 67.7,
           "fossilSite": "Yacimientos hulleros de Commentry (Allier, Francia)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1611,8 +1827,8 @@
           "weight": "4.5 kg",
           "scaleVsHuman": "Casi 10 veces más grande que un escorpión emperador actual.",
           "description": "Escorpión terrestre de tamaño descomunal provisto de pulmones en libro hiperdesarrollados y un aguijón bulboso con el que sometía anfibios y artrópodos.",
-          "lat": 55.9,
-          "lon": -3.5,
+          "lat": -35.65,
+          "lon": 61.4,
           "fossilSite": "East Kirkton Quarry (West Lothian, Escocia)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1629,8 +1845,8 @@
           "weight": "100 g",
           "scaleVsHuman": "Similar a una lagartija pequeña contemporánea.",
           "description": "El reptil más antiguo indiscutido del registro fósil. Protagonizó la mayor revolución reproductiva terrestre: el huevo amniótico con cáscara protectora impermeable que permitió a los vertebrados colonizar el interior de los continentes sin depender del agua para desovar.",
-          "lat": 45.7,
-          "lon": -64.4,
+          "lat": -38.05,
+          "lon": 48.38,
           "fossilSite": "Acantilados fosilíferos de Joggins (Nueva Escocia, Canadá)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1697,8 +1913,8 @@
           "weight": "1.0 tonelada",
           "scaleVsHuman": "Casi 3.5 veces la estatura humana; placas óseas craneales de 5 cm de grosor.",
           "description": "El superdepredador marino definitivo del Devónico. No tenía dientes convencionales, sino placas óseas dérmicas en forma de cuchillas que se autoafilaban al cerrar la boca con una fuerza de cizalla de más de 5,000 N.",
-          "lat": 41.5,
-          "lon": -81.7,
+          "lat": -73.25,
+          "lon": 45.08,
           "fossilSite": "Cleveland Shale (Ohio, EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1715,8 +1931,8 @@
           "weight": "60 kg",
           "scaleVsHuman": "Similar al tamaño de un cocodrilo joven; cráneo aplanado de 30 cm.",
           "description": "El icono fósil supremo de la evolución: el eslabón entre peces y animales terrestres de cuatro patas. Poseía escamas y branquias de pez, pero también cuello móvil articulado, costillas capaces de sostener el cuerpo fuera del agua y aletas con hombro, codo y muñeca funcional.",
-          "lat": 77,
-          "lon": -86,
+          "lat": -37.75,
+          "lon": 40.78,
           "fossilSite": "Isla de Ellesmere (Nunavut, Ártico Canadiense)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1733,8 +1949,8 @@
           "weight": "35 kg",
           "scaleVsHuman": "Similar en tamaño a una salamandra gigante del Japón.",
           "description": "Uno de los primeros vertebrados terrestres con extremidades pentadáctilas y polidáctilas (7 dedos en sus patas traseras), caja torácica robusta para evitar el colapso de los pulmones en tierra firme y cola con aleta natatoria reminiscente de los peces.",
-          "lat": 73.5,
-          "lon": -23,
+          "lat": -48.05,
+          "lon": 51.9,
           "fossilSite": "Formación Aina Dal (Groenlandia Oriental)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1751,8 +1967,8 @@
           "weight": "800 g",
           "scaleVsHuman": "Tamaño similar a una lubina o trucha mediana.",
           "description": "Hallazgo asombroso: el fósil de una hembra con un embrión intrauterino conectado mediante un cordón umbilical fosilizado. Adelantó el origen de la reproducción vivípara interna en los vertebrados en más de 200 millones de años.",
-          "lat": -18.3,
-          "lon": 125.8,
+          "lat": -104.47,
+          "lon": 60.36,
           "fossilSite": "Formación Gogo (Kimberley, Australia Occidental)",
           "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
           "zoneRadius": 1.3
@@ -1826,8 +2042,8 @@
           "weight": "12 kg",
           "scaleVsHuman": "Cuerpo segmentado que alcanzaba la cintura de un humano adulto.",
           "description": "Artrópodo depredador marino de gran éxito evolutivo. Nadaba con sus aletas traseras en forma de remo y atrapaba trilobites y peces sin mandíbulas con sus quelíceros espinosos.",
-          "lat": 43,
-          "lon": -75,
+          "lat": -97.75,
+          "lon": 71.78,
           "fossilSite": "Formación Furlong / Bertie (Nueva York, EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1844,8 +2060,8 @@
           "weight": "2 g",
           "scaleVsHuman": "Diminuta ramificación de 5 a 8 cm de altura.",
           "description": "La primera planta vascular confirmada en la historia de la Tierra. Presentaba tallos fotosintéticos verdes sin hojas verdaderas bifurcados en Y, rematados en esporangios globosos para dispersar esporas por el viento.",
-          "lat": 56.5,
-          "lon": -3.5,
+          "lat": -95.05,
+          "lon": 85.4,
           "fossilSite": "Old Red Sandstone (Gales y Escocia)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -1862,8 +2078,8 @@
           "weight": "25 g",
           "scaleVsHuman": "Tamaño de un boquerón o anchoa pequeña.",
           "description": "Pez primitivo desprovisto de mandíbulas articuladas, recubierto de pequeñas escamas rómbicas de hueso dérmico que le conferían flexibilidad para nadar con ondulaciones laterales.",
-          "lat": 55.6,
-          "lon": -3.9,
+          "lat": -95.95,
+          "lon": 85,
           "fossilSite": "Lesmahagow Inlier (Lanarkshire, Escocia)",
           "distributionZone": "Plataformas Marinas y Océano Epicontinental",
           "zoneRadius": 1.8
@@ -1880,8 +2096,8 @@
           "weight": "1.5 toneladas",
           "scaleVsHuman": "Columnas gigantes de 1 metro de diámetro en la base y 8 metros de alto.",
           "description": "El organismo terrestre más colosal del Silúrico y Devónico temprano. Mucho antes de que existieran árboles verdaderos, estos misteriosos troncos fungiformes dominaban el horizonte terrestre descomponiendo biomasa microbiana.",
-          "lat": 48,
-          "lon": -66,
+          "lat": -92.75,
+          "lon": 80.78,
           "fossilSite": "Formación Battery Point (Península de Gaspesia, Quebec, Canadá)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1948,8 +2164,8 @@
           "weight": "600 kg",
           "scaleVsHuman": "Concha cónica recta equivalente a la longitud de un camión mediano.",
           "description": "El superdepredador más gigantesco del Paleozoico temprano. Habitaba una concha cónica recta con cámaras de flotación y tentáculos prensiles con los que atrapaba peces acorazados y trilobites para quebrarlos con su pico quitinoso.",
-          "lat": 43.5,
-          "lon": -75.3,
+          "lat": -111.25,
+          "lon": 94.48,
           "fossilSite": "Trenton Limestone (Nueva York, EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -1966,8 +2182,8 @@
           "weight": "40 g",
           "scaleVsHuman": "Cabe en la palma de una mano humana.",
           "description": "Famoso trilobites que evolucionó ojos montados sobre largos pedúnculos erectos de calcita. Esto le permitía permanecer completamente enterrado en el sedimento del fondo marino observando posibles depredadores como un periscopio submarino.",
-          "lat": 59.9,
-          "lon": 31,
+          "lat": -85.29,
+          "lon": 36.36,
           "fossilSite": "Río Vóljov (Región de San Petersburgo, Rusia)",
           "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
           "zoneRadius": 1.5
@@ -1984,8 +2200,8 @@
           "weight": "180 g",
           "scaleVsHuman": "Largo similar al antebrazo de un adulto humano.",
           "description": "Pez basal desprovisto de mandíbulas y aletas pares, cuyo cuerpo anterior estaba protegido por placas óseas dérmicas con tubérculos poligonales en forma de estrella que constituían su armadura defensiva.",
-          "lat": 38.4,
-          "lon": -105.2,
+          "lat": -116.35,
+          "lon": 64.58,
           "fossilSite": "Formación Harding Sandstone (Colorado, EE. UU.)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -2002,8 +2218,8 @@
           "weight": "250 g",
           "scaleVsHuman": "Casi 10 veces más grande que los conodontos habituales (de 2-3 cm).",
           "description": "Uno de los conodontos fósiles mejor preservados del mundo. Poseía una notocorda dorsal, ojos grandes con conos musculares y una faringe provista de un complejo aparato de elementos dentados fosfatados mineralizados.",
-          "lat": -32.3,
-          "lon": 18.9,
+          "lat": -170.02,
+          "lon": 2.9,
           "fossilSite": "Lagerstätte Soom Shale (Cabo Occidental, Sudáfrica)",
           "distributionZone": "Plataformas Marinas y Océano Epicontinental",
           "zoneRadius": 1.8
@@ -2070,8 +2286,8 @@
           "weight": "4.0 kg",
           "scaleVsHuman": "El leviatán de su tiempo; en un océano donde la mayoría de los seres medían pocos centímetros.",
           "description": "El superdepredador por excelencia de la Explosión Cámbrica. Poseía dos ojos compuestos pedunculados formados por más de 16,000 lentes individuales, dos apéndices frontales articulados espinosos para atrapar presas y una boca circular en forma de rodaja de piña armada con placas concéntricas trituradoras.",
-          "lat": 51.4,
-          "lon": -116.5,
+          "lat": -79.35,
+          "lon": 81.28,
           "fossilSite": "Burgess Shale, Parque Nacional Yoho (Columbia Británica, Canadá)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -2088,8 +2304,8 @@
           "weight": "50 g",
           "scaleVsHuman": "Del tamaño de la palma de una mano humana, con exoesqueleto trilobulado calcificado.",
           "description": "El artrópodo más exitoso de la era Paleozoica temprana. Con un exoesqueleto articulado de calcita dividido en tres lóbulos longitudinales y ojos de calcita pura con óptica bifocal perfecta, dominó los fondos marinos durante casi 300 millones de años.",
-          "lat": 51.45,
-          "lon": -116.48,
+          "lat": -79.3,
+          "lon": 81.3,
           "fossilSite": "Burgess Shale (Canadá) y Esquisto de Maotianshan (Chengjiang, China)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -2106,8 +2322,8 @@
           "weight": "20 g",
           "scaleVsHuman": "Cuerpo alargado y suave de pocos centímetros con 5 ojos dorsales.",
           "description": "Una de las criaturas más asombrosas y desconcertantes de la fauna de Burgess Shale. Dotada de cinco ojos pedunculados con visión panorámica de 360 grados y una trompa frontal flexible extensible rematada en pinzas dentadas con la que atrapaba invertebrados de los sedimentos marinos.",
-          "lat": 51.41,
-          "lon": -116.51,
+          "lat": -79.34,
+          "lon": 81.27,
           "fossilSite": "Cantera de Walcott, Burgess Shale (Canadá)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -2124,8 +2340,8 @@
           "weight": "5 g",
           "scaleVsHuman": "Poco mayor que un dedo meñique humano; el tatarabuelo de todos los animales con columna vertebral.",
           "description": "Especie crucial para entender nuestros propios orígenes evolutivos. Este animal vermiforme dotado de una notocorda dorsal precursora de la columna vertebral y miómeros musculares en forma de zig-zag es el representante más representativo de los primeros cordados.",
-          "lat": 51.42,
-          "lon": -116.49,
+          "lat": -79.33,
+          "lon": 81.29,
           "fossilSite": "Cresta de los Fósiles, Burgess Shale (Columbia Británica, Canadá)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
@@ -2199,8 +2415,8 @@
           "weight": "1.2 kg",
           "scaleVsHuman": "Disco ovalado del tamaño de un plato de servir grande o rueda de bicicleta.",
           "description": "El organismo fósil más emblemático del Ediacárico. En 2018, el análisis de biomarcadores moleculares en fósiles del Mar Blanco confirmó la presencia de moléculas de colesterol intactas, demostrando concluyentemente que Dickinsonia era un animal verdadero y el animal confirmado más antiguo de la Tierra.",
-          "lat": -31.5,
-          "lon": 138.5,
+          "lat": -50.67,
+          "lon": 59.06,
           "fossilSite": "Colinas de Ediacara (Montes Flinders, Australia Meridional)",
           "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
           "zoneRadius": 1.3
@@ -2217,8 +2433,8 @@
           "weight": "1.5 kg",
           "scaleVsHuman": "Fronda erguida de medio metro a dos metros de altura fijada por un disco basal.",
           "description": "Extraordinario organismo sésil con arquitectura corporal puramente fractal: cada rama de la fronda repite a escala menor la misma estructura de la hoja completa. Vivía en aguas abisales oscuras fijado al lecho mediante un disco de anclaje.",
-          "lat": 52.7,
-          "lon": -1.3,
+          "lat": -111.49,
+          "lon": 27.06,
           "fossilSite": "Bosque de Charnwood (Leicestershire, Inglaterra)",
           "distributionZone": "Plataformas Marinas y Océano Epicontinental",
           "zoneRadius": 1.8
@@ -2235,8 +2451,8 @@
           "weight": "20 g",
           "scaleVsHuman": "Forma de babosa o lapa que cabe en la palma de la mano.",
           "description": "Uno de los bilaterios más tempranos y activos. Se arrastraba sobre las alfombras microbianas raspando el sedimento con una probóscide dentada similar a la rádula de los moluscos, dejando huellas fósiles de raspado (Radulichnus).",
-          "lat": 65.5,
-          "lon": 39.5,
+          "lat": -9.14,
+          "lon": -8.58,
           "fossilSite": "Costa del Mar Blanco (Región de Arcángel, Rusia)",
           "distributionZone": "Estepa Periglacial y Bosques de Eurasia",
           "zoneRadius": 1.5
@@ -2253,8 +2469,8 @@
           "weight": "5 g",
           "scaleVsHuman": "Menudo cuerpo segmentado de 3 a 5 cm de longitud.",
           "description": "Curioso organismo dotado de un escudo cefálico anterior en forma de herradura y un cuerpo alargado formado por segmentos alternados que no guardan simetría bilateral estricta, sino simetría de deslizamiento (isómeros).",
-          "lat": -31.5,
-          "lon": 138.5,
+          "lat": -50.67,
+          "lon": 59.06,
           "fossilSite": "Montes Flinders (Australia)",
           "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
           "zoneRadius": 1.3
@@ -2328,8 +2544,8 @@
           "weight": "0.05 g",
           "scaleVsHuman": "Diminuta estructura del tamaño de un grano de arena o cabeza de alfiler.",
           "description": "Descubierto en calizas fosilíferas de Namibia con una edad de entre 760 y 550 millones de años. Su cámara fosfatada interna con microporos sugiere que es uno de los animales pluricelulares más primitivos de la historia, sobreviviendo indemne a las dos glaciaciones globales de la Tierra Bola de Nieve.",
-          "lat": -19.5,
-          "lon": 17.5,
+          "lat": -97.22,
+          "lon": 29.5,
           "fossilSite": "Formación Ombaatjie / Etosha (Namibia)",
           "distributionZone": "Plataformas Marinas y Océano Epicontinental",
           "zoneRadius": 1.8
@@ -2346,8 +2562,8 @@
           "weight": "500 kg",
           "scaleVsHuman": "Montículos rocosos del tamaño de rocas o bañeras en la orilla.",
           "description": "Estructuras organosedimentarias laminadas construidas por capas sucesivas de cianobacterias fotosintéticas. Fueron los grandes constructores de la biosfera primordial y los artífices de la Gran Oxidación que transformó para siempre la atmósfera terrestre.",
-          "lat": -26.3,
-          "lon": 114.1,
+          "lat": -6.14,
+          "lon": 136.9,
           "fossilSite": "Cuenca de Amadeus (Australia) y Hamelin Pool (Shark Bay)",
           "distributionZone": "Cuenca Interior y Sabanas de Australia (Sahul)",
           "zoneRadius": 1.3
@@ -2364,8 +2580,8 @@
           "weight": "0.000001 g",
           "scaleVsHuman": "Visible únicamente bajo microscopio petrográfico de luz transmitida.",
           "description": "Resistentes quistes de pared orgánica gruesa con espinas microscópicas producidos por algas eucariotas primitivas para resistir las condiciones gélidas y la sequía líquida durante los 50 millones de años de congelación planetaria.",
-          "lat": 78.2,
-          "lon": 15.6,
+          "lat": 30.56,
+          "lon": -30.48,
           "fossilSite": "Formación Elbobreen (Spitsbergen, Svalbard, Noruega)",
           "distributionZone": "Zona Terrestre y Aluvial Continental",
           "zoneRadius": 1.2
@@ -2382,8 +2598,8 @@
           "weight": "0.001 g",
           "scaleVsHuman": "Filamento pluricelular visible con lupa de mano.",
           "description": "El organismo multicelular complejo más antiguo conocido en el que se ha comprobado diferenciación celular sexual (gametos masculinos y femeninos), clave evolutiva para la recombinación genética y la futura explosión biológica.",
-          "lat": 72.5,
-          "lon": -80,
+          "lat": 8.11,
+          "lon": 34.24,
           "fossilSite": "Formación Hunting (Isla Somerset, Ártico de Canadá)",
           "distributionZone": "Masa Continental de Laramidia y Tierras Bajas de Norteamérica",
           "zoneRadius": 1.4
