@@ -1947,7 +1947,8 @@
       "América del Sur y Norte",
       "Pampas",
       "Lagoa Santa",
-      "La Brea"
+      "La Brea",
+      "Chile 🇨🇱 (Cueva del Milodón)"
     ],
     "description": "El felino macairodontino más robusto y masivo de la historia, alcanzando más de 400 kg. Sus colmillos superiores en forma de sable de hasta 28 cm infligían mortales mordiscos degolladores de precisión tras inmovilizar a sus presas con poderosos antebrazos.",
     "media": {
@@ -1979,7 +1980,11 @@
     "paleoCoordinates": {
       "lat": -31.42,
       "lon": -64.18
-    }
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Magallanes",
+    "chileanProvince": "Provincia de Última Esperanza",
+    "chileanLocality": "Cueva del Milodón (Última Esperanza)"
   },
   {
     "id": "mammuthus-primigenius",
