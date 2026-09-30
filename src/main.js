@@ -182,6 +182,10 @@ class AncientEarthApp {
       this.globeScene.textureManager.prefetchPeriods(this.periods, 0, 3);
 
       console.info(`[AncientEarthApp] Engine initialized with ${this.fauna.length} cataloged fossil species across ${this.periods.length} geological periods.`);
+
+      // Expose globally for interactive academic navigation and external calls
+      window.focusOnFossil = (fossilId) => this.focusOnFossil(fossilId);
+      window.ancientEarthApp = this;
     } catch (err) {
       console.error('[AncientEarthApp] Error initializing application:', err);
     }
@@ -254,6 +258,93 @@ class AncientEarthApp {
     this.globeScene.showSpeciesZone(sp, this.currentPeriod.iugsColor);
     const activeFauna = this.filterFauna(this.currentPeriod.timeMa, this.currentPeriod);
     this.sidebar.update(this.currentPeriod, activeFauna, this.selectedSpecies);
+  }
+
+  /**
+   * Primary Scientific Navigation Focus for Fossils:
+   * Smoothly interpolates the 3D camera to point perpendicular to the fossil quarry,
+   * maintaining optimal distance (9.8) to prevent texture pixelation,
+   * firing concentric radar ripple pulse waves, and expanding the sidebar panel.
+   * @param {string|Object} fossilId ID of the fossil or fossil object
+   */
+  async focusOnFossil(fossilId) {
+    if (!fossilId) return;
+
+    // Resolve species object
+    let sp = null;
+    if (typeof fossilId === 'object' && fossilId.id) {
+      sp = fossilId;
+    } else {
+      const idStr = String(fossilId).toLowerCase().trim();
+      sp = this.fauna.find(f => f.id === fossilId || f.id.toLowerCase() === idStr || (f.name && f.name.toLowerCase() === idStr));
+    }
+    if (!sp) {
+      console.warn(`[AncientEarthApp] Fossil not found with ID: ${fossilId}`);
+      return;
+    }
+
+    // Determine target geological period
+    let targetPeriodIndex = -1;
+    if (this.fullCatalogModal) {
+      const mapping = this.fullCatalogModal.speciesPeriodMap?.get(sp.id) || this.fullCatalogModal.getBestPeriodForSpecies(sp);
+      if (mapping && mapping.index !== -1) {
+        targetPeriodIndex = mapping.index;
+      }
+    }
+    if (targetPeriodIndex === -1) {
+      const pId = (sp.periodId || '').toLowerCase();
+      targetPeriodIndex = this.periods.findIndex(p => p.id.toLowerCase() === pId || pId.includes(p.id.toLowerCase()));
+      if (targetPeriodIndex === -1 && typeof sp.startMa === 'number') {
+        let minDiff = Infinity;
+        this.periods.forEach((p, idx) => {
+          const diff = Math.abs(p.timeMa - sp.startMa);
+          if (diff < minDiff) {
+            minDiff = diff;
+            targetPeriodIndex = idx;
+          }
+        });
+      }
+    }
+
+    // Switch timeline if target period differs from current
+    if (targetPeriodIndex !== -1 && targetPeriodIndex !== this.currentPeriodIndex && this.timeline) {
+      this.timeline.pause();
+      this.timeline.goToIndex(targetPeriodIndex);
+    }
+
+    // Open Explorer Mode and reveal sidebar panel
+    document.body.classList.add('explorer-mode-active');
+    const navHero = document.getElementById('nav-btn-hero');
+    const navTimeline = document.getElementById('nav-btn-timeline');
+    const navBtnFossil = document.getElementById('nav-btn-fossil');
+    if (navHero) navHero.classList.remove('active');
+    if (navTimeline) navTimeline.classList.add('active');
+    if (navBtnFossil) navBtnFossil.classList.remove('active');
+
+    const sidebarPanel = document.getElementById('sidebar-panel');
+    if (sidebarPanel) {
+      sidebarPanel.classList.remove('closed');
+      if (this.sidebar) this.sidebar.isOpen = true;
+    }
+
+    // Execute GSAP 3D perpendicular camera flight and concentric radar ripple pulse
+    const periodColor = this.currentPeriod?.iugsColor || '#38bdf8';
+    if (this.globeScene) {
+      this.globeScene.focusOnFossil(sp.id, sp, {
+        periodColor,
+        distance: 9.8,
+        duration: 1.4
+      });
+    }
+
+    this.selectedSpecies = sp;
+
+    // Highlight and scroll to fossil in sidebar
+    if (this.sidebar) {
+      const activeFauna = this.filterFauna(this.currentPeriod?.timeMa ?? 0, this.currentPeriod);
+      this.sidebar.update(this.currentPeriod, activeFauna, sp);
+      this.sidebar.highlightFossil(sp);
+    }
   }
 
   /**
@@ -642,23 +733,7 @@ class AncientEarthApp {
    */
   async selectSpeciesFromCatalog(species, targetPeriod, periodIndex) {
     if (!species) return;
-
-    // 1. If species belongs to a different period, move the timeline scrubber
-    if (periodIndex !== -1 && this.timeline && this.currentPeriodIndex !== periodIndex) {
-      this.timeline.pause();
-      this.timeline.goToIndex(periodIndex);
-    }
-
-    // 2. Activate Explorer Mode & open sidebar
-    this.enterExplorerMode();
-
-    // 3. Highlight distribution zone and focus camera
-    setTimeout(() => {
-      this.selectSpecies(species);
-      if (this.sidebar) {
-        this.sidebar.highlightFossil(species);
-      }
-    }, 320);
+    this.focusOnFossil(species.id);
   }
 
   _setupConciergeActions() {
@@ -1122,6 +1197,22 @@ class AncientEarthApp {
     if (loc) loc.textContent = siteText;
     if (desc) desc.textContent = sp.description;
 
+    // Modern WGS84 Excavation Coordinates (Chile / International)
+    const gpsEl = document.getElementById('specimen-modal-gps');
+    if (gpsEl) {
+      const modernCoords = sp.coordinates;
+      if (modernCoords && (modernCoords.lat !== undefined && (modernCoords.lng !== undefined || modernCoords.lon !== undefined))) {
+        const mLat = modernCoords.lat;
+        const mLon = modernCoords.lng !== undefined ? modernCoords.lng : modernCoords.lon;
+        const latDir = mLat >= 0 ? 'N' : 'S';
+        const lonDir = mLon >= 0 ? 'E' : 'O';
+        gpsEl.style.display = 'block';
+        gpsEl.textContent = `📍 Coordenadas Geográficas Actuales (WGS84): ${Math.abs(mLat).toFixed(2)}° ${latDir}, ${Math.abs(mLon).toFixed(2)}° ${lonDir}`;
+      } else {
+        gpsEl.style.display = 'none';
+      }
+    }
+
     // Dual Human vs Specimen Scale Comparison (Human = 1.80m)
     if (scaleCreatureName) {
       scaleCreatureName.textContent = sp.commonName || sp.name;
@@ -1171,6 +1262,24 @@ class AncientEarthApp {
       paleoBiome.textContent = paleo.depthOrBiome || paleo.paleoZoneDescription || 'Hábitat característico del periodo geológico';
     }
 
+    // Ancestral Tectonic Paleocoordinates & Continental Drift Context
+    const paleoCoordsEl = document.getElementById('specimen-modal-paleo-coords');
+    if (paleoCoordsEl) {
+      const pCoords = sp.paleoCoordinates;
+      if (pCoords && (pCoords.lat !== undefined && (pCoords.lon !== undefined || pCoords.lng !== undefined))) {
+        const pLat = pCoords.lat;
+        const pLon = pCoords.lon !== undefined ? pCoords.lon : pCoords.lng;
+        const latDir = pLat >= 0 ? 'N' : 'S';
+        const lonDir = pLon >= 0 ? 'E' : 'O';
+        const ageMa = period.timeMa || sp.startMa || 'Era';
+        const landmass = sp.paleogeography?.landmass || sp.paleogeography?.waterBody || (sp.isChilean ? 'Margen Suroeste de Gondwana' : 'Masa Continental Ancestral');
+        paleoCoordsEl.style.display = 'block';
+        paleoCoordsEl.innerHTML = `🧭 <strong>Paleocoordenadas Tectónicas (${ageMa} Ma):</strong> ${Math.abs(pLat).toFixed(1)}° ${latDir}, ${Math.abs(pLon).toFixed(1)}° ${lonDir} • <em>${landmass}</em>`;
+      } else {
+        paleoCoordsEl.style.display = 'none';
+      }
+    }
+
     // Modal Exit & Explore Actions
     if (btnBackHeader) {
       btnBackHeader.onclick = () => dialog.close();
@@ -1185,20 +1294,7 @@ class AncientEarthApp {
         if (this.fullCatalogModal && this.fullCatalogModal.isOpen()) {
           this.fullCatalogModal.close();
         }
-        if (this.fullCatalogModal) {
-          const mapping = this.fullCatalogModal.speciesPeriodMap?.get(sp.id) || this.fullCatalogModal.getBestPeriodForSpecies(sp);
-          if (mapping && mapping.index !== -1 && this.currentPeriodIndex !== mapping.index && this.timeline) {
-            this.timeline.pause();
-            this.timeline.goToIndex(mapping.index);
-          }
-        }
-        this.enterExplorerMode();
-        setTimeout(() => {
-          this.selectSpecies(sp);
-          if (this.sidebar) {
-            this.sidebar.highlightFossil(sp);
-          }
-        }, 280);
+        this.focusOnFossil(sp.id);
       };
     }
 

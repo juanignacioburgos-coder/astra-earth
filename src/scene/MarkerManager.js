@@ -130,10 +130,15 @@ export class MarkerManager {
     this.cityGroup.name = 'city-marker-group';
     this.globeGroup.add(this.cityGroup);
 
+    this.radarGroup = new THREE.Group();
+    this.radarGroup.name = 'concentric-radar-group';
+    this.globeGroup.add(this.radarGroup);
+
     this.activeMarkers = [];
     this.hoveredMarker = null;
     this.selectedSpecies = null;
     this.activeCity = null;
+    this.radarWaves = [];
 
     // Raycaster for user mouse interaction
     this.raycaster = new THREE.Raycaster();
@@ -454,6 +459,53 @@ export class MarkerManager {
   }
 
   /**
+   * Spawns concentric expanding radar pulse waves centered at a geographic coordinate
+   */
+  triggerConcentricRadarPulse(lat, lon, hexColor = null) {
+    if (!this.radarGroup) {
+      this.radarGroup = new THREE.Group();
+      this.radarGroup.name = 'concentric-radar-group';
+      this.globeGroup.add(this.radarGroup);
+    }
+
+    // Clear existing radar waves
+    while (this.radarGroup.children.length > 0) {
+      const child = this.radarGroup.children[0];
+      this.radarGroup.remove(child);
+      if (child.geometry) child.geometry.dispose();
+      if (child.material) child.material.dispose();
+    }
+
+    const normal = this.latLonToCartesian(lat, lon, 1.0).normalize();
+    const pinPos = normal.clone().multiplyScalar(this.markerRadius * 1.035);
+
+    const baseColor = hexColor ? new THREE.Color(hexColor) : new THREE.Color(0x38bdf8);
+
+    // Create 3 concentric pulse waves with staggered offsets
+    this.radarWaves = [];
+    for (let i = 0; i < 3; i++) {
+      const ringGeom = new THREE.RingGeometry(0.18, 0.28, 36);
+      const ringMat = new THREE.MeshBasicMaterial({
+        color: baseColor,
+        side: THREE.DoubleSide,
+        transparent: true,
+        opacity: 0.9,
+        depthWrite: false
+      });
+      const ringMesh = new THREE.Mesh(ringGeom, ringMat);
+      ringMesh.position.copy(pinPos);
+      ringMesh.lookAt(pinPos.clone().multiplyScalar(2));
+      
+      this.radarGroup.add(ringMesh);
+      this.radarWaves.push({
+        mesh: ringMesh,
+        delay: i * 0.45,
+        startTime: performance.now() / 1000
+      });
+    }
+  }
+
+  /**
    * Places or updates a prominent City Marker on the globe according to continental drift
    * @param {Object} cityData Entry from cities.json
    * @param {number} timeMa Millions of years ago
@@ -550,6 +602,51 @@ export class MarkerManager {
   }
 
   /**
+   * Fires a concentric radar ripple pulse animation over the fossil quarry location.
+   */
+  triggerConcentricRadarPulse(lat, lon, hexColor = '#38bdf8') {
+    if (!this.radarGroup) return;
+
+    // Clear any previous radar waves
+    while (this.radarGroup.children.length > 0) {
+      const child = this.radarGroup.children[0];
+      this.radarGroup.remove(child);
+      this._disposeNode(child);
+    }
+    this.radarWaves = [];
+
+    const surfacePos = this.latLonToCartesian(lat, lon, this.globeRadius * 1.02);
+    const normal = surfacePos.clone().normalize();
+    const now = performance.now() / 1000;
+
+    const baseColor = new THREE.Color(hexColor);
+
+    // Create 3 concentric expanding rings with phase delays
+    const ringCount = 3;
+    for (let i = 0; i < ringCount; i++) {
+      const ringGeom = new THREE.RingGeometry(0.18, 0.28, 36);
+      const ringMat = new THREE.MeshBasicMaterial({
+        color: baseColor,
+        side: THREE.DoubleSide,
+        transparent: true,
+        opacity: 0.85,
+        depthWrite: false
+      });
+      const ringMesh = new THREE.Mesh(ringGeom, ringMat);
+      ringMesh.position.copy(surfacePos);
+      ringMesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), normal);
+      ringMesh.scale.set(0.001, 0.001, 1.0);
+
+      this.radarGroup.add(ringMesh);
+      this.radarWaves.push({
+        mesh: ringMesh,
+        startTime: now,
+        delay: i * 0.45 // Staggered concentric ripples
+      });
+    }
+  }
+
+  /**
    * Resets and clears all 3D markers and distribution zones
    */
   clearAll() {
@@ -569,6 +666,16 @@ export class MarkerManager {
       this._disposeNode(child);
     }
     this.zoneNodeData = null;
+
+    // Clear radar pulse waves
+    if (this.radarGroup) {
+      while (this.radarGroup.children.length > 0) {
+        const child = this.radarGroup.children[0];
+        this.radarGroup.remove(child);
+        this._disposeNode(child);
+      }
+    }
+    this.radarWaves = [];
   }
 
   _disposeNode(node) {
@@ -616,6 +723,23 @@ export class MarkerManager {
       if (rayMesh) {
         rayMesh.material.opacity = 0.55 + pulse * 0.35;
       }
+    }
+
+    // Animate concentric radar waves if active
+    if (this.radarWaves && this.radarWaves.length > 0) {
+      const now = performance.now() / 1000;
+      this.radarWaves.forEach(wave => {
+        const age = now - wave.startTime - wave.delay;
+        if (age > 0) {
+          const cycle = (age % 2.0) / 2.0; // 0 to 1 loop
+          const scaleVal = 1.0 + cycle * 4.5;
+          wave.mesh.scale.set(scaleVal, scaleVal, 1.0);
+          wave.mesh.material.opacity = Math.max(0, (1.0 - cycle) * 0.85);
+        } else {
+          wave.mesh.scale.set(0.001, 0.001, 1.0);
+          wave.mesh.material.opacity = 0;
+        }
+      });
     }
 
     // Animate city marker pulsing

@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import gsap from 'gsap';
 import { TextureManager } from './TextureManager.js';
 import { MarkerManager } from './MarkerManager.js';
 import { PlateTectonicsManager } from './PlateTectonicsManager.js';
@@ -30,6 +31,7 @@ export class GlobeScene {
     this.targetCameraPos = null;
     this.targetControlsTarget = null;
     this.cameraLerpSpeed = 0.05;
+    this._activeFocusTween = null;
 
     this.textureManager = new TextureManager();
 
@@ -922,15 +924,102 @@ export class GlobeScene {
   }
 
   /**
+   * Smoothly navigates the camera to point strictly perpendicular to the fossil site,
+   * maintaining optimal distance for sharp terrain texture, triggering concentric pulse animation.
+   * @param {string} fossilId Fossil species identifier or slug
+   * @param {Object} [speciesData] Optional species object
+   * @param {Object} [options] Custom configuration (duration, distance, onComplete)
+   */
+  focusOnFossil(fossilId, speciesData = null, options = {}) {
+    const sp = speciesData || (this.markerManager ? this.markerManager.selectedSpecies : null);
+    if (!sp && !speciesData) return;
+
+    // Calibrated viewing distance (1.96x globe radius) to ensure maximum texture sharpness without pixelation
+    const targetDistance = options.distance || 9.8;
+    const duration = options.duration !== undefined ? options.duration : 1.35; // seconds
+
+    // Disable auto-rotation during intentional scientific focus
+    this.controls.autoRotate = false;
+
+    // Physical Paleocoordinates Priority:
+    // In ancient periods (e.g. Jurassic Aysén at 150 Ma), South America was located further southeast in Gondwana.
+    // The marker and camera focus on paleoCoordinates so the site aligns with the continental landmass.
+    const coords = sp.paleoCoordinates || sp.coordinates;
+    const lat = coords ? coords.lat : (sp.lat || 0);
+    const lon = coords ? (coords.lon !== undefined ? coords.lon : (coords.lng !== undefined ? coords.lng : 0)) : (sp.lon || 0);
+
+    // Calculate normal vector pointing straight out of the sphere at the marker location
+    const normal = this.markerManager.latLonToCartesian(lat, lon, 1.0).normalize();
+    const targetCameraPos = normal.clone().multiplyScalar(targetDistance);
+
+    // Color determination for radar beacon
+    const dietStr = (sp.diet || '').toLowerCase();
+    const envStr = (sp.environment || '').toLowerCase();
+    const isMarine = envStr === 'marine' || dietStr.includes('piscívoro');
+    let zoneColor = options.periodColor || '#38bdf8';
+    if (dietStr.includes('filtrador') || dietStr.includes('omnívoro')) zoneColor = '#f59e0b';
+    else if (isMarine) zoneColor = '#00d2ff';
+    else if (dietStr.includes('carnívoro')) zoneColor = '#ef4444';
+    else if (dietStr.includes('herbívoro') || dietStr.includes('vegetariano')) zoneColor = '#10b981';
+
+    // 1. Display species distribution basin on the globe surface
+    this.markerManager.showSpeciesZone(sp, zoneColor);
+
+    // 2. Fire high-visibility concentric radar ripple pulse waves over the quarry site
+    if (typeof this.markerManager.triggerConcentricRadarPulse === 'function') {
+      this.markerManager.triggerConcentricRadarPulse(lat, lon, zoneColor);
+    }
+
+    // 3. Stop any existing ongoing camera flight or tween
+    this.isFlyingTo = false;
+    this.flyTargetDir = null;
+    if (this._activeFocusTween) {
+      this._activeFocusTween.kill();
+      this._activeFocusTween = null;
+    }
+
+    const startPos = this.camera.position.clone();
+    const startDist = startPos.length();
+    const startDir = startPos.clone().normalize();
+    const endDir = normal.clone();
+
+    // 4. GSAP Great-Circle Spherical Interpolation
+    const animObj = { progress: 0 };
+    this._activeFocusTween = gsap.to(animObj, {
+      progress: 1,
+      duration: duration,
+      ease: 'power3.inOut',
+      onUpdate: () => {
+        const t = animObj.progress;
+        // Spherical great-circle interpolation for direction
+        const currentDir = startDir.clone().lerp(endDir, t).normalize();
+        // Distance interpolation towards target altitude
+        const currentDist = startDist + (targetDistance - startDist) * t;
+
+        this.camera.position.copy(currentDir.multiplyScalar(currentDist));
+        this.camera.lookAt(0, 0, 0);
+        this.controls.target.set(0, 0, 0);
+        this.controls.update();
+      },
+      onComplete: () => {
+        this.camera.position.copy(targetCameraPos);
+        this.camera.lookAt(0, 0, 0);
+        this.controls.target.set(0, 0, 0);
+        this.controls.update();
+        this._activeFocusTween = null;
+        if (typeof options.onComplete === 'function') {
+          options.onComplete();
+        }
+      }
+    });
+  }
+
+  /**
    * Displays the geographic distribution zone for a selected species and smoothly focuses on it
    */
   showSpeciesZone(sp, periodColor) {
     if (!sp) return;
-    this.markerManager.showSpeciesZone(sp, periodColor);
-    const coords = sp.paleoCoordinates || sp.coordinates;
-    const lat = coords ? coords.lat : (sp.lat || 0);
-    const lon = coords ? (coords.lon !== undefined ? coords.lon : (coords.lng !== undefined ? coords.lng : 0)) : (sp.lon || 0);
-    this.focusOnCoordinate(lat, lon, 9.8);
+    this.focusOnFossil(sp.id, sp, { periodColor });
   }
 
   /**
