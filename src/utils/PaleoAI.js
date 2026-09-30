@@ -54,7 +54,42 @@ export class PaleoAI {
     const fauna = this.appContext.fauna || [];
     const extinctions = this.appContext.extinctions || [];
 
-    // 1. EXTINCTIONS MATCHING
+    // 1. CHILEAN PALEOFAUNA & REGIONAL FOSSIL EXPERTISE (🇨🇱)
+    if (q.includes('chile') || q.includes('chileno') || q.includes('chilena') || 
+        q.includes('aysen') || q.includes('magallanes') || q.includes('atacama') || 
+        q.includes('bahia inglesa') || q.includes('tagua tagua') || q.includes('pilauco') || 
+        q.includes('milodon') || q.includes('chilesaurio') || q.includes('stegouros') || 
+        q.includes('gonkoken') || q.includes('arackar') || q.includes('atacamatitan') || 
+        q.includes('chilecebus') || q.includes('magallanodon') || q.includes('pelagornis')) {
+
+      actions.push({ type: 'OPEN_CATALOG', era: 'chile', label: '🇨🇱 Explorar Fósiles de Chile en el Catálogo' });
+      actions.push({ type: 'SET_PERIOD', timeMa: 66, periodId: 'cretaceous_66ma', label: '🦕 Ir a Magallanes Cretácico (Stegouros / Gonkoken)' });
+      actions.push({ type: 'SET_PERIOD', timeMa: 150, periodId: 'jurassic_150ma', label: '🦎 Ir a Aysén Jurásico (Chilesaurus)' });
+
+      return {
+        text: `### 🇨🇱 Paleontología y Fauna Fósil de Chile
+Chile cuenta con un registro fósil extraordinario y diverso a lo largo de sus distintas regiones geográficas y administrativas:
+
+* **Región de Magallanes (Valle de las Chinas / Cerro Guido / Dorotea):** 
+  * ***Stegouros elengassen*** (74 Ma): Anquilosaurio acorazado con un arma caudal única en el mundo: un *macuahuitl* óseo de 7 pares de placas dérmicas.
+  * ***Gonkoken nanoi*** (72 Ma): Dinosaurio pico de pato basal primitivo de Gondwana.
+  * ***Magallanodon baikashkenke*** (75 Ma): El mamífero gondwanaterio más grande del Mesozoico chileno (~5 kg, tamaño coipo).
+  * ***Mylodon darwini*** (Pleistoceno): Perezoso gigante terrestre de la mítica Cueva del Milodón en Última Esperanza.
+* **Región de Aysén (Mallín Grande, Lago General Carrera):**
+  * ***Chilesaurus diegosuarezi*** (148 Ma): 'El ornitorrinco de los dinosaurios', un terópodo que evolucionó hacia una dieta 100% vegetariana.
+* **Región de Atacama (Bahía Inglesa, Caldera):**
+  * ***Pelagornis chilensis*** (9-6 Ma): Ave gigante marina con 5.2 m de envergadura y pseudodientes óseos.
+  * ***Thalassocnus sp.***: Perezoso marino adaptado al buceo con huesos densos (paquiosteosclerosis).
+  * ***Piscophoca pacifica***: Foca monachina fósil ancestral.
+  * ***Arackar licanantay***: Titanosaurio litostrotio del Cretácico Tardío.
+* **Región de O'Higgins y Región de Los Lagos:**
+  * ***Chilecebus carrascoensis*** (20 Ma, Tinguiririca): El primer mono fósil platirrino de Chile con encéfalo intacto.
+  * ***Notiomastodon platensis*** (Pleistoceno, Tagua Tagua y Pilauco): Gonfoterio emblemático cazado por los primeros paleoindios chilenos.`,
+        actions
+      };
+    }
+
+    // 2. EXTINCTIONS MATCHING
     if (q.includes('extincion') || q.includes('asteroide') || q.includes('meteorito') || q.includes('chicxulub') || q.includes('muerte de los dinosaurios') || q.includes('gran mortandad')) {
       if (q.includes('chicxulub') || q.includes('dinosaurio') || q.includes('k-pg') || q.includes('k/t') || q.includes('66')) {
         actions.push({ type: 'OPEN_EXTINCTION', extinctionId: 'k-pg-chicxulub', label: '☄️ Simular Impacto de Chicxulub (66 Ma)' });

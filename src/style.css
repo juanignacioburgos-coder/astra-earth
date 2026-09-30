@@ -2086,21 +2086,31 @@ html, body {
    Specimen Inspection Modal (Harmonious Paleobiological Profile)
    ========================================================================== */
 .specimen-modal {
-  max-width: 1080px;
+  max-width: 1060px;
   width: 92vw;
   max-height: 90vh;
   margin: auto;
+  padding: 0;
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 20px;
+  background: rgba(8, 14, 26, 0.98);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  box-shadow: 0 28px 75px rgba(0, 0, 0, 0.95), 0 0 45px rgba(56, 189, 248, 0.16);
+  color: var(--text-primary);
+  overflow: hidden;
 }
 
 .specimen-card-view {
-  padding: 24px 28px 20px;
+  padding: 22px 26px 18px;
   display: flex;
   flex-direction: column;
+  height: 100%;
   max-height: 90vh;
   overflow: hidden;
-  background: rgba(10, 16, 28, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85), 0 0 35px rgba(56, 189, 248, 0.2);
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .specimen-dialog-header {
@@ -2108,9 +2118,10 @@ html, body {
   justify-content: space-between;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 16px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
 }
 
 .specimen-modal-titles {
@@ -2135,6 +2146,22 @@ html, body {
   border-radius: var(--radius-pill);
   padding: 2px 10px;
   font-weight: 600;
+}
+
+.specimen-chile-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(225, 29, 72, 0.35) 0%, rgba(30, 58, 138, 0.45) 100%);
+  border: 1px solid rgba(244, 63, 94, 0.55);
+  border-radius: var(--radius-pill);
+  padding: 3px 11px;
+  box-shadow: 0 2px 10px rgba(225, 29, 72, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .specimen-modal-titles h3 {
@@ -2199,12 +2226,12 @@ html, body {
   border-color: rgba(239, 68, 68, 0.3);
 }
 
-/* Modal Body: Proportional 2-Column Split */
+/* Modal Body: Crisp 2-Column Split with Elevated Cards */
 .specimen-modal-body {
   display: grid;
-  grid-template-columns: 46% 54%;
-  gap: 22px;
-  flex: 1;
+  grid-template-columns: 44% 56%;
+  gap: 18px;
+  flex: 1 1 auto;
   min-height: 0;
   overflow: hidden;
 }
@@ -2215,32 +2242,39 @@ html, body {
   flex-direction: column;
   gap: 12px;
   overflow-y: auto;
-  padding-right: 4px;
+  padding: 14px;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 189, 248, 0.35) rgba(15, 23, 42, 0.5);
 }
 
 .specimen-modal-visual::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
 }
 .specimen-modal-visual::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(56, 189, 248, 0.35);
   border-radius: 4px;
 }
 
 .specimen-image-container {
   position: relative;
   width: 100%;
-  min-height: 300px;
-  max-height: 420px;
-  height: 360px;
-  background: radial-gradient(ellipse at center, rgba(30, 48, 77, 0.45) 0%, rgba(8, 12, 20, 0.95) 100%);
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  padding: 16px;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  min-height: 200px;
+  max-height: 280px;
+  background: radial-gradient(ellipse at center, rgba(30, 58, 95, 0.45) 0%, rgba(6, 11, 20, 0.96) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.24);
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  box-shadow: inset 0 0 35px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.8), 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
 .specimen-featured-image {
@@ -2248,13 +2282,13 @@ html, body {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  border-radius: var(--radius-md);
-  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.75));
+  border-radius: var(--radius-sm);
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.8));
   transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .specimen-image-container:hover .specimen-featured-image {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .specimen-media-meta {
@@ -2275,20 +2309,23 @@ html, body {
   font-size: 0.7rem;
   color: var(--text-muted);
   text-align: center;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   padding: 3px 10px;
   border-radius: var(--radius-pill);
 }
 
 /* Anatomical Scale Comparison Card (Directly in Visual Column) */
 .specimen-scale-card {
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-md);
+  background: rgba(10, 16, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #f59e0b;
+  border-radius: 10px;
   padding: 12px 14px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .scale-card-header {
@@ -2376,22 +2413,31 @@ html, body {
   box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
 }
 
-/* Right Column: Scientific & Paleobiological Data (Scrollable) */
+/* Right Column: Scientific & Paleobiological Data (Scrollable with Defined Limits) */
 .specimen-modal-info {
   display: flex;
   flex-direction: column;
   gap: 14px;
   overflow-y: auto;
-  padding-right: 8px;
+  padding: 14px 16px 26px 14px;
   min-height: 0;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 189, 248, 0.4) rgba(15, 23, 42, 0.6);
 }
 
 .specimen-modal-info::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
 }
 .specimen-modal-info::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(56, 189, 248, 0.4);
   border-radius: 4px;
+}
+.specimen-modal-info::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.7);
 }
 
 .specimen-pills-row {
@@ -2421,13 +2467,14 @@ html, body {
 }
 
 .metric-card {
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-sm);
+  background: rgba(10, 16, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
   padding: 10px 14px;
   display: flex;
   align-items: center;
   gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .metric-card.metric-full {
@@ -2460,12 +2507,14 @@ html, body {
 
 .specimen-paleo-card {
   background: rgba(6, 182, 212, 0.08);
-  border: 1px solid rgba(6, 182, 212, 0.28);
-  border-radius: var(--radius-md);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-left: 3px solid #06b6d4;
+  border-radius: 10px;
   padding: 12px 14px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .specimen-paleo-card h4 {
@@ -2491,13 +2540,15 @@ html, body {
 
 /* Historical Discovery Card */
 .specimen-discovery-card {
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-md);
+  background: rgba(10, 16, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #e2e8f0;
+  border-radius: 10px;
   padding: 14px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .specimen-discovery-card h4 {
@@ -2540,13 +2591,15 @@ html, body {
 }
 
 .specimen-desc-box {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(10, 16, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #38bdf8;
   padding: 14px;
-  border-radius: var(--radius-md);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .specimen-desc-box h4 {
@@ -2569,21 +2622,22 @@ html, body {
   justify-content: space-between;
   align-items: center;
   gap: 14px;
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
 }
 
 .btn-modal-back {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
+  padding: 9px 18px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-pill);
   color: #f8fafc;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2599,12 +2653,12 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 22px;
-  background: linear-gradient(135deg, #0284c7, #2563eb);
+  padding: 9px 20px;
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-pill);
   color: #fff;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2612,7 +2666,7 @@ html, body {
 }
 
 .btn-modal-explore:hover {
-  background: linear-gradient(135deg, #0369a1, #1d4ed8);
+  background: linear-gradient(135deg, #0369a1 0%, #1d4ed8 100%);
   box-shadow: 0 6px 22px rgba(37, 99, 235, 0.6);
   transform: translateY(-2px);
 }
@@ -3742,14 +3796,24 @@ html, body {
 
   /* Specimen Modal on Mobile */
   .specimen-modal {
-    width: 95vw;
-    max-height: 94vh;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    inset: 0;
+    position: fixed;
   }
 
   .specimen-card-view {
-    padding: 16px;
-    max-height: 94vh;
+    padding: 12px 14px 20px;
+    height: 100dvh;
+    max-height: 100dvh;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
   }
 
   .specimen-modal-body {
@@ -3757,29 +3821,43 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow: visible;
-    gap: 16px;
+    gap: 12px;
+    min-height: 0;
+  }
+
+  .specimen-modal-visual,
+  .specimen-modal-info {
+    padding: 12px;
+    overflow: visible;
+    min-height: 0;
+    max-height: none;
   }
 
   .specimen-image-container {
-    height: 200px;
-    min-height: 180px;
-    padding: 10px;
+    aspect-ratio: 16 / 10;
+    max-height: 220px;
+    height: auto;
+    min-height: 160px;
+    padding: 8px;
   }
 
   .specimen-featured-image {
-    max-height: 180px;
-    height: auto;
+    max-height: 200px;
+    height: 100%;
     object-fit: contain;
   }
 
   .specimen-modal-footer {
     flex-direction: column-reverse;
     gap: 8px;
+    padding: 10px 0 16px;
+    margin-top: 10px;
   }
 
   .btn-modal-back, .btn-modal-explore {
     width: 100%;
     justify-content: center;
+    padding: 10px 16px;
   }
 
   /* Extinction HUD on Mobile */
@@ -4809,6 +4887,7 @@ dialog.full-catalog-dialog::backdrop {
   width: 100%;
   background: transparent;
   overflow: hidden;
+  min-height: 0;
 }
 
 /* Catalog Header */
@@ -5099,8 +5178,12 @@ dialog.full-catalog-dialog::backdrop {
 
 /* Scrollable Cards Grid Viewport */
 .catalog-grid-viewport {
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  overscroll-behavior-y: contain;
   padding: 24px 28px;
   scrollbar-width: thin;
   scrollbar-color: rgba(56, 189, 248, 0.3) rgba(15, 23, 42, 0.5);
@@ -5127,6 +5210,40 @@ dialog.full-catalog-dialog::backdrop {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 20px;
+  touch-action: pan-y;
+}
+
+/* Chilean Paleofauna Filter & Badges */
+.catalog-era-btn.era-chile {
+  background: rgba(225, 29, 72, 0.15);
+  border-color: rgba(244, 63, 94, 0.4);
+  color: #fecdd3;
+}
+.catalog-era-btn.era-chile:hover {
+  background: rgba(225, 29, 72, 0.25);
+  border-color: rgba(244, 63, 94, 0.7);
+  box-shadow: 0 0 14px rgba(225, 29, 72, 0.3);
+}
+.catalog-era-btn.era-chile.active {
+  background: linear-gradient(135deg, rgba(225, 29, 72, 0.45) 0%, rgba(30, 58, 138, 0.5) 100%);
+  border-color: #f43f5e;
+  box-shadow: 0 0 18px rgba(225, 29, 72, 0.4);
+  color: #fff;
+}
+
+.catalog-chile-card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(135deg, rgba(225, 29, 72, 0.9) 0%, rgba(30, 58, 138, 0.9) 100%);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  white-space: nowrap;
 }
 
 /* Individual Catalog Card */
@@ -5564,43 +5681,96 @@ dialog.full-catalog-dialog::backdrop {
 /* Mobile & Responsive Tweaks */
 @media (max-width: 900px) {
   dialog.full-catalog-dialog {
-    width: 98vw;
-    height: 96vh;
-    border-radius: 16px;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    inset: 0;
+    position: fixed;
+  }
+
+  .full-catalog-card {
+    height: 100dvh;
+    max-height: 100dvh;
+    min-height: 0;
   }
 
   .catalog-dialog-header {
-    padding: 16px;
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .catalog-main-title {
+    font-size: 1.1rem;
+  }
+
+  .catalog-subtitle {
+    display: none; /* Hide long text on mobile to maximize card viewing space */
   }
 
   .catalog-toolbar {
-    padding: 12px 16px;
+    padding: 8px 12px;
+    gap: 8px;
   }
 
   .catalog-grid-viewport {
-    padding: 16px;
+    padding: 12px 12px 36px;
+    min-height: 0;
+    flex: 1 1 0%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+    overscroll-behavior-y: contain;
   }
 
   .catalog-cards-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
+    touch-action: pan-y;
   }
 
   .catalog-era-pills {
     overflow-x: auto;
     flex-wrap: nowrap;
     padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
   }
 
   .catalog-filters-row {
-    flex-direction: column;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .catalog-filters-row .catalog-select-group:nth-child(3) {
+    grid-column: 1 / -1;
   }
 
   .btn-catalog-reset {
+    grid-column: 1 / -1;
     margin-left: 0;
+    justify-content: center;
+    padding: 6px 12px;
+    font-size: 0.72rem;
+  }
+
+  .catalog-footer {
+    padding: 10px 14px;
+  }
+
+  .catalog-shortcut-hint {
+    display: none;
+  }
+
+  .btn-catalog-done {
+    width: 100%;
     justify-content: center;
   }
 }
+
 
 /* 3D Species Pin Taxonomy Legend */
 .globe-pins-legend {

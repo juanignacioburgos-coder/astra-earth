@@ -2088,53 +2088,58 @@
     "id": "macrauchenia-patachonica",
     "commonName": "Macrauquenia",
     "scientificName": "Macrauchenia patachonica",
-    "clade": "Litopterna (Macraucheniidae)",
-    "periodId": "pleistoceno",
-    "startMa": 2,
+    "clade": "Mammalia • Panperissodactyla • Litopterna • Macraucheniidae",
+    "periodId": "present_0ma",
+    "startMa": 0.12,
     "endMa": 0.01,
     "diet": "Herbívoro",
     "metrics": {
       "lengthMeters": 3,
       "weightTons": 1,
-      "heightMeters": 2
+      "heightMeters": 1.8
     },
     "paleoLocation": [
-      "Sudamérica",
-      "Patagonia Argentina",
-      "Chile",
-      "Bolivia"
+      "Chile 🇨🇱",
+      "Región de Antofagasta (Cuenca de Calama) y Región de Magallanes (Cueva del Milodón)",
+      "Provincia de El Loa / Provincia de Última Esperanza",
+      "Formación Chiu-Chiu y Depósitos Fuego-Patagónicos"
     ],
-    "description": "Singular ungulado nativo sudamericano descubierto por Charles Darwin con cuello semejante al de un camello y fosas nasales dorsales que sugieren una corta probóscide prehensil o labio muscular extensible para ramonear.",
+    "description": "Uno de los ungulados nativos sudamericanos más singulares y representativos del Cenozoico chileno. Poseía tres dedos en cada pata (extremidades tridáctilas perisodáctilas) y una abertura nasal ubicada arriba en el cráneo, directamente entre las cuencas oculares, lo que indica la posesión de una trompa móvil o probóscide prensil para seleccionar follaje. En Chile sus fósiles destacan tanto en los paleo-oasis de la Cuenca del Río Loa en Calama (estudiados por Gelfo et al. 2021) como en los yacimientos periglaciares de Magallanes (Cueva del Milodón y Laguna Sofía).",
     "media": {
       "imageUrl": "assets/species/macrauchenia.jpg",
-      "imageAuthor": "Mundo Prehistórico / Heinrich Harder",
-      "imageLicense": "Public Domain"
+      "imageAuthor": "Museo de Historia Natural del Desierto de Atacama / MNHN Chile",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
     },
     "coordinates": {
-      "lat": -50.12,
-      "lng": -69.8
+      "lat": -22.45,
+      "lng": -68.92
     },
     "environment": "terrestrial",
     "discovery": {
-      "discoverer": "Charles Darwin (1834, viaje del HMS Beagle) / Sir Richard Owen (1838)",
-      "yearDiscovered": 1834,
-      "describedBy": "Sir Richard Owen, 1838",
-      "geologicalFormation": "Puerto San Julián (Santa Cruz, Patagonia, Argentina)",
-      "typeSpecimen": "NHMUK M 1438",
-      "museum": "Natural History Museum (Londres, Reino Unido)",
-      "modernCountry": "Argentina, Chile, Bolivia y Brasil",
-      "holotypeSpecimen": "NHMUK PV M 434"
+      "discoverer": "Charles Darwin (1834), Richard Owen (1838), Javier Gelfo et al. (Calama, 2021)",
+      "yearDiscovered": 1838,
+      "describedBy": "Richard Owen (1838) / Revisión chilena por Gelfo, Flores-Aqueveque et al. (2021)",
+      "geologicalFormation": "Formación Chiu-Chiu (Calama) / Depósitos de Cueva del Milodón",
+      "typeSpecimen": "Esqueletos craneales y extremidades articuladas",
+      "museum": "Museo de Historia Natural y Cultural del Desierto de Atacama (Calama) / MNHN",
+      "modernCountry": "Chile 🇨🇱 (Región de Antofagasta y Magallanes)",
+      "holotypeSpecimen": "MNHN-Calama / SGO.PV"
     },
     "paleogeography": {
-      "waterBody": "Cuencas estépicas y cañadones fluviales",
-      "landmass": "Patagonia y Pampas del Cono Sur",
-      "depthOrBiome": "Estepa patagónica semiárida y llanuras áridas arbustivas",
-      "paleoZoneDescription": "Litopterno endémico con trompa móvil adaptado a pastorear en las frías y ventosas mesetas patagónicas."
+      "waterBody": "Cuenca del paleo-río Loa / Paleolagos glaciares de Última Esperanza",
+      "landmass": "América del Sur (Zona andina septentrional y estepa patagónica)",
+      "depthOrBiome": "Oasis fluviales desérticos en el norte y estepas frías abiertas en el sur",
+      "paleoZoneDescription": "Planicies aluviales y estepas periglaciares del Pleistoceno Tardío chileno."
     },
     "paleoCoordinates": {
-      "lat": -50.12,
-      "lon": -69.8
-    }
+      "lat": -23,
+      "lon": -69.2
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Antofagasta y Región de Magallanes",
+    "chileanProvince": "Provincia de El Loa / Provincia de Última Esperanza",
+    "chileanLocality": "Cuenca de Calama y Cueva del Milodón"
   },
   {
     "id": "toxodon-platensis",
@@ -4850,5 +4855,689 @@
       "lat": 51.2,
       "lon": 6.9
     }
+  },
+  {
+    "id": "chilesaurus-diegosuarezi",
+    "commonName": "Chilesaurio",
+    "scientificName": "Chilesaurus diegosuarezi",
+    "clade": "Theropoda • Chilesauridae (Terópodo Herbívoro Basal)",
+    "periodId": "jurassic_150ma",
+    "startMa": 148,
+    "endMa": 145,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3.2,
+      "weightTons": 0.2,
+      "heightMeters": 1.1
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Aysén del General Carlos Ibáñez del Campo",
+      "Provincia General Carrera (Mallín Grande, Lago General Carrera)",
+      "Formación Toqui"
+    ],
+    "description": "Conocido mundialmente como el 'ornitorrinco de los dinosaurios' y uno de los mayores enigmas evolutivos de la paleontología. A pesar de descender del linaje terópodo (el mismo grupo de depredadores que incluye al T-Rex), Chilesaurus evolucionó de manera asombrosa hacia una dieta 100% vegetariana: desarrolló un pico córneo, dientes foliares en espátula para cortar helechos y una pelvis modificada parecida a la de los ornitisquios. Descubierto en 2004 por el niño Diego Suárez (7 años), su descripción en la revista Nature redefinió la comprensión de la radiación temprana de los dinosaurios.",
+    "media": {
+      "imageUrl": "assets/species/chilesaurus.jpg",
+      "imageAuthor": "Reconstrucción Paleontológica Oficial Chilena / Aysén",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -46.65,
+      "lng": -72.68
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Diego Suárez (7 años de edad, 2004)",
+      "yearDiscovered": 2004,
+      "describedBy": "Fernando Novas, Leonardo Salgado, Manuel Suárez et al. (Nature, 2015)",
+      "geologicalFormation": "Formación Toqui (Manto de calizas y tobas volcánicas)",
+      "typeSpecimen": "SGO-PV 1930 (Esqueleto casi completo articulado)",
+      "museum": "Museo Nacional de Historia Natural de Chile (Santiago)",
+      "modernCountry": "Chile 🇨🇱 (Región de Aysén)",
+      "holotypeSpecimen": "SGO-PV 1930"
+    },
+    "paleogeography": {
+      "waterBody": "Sin drenaje marino directo (Cuenca intramontana fluvial)",
+      "landmass": "Suroeste de Gondwana (Patagonia jurásica andina)",
+      "depthOrBiome": "Valles fluviales volcánicos templados con bosques densos de Araucarias y helechos",
+      "paleoZoneDescription": "Ambientes ribereños y planicies aluviales volcánicas del Jurásico Superior patagónico chileno."
+    },
+    "paleoCoordinates": {
+      "lat": -52,
+      "lon": -68
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Aysén",
+    "chileanProvince": "Provincia General Carrera",
+    "chileanLocality": "Mallín Grande, Lago General Carrera"
+  },
+  {
+    "id": "stegouros-elengassen",
+    "commonName": "Stegouros",
+    "scientificName": "Stegouros elengassen",
+    "clade": "Ankylosauria • Parankylosauria",
+    "periodId": "cretaceous_66ma",
+    "startMa": 74,
+    "endMa": 72,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 2,
+      "weightTons": 0.15,
+      "heightMeters": 0.7
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Magallanes y de la Antártica Chilena",
+      "Provincia de Última Esperanza (Valle del Río de las Chinas)",
+      "Formación Dorotea"
+    ],
+    "description": "Sensacional dinosaurio acorazado patagónico que reveló un linaje enteramente nuevo de anquilosaurios de Gondwana: Parankylosauria. Posee un arma defensiva única jamás observada en ningún otro vertebrado fósil o viviente: un 'macuahuitl' caudal formado por 7 pares de placas óseas dérmicas fusionadas lateralmente como la mítica espada de obsidiana mesoamericana. Este blindaje le permitía protegerse de megarraptores en los deltas cretácicos más australes del planeta.",
+    "media": {
+      "imageUrl": "assets/species/stegouros.jpg",
+      "imageAuthor": "Red Paleontológica Universidad de Chile / Magallanes",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -51.35,
+      "lng": -72.35
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Sergio Soto-Acuña, Alexander Vargas, Jonatan Kaluza et al. (2018)",
+      "yearDiscovered": 2018,
+      "describedBy": "Soto-Acuña et al. (Nature, diciembre 2021)",
+      "geologicalFormation": "Formación Dorotea (Campaniense - Maastrichtiense)",
+      "typeSpecimen": "CPAP-3165 (Esqueleto postcraneal articulado casi intacto con cola completa)",
+      "museum": "Colección Paleontológica de la Universidad de Magallanes / U. de Chile",
+      "modernCountry": "Chile 🇨🇱 (Región de Magallanes)",
+      "holotypeSpecimen": "CPAP-3165"
+    },
+    "paleogeography": {
+      "waterBody": "Mar de Weddell ancestral / Océano Austral primitivo",
+      "landmass": "Gondwana austral (Bloque Patagónico-Antártico)",
+      "depthOrBiome": "Deltas fluviales meándricos templado-fríos dominados por Nothofagus y podocarpos",
+      "paleoZoneDescription": "Ambientes deltaicos y llanuras costeras subantárticas del extremo sur de Chile continental."
+    },
+    "paleoCoordinates": {
+      "lat": -62,
+      "lon": -64
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Magallanes y Antártica Chilena",
+    "chileanProvince": "Provincia de Última Esperanza",
+    "chileanLocality": "Valle del Río de las Chinas (cerca de Torres del Paine)"
+  },
+  {
+    "id": "pelagornis-chilensis",
+    "commonName": "Pelagornis Chileno",
+    "scientificName": "Pelagornis chilensis",
+    "clade": "Aves • Odontopterygiformes (Pelagornithidae)",
+    "periodId": "miocene_20ma",
+    "startMa": 9,
+    "endMa": 6,
+    "diet": "Piscívoro",
+    "metrics": {
+      "lengthMeters": 1.9,
+      "weightTons": 0.025,
+      "heightMeters": 1.2
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Atacama",
+      "Provincia de Copiapó / Comuna de Caldera (Bahía Inglesa)",
+      "Formación Bahía Inglesa"
+    ],
+    "description": "Una de las aves voladoras más gigantescas que surcaron el cielo en toda la historia de la biosfera, con una envergadura alar de 5.2 metros (más del doble que el albatros moderno). Sus mandíbulas estaban provistas de largas espinas óseas o 'pseudodientes' que brotaban del hueso premaxilar y mandibular, ideales para arponear calamares resbaladizos y peces en vuelo rasante sobre la ancestral Corriente de Humboldt. El holotipo chileno es el esqueleto de pelagornítido más completo y perfectamente preservado del planeta (70% del esqueleto articulado).",
+    "media": {
+      "imageUrl": "assets/species/pelagornis_chilensis.jpg",
+      "imageAuthor": "Museo Nacional de Historia Natural de Chile / Bahía Inglesa",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -27.15,
+      "lng": -70.85
+    },
+    "environment": "aerial",
+    "discovery": {
+      "discoverer": "David Rubilar-Rogers (MNHN) y Gerald Mayr (Senckenberg Museum)",
+      "yearDiscovered": 2005,
+      "describedBy": "Gerald Mayr & David Rubilar-Rogers (Journal of Vertebrate Paleontology, 2010)",
+      "geologicalFormation": "Formación Bahía Inglesa (Mioceno Tardío, Miembro Mina Fosforita)",
+      "typeSpecimen": "MNHN SGO-PV 1077 (Esqueleto tridimensional con cráneo casi completo)",
+      "museum": "Museo Nacional de Historia Natural de Chile (Santiago)",
+      "modernCountry": "Chile 🇨🇱 (Región de Atacama)",
+      "holotypeSpecimen": "MNHN SGO-PV 1077"
+    },
+    "paleogeography": {
+      "waterBody": "Océano Pacífico Suroriental / Corriente de Humboldt Ancestral",
+      "landmass": "Borde costero del Desierto de Atacama en formación",
+      "depthOrBiome": "Ecosistema marino pelágico templado-cálido con altísima bioproductividad y surgencias marinas",
+      "paleoZoneDescription": "Mar litoral de Bahía Inglesa repleto de cetáceos fósiles, megalodones y colonias de aves marinas."
+    },
+    "paleoCoordinates": {
+      "lat": -29,
+      "lon": -71.5
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Atacama",
+    "chileanProvince": "Provincia de Copiapó",
+    "chileanLocality": "Bahía Inglesa, Caldera"
+  },
+  {
+    "id": "mylodon-darwini",
+    "commonName": "Milodón",
+    "scientificName": "Mylodon darwini",
+    "clade": "Xenarthra • Folivora (Mylodontidae)",
+    "periodId": "present_0ma",
+    "startMa": 0.8,
+    "endMa": 0.01,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 3.2,
+      "weightTons": 1.6,
+      "heightMeters": 1.8
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Magallanes y de la Antártica Chilena",
+      "Provincia de Última Esperanza (Monumento Natural Cueva del Milodón, Puerto Natales)",
+      "Estepa y Bosques Patagónicos"
+    ],
+    "description": "Ícono indiscutible de la paleontología chilena y la megafauna pleistocénica sudamericana. Este colosal perezoso terrestre alcanzaba los 3.2 metros de largo y pesaba más de tonelada y media. Su piel poseía una armadura interna de diminutos huesos esféricos dérmicos (osteodermos) formando una cota de malla invulnerable contra los colmillos del tigre dientes de sable (Smilodon) y la pantera patagónica. En 1895, el colono Hermann Eberhard encontró en la caverna magallánica trozos de piel momificada con pelaje rojizo-amarillento, garras y estiércol intactos, preservados por el clima frío y seco de la Patagonia.",
+    "media": {
+      "imageUrl": "assets/species/mylodon.jpg",
+      "imageAuthor": "Monumento Natural Cueva del Milodón / Magallanes",
+      "imageLicense": "Dominio Público / Colección Histórica Darwin",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -51.58,
+      "lng": -72.62
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Hermann Eberhard (1895, hallazgo del cuero momificado); Richard Owen (1839)",
+      "yearDiscovered": 1895,
+      "describedBy": "Richard Owen (1839, con fósiles recolectados por Charles Darwin en el HMS Beagle)",
+      "geologicalFormation": "Depósitos cavernícolas de la Cueva del Milodón (Último Máximo Glaciar)",
+      "typeSpecimen": "Holotipo BMNH M 16560; cuero y huesos en MNHN Chile y Natural History Museum de Londres",
+      "museum": "Museo Nacional de Historia Natural (Santiago) / Museo Británico (Londres)",
+      "modernCountry": "Chile 🇨🇱 (Región de Magallanes)",
+      "holotypeSpecimen": "BMNH M 16560"
+    },
+    "paleogeography": {
+      "waterBody": "Canales patagónicos en deglaciación",
+      "landmass": "Patagonia austral magallánica",
+      "depthOrBiome": "Estepa fría periglacial abierta con parches de bosque templado caducifolio de Nothofagus",
+      "paleoZoneDescription": "Llanuras periglaciales y abrigos rocosos de Última Esperanza donde coexistió con los primeros cazadores-recolectores humanos."
+    },
+    "paleoCoordinates": {
+      "lat": -51.8,
+      "lon": -72.8
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Magallanes y Antártica Chilena",
+    "chileanProvince": "Provincia de Última Esperanza",
+    "chileanLocality": "Monumento Natural Cueva del Milodón, Puerto Natales"
+  },
+  {
+    "id": "arackar-licanantay",
+    "commonName": "Arackar",
+    "scientificName": "Arackar licanantay",
+    "clade": "Sauropoda • Titanosauria (Lithostrotia)",
+    "periodId": "cretaceous_66ma",
+    "startMa": 72,
+    "endMa": 68,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 6.3,
+      "weightTons": 3.5,
+      "heightMeters": 2.2
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Atacama",
+      "Provincia de Copiapó (Quebrada La Higuera, Formación Hornitos)",
+      "Desierto de Atacama"
+    ],
+    "description": "Saurópodo titanosaurio de tamaño mediano que habitó el norte de Chile a finales del Cretácico. Su nombre significa 'osamentas de los atacameños' en la lengua originaria kunza (licanantay). Poseía vértebras cervicales y dorsales con una estructura neumática sumamente ligera y una articulación reducida entre los arcos neurales que le conferían un cuello grácil y altamente maniobrable para ramonear copas de árboles en cuencas fluviales semiáridas.",
+    "media": {
+      "imageUrl": "assets/species/arackar.jpg",
+      "imageAuthor": "SERNAGEOMIN & Red Paleontológica Universidad de Chile",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -27.85,
+      "lng": -70.25
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Carlos Arévalo (geólogo SERNAGEOMIN, 1993)",
+      "yearDiscovered": 1993,
+      "describedBy": "David Rubilar-Rogers, Alexander Vargas, Bernardo González-Riga et al. (Cretaceous Research, 2021)",
+      "geologicalFormation": "Formación Hornitos (Cretácico Superior)",
+      "typeSpecimen": "SGO-PV 261 (Vértebras cervicales, dorsales y huesos de extremidades)",
+      "museum": "Museo Nacional de Historia Natural de Chile (Santiago)",
+      "modernCountry": "Chile 🇨🇱 (Región de Atacama)",
+      "holotypeSpecimen": "SGO-PV 261"
+    },
+    "paleogeography": {
+      "waterBody": "Lagos someros estacionales y ríos efímeros",
+      "landmass": "Margen occidental de Sudamérica proto-andina",
+      "depthOrBiome": "Llanuras fluviales aluviales semiáridas con coníferas y cicadáceas xerófitas",
+      "paleoZoneDescription": "Cuencas de sedimentación continental del proto-Desierto de Atacama previa al levantamiento de la alta cordillera."
+    },
+    "paleoCoordinates": {
+      "lat": -30.5,
+      "lon": -70
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Atacama",
+    "chileanProvince": "Provincia de Copiapó",
+    "chileanLocality": "Quebrada La Higuera (al sur de Copiapó)"
+  },
+  {
+    "id": "atacamatitan-chilensis",
+    "commonName": "Atacamatitán",
+    "scientificName": "Atacamatitan chilensis",
+    "clade": "Sauropoda • Titanosauria",
+    "periodId": "cretaceous_66ma",
+    "startMa": 78,
+    "endMa": 72,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 10,
+      "weightTons": 5,
+      "heightMeters": 3.5
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Antofagasta",
+      "Provincia de El Loa (Conchi Viejo, Calama)",
+      "Formación Tolar"
+    ],
+    "description": "El primer dinosaurio titanosaurio formalmente descrito y bautizado en territorio chileno continental. Con una longitud estimada en 10 metros, este robusto herbívoro cuadrúpedo dominaba los cursos de agua que cruzaban lo que hoy es el Desierto de Atacama. Sus fémures y vértebras caudales marcadamente procélicas revelan adaptaciones avanzadas para soportar peso en terrenos secos y recorrer largas distancias en busca de oasis de vegetación.",
+    "media": {
+      "imageUrl": "assets/species/atacamatitan.jpg",
+      "imageAuthor": "Museo Nacional de Historia Natural de Chile / Antofagasta",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -22.35,
+      "lng": -69.05
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Expedición conjunta chileno-brasileña (2000)",
+      "yearDiscovered": 2000,
+      "describedBy": "Alexander Kellner, David Rubilar-Rogers, Alexander Vargas & Mario Suárez (2011)",
+      "geologicalFormation": "Formación Tolar (Cretácico Tardío)",
+      "typeSpecimen": "SGO-PV 961 (Fémur derecho, vértebras dorsales y caudales)",
+      "museum": "Museo Nacional de Historia Natural de Chile (Santiago)",
+      "modernCountry": "Chile 🇨🇱 (Región de Antofagasta)",
+      "holotypeSpecimen": "SGO-PV 961"
+    },
+    "paleogeography": {
+      "waterBody": "Cuenca lacustre endorreica continental",
+      "landmass": "Sudamérica central cretácica",
+      "depthOrBiome": "Llanuras de inundación aluvial con bosques ripícolas y matorrales secos",
+      "paleoZoneDescription": "Valles sedimentarios intermontanos en la actual provincia de El Loa (Calama), norte grande de Chile."
+    },
+    "paleoCoordinates": {
+      "lat": -24.5,
+      "lon": -68.5
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Antofagasta",
+    "chileanProvince": "Provincia de El Loa",
+    "chileanLocality": "Conchi Viejo, Calama"
+  },
+  {
+    "id": "gonkoken-nanoi",
+    "commonName": "Gonkoken",
+    "scientificName": "Gonkoken nanoi",
+    "clade": "Ornithopoda • Hadrosauroidea Basal",
+    "periodId": "cretaceous_66ma",
+    "startMa": 73,
+    "endMa": 71,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 4,
+      "weightTons": 1,
+      "heightMeters": 1.6
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Magallanes y de la Antártica Chilena",
+      "Provincia de Última Esperanza (Valle del Río de las Chinas)",
+      "Formación Dorotea"
+    ],
+    "description": "Extraordinario dinosaurio pico de pato basal descubierto en el extremo sur de Chile. Su hallazgo en 2023 demostró que la Patagonia austral actuó como un 'refugio biogeográfico' para linajes primitivos de ornitópodos que habían desaparecido millones de años antes en Norteamérica y Asia. Su nombre honra la lengua de los pueblos originarios tehuelches (Aonikenk), donde 'gon' significa 'parecido a' y 'koken' significa 'cisne o pato silvestre', mientras que 'nanoi' homenajea al pionero magallánico Nano Lepe.",
+    "media": {
+      "imageUrl": "assets/species/gonkoken.jpg",
+      "imageAuthor": "Red Paleontológica Universidad de Chile / Magallanes",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -51.3,
+      "lng": -72.3
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Jhonatan Alarcón-Muñoz, Alexander Vargas et al. (Red Paleontológica U. de Chile)",
+      "yearDiscovered": 2013,
+      "describedBy": "Alarcón-Muñoz, Vargas, Soto-Acuña et al. (Science Advances, junio 2023)",
+      "geologicalFormation": "Formación Dorotea (Maastrichtiense inferior)",
+      "typeSpecimen": "CPAP-3054 (Esqueleto desarticulado pero exhaustivo de múltiples individuos)",
+      "museum": "Colección Paleontológica de la Universidad de Magallanes (Punta Arenas)",
+      "modernCountry": "Chile 🇨🇱 (Región de Magallanes)",
+      "holotypeSpecimen": "CPAP-3054"
+    },
+    "paleogeography": {
+      "waterBody": "Cuenca de Magallanes / Canal marino somero subantártico",
+      "landmass": "Gondwana terminal austral",
+      "depthOrBiome": "Bosques templados húmedos de coníferas australes, helechos arborescentes y Nothofagus",
+      "paleoZoneDescription": "Valles deltaicos y llanuras fluviales ricas en microclimas templados del sur de la Patagonia chilena."
+    },
+    "paleoCoordinates": {
+      "lat": -61.5,
+      "lon": -64.2
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Magallanes y Antártica Chilena",
+    "chileanProvince": "Provincia de Última Esperanza",
+    "chileanLocality": "Valle del Río de las Chinas, cerca de Torres del Paine"
+  },
+  {
+    "id": "chilecebus-carrascoensis",
+    "commonName": "Chilecebus",
+    "scientificName": "Chilecebus carrascoensis",
+    "clade": "Primates • Platyrrhini • Cebidae Basal",
+    "periodId": "miocene_20ma",
+    "startMa": 20.5,
+    "endMa": 19.8,
+    "diet": "Frugívoro / Herbívoro",
+    "metrics": {
+      "lengthMeters": 0.45,
+      "weightTons": 0.0012,
+      "heightMeters": 0.25
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región del Libertador General Bernardo O'Higgins",
+      "Provincia de Colchagua (Termas del Flaco, Valle del Río Tinguiririca)",
+      "Formación Abanico"
+    ],
+    "description": "El primer mono fósil del orden Platyrrhini descubierto en Chile y uno de los primates fósiles más antiguos y mejor preservados de toda Sudamérica. Su cráneo holotípico preserva de manera única los moldes endocraniales del cerebro y los canales semicirculares del oído interno (estudiados mediante tomografía computarizada de alta resolución por Ni et al. 2010, 2019), demostrando que la encefalización en los ancestros de los monos del Nuevo Mundo ocurrió de forma independiente y que ya habitaban exuberantes bosques andinos templados hace 20 millones de años.",
+    "media": {
+      "imageUrl": "assets/species/chilecebus.jpg",
+      "imageAuthor": "Reconstrucción Paleontológica Oficial Chilena / O'Higgins",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -34.95,
+      "lng": -70.43
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "John Flynn, André Wyss, Reynaldo Charrier y Carl Swisher (1995)",
+      "yearDiscovered": 1995,
+      "describedBy": "Flynn, Wyss, Charrier & Swisher (Nature, 1995)",
+      "geologicalFormation": "Formación Abanico (Mioceno Temprano)",
+      "typeSpecimen": "SGOPV 3213 (Cráneo casi completo con dentición superior)",
+      "museum": "Museo Nacional de Historia Natural de Chile (Santiago) / AMNH",
+      "modernCountry": "Chile 🇨🇱 (Región de O'Higgins)",
+      "holotypeSpecimen": "SGOPV 3213"
+    },
+    "paleogeography": {
+      "waterBody": "Sin cuenca marina directa (Valles andinos intramontanos)",
+      "landmass": "Gondwana sudoccidental (Provincias volcánicas andinas de Chile central)",
+      "depthOrBiome": "Bosques templados montanos húmedos con coníferas australes, Nothofagus y laureles",
+      "paleoZoneDescription": "Ambientes boscosos andinos premontañosos del Mioceno Temprano de Chile central."
+    },
+    "paleoCoordinates": {
+      "lat": -36.5,
+      "lon": -68.8
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de O'Higgins",
+    "chileanProvince": "Provincia de Colchagua",
+    "chileanLocality": "Termas del Flaco, Valle de Tinguiririca"
+  },
+  {
+    "id": "magallanodon-baikashkenke",
+    "commonName": "Magallanodon",
+    "scientificName": "Magallanodon baikashkenke",
+    "clade": "Mammalia • Gondwanatheria • Ferugliotheriidae",
+    "periodId": "cretaceous_66ma",
+    "startMa": 75,
+    "endMa": 72,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 0.6,
+      "weightTons": 0.005,
+      "heightMeters": 0.22
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Magallanes y de la Antártica Chilena",
+      "Provincia de Última Esperanza (Valle del Río de las Chinas, Cerro Guido)",
+      "Formación Dorotea"
+    ],
+    "description": "El mamífero de la 'Era de los Dinosaurios' más grande descubierto en Chile y el más austral del planeta. Con una masa estimada de hasta 5 kg (similar a un coipo moderno), este extraordinario gondwanaterio poseía molares hipsodontes con profundas crestas de esmalte para masticar vegetación dura y helechos. Convivió en los deltas y bosques magallánicos del fin del Cretácico con grandes titanosaurios, el anquilosaurio Stegouros y el pico de pato Gonkoken.",
+    "media": {
+      "imageUrl": "assets/species/magallanodon.jpg",
+      "imageAuthor": "Red Paleontológica Universidad de Chile / Magallanes",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -51.32,
+      "lng": -72.33
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Francisco Goin, Agustín Martinelli, Sergio Soto-Acuña, Alexander Vargas et al. (2020)",
+      "yearDiscovered": 2020,
+      "describedBy": "Goin, Martinelli, Soto-Acuña, Vargas et al. (Boletín MNHN, 2020)",
+      "geologicalFormation": "Formación Dorotea (Campaniense - Maastrichtiense)",
+      "typeSpecimen": "CPAP-3189 (Molares inferiores y superiores con dentición molariforme)",
+      "museum": "Colección Paleontológica de la Universidad de Magallanes / U. de Chile",
+      "modernCountry": "Chile 🇨🇱 (Región de Magallanes)",
+      "holotypeSpecimen": "CPAP-3189"
+    },
+    "paleogeography": {
+      "waterBody": "Océano Austral primitivo / Mar de Weddell somero",
+      "landmass": "Gondwana austral (Conexión Patagonia-Antártida)",
+      "depthOrBiome": "Bosques templados lluviosos australes con ríos meándricos y coníferas",
+      "paleoZoneDescription": "Ecosistemas ribereños y estuarios fluviales del Cretácico Tardío más austral de América."
+    },
+    "paleoCoordinates": {
+      "lat": -61.8,
+      "lon": -64.1
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Magallanes y Antártica Chilena",
+    "chileanProvince": "Provincia de Última Esperanza",
+    "chileanLocality": "Valle de las Chinas, Cerro Guido"
+  },
+  {
+    "id": "notiomastodon-platensis",
+    "commonName": "Gonfoterio Chileno",
+    "scientificName": "Notiomastodon platensis",
+    "clade": "Mammalia • Proboscidea • Gomphotheriidae",
+    "periodId": "present_0ma",
+    "startMa": 0.035,
+    "endMa": 0.011,
+    "diet": "Herbívoro",
+    "metrics": {
+      "lengthMeters": 4.8,
+      "weightTons": 5,
+      "heightMeters": 2.7
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de O'Higgins (Tagua Tagua) y Región de Los Lagos (Pilauco, Osorno)",
+      "Provincia de Cachapoal / Provincia de Osorno",
+      "Yacimientos Laguna de Tagua Tagua y Sitio Paleontológico Pilauco"
+    ],
+    "description": "El proboscidio fósil por excelencia de Chile y el titán de la megafauna pleistocénica nacional (anteriormente clasificado de forma errónea como Stegomastodon o Mastodon andium). Con defensas de marfil espiraladas y molares trilofodontes robustos, estaba adaptado tanto al pastoreo como al ramoneo de vegetación palustre. Los yacimientos chilenos de Tagua Tagua (O'Higgins), Pilauco (Osorno) y Quereo (Coquimbo) han preservado esqueletos casi intactos junto a herramientas líticas humanas, evidenciando cacería y faenamiento por los primeros cazadores-recolectores paleoindios hace más de 12.000 años.",
+    "media": {
+      "imageUrl": "assets/species/notiomastodon.jpg",
+      "imageAuthor": "Museo Pleistocénico de Osorno / MELT Tagua Tagua / MNHN Chile",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -34.52,
+      "lng": -71.18
+    },
+    "environment": "terrestrial",
+    "discovery": {
+      "discoverer": "Rodolfo Philippi (1887), Daniel Frassinetti & María Teresa Alberdi (2000, 2005), Rafael Labarca (2016, 2020), Mario Pino",
+      "yearDiscovered": 1887,
+      "describedBy": "Florentino Ameghino (1888) / Redescrito para Chile por Labarca et al. (2016, 2020)",
+      "geologicalFormation": "Depósitos Lacustres Pleistocénicos de Tagua Tagua y Pilauco",
+      "typeSpecimen": "Múltiples cráneos completos, mandíbulas y esqueletos postcraneales articulados",
+      "museum": "Museo Nacional de Historia Natural de Chile (Santiago) / Museo de Pilauco (Osorno)",
+      "modernCountry": "Chile 🇨🇱 (Región de O'Higgins y Región de Los Lagos)",
+      "holotypeSpecimen": "Taguatagua 1 / Pilauco MNP"
+    },
+    "paleogeography": {
+      "waterBody": "Cuenca lacustre endorreica de Tagua Tagua / Valle fluvial de Osorno",
+      "landmass": "América del Sur (Valle Central y Depresión Intermedia Chilena)",
+      "depthOrBiome": "Lagos y humedales templados rodeados de estepas herbáceas y bosques de Nothofagus",
+      "paleoZoneDescription": "Ambientes lacustres y de turbera del Pleistoceno Tardío de Chile centro-sur."
+    },
+    "paleoCoordinates": {
+      "lat": -34.52,
+      "lon": -71.18
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de O'Higgins / Región de Los Lagos",
+    "chileanProvince": "Provincia de Cachapoal / Provincia de Osorno",
+    "chileanLocality": "Laguna de Tagua Tagua y Pilauco (Osorno)"
+  },
+  {
+    "id": "thalassocnus-sp",
+    "commonName": "Perezoso Acuático de Bahía Inglesa",
+    "scientificName": "Thalassocnus sp.",
+    "clade": "Mammalia • Xenarthra • Nothrotheriidae / Megatherioidea",
+    "periodId": "miocene_20ma",
+    "startMa": 7.5,
+    "endMa": 5.3,
+    "diet": "Herbívoro (Algas marinas / Pastos marinos)",
+    "metrics": {
+      "lengthMeters": 2.5,
+      "weightTons": 0.12,
+      "heightMeters": 0.8
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Atacama",
+      "Provincia de Copiapó (Bahía Inglesa, Comuna de Caldera)",
+      "Formación Bahía Inglesa"
+    ],
+    "description": "Sorprendente perezoso marino que adaptó su fisiología a la vida acuática en las costas del Pacífico sudoccidental. Para bucear eficientemente en busca de alimento desarrolló huesos densos y pesados (paquiosteosclerosis) que funcionaban como cinturón de lastre natural contra la flotabilidad. Su hocico ancho y aplanado le permitía pastar densas praderas de algas marinas bentónicas en los fondos someros de Bahía Inglesa, anclándose a las rocas submarinas con sus poderosas garras curvadas.",
+    "media": {
+      "imageUrl": "assets/species/thalassocnus.jpg",
+      "imageAuthor": "Red Paleontológica Bahía Inglesa / MNHN Chile",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -27.12,
+      "lng": -70.88
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Christian de Muizon, Jhoann Canto (2008), Peralta-Prato & Solórzano (2019)",
+      "yearDiscovered": 2008,
+      "describedBy": "Canto et al. (2008) / Peralta-Prato & Solórzano (Andean Geology, 2019)",
+      "geologicalFormation": "Formación Bahía Inglesa (Miembro Mina Fosforita)",
+      "typeSpecimen": "SGO.PV. 1133 (Mandíbula y fragmentos postcraneales con hiperostosis)",
+      "museum": "Museo Nacional de Historia Natural de Chile (Santiago)",
+      "modernCountry": "Chile 🇨🇱 (Región de Atacama)",
+      "holotypeSpecimen": "SGO.PV. 1133"
+    },
+    "paleogeography": {
+      "waterBody": "Océano Pacífico Suroriental (Proto-corriente de Humboldt)",
+      "landmass": "Borde costero pacífico de Gondwana occidental / Chile septentrional",
+      "depthOrBiome": "Bahías protegidas marinas someras y praderas submarinas de macroalgas",
+      "paleoZoneDescription": "Ambientes costeros marinos someros del Mioceno Tardío de Caldera, Atacama."
+    },
+    "paleoCoordinates": {
+      "lat": -28,
+      "lon": -71.5
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Atacama",
+    "chileanProvince": "Provincia de Copiapó",
+    "chileanLocality": "Bahía Inglesa, Caldera"
+  },
+  {
+    "id": "piscophoca-pacifica",
+    "commonName": "Foca Fósil de Bahía Inglesa",
+    "scientificName": "Piscophoca pacifica",
+    "clade": "Mammalia • Carnivora • Pinnipedia • Phocidae (Monachinae)",
+    "periodId": "miocene_20ma",
+    "startMa": 7,
+    "endMa": 4.5,
+    "diet": "Piscívoro / Carnívoro marino",
+    "metrics": {
+      "lengthMeters": 1.8,
+      "weightTons": 0.15,
+      "heightMeters": 0.5
+    },
+    "paleoLocation": [
+      "Chile 🇨🇱",
+      "Región de Atacama",
+      "Provincia de Copiapó (Bahía Inglesa, Caldera)",
+      "Formación Bahía Inglesa"
+    ],
+    "description": "Foca fósil ancestral perteneciente a la subfamilia Monachinae que habitó la costa del desierto de Atacama durante el Neógeno. Dotada de extremidades completamente transformadas en aletas hidrodinámicas y una dentición especializada para atrapar peces y cefalópodos en aguas abiertas. El registro chileno documentado por Walsh & Naish (2002) y Valenzuela-Toro et al. (2013, 2016) demuestra la gran diversidad y éxito evolutivo de los mamíferos marinos carnívoros en el Pacífico suroriental.",
+    "media": {
+      "imageUrl": "assets/species/piscophoca.jpg",
+      "imageAuthor": "Colección Paleontológica de Caldera / MNHN Chile",
+      "imageLicense": "Creative Commons Reconocimiento Paleontológico",
+      "phylopicSvgUrl": ""
+    },
+    "coordinates": {
+      "lat": -27.1,
+      "lng": -70.92
+    },
+    "environment": "marine",
+    "discovery": {
+      "discoverer": "Stig Walsh & Darren Naish (2002), Ana Valenzuela-Toro, Carolina Gutstein et al. (2013)",
+      "yearDiscovered": 2002,
+      "describedBy": "De Muizon (1981) / Primer registro chileno por Walsh & Naish (2002)",
+      "geologicalFormation": "Formación Bahía Inglesa (Mioceno Tardío - Plioceno)",
+      "typeSpecimen": "Restos craneales y mandibulares articulados con fosa glenoidea típica",
+      "museum": "Museo Paleontológico de Caldera / Museo Nacional de Historia Natural de Chile",
+      "modernCountry": "Chile 🇨🇱 (Región de Atacama)",
+      "holotypeSpecimen": "MPC-Bahía Inglesa"
+    },
+    "paleogeography": {
+      "waterBody": "Océano Pacífico Suroriental (Surgencia costera rica en nutrientes)",
+      "landmass": "Costa árida y archipiélagos costeros de Atacama",
+      "depthOrBiome": "Zona nerítica costera y rompientes rocosas ricas en fauna ictícola",
+      "paleoZoneDescription": "Costas y arrecifes someros del Neógeno en la Región de Atacama."
+    },
+    "paleoCoordinates": {
+      "lat": -28.1,
+      "lon": -71.6
+    },
+    "isChilean": true,
+    "chileanRegion": "Región de Atacama",
+    "chileanProvince": "Provincia de Copiapó",
+    "chileanLocality": "Bahía Inglesa, Caldera"
   }
 ]

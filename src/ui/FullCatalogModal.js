@@ -176,6 +176,11 @@ export class FullCatalogModal {
               <span>Precámbrico (&gt; 541 Ma)</span>
               <span class="era-chip-count" id="count-era-precambrico">0</span>
             </button>
+            <button class="catalog-era-btn era-chile" data-era="chile">
+              <span class="era-dot" style="background: #0039A6; border: 1px solid #D52B1E;"></span>
+              <span>🇨🇱 Fósiles de Chile</span>
+              <span class="era-chip-count" id="count-era-chile">0</span>
+            </button>
           </div>
 
           <!-- Secondary Filter Controls: Ecosystem, Diet, Sort & Reset -->
@@ -250,24 +255,30 @@ export class FullCatalogModal {
   }
 
   _updateEraPillCounts() {
-    let ceno = 0, meso = 0, paleo = 0, prec = 0;
+    let ceno = 0, meso = 0, paleo = 0, prec = 0, chile = 0;
     this.fauna.forEach(sp => {
       const era = this.getSpeciesEra(sp);
       if (era === 'cenozoico') ceno++;
       else if (era === 'mesozoico') meso++;
       else if (era === 'paleozoico') paleo++;
       else if (era === 'precambrico') prec++;
+
+      if (sp.isChilean || sp.country === 'Chile' || (sp.discovery && sp.discovery.modernCountry === 'Chile')) {
+        chile++;
+      }
     });
 
     const elCeno = this.dialog.querySelector('#count-era-cenozoico');
     const elMeso = this.dialog.querySelector('#count-era-mesozoico');
     const elPaleo = this.dialog.querySelector('#count-era-paleozoico');
     const elPrec = this.dialog.querySelector('#count-era-precambrico');
+    const elChile = this.dialog.querySelector('#count-era-chile');
 
     if (elCeno) elCeno.textContent = ceno;
     if (elMeso) elMeso.textContent = meso;
     if (elPaleo) elPaleo.textContent = paleo;
     if (elPrec) elPrec.textContent = prec;
+    if (elChile) elChile.textContent = chile;
   }
 
   _attachEvents() {
@@ -442,15 +453,22 @@ export class FullCatalogModal {
         const waterBody = (sp.paleogeography?.waterBody || '').toLowerCase();
         const landmass = (sp.paleogeography?.landmass || '').toLowerCase();
 
+        const region = (sp.chileanRegion || '').toLowerCase();
+        const province = (sp.chileanProvince || '').toLowerCase();
+        const locality = (sp.chileanLocality || '').toLowerCase();
+
         return name.includes(q) || sci.includes(q) || clade.includes(q) || 
                desc.includes(q) || formation.includes(q) || discoverer.includes(q) || 
                country.includes(q) || paleoLocations.includes(q) || 
-               waterBody.includes(q) || landmass.includes(q);
+               waterBody.includes(q) || landmass.includes(q) ||
+               region.includes(q) || province.includes(q) || locality.includes(q);
       });
     }
 
-    // 2. Era Filter
-    if (this.selectedEra !== 'all') {
+    // 2. Era / Chilean Regional Filter
+    if (this.selectedEra === 'chile') {
+      list = list.filter(sp => sp.isChilean || sp.country === 'Chile' || (sp.discovery && sp.discovery.modernCountry === 'Chile'));
+    } else if (this.selectedEra !== 'all') {
       list = list.filter(sp => this.getSpeciesEra(sp) === this.selectedEra);
     }
 
@@ -560,6 +578,7 @@ export class FullCatalogModal {
               <span class="catalog-era-tag" style="background-color: ${periodColor}">
                 ${periodName}
               </span>
+              ${sp.isChilean ? `<span class="catalog-chile-card-tag" title="Fósil descubierto en Chile">🇨🇱 ${sp.chileanRegion || 'Chile'}</span>` : ''}
               <span class="catalog-env-tag env-${env}">${envLabel}</span>
             </div>
 
@@ -593,6 +612,12 @@ export class FullCatalogModal {
 
             <!-- Geological & Discovery Metadata -->
             <div class="catalog-meta-box">
+              ${sp.isChilean ? `
+                <div class="catalog-meta-item catalog-meta-chile" style="background: rgba(0, 57, 166, 0.15); border-left: 2px solid #0039A6; padding: 3px 6px; border-radius: 4px; margin-bottom: 4px;">
+                  <span class="meta-icon">🇨🇱</span>
+                  <span class="meta-text" style="color: #93c5fd;"><strong>${sp.chileanRegion || 'Chile'}:</strong> ${sp.chileanProvince || ''} (${sp.chileanLocality || sp.fossilSite || ''})</span>
+                </div>
+              ` : ''}
               <div class="catalog-meta-item">
                 <span class="meta-icon">⛏️</span>
                 <span class="meta-text" title="${formation}"><strong>Yacimiento:</strong> ${formation}</span>
@@ -637,10 +662,21 @@ export class FullCatalogModal {
   }
 
   /**
-   * Opens the catalog modal
+   * Opens the catalog modal optionally preset to an era or region (e.g. 'chile')
    */
-  open() {
+  open(initialEra = null) {
     if (!this.dialog) return;
+
+    if (initialEra) {
+      this.selectedEra = initialEra;
+      const eraContainer = this.dialog.querySelector('#catalog-era-pills');
+      if (eraContainer) {
+        eraContainer.querySelectorAll('.catalog-era-btn').forEach(b => {
+          b.classList.toggle('active', b.dataset.era === initialEra);
+        });
+      }
+    }
+
     this.render();
     this.dialog.showModal();
 

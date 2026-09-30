@@ -628,11 +628,11 @@ class AncientEarthApp {
   }
 
   /**
-   * Opens the full 57-species paleobiological encyclopedia modal
+   * Opens the full paleobiological encyclopedia modal
    */
-  openFullCatalog() {
+  openFullCatalog(initialEra = null) {
     if (this.fullCatalogModal) {
-      this.fullCatalogModal.open();
+      this.fullCatalogModal.open(initialEra);
     }
   }
 
@@ -885,7 +885,7 @@ class AncientEarthApp {
         this.selectCity(city);
       }
     } else if (act.type === 'OPEN_CATALOG') {
-      this.openFullCatalog();
+      this.openFullCatalog(act.era || null);
     }
   }
 
@@ -1050,13 +1050,27 @@ class AncientEarthApp {
       badge.textContent = `${period.era} • ${period.period}`;
       badge.style.backgroundColor = period.iugsColor;
     }
+
+    // Chilean Fossil Provenance Badge
+    const chileBadge = document.getElementById('specimen-modal-chile-badge');
+    if (chileBadge) {
+      if (sp.isChilean || sp.country === 'Chile' || (sp.discovery && sp.discovery.modernCountry === 'Chile')) {
+        chileBadge.style.display = 'inline-flex';
+        chileBadge.innerHTML = `🇨🇱 Chile • ${sp.chileanRegion || 'Territorio Nacional'}${sp.chileanProvince ? ` (${sp.chileanProvince})` : ''}`;
+      } else {
+        chileBadge.style.display = 'none';
+      }
+    }
+
     if (commonName) commonName.textContent = sp.commonName || sp.name;
     if (sciName) sciName.textContent = sp.scientificName || sp.name;
     
     const imgUrl = sp.media ? sp.media.imageUrl : (sp.image || 'assets/species/allosaurus.jpg');
     if (img) img.src = `./${imgUrl}`;
 
-    const siteText = Array.isArray(sp.paleoLocation) ? sp.paleoLocation.join(', ') : (sp.fossilSite || 'No documentado');
+    const siteText = sp.isChilean ? 
+      `🇨🇱 ${sp.chileanLocality || ''}, ${sp.chileanProvince || ''}, ${sp.chileanRegion || ''} — Fm. ${sp.discovery?.geologicalFormation || 'Fósil'}` :
+      (Array.isArray(sp.paleoLocation) ? sp.paleoLocation.join(', ') : (sp.fossilSite || 'No documentado'));
     if (fossilSite) fossilSite.textContent = `Yacimiento / Ubicación: ${siteText}`;
 
     if (licenseNote) {
