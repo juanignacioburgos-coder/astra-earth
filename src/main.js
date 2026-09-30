@@ -1153,6 +1153,12 @@ class AncientEarthApp {
     if (commonName) commonName.textContent = sp.commonName || sp.name;
     if (sciName) sciName.textContent = sp.scientificName || sp.name;
     
+    // Specimen Site Description
+    const siteText = sp.isChilean ? 
+      `🇨🇱 ${sp.chileanLocality || ''}, ${sp.chileanProvince || ''}, ${sp.chileanRegion || ''} — Fm. ${sp.discovery?.geologicalFormation || 'Fósil'}` :
+      (Array.isArray(sp.paleoLocation) ? sp.paleoLocation.join(', ') : (sp.fossilSite || 'No documentado'));
+    if (fossilSite) fossilSite.textContent = `Yacimiento / Ubicación: ${siteText}`;
+
     // Visual & Video Media Management
     const videoUrl = sp.media?.videoUrl || sp.video;
     const imgUrl = sp.media ? sp.media.imageUrl : (sp.image || 'assets/species/allosaurus.jpg');
@@ -1180,8 +1186,18 @@ class AncientEarthApp {
         if (img) img.style.display = 'none';
         if (video) {
           video.style.display = 'block';
-          video.currentTime = 0;
-          video.play().catch(e => console.warn('Autoplay video error:', e));
+          video.muted = true;
+          const playVideo = () => {
+            const p = video.play();
+            if (p !== undefined) {
+              p.catch(e => console.warn('Autoplay notice:', e));
+            }
+          };
+          if (video.readyState >= 2) {
+            playVideo();
+          } else {
+            video.addEventListener('canplay', () => playVideo(), { once: true });
+          }
         }
         updateLicenseText(true);
       } else {
@@ -1199,12 +1215,13 @@ class AncientEarthApp {
     if (videoUrl) {
       if (mediaSwitcher) mediaSwitcher.style.display = 'flex';
       if (video) {
-        video.src = `./${videoUrl}`;
-        video.load();
+        const targetSrc = `./${videoUrl}`;
+        if (!video.src.endsWith(videoUrl)) {
+          video.src = targetSrc;
+        }
       }
       if (btnMediaPhoto) btnMediaPhoto.onclick = () => setMediaTab('photo');
       if (btnMediaVideo) btnMediaVideo.onclick = () => setMediaTab('video');
-      setMediaTab(initialTab === 'video' ? 'video' : 'photo');
     } else {
       if (mediaSwitcher) mediaSwitcher.style.display = 'none';
       if (video) {
@@ -1370,6 +1387,11 @@ class AncientEarthApp {
     if (infoCol) infoCol.scrollTop = 0;
 
     dialog.showModal();
+
+    // Set active media tab now that dialog is mounted in top layer
+    if (videoUrl) {
+      setMediaTab(initialTab === 'video' ? 'video' : 'photo');
+    }
   }
 
   /**
@@ -2191,5 +2213,5 @@ class AncientEarthApp {
 
 // Start application
 window.addEventListener('DOMContentLoaded', () => {
-  new AncientEarthApp();
+  window.app = new AncientEarthApp();
 });

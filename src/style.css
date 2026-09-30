@@ -2140,6 +2140,7 @@ html, body {
   box-shadow: 0 28px 75px rgba(0, 0, 0, 0.95), 0 0 45px rgba(56, 189, 248, 0.16);
   color: var(--text-primary);
   overflow: hidden;
+  z-index: 1050;
 }
 
 .specimen-card-view {
