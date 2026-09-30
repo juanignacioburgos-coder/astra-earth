@@ -100,9 +100,9 @@ class AncientEarthApp {
           // "Ver Zona de Distribución" trigger from species card
           this.selectSpecies(speciesData);
         },
-        (speciesData, period) => {
+        (speciesData, period, initialTab = 'photo') => {
           // Open HD Specimen Inspection Modal
-          this._openSpecimenModal(speciesData, period);
+          this._openSpecimenModal(speciesData, period, initialTab);
         },
         () => {
           // Reset zone: restore all points
@@ -124,8 +124,8 @@ class AncientEarthApp {
           onSelectSpeciesOnGlobe: (species, targetPeriod, periodIndex) => {
             this.selectSpeciesFromCatalog(species, targetPeriod, periodIndex);
           },
-          onOpenSpecimenModal: (species, period) => {
-            this._openSpecimenModal(species, period || this.currentPeriod);
+          onOpenSpecimenModal: (species, period, initialTab = 'photo') => {
+            this._openSpecimenModal(species, period || this.currentPeriod, initialTab);
           }
         });
       }
@@ -1079,8 +1079,12 @@ class AncientEarthApp {
     const btnClose = document.getElementById('btn-close-specimen');
     const btnBack = document.getElementById('btn-back-specimen');
     const btnBackFooter = document.getElementById('btn-specimen-back-footer');
+    const videoEl = document.getElementById('specimen-modal-video');
 
     const handleClose = () => {
+      if (videoEl) {
+        try { videoEl.pause(); } catch (_) {}
+      }
       if (dialog && typeof dialog.close === 'function') {
         dialog.close();
       }
@@ -1091,13 +1095,18 @@ class AncientEarthApp {
     if (btnBackFooter) btnBackFooter.addEventListener('click', handleClose);
 
     if (dialog) {
+      dialog.addEventListener('close', () => {
+        if (videoEl) {
+          try { videoEl.pause(); } catch (_) {}
+        }
+      });
       dialog.addEventListener('click', (e) => {
         if (e.target === dialog) handleClose();
       });
     }
   }
 
-  _openSpecimenModal(sp, period) {
+  _openSpecimenModal(sp, period, initialTab = 'photo') {
     const dialog = document.getElementById('specimen-dialog');
     if (!dialog) return;
 
@@ -1106,6 +1115,10 @@ class AncientEarthApp {
     const commonName = document.getElementById('specimen-modal-common');
     const sciName = document.getElementById('specimen-modal-sci');
     const img = document.getElementById('specimen-modal-img');
+    const video = document.getElementById('specimen-modal-video');
+    const mediaSwitcher = document.getElementById('specimen-media-switcher');
+    const btnMediaPhoto = document.getElementById('btn-media-photo');
+    const btnMediaVideo = document.getElementById('btn-media-video');
     const fossilSite = document.getElementById('specimen-modal-fossil-site');
     const licenseNote = document.getElementById('specimen-modal-license');
 
@@ -1140,20 +1153,67 @@ class AncientEarthApp {
     if (commonName) commonName.textContent = sp.commonName || sp.name;
     if (sciName) sciName.textContent = sp.scientificName || sp.name;
     
+    // Visual & Video Media Management
+    const videoUrl = sp.media?.videoUrl || sp.video;
     const imgUrl = sp.media ? sp.media.imageUrl : (sp.image || 'assets/species/allosaurus.jpg');
     if (img) img.src = `./${imgUrl}`;
 
-    const siteText = sp.isChilean ? 
-      `🇨🇱 ${sp.chileanLocality || ''}, ${sp.chileanProvince || ''}, ${sp.chileanRegion || ''} — Fm. ${sp.discovery?.geologicalFormation || 'Fósil'}` :
-      (Array.isArray(sp.paleoLocation) ? sp.paleoLocation.join(', ') : (sp.fossilSite || 'No documentado'));
-    if (fossilSite) fossilSite.textContent = `Yacimiento / Ubicación: ${siteText}`;
-
-    if (licenseNote) {
-      if (sp.media && sp.media.imageLicense) {
-        licenseNote.textContent = `Licencia: ${sp.media.imageLicense} • Autor: ${sp.media.imageAuthor || 'Reconstrucción Paleontológica'}`;
+    const updateLicenseText = (isVideoActive) => {
+      if (!licenseNote) return;
+      if (isVideoActive) {
+        const author = sp.media?.videoAuthor || 'Reconstrucción Digital Paleontológica';
+        const license = sp.media?.videoLicense || 'Licencia Educativa / Demostración';
+        licenseNote.textContent = `🎬 Animación 3D: ${license} • Autor: ${author}`;
       } else {
-        licenseNote.textContent = 'Licencia: Creative Commons / Dominio Público';
+        if (sp.media && sp.media.imageLicense) {
+          licenseNote.textContent = `Licencia: ${sp.media.imageLicense} • Autor: ${sp.media.imageAuthor || 'Reconstrucción Paleontológica'}`;
+        } else {
+          licenseNote.textContent = 'Licencia: Creative Commons / Dominio Público';
+        }
       }
+    };
+
+    const setMediaTab = (tab) => {
+      if (tab === 'video' && videoUrl) {
+        if (btnMediaVideo) btnMediaVideo.classList.add('active');
+        if (btnMediaPhoto) btnMediaPhoto.classList.remove('active');
+        if (img) img.style.display = 'none';
+        if (video) {
+          video.style.display = 'block';
+          video.currentTime = 0;
+          video.play().catch(e => console.warn('Autoplay video error:', e));
+        }
+        updateLicenseText(true);
+      } else {
+        if (btnMediaPhoto) btnMediaPhoto.classList.add('active');
+        if (btnMediaVideo) btnMediaVideo.classList.remove('active');
+        if (img) img.style.display = 'block';
+        if (video) {
+          try { video.pause(); } catch (_) {}
+          video.style.display = 'none';
+        }
+        updateLicenseText(false);
+      }
+    };
+
+    if (videoUrl) {
+      if (mediaSwitcher) mediaSwitcher.style.display = 'flex';
+      if (video) {
+        video.src = `./${videoUrl}`;
+        video.load();
+      }
+      if (btnMediaPhoto) btnMediaPhoto.onclick = () => setMediaTab('photo');
+      if (btnMediaVideo) btnMediaVideo.onclick = () => setMediaTab('video');
+      setMediaTab(initialTab === 'video' ? 'video' : 'photo');
+    } else {
+      if (mediaSwitcher) mediaSwitcher.style.display = 'none';
+      if (video) {
+        try { video.pause(); } catch (_) {}
+        video.style.display = 'none';
+        video.removeAttribute('src');
+      }
+      if (img) img.style.display = 'block';
+      updateLicenseText(false);
     }
 
     const cladeTop = document.getElementById('specimen-modal-clade-top');
@@ -1282,14 +1342,21 @@ class AncientEarthApp {
 
     // Modal Exit & Explore Actions
     if (btnBackHeader) {
-      btnBackHeader.onclick = () => dialog.close();
+      btnBackHeader.onclick = () => {
+        if (video) { try { video.pause(); } catch (_) {} }
+        dialog.close();
+      };
     }
     if (btnBackFooter) {
-      btnBackFooter.onclick = () => dialog.close();
+      btnBackFooter.onclick = () => {
+        if (video) { try { video.pause(); } catch (_) {} }
+        dialog.close();
+      };
     }
 
     if (btnFlyto) {
       btnFlyto.onclick = () => {
+        if (video) { try { video.pause(); } catch (_) {} }
         dialog.close();
         if (this.fullCatalogModal && this.fullCatalogModal.isOpen()) {
           this.fullCatalogModal.close();

@@ -189,6 +189,7 @@ export class Sidebar {
               : (sp.paleogeography?.landmass || sp.paleogeography?.waterBody || 'Masa continental ancestral');
             const discoverer = sp.discovery?.discoverer || '';
             const yearDisc = sp.discovery?.yearDiscovered || '';
+            const hasVideo = !!(sp.media?.videoUrl || sp.video);
 
             return `
               <div class="species-card ${isSelected ? 'selected' : ''}" data-species-id="${sp.id}">
@@ -198,6 +199,7 @@ export class Sidebar {
                   <div class="species-tags-overlay">
                     <span class="species-env-tag env-${env}">${envLabel}</span>
                     <span class="species-diet-badge ${dietClass}">${diet.split(' ')[0]}</span>
+                    ${hasVideo ? `<span class="badge-has-video" data-species-id="${sp.id}" title="Contiene animación 3D cinemática">🎬 Animación 3D</span>` : ''}
                   </div>
 
                   <span class="species-era-pill">⏳ ${sp.startMa ? `${sp.startMa}-${sp.endMa} Ma` : (sp.timeRange || '')}</span>
@@ -247,6 +249,15 @@ export class Sidebar {
                       </svg>
                       <span>${isSelected ? '✓ En Globo 3D' : 'Ver en Globo 3D'}</span>
                     </button>
+
+                    ${hasVideo ? `
+                      <button class="btn-view-video" data-species-id="${sp.id}" title="Ver animación 3D cinemática del espécimen">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>Animación 3D</span>
+                      </button>
+                    ` : ''}
 
                     <button class="btn-view-specimen" data-species-id="${sp.id}" title="Ver ficha técnica completa">
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -427,17 +438,34 @@ export class Sidebar {
       });
     });
 
+    // View 3D animation video directly
+    const viewVideoBtns = content.querySelectorAll('.btn-view-video, .badge-has-video');
+    viewVideoBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = btn.closest('.species-card');
+        const spId = btn.dataset.speciesId || (card ? card.dataset.speciesId : null);
+        if (spId) {
+          const sp = this.activeFauna.find(s => s.id === spId);
+          if (sp && this.onSelectSpecies) {
+            this.onSelectSpecies(sp, this.currentPeriod, 'video');
+          }
+        }
+      });
+    });
+
     // View HD specimen modal
     const viewSpecimenBtns = content.querySelectorAll('.btn-view-specimen, .species-img-wrapper');
     viewSpecimenBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
+        if (e.target.closest('.badge-has-video')) return; // handled by viewVideoBtns
         e.stopPropagation();
         const card = btn.closest('.species-card');
         const spId = card ? card.dataset.speciesId : null;
         if (spId) {
           const sp = this.activeFauna.find(s => s.id === spId);
           if (sp && this.onSelectSpecies) {
-            this.onSelectSpecies(sp, this.currentPeriod);
+            this.onSelectSpecies(sp, this.currentPeriod, 'photo');
           }
         }
       });

@@ -414,9 +414,25 @@ export class FullCatalogModal {
           return;
         }
 
-        // 2. "Ficha Técnica" or clicking card image/title
+        // 2. "Animación 3D"
+        const btnVideo = e.target.closest('.btn-card-video, .catalog-video-badge');
+        if (btnVideo) {
+          const card = e.target.closest('.catalog-card');
+          const spId = btnVideo.dataset.speciesId || (card ? card.dataset.speciesId : null);
+          const sp = this.fauna.find(s => s.id === spId);
+          if (sp) {
+            const mapping = this.speciesPeriodMap.get(sp.id) || this.getBestPeriodForSpecies(sp);
+            if (this.onOpenSpecimenModal) {
+              this.onOpenSpecimenModal(sp, mapping.period, 'video');
+            }
+          }
+          return;
+        }
+
+        // 3. "Ficha Técnica" or clicking card image/title
         const btnSpecimen = e.target.closest('.btn-card-specimen, .catalog-card-image-wrap, .catalog-card-header');
         if (btnSpecimen) {
+          if (e.target.closest('.catalog-video-badge')) return;
           const card = e.target.closest('.catalog-card');
           if (!card) return;
           const spId = card.dataset.speciesId;
@@ -424,7 +440,7 @@ export class FullCatalogModal {
           if (sp) {
             const mapping = this.speciesPeriodMap.get(sp.id) || this.getBestPeriodForSpecies(sp);
             if (this.onOpenSpecimenModal) {
-              this.onOpenSpecimenModal(sp, mapping.period);
+              this.onOpenSpecimenModal(sp, mapping.period, 'photo');
             }
           }
         }
@@ -579,6 +595,7 @@ export class FullCatalogModal {
                 ${periodName}
               </span>
               ${sp.isChilean ? `<span class="catalog-chile-card-tag" title="Fósil descubierto en Chile">🇨🇱 ${sp.chileanRegion || 'Chile'}</span>` : ''}
+              ${(sp.media?.videoUrl || sp.video) ? `<span class="catalog-video-badge" data-species-id="${sp.id}" title="Contiene animación 3D de alta fidelidad">🎬 Animación 3D</span>` : ''}
               <span class="catalog-env-tag env-${env}">${envLabel}</span>
             </div>
 
@@ -646,6 +663,15 @@ export class FullCatalogModal {
                 </svg>
                 <span>Ver en Globo 3D</span>
               </button>
+
+              ${(sp.media?.videoUrl || sp.video) ? `
+                <button class="btn-card-video" data-species-id="${sp.id}" title="Ver animación 3D cinemática">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  <span>Animación 3D</span>
+                </button>
+              ` : ''}
 
               <button class="btn-card-specimen" data-species-id="${sp.id}" title="Abrir ficha anatómica y científica">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

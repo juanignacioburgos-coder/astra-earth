@@ -674,8 +674,22 @@
           <div class="specimen-modal-body">
             <!-- Left Column: Visual Showcase & Anatomical Scale Comparison -->
             <div class="specimen-modal-visual">
+              <!-- Media Switcher Tab (2D Illustration vs 3D Video Animation) -->
+              <div id="specimen-media-switcher" class="specimen-media-switcher" style="display: none;">
+                <button type="button" id="btn-media-photo" class="media-tab-btn active">
+                  <span>🎨</span>
+                  <span>Ilustración 2D</span>
+                </button>
+                <button type="button" id="btn-media-video" class="media-tab-btn">
+                  <span>🎬</span>
+                  <span>Animación 3D</span>
+                  <span class="media-live-dot"></span>
+                </button>
+              </div>
+
               <div class="specimen-image-container">
                 <img id="specimen-modal-img" src="" alt="Ilustración paleontológica" class="specimen-featured-image" />
+                <video id="specimen-modal-video" class="specimen-featured-video" playsinline loop muted controls style="display: none;"></video>
                 <div class="specimen-image-glow"></div>
               </div>
 

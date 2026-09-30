@@ -1543,7 +1543,10 @@
     "media": {
       "imageUrl": "assets/species/quetzalcoatlus.jpg",
       "imageAuthor": "Mundo Prehistórico / Mark Witton",
-      "imageLicense": "CC-BY-SA 4.0"
+      "imageLicense": "CC-BY-SA 4.0",
+      "videoUrl": "assets/videos/quetzalcoatlus-animation.mp4",
+      "videoAuthor": "Animación Científica 3D / Reconstrucción Biomecánica",
+      "videoLicense": "Material Didáctico Paleontológico"
     },
     "coordinates": {
       "lat": 29.25,

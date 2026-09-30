@@ -979,6 +979,7 @@
           "name": "Quetzalcoatlus northropi",
           "commonName": "Quetzalcoatlus (Reptil Volador Gigante)",
           "image": "assets/species/quetzalcoatlus.jpg",
+          "video": "assets/videos/quetzalcoatlus-animation.mp4",
           "group": "Reptil volador (Pterosaurio azdárquido)",
           "diet": "Carnívoro / Piscívoro (Depredador terrestre acechador y carroñero)",
           "habitat": "Aéreo y terrestre (Llanuras de inundación interiores)",
